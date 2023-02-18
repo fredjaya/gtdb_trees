@@ -58,9 +58,48 @@ This was informative.
 
 | What             | IQ-TREE (eps 0.1) | IQ-TREE (eps 1.0) | RAxML (eps 0.1)    | RAxML (eps 1.0)   | 
 | -------          | ----------------- | ----------------- | ----------------- | -----------------  | 
-| Wall time        | 13:27:56          |                   |                   | 0:6:12             | 
-| LnL              | -138894945.73     |                   |                   | -138894945.42      | 
-| Efficiency       | 15%               |                   |                   | 72%                | 
-| Max Mem          | 54.9 Gb           |                   |                   | 47.4 Gb            | 
+| Wall time        | 13:27:56          |                   | 0:6:41            | 0:6:12             | 
+| LnL              | -138894945.73     |                   | -138894945.42     | -138894945.42      | 
+| Efficiency       | 15%               |                   | 74%               | 72%                | 
+| Max Mem          | 54.9 Gb           |                   | 47.4 Gb           | 47.4 Gb            | 
 
-         
+So, RAxML is certainly a *lot* quicker and a little more memory efficient. 
+
+Let's see if we can use RAxML for model selection too. 
+
+# Model selection on the MP tree
+
+To do model selection, we need a tree. The MP tree won't be great, but it will be better than nothing. Let's see how far we can push models in RAxML.          
+# Rate distribution
+
+RAxML has a few options for models, here are the obvious things to try. I'll switch off branch length optimisation for all of these, to isolate the time just for each model optimisation.
+
+I'll use the brlen optimised tree from RAxML above as the input tree with fixed branch lengths.
+
+* LG (really this just measures overheads, because there are no parameters to tune)
+* LG+G
+* LG+I+G (+I seems crazy here, because there are no constant sites, but still)
+* LG+F
+* LG+F+G
+* LG+F+I+G
+
+Here are the commandlines:
+
+```
+/usr/bin/time -o LGmem.txt -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG --threads 32 --tree gtdb_r207_bac120_concatenated.faa.raxml.bestTree --opt-branches off --evaluate --lh-epsilon 0.1  —prefix LG
+/usr/bin/time -o LGGmem.txt -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG+G --threads 32 --tree gtdb_r207_bac120_concatenated.faa.raxml.bestTree --opt-branches off --evaluate --lh-epsilon 0.1  —prefix LGG
+/usr/bin/time -o LGIGmem.txt -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG+I+G --threads 32 --tree gtdb_r207_bac120_concatenated.faa.raxml.bestTree --opt-branches off --evaluate --lh-epsilon 0.1  —prefix LGIG
+/usr/bin/time -o LGFmem.txt -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG+F --threads 32 --tree gtdb_r207_bac120_concatenated.faa.raxml.bestTree --opt-branches off --evaluate --lh-epsilon 0.1  —prefix LGF
+/usr/bin/time -o LGFGmem.txt -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG+F+G --threads 32 --tree gtdb_r207_bac120_concatenated.faa.raxml.bestTree --opt-branches off --evaluate --lh-epsilon 0.1  —prefix LGFG
+/usr/bin/time -o LGFIGmem.txt -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG+F+I+G --threads 32 --tree gtdb_r207_bac120_concatenated.faa.raxml.bestTree --opt-branches off --evaluate --lh-epsilon 0.1  —prefix LGFIG
+```
+
+
+| Model  | Wall Time | Memory | lnL | AIC | BIC |
+|------- |-----------|--------|-----|-----|-----|
+|LG      ||||||
+|LG+G    ||||||
+|LG+I+G  ||||||
+|LG+F    ||||||
+|LG+F+G  ||||||
+|LG+F+I+G||||||
