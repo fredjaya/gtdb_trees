@@ -94,12 +94,18 @@ Here are the commandlines:
 /usr/bin/time -o LGFIGmem.txt -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG+F+I+G --threads 32 --tree gtdb_r207_bac120_concatenated.faa.raxml.bestTree --opt-branches off --evaluate --lh-epsilon 0.1  -—prefix LGFIG
 ```
 
+The deltaBIC column is just compared to the straight LG model...
 
-| Model  | Wall Time | Memory | lnL | AIC | BIC |
-|------- |-----------|--------|-----|-----|-----|
-|LG      ||||||
-|LG+G    ||||||
-|LG+I+G  ||||||
-|LG+F    ||||||
-|LG+F+G  ||||||
+| Model  | Wall Time | Memory | lnL | AIC | BIC | deltaBIC | Model |
+|------- |-----------|--------|-----|-----|-----| ---------|-------|
+|LG      |||-138894945.422835|278039048.845670|278851848.011393|0|LG, noname = 1-5036|
+|LG+G    |||-131342037.923499|262933235.846998|263746041.537088|15105806|LG+G4m{0.928691}, noname = 1-5036|
+|LG+I+G  |||-130970438.655390|262190039.310780|263002851.525237|15848947|LG+IU{0.356239}+G4m{1.185920}, noname = 1-5036|
+|LG+F    |||-139310868.809559|278870933.619118|279683856.747821|-832008|LG+FC, noname = 1-5036|
+|LG+F+G  |||-131483774.606592|263216747.213183|264029676.866253|14822172|LG+FC+G4m{0.854565}, noname = 1-5036|
 |LG+F+I+G||||||
+
+
+No real surprises here. I guess the +I+G models are better because the +I frees the gamma distribution to better fit what's left (even though there are no constant sites).
+
+It's a bit odd that the +F models don't work, but perhaps because they're empirical not ML frequencies they just don't work well at all with such a short alignment.
