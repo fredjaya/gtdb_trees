@@ -77,21 +77,55 @@ RAxML has a few options for models, here are the obvious things to try. I'll swi
 I'll use the brlen optimised tree from RAxML above as the input tree with fixed branch lengths.
 
 * LG (really this just measures overheads, because there are no parameters to tune)
-* LG+G
-* LG+I+G (+I seems crazy here, because there are no constant sites, but still)
-* LG+F
-* LG+F+G
-* LG+F+I+G
 
-Here are the commandlines:
+Rate distributions:
+
+* + nothing
+* +G
+* +I+G
+* +R2
+* +R3 
+* +R4
+* +I+R2
+* +I+R3
+* +I+R4
+
+Amino acid frequencies:
+
+* from LG
+* +F (empirical)
+* +FO (ml estimates)
+
+Here are the commandlines for all 27 combinations:
 
 ```
-/usr/bin/time -o LGmem.txt -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG --threads 32 --tree gtdb_r207_bac120_concatenated.faa.raxml.bestTree --opt-branches off --evaluate --lh-epsilon 0.1  -—prefix LG
-/usr/bin/time -o LGGmem.txt -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG+G --threads 32 --tree gtdb_r207_bac120_concatenated.faa.raxml.bestTree --opt-branches off --evaluate --lh-epsilon 0.1  -—prefix LGG
-/usr/bin/time -o LGIGmem.txt -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG+I+G --threads 32 --tree gtdb_r207_bac120_concatenated.faa.raxml.bestTree --opt-branches off --evaluate --lh-epsilon 0.1  -—prefix LGIG
-/usr/bin/time -o LGFmem.txt -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG+F --threads 32 --tree gtdb_r207_bac120_concatenated.faa.raxml.bestTree --opt-branches off --evaluate --lh-epsilon 0.1  -—prefix LGF
-/usr/bin/time -o LGFGmem.txt -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG+F+G --threads 32 --tree gtdb_r207_bac120_concatenated.faa.raxml.bestTree --opt-branches off --evaluate --lh-epsilon 0.1  -—prefix LGFG
-/usr/bin/time -o LGFIGmem.txt -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG+F+I+G --threads 32 --tree gtdb_r207_bac120_concatenated.faa.raxml.bestTree --opt-branches off --evaluate --lh-epsilon 0.1  -—prefix LGFIG
+/usr/bin/time -o LGR2mem.txt -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG+R2 --threads 32 --tree gtdb_r207_bac120_concatenated.faa.raxml.bestTree --opt-branches off --evaluate --lh-epsilon 0.1  --prefix LGR2
+/usr/bin/time -o LGR2mem.txt -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG+R3 --threads 32 --tree gtdb_r207_bac120_concatenated.faa.raxml.bestTree --opt-branches off --evaluate --lh-epsilon 0.1  --prefix LGR3
+/usr/bin/time -o LGR2mem.txt -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG+R4 --threads 32 --tree gtdb_r207_bac120_concatenated.faa.raxml.bestTree --opt-branches off --evaluate --lh-epsilon 0.1  --prefix LGR4
+
+/usr/bin/time -o LGIR2mem.txt -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG+I+R2 --threads 32 --tree gtdb_r207_bac120_concatenated.faa.raxml.bestTree --opt-branches off --evaluate --lh-epsilon 0.1  --prefix LGIR2
+/usr/bin/time -o LGIR2mem.txt -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG+I+R3 --threads 32 --tree gtdb_r207_bac120_concatenated.faa.raxml.bestTree --opt-branches off --evaluate --lh-epsilon 0.1  --prefix LGIR3
+/usr/bin/time -o LGIR2mem.txt -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG+I+R4 --threads 32 --tree gtdb_r207_bac120_concatenated.faa.raxml.bestTree --opt-branches off --evaluate --lh-epsilon 0.1  --prefix LGIR4
+
+/usr/bin/time -o LGFR2mem.txt -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG+F+R2 --threads 32 --tree gtdb_r207_bac120_concatenated.faa.raxml.bestTree --opt-branches off --evaluate --lh-epsilon 0.1  --prefix LGFR2
+/usr/bin/time -o LGFR2mem.txt -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG+F+R3 --threads 32 --tree gtdb_r207_bac120_concatenated.faa.raxml.bestTree --opt-branches off --evaluate --lh-epsilon 0.1  --prefix LGFR3
+/usr/bin/time -o LGFR2mem.txt -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG+F+R4 --threads 32 --tree gtdb_r207_bac120_concatenated.faa.raxml.bestTree --opt-branches off --evaluate --lh-epsilon 0.1  --prefix LGFR4
+
+/usr/bin/time -o LGFIR2mem.txt -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG+F+I+R2 --threads 32 --tree gtdb_r207_bac120_concatenated.faa.raxml.bestTree --opt-branches off --evaluate --lh-epsilon 0.1  --prefix LGFIR2
+/usr/bin/time -o LGFIR2mem.txt -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG+F+I+R3 --threads 32 --tree gtdb_r207_bac120_concatenated.faa.raxml.bestTree --opt-branches off --evaluate --lh-epsilon 0.1  --prefix LGFIR3
+/usr/bin/time -o LGFIR2mem.txt -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG+F+I+R4 --threads 32 --tree gtdb_r207_bac120_concatenated.faa.raxml.bestTree --opt-branches off --evaluate --lh-epsilon 0.1  --prefix LGFIR4
+
+/usr/bin/time -o LGFOmem.txt -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG+FO --threads 32 --tree gtdb_r207_bac120_concatenated.faa.raxml.bestTree --opt-branches off --evaluate --lh-epsilon 0.1  --prefix LGFO
+/usr/bin/time -o LGFOGmem.txt -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG+FO+G --threads 32 --tree gtdb_r207_bac120_concatenated.faa.raxml.bestTree --opt-branches off --evaluate --lh-epsilon 0.1  --prefix LGFOG
+/usr/bin/time -o LGFOIGmem.txt -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG+FO+I+G --threads 32 --tree gtdb_r207_bac120_concatenated.faa.raxml.bestTree --opt-branches off --evaluate --lh-epsilon 0.1  --prefix LGFOIG
+
+/usr/bin/time -o LGFOR2mem.txt -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG+FO+R2 --threads 32 --tree gtdb_r207_bac120_concatenated.faa.raxml.bestTree --opt-branches off --evaluate --lh-epsilon 0.1  --prefix LGFOR2
+/usr/bin/time -o LGFOR2mem.txt -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG+FO+R3 --threads 32 --tree gtdb_r207_bac120_concatenated.faa.raxml.bestTree --opt-branches off --evaluate --lh-epsilon 0.1  --prefix LGFOR3
+/usr/bin/time -o LGFOR2mem.txt -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG+FO+R4 --threads 32 --tree gtdb_r207_bac120_concatenated.faa.raxml.bestTree --opt-branches off --evaluate --lh-epsilon 0.1  --prefix LGFOR4
+
+/usr/bin/time -o LGFOIR2mem.txt -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG+FO+I+R2 --threads 32 --tree gtdb_r207_bac120_concatenated.faa.raxml.bestTree --opt-branches off --evaluate --lh-epsilon 0.1  --prefix LGFOIR2
+/usr/bin/time -o LGFOIR2mem.txt -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG+FO+I+R3 --threads 32 --tree gtdb_r207_bac120_concatenated.faa.raxml.bestTree --opt-branches off --evaluate --lh-epsilon 0.1  --prefix LGFOIR3
+/usr/bin/time -o LGFOIR2mem.txt -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG+FO+I+R4 --threads 32 --tree gtdb_r207_bac120_concatenated.faa.raxml.bestTree --opt-branches off --evaluate --lh-epsilon 0.1  --prefix LGFOIR4
 ```
 
 The deltaBIC column is just compared to the straight LG model...
