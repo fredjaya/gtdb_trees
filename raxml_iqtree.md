@@ -39,6 +39,15 @@ Let's try again, but using the MP starting tree from the first RAxML run as a st
 /usr/bin/time -o mem.txt -v iqtree2 -s gtdb_r207_bac120_concatenated.faa -m LG -fast -nt 32 -t gtdb_r207_bac120_concatenated.faa.raxml_parsimony.tree -v 
 ```
 
+So, this took ~52 hours, and used ~7 processors on average (so an efficiency of 22%). It used 55Gb of memory.
+
+It does look like IQ-TREE managed to optimise the tree a bit too:
+
+Initial lnL: -138582337.79
+Final lnL:   -138581893.07
+
+So, this is encouraging. 
+
 ## Just optimising the tree branch lengths
 
 What if we only want to optimise the branch lengths of the tree? Let's try both with an epsilon of 1.0 likelihood units. (It's usually a lot lower, but I raised it to try and speed things up...)
@@ -58,10 +67,10 @@ This was informative.
 
 | What             | IQ-TREE (eps 0.1) | IQ-TREE (eps 1.0) | RAxML (eps 0.1)    | RAxML (eps 1.0)   | 
 | -------          | ----------------- | ----------------- | ----------------- | -----------------  | 
-| Wall time        | 13:27:56          |                   | 0:6:41            | 0:6:12             | 
-| LnL              | -138894945.73     |                   | -138894945.42     | -138894945.42      | 
-| Efficiency       | 15%               |                   | 74%               | 72%                | 
-| Max Mem          | 54.9 Gb           |                   | 47.4 Gb           | 47.4 Gb            | 
+| Wall time        | 13:27:56          | 12:35:51          | 0:6:41            | 0:6:12             | 
+| LnL              | -138894945.73     | -138894945.75     | -138894945.42     | -138894945.42      | 
+| Efficiency       | 15%               | 15%               | 74%               | 72%                | 
+| Max Mem          | 54.9 Gb           | 54.9 Gb           | 47.4 Gb           | 47.4 Gb            | 
 
 So, RAxML is certainly a *lot* quicker and a little more memory efficient. 
 
