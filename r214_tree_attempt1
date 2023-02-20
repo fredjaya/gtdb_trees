@@ -1,0 +1,40 @@
+# An attempt to build a tree for R214
+
+Here's the plan. 
+
+## Starting tree
+
+Try a few options.
+
+1. Reduced dataset, fasttree2
+2. Reduced dataset, raxml-ng parsimony tree
+3. Full dataset, fasttree2
+4. Full datatset, raxml-ng parsimony tree
+
+Evaluate the likelihood of each of these 4 using an LG+G model in raxml-ng or fasttree2
+
+## Online tree
+
+1. Start with the r207 tree.
+2. Drop all taxa *not* in the r214 dataset
+3. Use IQ-TREE2 to add the new taxa by providing r207 as a constraint tree and r214 as the input data
+4. As above but try the same with raxml-ng and/or other placement algorithms
+
+Evaluate the likelihood of each of these 4 using an LG+G model in raxml-ng or fasttree2
+
+## Model selection
+
+Fit the following models to the best starting tree. Do it separately for the full and reduced datasets.
+
+1. LG+G
+2. LG+I+G
+3. LG+R2-R? where ? is as long as we can wait
+
+
+## Update starting tree
+
+1. In fasttree 2
+2. In raxml-ng
+3. In IQ-TREE
+
+In each case we use the best available model for the given alignmnt, with fixed parameters where possible. 
