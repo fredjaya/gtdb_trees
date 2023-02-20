@@ -44,9 +44,18 @@ So, this took ~52 hours, and used ~7 processors on average (so an efficiency of 
 It does look like IQ-TREE managed to optimise the tree a bit too:
 
 Initial lnL: -138582337.79
+
 Final lnL:   -138581893.07
 
-So, this is encouraging. 
+So, this is encouraging. Let's see if we can further optimise it. This time I'll use 4 rounds of optimisation, and a perturbation strength of 0.2 (down from the usual 0.5). I'll keep epsilon at 1.0.
+
+```
+/usr/bin/time -o mem1.txt -v iqtree2 -s gtdb_r207_bac120_concatenated.faa -m LG -n 4 -pers 0.2 -nt 8 -te gtdb_r207_bac120_concatenated.faa.treefile -v  --epsilon 1.0 -pre iter2
+```
+
+gtdb3/r3
+
+
 
 ## Just optimising the tree branch lengths
 
