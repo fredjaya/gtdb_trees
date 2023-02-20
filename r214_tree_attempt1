@@ -4,14 +4,15 @@ Here's the plan.
 
 ## Starting tree
 
-Try a few options.
+Try a few options. Use both the reduced and the full dataset, and the following software
 
-1. Reduced dataset, fasttree2
-2. Reduced dataset, raxml-ng parsimony tree
-3. Full dataset, fasttree2
-4. Full datatset, raxml-ng parsimony tree
+1. fasttree2 (NJ step only)
+2. rapidNJ
+3. decentTree (if possible)
+4. raxml-ng (parsimony tree)
+5. TNT
 
-Evaluate the likelihood of each of these 4 using an LG+G model in raxml-ng or fasttree2
+Evaluate the likelihood of each of these 4 on the full dataset using an LG+G model in raxml-ng or fasttree2
 
 ## Online tree
 
@@ -20,7 +21,7 @@ Evaluate the likelihood of each of these 4 using an LG+G model in raxml-ng or fa
 3. Use IQ-TREE2 to add the new taxa by providing r207 as a constraint tree and r214 as the input data
 4. As above but try the same with raxml-ng and/or other placement algorithms
 
-Evaluate the likelihood of each of these 4 using an LG+G model in raxml-ng or fasttree2
+Evaluate the likelihood of each of these 4 on the full dataset using an LG+G model in raxml-ng or fasttree2
 
 ## Model selection
 
