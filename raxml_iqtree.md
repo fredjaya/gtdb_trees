@@ -164,41 +164,49 @@ Here are the commandlines for all 39 combinations (in a randomish order as I lea
 /usr/bin/time -o LGFOIOR4mem.txt -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG+FO+IO+R4 --threads 16 --force perf_threads --tree gtdb_r207_bac120_concatenated.faa.raxml.bestTree --opt-branches off --evaluate --lh-epsilon 0.1  --prefix LGFOIOR4
 ```
 
-The deltaBIC column is just compared to the straight LG model...
-Wall time is m:s, memory is in GB
+Delta BIC is compared to the best model so far. 
+Wall time is m:s
+Memory is in GB
 
-| Model    | Wall Time | Memory | lnL | AIC | BIC | deltaBIC | Model |
-|-------   |-----------|--------|-----|-----|-----| ---------|-------|
-|LG        |2:41|47|-138894945.422835|278039048.845670|278851848.011393|0|LG, noname = 1-5036|
-|LG+G      |12:39|169|-131342037.923499|262933235.846998|263746041.537088|15105806|LG+G4m{0.928691}, noname = 1-5036|
-|LG+I+G    |32:35|169|-130970438.655390|262190039.310780|263002851.525237|15848947|LG+IU{0.356239}+G4m{1.185920}, noname = 1-5036|
-|LG+IO+G   ||||||||
-|LG+F      |2:26|47|-139310868.809559|278870933.619118|279683856.747821|-832008|LG+FC, noname = 1-5036|
-|LG+F+G    |10:56|169|-131483774.606592|263216747.213183|264029676.866253|14822172|LG+FC+G4m{0.854565}, noname = 1-5036|
-|LG+F+I+G  |28:11|169|-130981085.221007|262211370.442013|263024306.619451|15827542|LG+FC+IU{0.396633}+G4m{1.139195}, noname = 1-5036|
-|LG+F+IO+G ||||||||
-|LG+R2     |||-133141864.230090|266532890.460180|267345702.674637|11506146|LG+R2{0.477258/1.928660}{0.639836/0.360164}, noname = 1-5036|
-|LG+R3     ||||||||
-|LG+R4     ||||||||
-|LG+I+R2   ||||||||
-|LG+I+R3   ||||||||
-|LG+I+R4   ||||||||
-|LG+F+R2   ||||||||
-|LG+F+R3   ||||||||
-|LG+F+R4   ||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
-|||||||||
+| Model       | Time (m:s) | Memory | lnL        | BIC       | deltaBIC  | params                                                                                                                                                                                                                |
+|-------------|------------|--------|------------|-----------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| LG          | 2:00       | 35     | -138894945 | 278851848 | -15872163 | NA                                                                                                                                                                                                                    |
+| LG+G        | 10:32      | 122    | -131342037 | 263746041 | -766356   | LG+G4m{0.928691}                                                                                                                                                                                                      |
+| LG+I+G      | 32:18      | 122    | -130970438 | 263002851 | -23166    | LG+IU{0.356239}+G4m{1.185920}                                                                                                                                                                                         |
+| LG+IO+G     | 33:41      | 122    | -130970438 | 263002851 | -23166    | LG+IU{0.356239}+G4m{1.185920}                                                                                                                                                                                         |
+| LG+F        | 1:58       | 35     | -139310868 | 279683856 | -16704171 |    Base frequencies (empirical): 0.097978 0.055944 0.031043 0.050875 0.008364 0.030803 0.069143 0.057151 0.018318 0.080991 0.104304 0.067822 0.024028 0.032508 0.035765 0.054730 0.051257 0.006756 0.024449 0.097773  |
+| LG+F+G      | 10:40      | 122    | -131483774 | 264029676 | -1049991  | LG+FC+G4m{0.854565}; aa freqs as for LG+F                                                                                                                                                                             |
+| LG+F+I+G    | 31:33      | 122    | -130981085 | 263024306 | -44621    | LG+FC+IU{0.396633}+G4m{1.139195}                                                                                                                                                                                      |
+| LG+F+IO+G   | 30:50      | 122    | -130981085 | 263024306 | -44621    | LG+FC+IU{0.396633}+G4m{1.139195}                                                                                                                                                                                      |
+| LG+R2       | 36:41      | 64     | -133141864 | 267345702 | -4366017  | LG+R2{0.477258/1.928660}{0.639836/0.360164}                                                                                                                                                                           |
+| LG+R3       | 79:01      | 93     | -131520921 | 264103834 | -1124149  | LG+R3{0.308202/0.989746/2.712386}{0.411955/0.419107/0.168938}                                                                                                                                                         |
+| LG+R4       | 113:40     | 122    | -130958838 | 262979685 | 0         | LG+R4{0.235731/0.657483/1.369952/3.119759}{0.295838/0.332110/0.256490/0.115562}                                                                                                                                       |
+| LG+I+R2     | 30:58      | 64     | -133143219 | 267348421 | -4368736  | LG+IU{0.235932}+R2{0.477263/1.928575}{0.639818/0.360182}                                                                                                                                                              |
+| LG+I+R3     | 67:33      | 93     | -131523019 | 264108039 | -1128354  | LG+IU{0.340747}+R3{0.308186/0.989732/2.712115}{0.411968/0.419055/0.168977}                                                                                                                                            |
+| LG+I+R4     |            |        |            |           |           |                                                                                                                                                                                                                       |
+| LG+IO+R2    |            |        |            |           |           |                                                                                                                                                                                                                       |
+| LG+IO+R3    |            |        |            |           |           |                                                                                                                                                                                                                       |
+| LG+IO+R4    |            |        |            |           |           |                                                                                                                                                                                                                       |
+| LG+F+R2     |            |        |            |           |           |                                                                                                                                                                                                                       |
+| LG+F+R3     |            |        |            |           |           |                                                                                                                                                                                                                       |
+| LG+F+R4     |            |        |            |           |           |                                                                                                                                                                                                                       |
+| LG+F+I+R2   |            |        |            |           |           |                                                                                                                                                                                                                       |
+| LG+F+I+R3   |            |        |            |           |           |                                                                                                                                                                                                                       |
+| LG+F+I+R4   |            |        |            |           |           |                                                                                                                                                                                                                       |
+| LG+F+IO+R2  |            |        |            |           |           |                                                                                                                                                                                                                       |
+| LG+F+IO+R3  |            |        |            |           |           |                                                                                                                                                                                                                       |
+| LG+F+IO+R4  |            |        |            |           |           |                                                                                                                                                                                                                       |
+| LG+FO       |            |        |            |           |           |                                                                                                                                                                                                                       |
+| LG+FO+G     |            |        |            |           |           |                                                                                                                                                                                                                       |
+| LG+FO+I+G   |            |        |            |           |           |                                                                                                                                                                                                                       |
+| LG+FO+IO+G  |            |        |            |           |           |                                                                                                                                                                                                                       |
+| LG+FO+I+R2  |            |        |            |           |           |                                                                                                                                                                                                                       |
+| LG+FO+I+R3  |            |        |            |           |           |                                                                                                                                                                                                                       |
+| LG+FO+I+R4  |            |        |            |           |           |                                                                                                                                                                                                                       |
+| LG+FO+IO+R2 |            |        |            |           |           |                                                                                                                                                                                                                       |
+| LG+FO+IO+R3 |            |        |            |           |           |                                                                                                                                                                                                                       |
+| LG+FO+IO+R4 |            |        |            |           |           |                                                                                                                                                                                                                       |
 
 No real surprises here. I guess the +I+G models are better because the +I frees the gamma distribution to better fit what's left (even though there are no constant sites).
 
-It's a bit odd that the +F models don't work, but perhaps because they're empirical not ML frequencies they just don't work well at all with such a short alignment.
+It's a bit odd that the +F models don't work. I guess empirical frequencies are no good. The +FO models should get better likelihoods, but likely at a prohibitive cost.
