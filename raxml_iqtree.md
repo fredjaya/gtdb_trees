@@ -50,7 +50,7 @@ Final lnL:   -138581893.07
 So, this is encouraging. Let's see if we can further optimise it. This time I'll use 4 rounds of optimisation, and a perturbation strength of 0.2 (down from the usual 0.5). I'll keep epsilon at 1.0.
 
 ```
-/usr/bin/time -o mem1.txt -v iqtree2 -s gtdb_r207_bac120_concatenated.faa -m LG -n 4 -pers 0.2 -nt 8 -te gtdb_r207_bac120_concatenated.faa.treefile -v  --epsilon 1.0 -pre iter2
+/usr/bin/time -o mem1.txt -v iqtree2 -s gtdb_r207_bac120_concatenated.faa -m LG -n 4 -pers 0.2 -nt 8 -t gtdb_r207_bac120_concatenated.faa.treefile -v  --epsilon 1.0 -pre iter2
 ```
 
 gtdb3/r3
@@ -186,6 +186,8 @@ Delta BIC is compared to the best model so far.
 Wall time is m:s
 Memory is in GB
 
+I killed a few models which just didn't optimise for whatever reason. Also the +I models were tended to get WORSE likelihoods than the ones without +I when the free rate model was involved, so honestly I have no idea what is happening there. It simplifies things a bit though.
+
 | Model       | Time (m:s) | Memory | lnL        | BIC       | deltaBIC  | params                                                                                                                                                                                                                |
 |-------------|------------|--------|------------|-----------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | LG          | 2:00       | 35     | -138894945 | 278851848 | -15872163 | NA                                                                                                                                                                                                                    |
@@ -202,7 +204,7 @@ Memory is in GB
 | LG+I+R2     | 30:58      | 64     | -133143219 | 267348421 | -4368736  | LG+IU{0.235932}+R2{0.477263/1.928575}{0.639818/0.360182}                                                                                                                                                              |
 | LG+I+R3     | 67:33      | 93     | -131523019 | 264108039 | -1128354  | LG+IU{0.340747}+R3{0.308186/0.989732/2.712115}{0.411968/0.419055/0.168977}                                                                                                                                            |
 | LG+I+R4     |  NA        | NA     | NA         | NA        | NA        | This analysis hangs, no idea why                                                                                                                                                                                      |
-| LG+IO+R2    |            |        |            |           |           |                                                                                                                                                                                                                       |
+| LG+IO+R2    | 54:48      | 64     | -133143219 | 267348421 |           |                                                                                                                                                                                                                       |
 | LG+IO+R3    |            |        |            |           |           |                                                                                                                                                                                                                       |
 | LG+IO+R4    |            |        |            |           |           |                                                                                                                                                                                                                       |
 | LG+F+R2     |            |        |            |           |           |                                                                                                                                                                                                                       |
