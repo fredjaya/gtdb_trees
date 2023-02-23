@@ -33,7 +33,9 @@ Let's try again, but using the MP starting tree from the first RAxML run as a st
 /usr/bin/time -o mem.txt -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG --threads 32 --tree gtdb_r207_bac120_concatenated.faa.raxml_parsimony.tree --spr-radius 5
 ```
 
-### IQ-TREE
+This takes too long and will never scale.
+
+### IQ-TREE: likelihood
 
 ```
 /usr/bin/time -o mem.txt -v iqtree2 -s gtdb_r207_bac120_concatenated.faa -m LG -fast -nt 32 -t gtdb_r207_bac120_concatenated.faa.raxml_parsimony.tree -v 
@@ -53,8 +55,57 @@ So, this is encouraging. Let's see if we can further optimise it. This time I'll
 /usr/bin/time -o mem1.txt -v iqtree2 -s gtdb_r207_bac120_concatenated.faa -m LG -n 4 -pers 0.2 -nt 8 -t gtdb_r207_bac120_concatenated.faa.treefile -v  --epsilon 1.0 -pre iter2
 ```
 
-gtdb3/r3
+Answer: nope, takes too long.
 
+# IQ-TREE parsimony
+
+James Barbetti wrote some good parsimony optimisation code a couple of years ago. Let's see if we can optimise the parsimony starting tree from RAxML-ng, and see if that improves the likelihood. There are lots of ways to do this, but the simplest (and quickest) is just to try lots of SPR radii:
+
+In each one, I'll run the optimisation, then get the likelihood from RAxML-NG using the LG+R8 model. 
+
+```
+name=iqtree_spr10  
+/usr/bin/time -o $name.txt -v ./iqtree -m LG -n 0 -no-ml-dist -t gtdb_r207_bac120_concatenated.faa.raxml_parsimony.tree -s gtdb_r207_bac120_concatenated.faa -parsimony-spr 100 -spr-radius 10 --suppress-list-of-sequences -nt 128 -fast -cptime 999999999  -pre $name
+
+/usr/bin/time -o $name'_raxml.txt' -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG+R8{0.310018/0.131557/0.539684/1.181882/0.818461/1.760518/2.631203/4.214275}{0.186522/0.118450/0.176177/0.149001/0.161811/0.101324/0.066409/0.04
+0304} --threads 16 --force perf_threads --tree $name'.treefile' --opt-branches on --evaluate --lh-epsilon 0.1  --prefix $name
+
+name=iqtree_spr20  
+/usr/bin/time -o $name.txt -v ./iqtree -m LG -n 0 -no-ml-dist -t gtdb_r207_bac120_concatenated.faa.raxml_parsimony.tree -s gtdb_r207_bac120_concatenated.faa -parsimony-spr 100 -spr-radius 20 --suppress-list-of-sequences -nt 128 -fast -cptime 999999999  -pre $name
+
+/usr/bin/time -o $name'_raxml.txt' -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG+R8{0.310018/0.131557/0.539684/1.181882/0.818461/1.760518/2.631203/4.214275}{0.186522/0.118450/0.176177/0.149001/0.161811/0.101324/0.066409/0.04
+0304} --threads 16 --force perf_threads --tree $name'.treefile' --opt-branches on --evaluate --lh-epsilon 0.1  --prefix $name
+
+name=iqtree_spr30  
+/usr/bin/time -o $name.txt -v ./iqtree -m LG -n 0 -no-ml-dist -t gtdb_r207_bac120_concatenated.faa.raxml_parsimony.tree -s gtdb_r207_bac120_concatenated.faa -parsimony-spr 100 -spr-radius 30 --suppress-list-of-sequences -nt 128 -fast -cptime 999999999  -pre $name
+
+/usr/bin/time -o $name'_raxml.txt' -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG+R8{0.310018/0.131557/0.539684/1.181882/0.818461/1.760518/2.631203/4.214275}{0.186522/0.118450/0.176177/0.149001/0.161811/0.101324/0.066409/0.04
+0304} --threads 16 --force perf_threads --tree $name'.treefile' --opt-branches on --evaluate --lh-epsilon 0.1  --prefix $name
+
+name=iqtree_spr40  
+/usr/bin/time -o $name.txt -v ./iqtree -m LG -n 0 -no-ml-dist -t gtdb_r207_bac120_concatenated.faa.raxml_parsimony.tree -s gtdb_r207_bac120_concatenated.faa -parsimony-spr 100 -spr-radius 40 --suppress-list-of-sequences -nt 128 -fast -cptime 999999999  -pre $name
+
+/usr/bin/time -o $name'_raxml.txt' -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG+R8{0.310018/0.131557/0.539684/1.181882/0.818461/1.760518/2.631203/4.214275}{0.186522/0.118450/0.176177/0.149001/0.161811/0.101324/0.066409/0.04
+0304} --threads 16 --force perf_threads --tree $name'.treefile' --opt-branches on --evaluate --lh-epsilon 0.1  --prefix $name
+
+name=iqtree_spr50  
+/usr/bin/time -o $name.txt -v ./iqtree -m LG -n 0 -no-ml-dist -t gtdb_r207_bac120_concatenated.faa.raxml_parsimony.tree -s gtdb_r207_bac120_concatenated.faa -parsimony-spr 100 -spr-radius 50 --suppress-list-of-sequences -nt 128 -fast -cptime 999999999  -pre $name
+
+/usr/bin/time -o $name'_raxml.txt' -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG+R8{0.310018/0.131557/0.539684/1.181882/0.818461/1.760518/2.631203/4.214275}{0.186522/0.118450/0.176177/0.149001/0.161811/0.101324/0.066409/0.04
+0304} --threads 16 --force perf_threads --tree $name'.treefile' --opt-branches on --evaluate --lh-epsilon 0.1  --prefix $name
+
+name=iqtree_spr100  
+/usr/bin/time -o $name.txt -v ./iqtree -m LG -n 0 -no-ml-dist -t gtdb_r207_bac120_concatenated.faa.raxml_parsimony.tree -s gtdb_r207_bac120_concatenated.faa -parsimony-spr 100 -spr-radius 100 --suppress-list-of-sequences -nt 128 -fast -cptime 999999999  -pre $name
+
+/usr/bin/time -o $name'_raxml.txt' -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG+R8{0.310018/0.131557/0.539684/1.181882/0.818461/1.760518/2.631203/4.214275}{0.186522/0.118450/0.176177/0.149001/0.161811/0.101324/0.066409/0.04
+0304} --threads 16 --force perf_threads --tree $name'.treefile' --opt-branches on --evaluate --lh-epsilon 0.1  --prefix $name
+
+```
+
+| SPR radius       | Time (m:s) | Memory | lnL        | parsimony       |
+| 10       |  | |  | |
+
+gtdb5/r7
 
 
 ## Just optimising the tree branch lengths
