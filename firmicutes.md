@@ -18,3 +18,24 @@ faSomeRecords r207_reduced.fa firmicutes.txt r207_reduced_firmicutes.fa
 faSomeRecords r207_full.fa firmicutes.txt r207_full_firmicutes.fa
 ```
 
+Now we extract that same clade from the tree in Dendroscope, and clean up the labels like so:
+
+```
+sed "s/'[^']*'//g" firmicutes_r207.tree > firmicutes_r207_clean.tree
+```
+
+Then I manually removed the root branch from the tree.
+
+# Naive analyses
+
+Let's start simple - model testing with IQ-TREE on the reduced and full length alignments, and a tree search in raxml-ng on the full length alignment.
+
+```
+/usr/bin/time -o raxml_LGR4.txt -v raxml-ng --msa r207_full_firmicutes.fa --model LG+R4 --threads 64 --tree firmicutes_r207_clean.tree 
+
+/usr/bin/time -o iqtree.txt -v iqtree -s r207_full_firmicutes.fa -m TEST -madd LG4M,LG4X,C10,C20,Q.bird,NQ.bird,Q.insect,NQ.insect,Q.mammal,NQ.mammal,Q.pfam,NQ.pfam,Q.plant,NQ.plant,Q.yeast,NQ.yeast -nt 64 -v -t firmicutes_r207_clean.tree -pre iqtree_full
+
+/usr/bin/time -o iqtree.txt -v iqtree -s r207_reduced_firmicutes.fa -m TEST -madd LG4M,LG4X,C10,C20,Q.bird,NQ.bird,Q.insect,NQ.insect,Q.mammal,NQ.mammal,Q.pfam,NQ.pfam,Q.plant,NQ.plant,Q.yeast,NQ.yeast -nt 64 -v -t firmicutes_r207_clean.tree -pre iqtree_reduced
+
+
+```
