@@ -2,6 +2,9 @@
 
 Here's the plan. 
 
+```{mermaid}
+
+```
 ## Starting tree
 
 Try a few options. Use both the reduced and the full dataset, and the following software
@@ -18,10 +21,15 @@ Evaluate the likelihood of each of these 4 on the full dataset using an LG+G mod
 
 1. Start with the r207 tree.
 2. Drop all taxa *not* in the r214 dataset
-3. Use IQ-TREE2 to add the new taxa by providing r207 as a constraint tree and r214 as the input data
-4. As above but try the same with raxml-ng and/or other placement algorithms
+3. Place tips on r207 with a variety of algorithms:  
+	- pplacer*
+	- pplacer-SCAMPP*
+	- APPLES-2
+	- EPA-ng
+	- IQ-TREE2
+	- RAxML
 
-Evaluate the likelihood of each of these 4 on the full dataset using an LG+G model in raxml-ng or fasttree2
+Evaluate the likelihood of each of these 4 on the full dataset using an LG+G model in raxml-ng or fasttree2. Methods denoted with a * should be used as it can be used to inform whether GTDB-tk can be improved.  
 
 ## Model selection
 
