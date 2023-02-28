@@ -19,16 +19,29 @@ done
 mv gtdb* train/ 
 ```
 
-I'll use a starting tree too, since I know this will be painful (if it's possible at all) for poor IQ-TREE...
+# Subset the alignments
 
-We'll start with the r207 tree from before...
+Initial analyses show that we have no hope of estimating a matrix for trees of 66K taxa. So the approach has to be to subset each alignment to a subset of e.g. 1K taxa, and go from there. 
 
-```
-sed "s/'[^']*'//g" gtdb_r207_bac120_unscaled.decorated.tree > gtdb_r207_bac120_unscaled.clean.tree 
-```
+Here's a plan:
 
-Now we run step 1 in IQ-TREE, to get the trees. I included the Q.yeast matrix because that performed well in other analyses of this data.
+1. Remove all taxa with more than 20% gaps (have a look at a bunch of the alignments first, and look at what a reasonable number might be).
+2. From what's left, choose the 10K taxa with the most PD from the global tree
+3. From those, randomly choose 1K taxa
 
-```
-iqtree2 -seed 1 -T 32 -S alignments/train -mset LG,WAG,JTT,Q.yeast -cmax 4 -pre bacteria_train -t gtdb_r207_bac120_unscaled.clean.tree 
-```
+This keeps a lot of randomness in the selection, but step 2 also ensrues that we don't get too biased by taxon sampling either. Also, the proportion of gaps, the number of initial taxa (step 2) and the number of final taxa (step 3) can all be adjusted at will. We want the datasets as large as possible to estimate the matrix, but bearing in mind computational constraints at each step.
+
+
+# Run the Q matrix estimation
+
+# Test the Q matrix on the 20 test alignments
+
+For this part one could subset the alignments similarly to above, or perhaps better to just choose random sets of ~100 taxa from each alignment, and fit the models to those. E.g. for each alignment you could choose 100 non-overlapping sets of 100 taxa, and then do the model selection on those. They're not all independent (a lot will contain the deeper branches) but it's still a sensible way to use the data to good effect.
+
+Some other ideas for model comparison:
+
+1. Fix the tree to r207 and ask which model fits better for each locus in raxml-ng or IQ-TREE
+2. As for 1 but reoptimise the tree under each model in FastTree, using r207 as the starting tree. 
+3. As for 2 but with the 20 loci concatentated
+4. As for 2 but with all 120 loci concatenated
+5. Tests of topologies in IQ-TREE for the trees from 3 and 4
