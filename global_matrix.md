@@ -31,6 +31,12 @@ Here's a plan:
 
 This keeps a lot of randomness in the selection, but step 2 also ensrues that we don't get too biased by taxon sampling either. Also, the proportion of gaps, the number of initial taxa (step 2) and the number of final taxa (step 3) can all be adjusted at will. We want the datasets as large as possible to estimate the matrix, but bearing in mind computational constraints at each step.
 
+Additinoally, I think we can just re-do this process for *any* sub-clade by introducing an extra filtering step:
+
+0. Remove all taxa not in the named sub-clade
+
+Then we have a very flexible approach to estimating matrices for sub-clades.
+
 
 # Run the Q matrix estimation
 
