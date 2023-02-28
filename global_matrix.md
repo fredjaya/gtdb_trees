@@ -87,3 +87,8 @@ Some other ideas for model comparison:
 5. Tests of topologies in IQ-TREE for the trees from 3 and 4
 
 Others?
+
+## W.r.t. actual biology
+
+There is some cool stuff in the nQmaker paper on this. But also I think it would be great to look at the relationship between the matrices themselves and the phylogeny. E.g. assuming we can estimate what look like reliable matrices for a bunch of sub-clades, we can ask to what extent closely-related taxa have closely-related substitution matrices / AA frequencies.
+
