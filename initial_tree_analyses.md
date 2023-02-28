@@ -1,4 +1,4 @@
-# RAxML and IQ-TREE analyses
+# Initial tree analyses
 
 This is just to keep some notes on what works and what doesn't with RAxML and IQ-TREE.
 
@@ -23,16 +23,53 @@ Gets an MP starting tree after ~15 hours. Then takes a loooong time to try and d
 
 Segmentation fault because it tries to build a NJ tree, and it can't with more than 64K sequences.
 
+### VeryFastTree  
+```
+#SBATCH -D /home/u1070770/gtdb/02_analyses/2302_vft       
+#SBATCH -J vft                                            
+#SBATCH -o /home/u1070770/gtdb/02_analyses/2302_vft/%j.log
+#SBATCH -c 4                                              
+#SBATCH --mem 128gb                                       
+#SBATCH --nodelist=dayhoff                                
+FA=/home/u1070770/gtdb/01_working_data/gtdb_r207_bac_120_full.faa
+VeryFastTree -log vft.log -fastest -no2nd -gamma -threads 4 $FA > vft.tre
+```
+
+Initial NJ topology in 118365.91 seconds.  
+
+Job killed as it exceeded the 128GB memory limit, during `375959.73 seconds: ML Lengths 11101 of 62289 splits`  
+
+### FastTree
+```
+#SBATCH -D /home/u1070770/gtdb/02_analyses/2302_ft_full                
+#SBATCH --job-name=full_ft_fastest_no2nd_gamma_gtr_4c                  
+#SBATCH --output=/home/u1070770/gtdb/02_analyses/2302_ft_full/%j.%x.out
+#SBATCH --error=/home/u1070770/gtdb/02_analyses/2302_ft_full/%j.%x.err 
+#SBATCH --mem 512G                                                     
+#SBATCH -c 4                                                           
+#SBATCH --nodelist=dayhoff                                             
+
+FastTreeMP -log full_ft_fastest_no2nd_gamma_gtr_4c.log -fastest -no2nd -gamma $FA > full_ft_fastest_no2nd_gamma_gtr_4c.tre
+```
+
+Initial NJ topology in 24677.76 seconds (<7 hours)
+
+Total time: 183780.71 seconds (<51 hours)
+```
+Although not quite comparable with VFT and the other methods, FT is the fastest so far, especially since it was run on the complete r207 dataset.  
+```
+
+### JolyTree  
+The pairwise comparisons are single-threaded and take about a second each. It will take ~57 years to complete this step on 60k taxa. Making it run in with 500 parallel processes will get it done in ~42 days...
+
 ## Analyses with a starting tree
 
 Let's try again, but using the MP starting tree from the first RAxML run as a starting tree
 
 ### RAxML
-
 ```
 /usr/bin/time -o mem.txt -v raxml-ng --msa gtdb_r207_bac120_concatenated.faa --model LG --threads 32 --tree gtdb_r207_bac120_concatenated.faa.raxml_parsimony.tree --spr-radius 5
 ```
-
 This takes too long and will never scale.
 
 ### IQ-TREE: likelihood
