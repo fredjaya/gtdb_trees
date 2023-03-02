@@ -2,9 +2,6 @@
 
 Here's the plan. 
 
-```{mermaid}
-
-```
 ## Starting tree
 
 Try a few options. Use both the reduced and the full dataset, and the following software
@@ -14,6 +11,7 @@ Try a few options. Use both the reduced and the full dataset, and the following 
 3. decentTree (if possible)
 4. raxml-ng (parsimony tree)
 5. TNT
+6. FRACTAL
 
 Evaluate the likelihood of each of these 4 on the full dataset using an LG+G model in raxml-ng or fasttree2
 
@@ -29,7 +27,7 @@ Evaluate the likelihood of each of these 4 on the full dataset using an LG+G mod
 	- IQ-TREE2
 	- RAxML
 
-Evaluate the likelihood of each of these 4 on the full dataset using an LG+G model in raxml-ng or fasttree2. Methods denoted with a * should be used as it can be used to inform whether GTDB-tk can be improved.  
+Evaluate the likelihood of each of these on the full dataset using an LG+G model in raxml-ng or fasttree2. Methods denoted with a * should be used as it can be used to inform whether GTDB-tk can be improved. pplacer-SCAMPP can scale up to 200k taxa without sacrificing much accuracy. APPLES-2, EPA-ng are fast, but may not be as accurate as the pplacer methods.
 
 ## Model selection
 
@@ -46,4 +44,4 @@ Fit the following models to the best starting tree. Do it separately for the ful
 2. In raxml-ng
 3. In IQ-TREE
 
-In each case we use the best available model for the given alignmnt, with fixed parameters where possible. 
+In each case we use the best available model for the given alignment, with fixed parameters where possible. 
