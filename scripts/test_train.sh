@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-n_train=108 # {0.5,0.6,0.7,0.8,0.9} * 120 loci == {60,72,84,96,108}
+n_train=60 # {0.5,0.6,0.7,0.8,0.9} * 120 loci == {60,72,84,96,108}
 nrep=1
 LOCI_DIR=/home/frederickjaya/Dropbox/gtdb/01_data/gtdb_r207_full_concat
 OUT_DIR=train${n_train}_rep${nrep}
