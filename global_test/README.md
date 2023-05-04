@@ -1,14 +1,30 @@
 # global_test  
 
-**Goal:** get a working pipeline for estimating bacterial matrices.  
+**Goal: Get a working pipeline for estimating bacterial matrices.**
 
-**0. Subset loci according to phylogenetic distance**  
+## 1. Subsetting taxa  
 
-(Add subset scripts here)  
+Not possible running 60k taxa, so first choose *k* taxa according to some criteria.  
 
-60 training loci (50%) with 50 most phylogenetically distant global taxa. Full dataset.  
+**Phylogenetic distant taxa**  
+`/scripts/subset_loci_phydist.sh` selects the *k* most divergent taxa from a pre-inferred tree. Useful for global Q, or choosing representative taxa in a subset.  
 
-**1. Infer a separate tree for each loci with rev model**  
+**Nested taxa**  
+Alternatively, explore the impact of estimating Qs for each taxonomic rank e.g. **Aquaficota** phyla --> genus level.  
+
+## 2. Subsetting loci  
+
+Next, loci need to be separated for training and testing.  
+
+`/scripts/test_train.sh` chooses *l* loci at random.  
+
+In future, maximise the choice of quality training loci, and reserve a minimum of 20(/120) testing loci.  
+
+## 3. Estimating a reversible Q matrix
+
+For this example, 60 training loci (50%) with 50 most phylogenetically distant global taxa. Full dataset. The pipeline below is now represented in `/scripts/estimate_q.py`
+
+**Infer a separate tree for each loci with rev model**  
 
 ```
 time iqtree2 -seed 1 -T 8 -S `pwd`/train60_rep1/50/train -mset LG,WAG,JTT -cmax 4
@@ -29,7 +45,7 @@ Frequency of best models:
  1 LG+F+R3
 ```
 
-**2. Estimating a joint rev matrix**  
+**Estimating a joint rev matrix**  
 
 ```
 time iqtree2 -seed 1 -T 8 -S train.best_scheme.nex -te train.treefile --model-joint GTR20+FO --init-model LG -pre train.GTR20
@@ -44,7 +60,7 @@ grep -A 22 "can be used as input for IQ-TREE" train.GTR20.iqtree | tail -n 21 > 
 grep "BIC" | sed 's/^.*: //' #2302557.3857
 ```
 
-**Repeat estimation (from 1.) - 2nd iteration**  
+**Repeat estimation - 2nd iteration**  
 
 ```
 time iqtree2 -seed 1 -T 8 -S `pwd`/train60_rep1/50/train -mset Q.bac_loci -cmax 4 -pre train_i2
@@ -117,4 +133,19 @@ time iqtree2 -seed 1 -T 8 -S i5/train_i5.best_scheme.nex -te i5/train_i5.treefil
 ```
 
 BIC: 2301988.0892.
-Stop!
+
+**Stop!** i4 is best Q.  
+
+# 4. Testing  
+See how `Q.bac_locus_i4` performs against other pre-defined Q matrices.  
+```
+mkdir test_analysis
+# With estimated Q
+time iqtree2 -seed 1 -T 8 -S test -mset i4/Q.bac_locus_i4 -pre test_analysis/Q.bac_locus_i4
+# With predefined models
+time iqtree2 -seed 1 -T 8 -S test -pre test_analysis/predefined
+```
+
+Q.bac_locus_i4 BIC: 2672227.1299
+Predefined BIC: 2680521.6803 Models: LG,Q.pfam,Q.yeast with varying +F,+I,+R,+G
+
