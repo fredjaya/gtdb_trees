@@ -16,9 +16,16 @@ Alternatively, explore the impact of estimating Qs for each taxonomic rank e.g. 
 
 Next, loci need to be separated for training and testing.  
 
+**Random sampling**  
 `/scripts/test_train.sh` chooses *l* loci at random.  
 
-In future, maximise the choice of quality training loci, and reserve a minimum of 20(/120) testing loci.  
+**Maximising quality loci**  
+Maximise the choice of quality training loci, and reserve a minimum of 20(/120) testing loci.  
+
+Use AliStat to check alignment completeness:  
+```
+alistat <.fa> 6
+```
 
 ## 3. Estimating a reversible Q matrix
 
