@@ -2,7 +2,7 @@ nextflow.enable.dsl=2
 
 process subset_taxa {
 
-    publishDir "${params.outdir}/${taxa_list.baseName}"
+    publishDir "${params.outdir}/00_subset_taxa/${taxa_list.baseName}"
 
     input:
         tuple path(locus), path(taxa_list)
@@ -19,7 +19,7 @@ process subset_taxa {
 
 process alistat {
 
-    publishDir "${params.outdir}/alistat/${taxa_list}"
+    publishDir "${params.outdir}/01_alistat/${taxa_list}"
     
     input:
         tuple path(locus_subtaxa), val(taxa_list)
@@ -36,7 +36,7 @@ process alistat {
 
 process cat_stats {
 
-    publishDir "${params.outdir}/alistat/"
+    publishDir "${params.outdir}/01_alistat/"
 
     input:
         tuple path(alistats), val(taxa_list)
@@ -53,7 +53,7 @@ process cat_stats {
 
 process id_train_test_loci {
 
-    publishDir "${params.outdir}/alistat/", saveAs: { filename -> "${taxa_list}_${filename}"}
+    publishDir "${params.outdir}/02_loci_assignment", saveAs: { filename -> "${taxa_list}_${filename}"}
 
     input:
         tuple path(combined_stats), val(taxa_list), val(n_training_loci)
@@ -70,3 +70,4 @@ process id_train_test_loci {
     """
 
 }
+
