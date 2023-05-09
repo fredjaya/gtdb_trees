@@ -59,10 +59,8 @@ process id_train_test_loci {
         tuple path(combined_stats), val(taxa_list), val(n_training_loci)
 
     output:
-        path "training_loci.txt"
-        path "testing_loci.txt"
+        tuple path("training_loci.txt"), path("testing_loci.txt"), val(taxa_list)
         path "completeness.png"
-
 
     script:
     """
@@ -71,3 +69,36 @@ process id_train_test_loci {
 
 }
 
+process arrange_loci {
+
+    input:
+        tuple path(training_loci), path(testing_loci), val(taxa_list)
+
+    shell:
+    '''
+    LOCIDIR="!{params.outdir}/00_subset_taxa/!{taxa_list}/"
+    PUBLISHDIR="!{params.outdir}/03_subset_loci/!{taxa_list}"
+    mkdir -p ${PUBLISHDIR}/training_loci ${PUBLISHDIR}/testing_loci
+
+    for fasta in ${LOCIDIR}/*; do
+        if grep `basename $fasta` !{training_loci}; then
+            cp -P $fasta ${PUBLISHDIR}/training_loci
+        elif grep `basename $fasta` !{testing_loci}; then
+            cp -P $fasta ${PUBLISHDIR}/testing_loci
+        else
+            echo "Alignment not found"
+            exit 1
+        fi
+    done
+    '''
+
+}
+process estimate_Q {
+
+    publishDir "${params.outdir}/03_Q_train"
+
+    script:
+    """
+    estimate_q.py --loci
+    """      
+}

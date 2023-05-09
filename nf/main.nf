@@ -5,6 +5,7 @@ include {
     alistat
     cat_stats
     id_train_test_loci
+    arrange_loci
 } from "./processes.nf"
 
 locus_ch = Channel.fromPath(params.locus)
@@ -20,7 +21,7 @@ workflow {
     taxa_list = ${params.taxa_list}
     n_training_loci = ${params.n_training_loci}
     """
-    
+   
     locus_ch.combine(taxa_list_ch) | 
         subset_taxa | 
         alistat | 
@@ -28,4 +29,5 @@ workflow {
         cat_stats | 
         combine(n_training_loci_ch) |
         id_train_test_loci
+        arrange_loci(id_train_test_loci.out[0])
 }   
