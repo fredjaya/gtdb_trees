@@ -6,6 +6,7 @@ include {
     cat_stats
     id_train_test_loci
     arrange_loci
+    estimate_Q
 } from "./processes.nf"
 
 locus_ch = Channel.fromPath(params.locus)
@@ -29,5 +30,6 @@ workflow {
         cat_stats | 
         combine(n_training_loci_ch) |
         id_train_test_loci
-        arrange_loci(id_train_test_loci.out[0])
+        arrange_loci(id_train_test_loci.out[0]) |
+        estimate_Q
 }   

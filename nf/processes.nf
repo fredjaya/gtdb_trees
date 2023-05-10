@@ -74,6 +74,9 @@ process arrange_loci {
     input:
         tuple path(training_loci), path(testing_loci), val(taxa_list)
 
+    output:
+        val taxa_list
+
     shell:
     '''
     LOCIDIR="!{params.outdir}/00_subset_taxa/!{taxa_list}/"
@@ -93,12 +96,34 @@ process arrange_loci {
     '''
 
 }
+
 process estimate_Q {
 
-    publishDir "${params.outdir}/03_Q_train"
+    publishDir "${params.outdir}/04_Q_train/${taxa_list}"
+
+    input:
+        val taxa_list
+
+    output:
+        "i*/i*.parstree"
+        "i*/i*.model.gz"
+        "i*/i*.best_scheme.nex"
+        "i*/i*.best_scheme"
+        "i*/i*.trefile"
+        "i*/i*.log"
+        "i*/i*.iqtree"
+        "i*/i*.ckp.gz"
+        "i*/i*.best_model.nex"
+        "i*/Q.bac_locus_i*"
+        "i*/i*.GTR2O.treefile"
+        "i*/i*.GTR2O.log"
+        "i*/i*.GTR2O.iqtree"
+        "i*/i*.GTR2O.ckp.gz"
+        "i*/i*.GTR2O.best_model.nex"
+        "i*/i*.F.bac_locus_i*"
 
     script:
     """
-    estimate_q.py --loci
+    estimate_q.py --loci ${params.outdir}/03_subset_loci/${taxa_list}/training_loci/
     """      
 }

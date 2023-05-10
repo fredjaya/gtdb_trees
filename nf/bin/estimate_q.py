@@ -47,25 +47,24 @@ while bic_0 is None or bic_1 <= bic_0:
     bic_0 = bic_1
     iteration += 1
     print("ITERATION: ", iteration)
-    prefix = f"{os.getcwd()}/rep1" #TODO: softcode rep1
     
-    best_scheme = f"{prefix}/i{iteration}/i{iteration}.best_scheme.nex"
-    tree_file = f"{prefix}/i{iteration}/i{iteration}.treefile"
-    estimated_Q = f"{prefix}/i{iteration-1}/Q.bac_locus_i{iteration-1}"
+    best_scheme = f"i{iteration}/i{iteration}.best_scheme.nex"
+    tree_file = f"i{iteration}/i{iteration}.treefile"
+    estimated_Q = f"i{iteration-1}/Q.bac_locus_i{iteration-1}"
     mset = estimated_Q
     if iteration == 1:
         mset = "LG,WAG,JTT"
         estimated_Q = "LG"
 
-    run_command(f"mkdir -p {prefix}/i{iteration}")
+    run_command(f"mkdir -p i{iteration}")
     # Construct per-locus trees
     run_command(f"{iqtree_path} -seed {seed} -T {threads} -S {args.loci} \
-            -mset {mset} -cmax 8 -pre {prefix}/i{iteration}/i{iteration}")
+            -mset {mset} -cmax 8 -pre i{iteration}/i{iteration}")
     # Estimate Q-matrix
     run_command(f"{iqtree_path} -seed {seed} -T {threads} -S {best_scheme} -te {tree_file} \
-            --model-joint GTR20+FO --init-model {estimated_Q} -pre {prefix}/i{iteration}/i{iteration}.GTR20")
+            --model-joint GTR20+FO --init-model {estimated_Q} -pre i{iteration}/i{iteration}.GTR20")
     
-    with open(f"{prefix}/i{iteration}/i{iteration}.GTR20.iqtree") as iq:
+    with open(f"i{iteration}/i{iteration}.GTR20.iqtree") as iq:
         # Get BIC
         lines = iq.readlines()
         bic_1 = [ l.strip() for l in lines if "BIC" in l ][0]
@@ -73,8 +72,6 @@ while bic_0 is None or bic_1 <= bic_0:
         print(f"Iteration {iteration} BIC: {bic_1}")
 
         # Get Q-matrix and base frequencies
-        grep_iqtree("can be used as input", f"{prefix}/i{iteration}/Q.bac_locus_i{iteration}")
+        grep_iqtree("can be used as input", f"i{iteration}/Q.bac_locus_i{iteration}")
         # TODO: Add catch for 0 frequencies
-        grep_iqtree("State frequencies: ", f"{prefix}/i{iteration}/F.bac_locus_i{iteration}")
-
-    ## FIX BIC SAVING. 1: PREFIX NOT UPDATING AFTER ITERATION. 2: INFINITE LOOP
+        grep_iqtree("State frequencies: ", f"i{iteration}/F.bac_locus_i{iteration}")
