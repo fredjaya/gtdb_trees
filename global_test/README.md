@@ -143,16 +143,51 @@ BIC: 2301988.0892.
 
 **Stop!** i4 is best Q.  
 
-# 4. Testing  
+## 4. Testing  
+
+### IQ-TREE
+
+**1. 60 training loci**  
+
 See how `Q.bac_locus_i4` performs against other pre-defined Q matrices.  
 ```
 mkdir test_analysis
 # With estimated Q
 time iqtree2 -seed 1 -T 8 -S test -mset i4/Q.bac_locus_i4 -pre test_analysis/Q.bac_locus_i4
 # With predefined models
-time iqtree2 -seed 1 -T 8 -S test -pre test_analysis/predefined
+time iqtree2 -seed 1 -T 8 -S test -pre test_analysis/predefined  
 ```
 
 Q.bac_locus_i4 BIC: 2672227.1299
 Predefined BIC: 2680521.6803 Models: LG,Q.pfam,Q.yeast with varying +F,+I,+R,+G
 
+**2. Reduced data (fixed tree)**
+```
+cd ~/Dropbox/gtdb/02_working/2304_global_test/train60_rep1/50
+mkdir test_reduced
+# With existing models  
+time iqtree2 -seed 1 -T 8 -s gtdb_r207_bac120_concatenated.faa -pre existing/existing
+# With estimated_Q
+time iqtree2 -seed 1 -T 8 -s gtdb_r207_bac120_concatenated.faa -pre Q.bac_locus_i4/Q.bac_locus_i4 -mset Q.bac_locus_i4 -te gtdb_r207_bac120_unscaled.decorated.tree
+```
+
+`ERROR: Not enough memory, allocation of 201557241632 bytes failed (bad_alloc)` lol...  FastTree it is!  
+
+### FastTree  
+
+**1. 60 testing loci**  
+
+#### On reduced concatenated data
+
+
+```
+# gtdb tree uses wag  
+FastTree -wag -gamma -nome -mllen -fastest -intree ~/Dropbox/gtdb/01_data/gtdb_r207_bac_120_figtree.tre -log wag_reduced.log ~/Dropbox/gtdb/00_raw_data/r207/gtdb_r207_bac120_concatenated.faa > wag_reduced.ftlen
+```
+
+**Estimated Q**
+```
+cd ~/Dropbox/gtdb/02_working/2304_global_test/train60_rep1/50/test_reduced/ft_q
+
+
+```
