@@ -33,7 +33,7 @@ Python program related
 """
 bic_1 = None
 bic_0 = None
-iteration = 0 
+iteration = 0
     
 """
 IQ-TREE related
@@ -48,23 +48,23 @@ while bic_0 is None or bic_1 <= bic_0:
     iteration += 1
     print("ITERATION: ", iteration)
     
-    best_scheme = f"i{iteration}/i{iteration}.best_scheme.nex"
-    tree_file = f"i{iteration}/i{iteration}.treefile"
-    estimated_Q = f"i{iteration-1}/Q.bac_locus_i{iteration-1}"
+    best_scheme = f"i{iteration}.best_scheme.nex"
+    tree_file = f"i{iteration}.treefile"
+    estimated_Q = f"Q.bac_locus_i{iteration-1}"
     mset = estimated_Q
     if iteration == 1:
         mset = "LG,WAG,JTT"
         estimated_Q = "LG"
 
-    run_command(f"mkdir -p i{iteration}")
+    #run_command(f"mkdir -p i{iteration}")
     # Construct per-locus trees
     run_command(f"{iqtree_path} -seed {seed} -T {threads} -S {args.loci} \
-            -mset {mset} -cmax 8 -pre i{iteration}/i{iteration}")
+            -mset {mset} -cmax 8 -pre i{iteration}")
     # Estimate Q-matrix
     run_command(f"{iqtree_path} -seed {seed} -T {threads} -S {best_scheme} -te {tree_file} \
-            --model-joint GTR20+FO --init-model {estimated_Q} -pre i{iteration}/i{iteration}.GTR20")
+            --model-joint GTR20+FO --init-model {estimated_Q} -pre i{iteration}.GTR20")
     
-    with open(f"i{iteration}/i{iteration}.GTR20.iqtree") as iq:
+    with open(f"i{iteration}.GTR20.iqtree") as iq:
         # Get BIC
         lines = iq.readlines()
         bic_1 = [ l.strip() for l in lines if "BIC" in l ][0]
@@ -72,6 +72,6 @@ while bic_0 is None or bic_1 <= bic_0:
         print(f"Iteration {iteration} BIC: {bic_1}")
 
         # Get Q-matrix and base frequencies
-        grep_iqtree("can be used as input", f"i{iteration}/Q.bac_locus_i{iteration}")
+        grep_iqtree("can be used as input", f"Q.bac_locus_i{iteration}")
         # TODO: Add catch for 0 frequencies
-        grep_iqtree("State frequencies: ", f"i{iteration}/F.bac_locus_i{iteration}")
+        grep_iqtree("State frequencies: ", f"F.bac_locus_i{iteration}")

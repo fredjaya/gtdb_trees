@@ -1,7 +1,5 @@
 nextflow.enable.dsl=2
-
 process subset_taxa {
-
     publishDir "${params.outdir}/00_subset_taxa/${taxa_list.baseName}"
 
     input:
@@ -105,22 +103,22 @@ process estimate_Q {
         val taxa_list
 
     output:
-        "i*/i*.parstree"
-        "i*/i*.model.gz"
-        "i*/i*.best_scheme.nex"
-        "i*/i*.best_scheme"
-        "i*/i*.trefile"
-        "i*/i*.log"
-        "i*/i*.iqtree"
-        "i*/i*.ckp.gz"
-        "i*/i*.best_model.nex"
-        "i*/Q.bac_locus_i*"
-        "i*/i*.GTR2O.treefile"
-        "i*/i*.GTR2O.log"
-        "i*/i*.GTR2O.iqtree"
-        "i*/i*.GTR2O.ckp.gz"
-        "i*/i*.GTR2O.best_model.nex"
-        "i*/i*.F.bac_locus_i*"
+        path "i*.parstree"
+        path "i*.model.gz"
+        path "i*.best_scheme.nex"
+        path "i*.best_scheme"
+        path "i*.treefile"
+        path "i*.log"
+        path "i*.iqtree"
+        path "i*.ckp.gz"
+        path "i*.best_model.nex"
+        path "Q.bac_locus_i*"
+        path "i*.GTR20.treefile"
+        path "i*.GTR20.log"
+        path "i*.GTR20.iqtree"
+        path "i*.GTR20.ckp.gz"
+        path "i*.GTR20.best_model.nex"
+        path "F.bac_locus_i*"
 
     script:
     """

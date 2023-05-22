@@ -9,7 +9,7 @@ include {
     estimate_Q
 } from "./processes.nf"
 
-locus_ch = Channel.fromPath(params.locus)
+loci_ch = Channel.fromPath(params.loci)
 taxa_list_ch = Channel.fromPath(params.taxa_list)
 n_training_loci_ch = Channel.from(params.n_training_loci)
 
@@ -18,12 +18,12 @@ workflow {
     log.info"""
     baseDir = ${baseDir}
     outdir = ${params.outdir}
-    locus = ${params.locus}
+    loci = ${params.loci}
     taxa_list = ${params.taxa_list}
     n_training_loci = ${params.n_training_loci}
     """
    
-    locus_ch.combine(taxa_list_ch) | 
+    loci_ch.combine(taxa_list_ch) | 
         subset_taxa | 
         alistat | 
         groupTuple(by: 1) |
