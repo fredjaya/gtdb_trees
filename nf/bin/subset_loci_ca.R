@@ -28,5 +28,8 @@ as %>%
 as %>%
   arrange(desc(V4)) %>%
   slice((n_loci+1):nrow(.)) %>%
+  # remove empty sequences
+  # TODO: output number of loci remaining or throw error if too low
+  filter(V4 > 0) %>%
   select(V1) %>%
   write.table(file = "testing_loci.txt", col.names = F, quote = F, row.names = F)

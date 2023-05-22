@@ -75,3 +75,4 @@ while bic_0 is None or bic_1 <= bic_0:
         grep_iqtree("can be used as input", f"Q.bac_locus_i{iteration}")
         # TODO: Add catch for 0 frequencies
         grep_iqtree("State frequencies: ", f"F.bac_locus_i{iteration}")
+    break

@@ -7,6 +7,8 @@ include {
     id_train_test_loci
     arrange_loci
     estimate_Q
+    test_loci_estimated_Q
+    test_loci_existing_Q
 } from "./processes.nf"
 
 loci_ch = Channel.fromPath(params.loci)
@@ -31,5 +33,18 @@ workflow {
         combine(n_training_loci_ch) |
         id_train_test_loci
         arrange_loci(id_train_test_loci.out[0]) |
-        estimate_Q
+        estimate_Q & test_loci_existing_Q
+
+    /*
+     * Having only a single iteration is impossible outside of testing,
+     * but doesn't hurt to keep here I guess.
+     */
+    estimate_Q.out[0].map{ it -> 
+        if( it[0].getClass() == sun.nio.fs.UnixPath) { 
+            println "WARNING: Only a single iteration of Q estimated for ${it[1]}"
+            return it
+        } else { 
+            return tuple(it[0][-2], it[1])
+        }
+    } | test_loci_estimated_Q
 }   
