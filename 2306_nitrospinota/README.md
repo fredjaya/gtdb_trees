@@ -3,18 +3,27 @@
 Run a fast and complete pipeline for a decently sized phyla. Was going to choose Nitrospirota but it's a bit big. Chose Nitrospinota because it looks problematic (i.e. Nitrosponita and Nitrosponita_B).  
 
 - [x] Create taxa list with both Nitrospinota and Nitrospinota_B taxa  
-- [x] Calculate total tree length of r207 tree (place in `/phyla` and rename dir)
+- [x] Calculate total tree length of r207 tree (place in `/phyla` and rename dir)  
 - [x] Output distribution of branch lengths of r207 tree  
-- [ ] Prune taxa from r207 tree  
-- [ ] Get new tree and branch lengths
-- [ ] Run treeshrink
-- [ ] Get new tree and branch lengths
-- [ ] Run unconstrained estimation on treeshrinked tree
-- [ ] Output stats (expand later)
+- [x] Prune taxa from r207 tree  
+- [x] Get new tree and branch lengths  
+- [x] Run treeshrink  
+- [x] Get new tree and branch lengths  
 
-Bonus:
-- [ ] Run estimation on pruned (pre-treeshrinked) tree
+Nextflow steps:  
+- [ ] Add option to run test in a single command `-mset`  
+	- qMaker does this  
+	- Running existing and new Qs separately makes model selection per partition difficult  
+- `-m madd` does not do `+F,+I,+G,+R`  
+- [ ] Subset alignments according to shrunk taxa  
+- [ ] Run unconstrained estimation on treeshrinked tree  
 
+Second pass:  
+- [x] Run estimation on pruned (pre-treeshrinked) tree  
+	- Doesn't apply to this subset because no shrinking occurred  
+- [ ] Implement constrained analysis  
+- [ ] Run constrained estimation on treeshrinked tree  
+- [ ] Fix RHAS on subset with LG only  
 ## Dependencies  
 - python3  
 - biopython  
@@ -47,4 +56,10 @@ Tree length: 11.898950000000001
 
 ## Prune long branches (treeshrink)  
 
+```
+run_treeshrink -t pruned.tree
+```  
 
+No tips removed! (sanity check: tree length of output tree identical)  
+
+## BICs
