@@ -59,7 +59,7 @@ while bic_0 is None or bic_1 <= bic_0:
     #run_command(f"mkdir -p i{iteration}")
     # Construct per-locus trees
     run_command(f"{iqtree_path} -seed {seed} -T {threads} -S {args.loci} \
-            -mset {mset} -cmax 8 -pre i{iteration}")
+            -mset {mset} -cmax 4 -pre i{iteration}")
     # Estimate Q-matrix
     run_command(f"{iqtree_path} -seed {seed} -T {threads} -S {best_scheme} -te {tree_file} \
             --model-joint GTR20+FO --init-model {estimated_Q} -pre i{iteration}.GTR20")

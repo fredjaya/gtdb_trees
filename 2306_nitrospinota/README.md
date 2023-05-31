@@ -14,7 +14,7 @@ Nextflow steps:
 - [ ] Add option to run test in a single command `-mset`  
 	- qMaker does this  
 	- Running existing and new Qs separately makes model selection per partition difficult  
-- `-m madd` does not do `+F,+I,+G,+R`  
+	- `-m madd` does not do `+F,+I,+G,+R`  
 - [ ] Subset alignments according to shrunk taxa  
 - [ ] Run unconstrained estimation on treeshrinked tree  
 
@@ -24,12 +24,14 @@ Second pass:
 - [ ] Implement constrained analysis  
 - [ ] Run constrained estimation on treeshrinked tree  
 - [ ] Fix RHAS on subset with LG only  
+
 ## Dependencies  
 - python3  
 - biopython  
 - matplotlib  
 - numpy  
-- treeshrink (conda version broken, need to use git repo) 
+- treeshrink (conda version broken, need to use git repo)  
+- nextflow  
 
 ## Taxa list  
 ```
@@ -62,4 +64,13 @@ run_treeshrink -t pruned.tree
 
 No tips removed! (sanity check: tree length of output tree identical)  
 
-## BICs
+## Training  
+
+For now, run the nf pipeline to get the (iterative) training going:  
+```
+nextflow run ../nf/main.nf \
+	--outdir "$PWD" \
+	--loci "$baseDir/../data/alignments/full_loci/*" \
+	--taxa_list "nitrospinota.taxa" \
+	--n_training_loci 100
+```
