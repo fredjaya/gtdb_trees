@@ -15,6 +15,13 @@ Run a fast and complete pipeline for a decently sized phyla. Was going to choose
 Bonus:
 - [ ] Run estimation on pruned (pre-treeshrinked) tree
 
+## Dependencies  
+- python3  
+- biopython  
+- matplotlib  
+- numpy  
+- treeshrink (conda version broken, need to use git repo) 
+
 ## Taxa list  
 ```
 grep 'Nitrospinota' ../2306_phyla/data/gtdb_r207_bac120_curation_taxonomy_tabbed.tsv | cut -f1 > nitrospirota_taxa.txt
@@ -37,4 +44,7 @@ Get branch lengths:
 ```  
 
 Tree length: 11.898950000000001  
+
+## Prune long branches (treeshrink)  
+
 
