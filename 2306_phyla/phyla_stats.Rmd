@@ -1,0 +1,55 @@
+---
+title: "Phyla stats"
+author: "Fred Jaya"
+output: 
+   html_document:
+     theme: spacelab
+     code_folding: hide
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = T,
+  warning = F, 
+  dev = 'png',
+  fig.width = 8,
+  fig.height = 4
+  )
+
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(knitr)
+library(forcats)
+library(scales)
+```
+
+```{r}
+taxa <- read.table("data/gtdb_r207_bac120_curation_taxonomy_tabbed.tsv", sep = "\t", header = T)
+```
+
+```{r}
+taxa_counts <- 
+  taxa %>%
+  select(Phylum) %>%
+  group_by(Phylum) %>%
+  summarise(Number = n())
+```
+
+```{r}
+taxa_counts %>%
+  ggplot(aes(x = fct_reorder(Phylum, Number, .desc = T), y = Number)) +
+  geom_col() +
+  scale_y_log10(breaks = trans_breaks("log10", function(x) 10^x)) +
+  theme_minimal() +
+  annotation_logticks(sides = "l") +
+  theme(axis.text.x = element_blank(), panel.grid.major.x = element_blank()) +
+  labs(x = "Phyla (n = 169)", y = "Number of species")
+```
+What is a sensible minimum and maximum number of taxa to include in Q-matrix training?
+
+```{r}
+taxa_counts %>%
+  #arrange(desc(Number)) %>%
+  kable()
+```
