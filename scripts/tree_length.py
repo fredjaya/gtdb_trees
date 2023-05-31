@@ -24,6 +24,7 @@ plt.xlabel('Branch length')
 plt.ylabel('Count')
 text = f"Total number of branches: {len(bl)}"
 plt.text(0.7, 0.9, f"{len(bl)} branches", transform=plt.gca().transAxes, fontsize=10)
-plt.show()
 
 plt.savefig("branch_length_histogram.png")
+
+plt.show()

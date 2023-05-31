@@ -15,11 +15,6 @@ Run a fast and complete pipeline for a decently sized phyla. Was going to choose
 Bonus:
 - [ ] Run estimation on pruned (pre-treeshrinked) tree
 
-## Tree length  
-```
-../scripts/tree_length.py ../data/trees/gtdb_r207_bac120_unscaled.decorated.tree 
-```  
-
 ## Taxa list  
 ```
 grep 'Nitrospinota' ../2306_phyla/data/gtdb_r207_bac120_curation_taxonomy_tabbed.tsv | cut -f1 > nitrospirota_taxa.txt
@@ -27,4 +22,19 @@ grep 'Nitrospinota' ../2306_phyla/data/gtdb_r207_bac120_curation_taxonomy_tabbed
 
 62 taxa (2 are \_B).  
 
+## Prune tree  
+
+Before training, check if any taxa are on abnormally long branches.  
+
+Get Nitrospinota subtree from reference tree:  
+```
+../scripts/get_subtree.py ../data/trees/gtdb_r207_bac120_unscaled.decorated.tree nitrospinota.taxa
+```  
+
+Get branch lengths:  
+```
+../scripts/tree_length.py pruned.tree
+```  
+
+Tree length: 11.898950000000001  
 
