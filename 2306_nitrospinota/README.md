@@ -15,8 +15,20 @@ Nextflow steps:
 	- qMaker does this  
 	- Running existing and new Qs separately makes model selection per partition difficult  
 	- `-m madd` does not do `+F,+I,+G,+R`  
-- [ ] Subset alignments according to shrunk taxa  
-- [ ] Run unconstrained estimation on treeshrinked tree  
+- [x] Subset alignments according to shrunk taxa  
+- [x] Run unconstrained estimation on treeshrinked tree  
+
+Training outputs:  
+- [ ] n loci 
+- [ ] alignment size  
+- [ ] tree/branch lengths 
+- [ ] rates bubble plot first and last iter 
+- [ ] rates over iterations (line graph)  
+- [ ] rates PCA  
+- [ ] frequency PCA  
+
+Testing outputs:  
+- [ ] BIC and lnLs of training per loci 
 
 Second pass:  
 - [x] Run estimation on pruned (pre-treeshrinked) tree  
@@ -69,8 +81,10 @@ No tips removed! (sanity check: tree length of output tree identical)
 For now, run the nf pipeline to get the (iterative) training going:  
 ```
 nextflow run ../nf/main.nf \
-	--outdir "$PWD" \
-	--loci "$baseDir/../data/alignments/full_loci/*" \
-	--taxa_list "nitrospinota.taxa" \
+	--outdir $PWD \
+	--loci "../data/alignments/full_loci/*.faa" \
+	--taxa_list nitrospinota.taxa \
 	--n_training_loci 100
-```
+```  
+
+i4 iterations for training completed under 14 hours with 4 cores and < 2GB RSS.

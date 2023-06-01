@@ -33,7 +33,7 @@ workflow {
         combine(n_training_loci_ch) |
         id_train_test_loci
         arrange_loci(id_train_test_loci.out[0]) |
-        estimate_Q & test_loci_existing_Q
+        estimate_Q //& test_loci_existing_Q
 
     /*
      * Having only a single iteration is impossible outside of testing,
@@ -46,5 +46,5 @@ workflow {
         } else { 
             return tuple(it[0][-2], it[1])
         }
-    } | test_loci_estimated_Q
+    } //| test_loci_estimated_Q
 }   

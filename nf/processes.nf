@@ -126,6 +126,33 @@ process estimate_Q {
     """      
 }
 
+process test_loci_all_mset {
+    
+    publishDir "${params.outdir}/05_Q_test_loci/${taxa}"
+
+    input:
+        tuple path(estimated_Q), val(taxa)
+
+    output:
+        path "Q.bac_locus_i*.parstree"
+        path "Q.bac_locus_i*.model.gz"
+        path "Q.bac_locus_i*.best_scheme.nex"
+        path "Q.bac_locus_i*.best_scheme"
+        path "Q.bac_locus_i*.treefile"
+        path "Q.bac_locus_i*.log"
+        path "Q.bac_locus_i*.iqtree"
+        path "Q.bac_locus_i*.ckp.gz"
+        path "Q.bac_locus_i*.best_model.nex"
+
+    script:
+    """
+    iqtree2 -seed 1 -T 4 -m MFP -pre test_mset_all \
+        -S ${params.outdir}/03_subset_loci/${taxa}/testing_loci/ \
+        -mset "${estimated_Q}"
+    """
+
+}
+
 process test_loci_estimated_Q {
 
     publishDir "${params.outdir}/05_Q_test_loci/${taxa}"
