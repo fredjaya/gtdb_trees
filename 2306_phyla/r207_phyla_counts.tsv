@@ -1,4 +1,4 @@
-Phylum	Number
+Phylum	Taxa	Treeshrunk?	QNew fits locus best (/20)
 p__4484-113	2
 p__4572-55	2
 p__AABM5-125-24	21
@@ -110,8 +110,8 @@ p__Moduliflexota	4
 p__Muirbacteria	1
 p__Myxococcota	393
 p__Myxococcota_A	72
-p__Nitrospinota	60
-p__Nitrospinota_B	2
+p__Nitrospinota	60	No	17
+p__Nitrospinota_B	2	No	17
 p__Nitrospirota	314
 p__Nitrospirota_A	5
 p__NPL-UPA2	2

@@ -33,13 +33,14 @@ Testing outputs:
 Second pass:  
 - [x] Run estimation on pruned (pre-treeshrinked) tree  
 	- Doesn't apply to this subset because no shrinking occurred  
-- [ ] Implement constrained analysis  
 - [ ] Run constrained estimation on treeshrinked tree  
 - [ ] Fix RHAS on subset with LG only  
 - [ ] Add option to run test in a single command `-mset`  
 	- qMaker does this  
 	- Running existing and new Qs separately makes model selection per partition difficult  
 	- `-m madd` does not do `+F,+I,+G,+R`  
+- [ ] Implement constrained analysis in nf?  
+ 
 ## Dependencies  
 - python3  
 - biopython  
@@ -79,7 +80,9 @@ run_treeshrink -t pruned.tree
 
 No tips removed! (sanity check: tree length of output tree identical)  
 
-## Training  
+## Unconstrained per-locus trees  
+
+### Training  
 
 For now, run the nf pipeline to get the (iterative) training going:  
 ```
@@ -92,7 +95,15 @@ nextflow run ../nf/main.nf \
 
 i4 iterations for training completed under 14 hours with 4 cores and < 2GB RSS.
 
-## Testing  
+#### Outputs  
+**BIC**  
+```
+../scripts/cat_bic.sh 04_Q_train/nitrospinota/
+```
+
+Fill `output.Rmd`  
+
+### Testing  
 
 Moved to Dropbox because lfs cp exceeded.  
 
@@ -103,4 +114,6 @@ iqtree2 -seed 1 -T 8 -m MFP -pre test_mset_28existing \
 	-mset "${estimated_Q},Blosum62,cpREV,Dayhoff,DCMut,FLAVI,FLU
 ,HIVb,HIVw,JTT,JTTDCMut,LG,mtART,mtMAM,mtREV,mtZOA,mtMet,mtVer,mtInv
 ,PMB,Q.bird,Q.insect,Q.mammal,Q.pfam,Q.plant,Q.yeast,rtREV,VT,WAG"
-```
+```  
+
+Interestingly, $Q^{NEW}$ was the best model for 17/20 loci. The remaining loci fit LG, Q.plant and Q.yeast best.  
