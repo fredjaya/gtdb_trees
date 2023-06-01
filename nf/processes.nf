@@ -148,7 +148,7 @@ process test_loci_all_mset {
     """
     iqtree2 -seed 1 -T 4 -m MFP -pre test_mset_all \
         -S ${params.outdir}/03_subset_loci/${taxa}/testing_loci/ \
-        -mset "${estimated_Q}"
+        -mset "${estimated_Q},Blosum62,cpREV,Dayhoff,DCMut,FLAVI,FLU,HIVb,HIVw,JTT,JTTDCMut,LG,mtART,mtMAM,mtREV,mtZOA,mtMet,mtVer,mtInv,PMB,Q.bird,Q.insect,Q.mammal,Q.pfam,Q.plant,Q.yeast,rtREV,VT,WAG"
     """
 
 }

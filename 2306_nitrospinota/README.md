@@ -2,6 +2,8 @@
 
 Run a fast and complete pipeline for a decently sized phyla. Was going to choose Nitrospirota but it's a bit big. Chose Nitrospinota because it looks problematic (i.e. Nitrosponita and Nitrosponita_B).  
 
+**Complete files and analyses moved to https://www.dropbox.com/home/gtdb/02_working/2306_nitrospinota due to exceeding LFS cap**  
+
 - [x] Create taxa list with both Nitrospinota and Nitrospinota_B taxa  
 - [x] Calculate total tree length of r207 tree (place in `/phyla` and rename dir)  
 - [x] Output distribution of branch lengths of r207 tree  
@@ -11,12 +13,10 @@ Run a fast and complete pipeline for a decently sized phyla. Was going to choose
 - [x] Get new tree and branch lengths  
 
 Nextflow steps:  
-- [ ] Add option to run test in a single command `-mset`  
-	- qMaker does this  
-	- Running existing and new Qs separately makes model selection per partition difficult  
-	- `-m madd` does not do `+F,+I,+G,+R`  
 - [x] Subset alignments according to shrunk taxa  
 - [x] Run unconstrained estimation on treeshrinked tree  
+
+- [x] Run testing  
 
 Training outputs:  
 - [ ] n loci 
@@ -36,7 +36,10 @@ Second pass:
 - [ ] Implement constrained analysis  
 - [ ] Run constrained estimation on treeshrinked tree  
 - [ ] Fix RHAS on subset with LG only  
-
+- [ ] Add option to run test in a single command `-mset`  
+	- qMaker does this  
+	- Running existing and new Qs separately makes model selection per partition difficult  
+	- `-m madd` does not do `+F,+I,+G,+R`  
 ## Dependencies  
 - python3  
 - biopython  
@@ -88,3 +91,16 @@ nextflow run ../nf/main.nf \
 ```  
 
 i4 iterations for training completed under 14 hours with 4 cores and < 2GB RSS.
+
+## Testing  
+
+Moved to Dropbox because lfs cp exceeded.  
+
+```
+cd ~/Dropbox/gtdb/02_working/2306_nitrospinota/05_manual_train
+iqtree2 -seed 1 -T 8 -m MFP -pre test_mset_28existing \
+	-S ../03_subset_loci/nitrospinota/testing_loci/ \
+	-mset "${estimated_Q},Blosum62,cpREV,Dayhoff,DCMut,FLAVI,FLU
+,HIVb,HIVw,JTT,JTTDCMut,LG,mtART,mtMAM,mtREV,mtZOA,mtMet,mtVer,mtInv
+,PMB,Q.bird,Q.insect,Q.mammal,Q.pfam,Q.plant,Q.yeast,rtREV,VT,WAG"
+```
