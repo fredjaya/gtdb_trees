@@ -19,6 +19,7 @@ Nextflow steps:
 - [x] Run testing  
 
 Training outputs:  
+- [ ] BICs over iter  
 - [ ] n loci 
 - [ ] alignment size  
 - [ ] tree/branch lengths 
@@ -95,14 +96,6 @@ nextflow run ../nf/main.nf \
 
 i4 iterations for training completed under 14 hours with 4 cores and < 2GB RSS.
 
-#### Outputs  
-**BIC**  
-```
-../scripts/cat_bic.sh 04_Q_train/nitrospinota/
-```
-
-Fill `output.Rmd`  
-
 ### Testing  
 
 Moved to Dropbox because lfs cp exceeded.  
@@ -117,3 +110,20 @@ iqtree2 -seed 1 -T 8 -m MFP -pre test_mset_28existing \
 ```  
 
 Interestingly, $Q^{NEW}$ was the best model for 17/20 loci. The remaining loci fit LG, Q.plant and Q.yeast best.  
+
+### Outputs  
+
+#### Training  
+Fill `output.Rmd`  
+
+**BIC**  
+```
+../scripts/cat_bic.sh 04_Q_train/nitrospinota/
+```
+
+**IQ-TREE filtering**  
+```
+../scripts/training_iqtree_filter.sh 04_Q_train/nitrospinota/i4.GTR20.log > training_stats.txt
+```
+
+#### Testing  
