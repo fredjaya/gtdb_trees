@@ -19,14 +19,13 @@ Nextflow steps:
 - [x] Run testing  
 
 Training outputs:  
-- [ ] BICs over iter  
-- [ ] n loci 
+- [x] BICs over iter  
+- [x] n loci 
 - [ ] alignment size  
 - [ ] tree/branch lengths 
-- [ ] rates bubble plot first and last iter 
-- [ ] rates over iterations (line graph)  
-- [ ] rates PCA  
-- [ ] frequency PCA  
+- [x] rates bubble plot first and last iter 
+- [x] rates PCA  
+- [x] frequency PCA  
 
 Testing outputs:  
 - [ ] BIC and lnLs of training per loci 
@@ -34,6 +33,7 @@ Testing outputs:
 Second pass:  
 - [x] Run estimation on pruned (pre-treeshrinked) tree  
 	- Doesn't apply to this subset because no shrinking occurred  
+- [ ] Run separate testing on nitrospinota
 - [ ] Run constrained estimation on treeshrinked tree  
 - [ ] Fix RHAS on subset with LG only  
 - [ ] Add option to run test in a single command `-mset`  
@@ -41,7 +41,12 @@ Second pass:
 	- Running existing and new Qs separately makes model selection per partition difficult  
 	- `-m madd` does not do `+F,+I,+G,+R`  
 - [ ] Implement constrained analysis in nf?  
- 
+- [ ] rates over iterations (line graph)  
+- [ ] raw rates boxplots  
+
+Third pass:  
+- [ ] Move on to 2306_phyla   
+
 ## Dependencies  
 - python3  
 - biopython  
