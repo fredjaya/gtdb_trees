@@ -22,24 +22,20 @@ Training outputs:
 - [x] BICs over iter  
 - [x] n loci 
 - [ ] alignment size  
-- [ ] tree/branch lengths 
 - [x] rates bubble plot first and last iter 
 - [x] rates PCA  
 - [x] frequency PCA  
 
 Testing outputs:  
-- [ ] BIC and lnLs of training per loci 
+- [ ] BIC and lnLs of locus trees best existing vs new  
+- [ ] branch and tree lengths of best existing vs new  
+- [ ] alignment size
 
 Second pass:  
 - [x] Run estimation on pruned (pre-treeshrinked) tree  
 	- Doesn't apply to this subset because no shrinking occurred  
-- [ ] Run separate testing on nitrospinota
+- [x] Run separate testing on nitrospinota
 - [ ] Run constrained estimation on treeshrinked tree  
-- [ ] Fix RHAS on subset with LG only  
-- [ ] Add option to run test in a single command `-mset`  
-	- qMaker does this  
-	- Running existing and new Qs separately makes model selection per partition difficult  
-	- `-m madd` does not do `+F,+I,+G,+R`  
 - [ ] Implement constrained analysis in nf?  
 - [ ] rates over iterations (line graph)  
 - [ ] raw rates boxplots  
@@ -115,6 +111,33 @@ iqtree2 -seed 1 -T 8 -m MFP -pre test_mset_28existing \
 ```  
 
 Interestingly, $Q^{NEW}$ was the best model for 17/20 loci. The remaining loci fit LG, Q.plant and Q.yeast best.  
+
+Revert back to separate testing of existing models vs newly estimated model. This allows for comparison of locus trees between old and new models.  
+
+```  
+cd ~/Dropbox/gtdb/02_working/2306_nitrospinota/05_manual_test  
+# existing
+iqtree2 -seed 1 -T 8 -m MFP -pre test_existing_only \
+	-S ../03_subset_loci/nitrospinota/testing_loci/ \
+	-mset "Blosum62,cpREV,Dayhoff,DCMut,FLAVI,FLU
+,HIVb,HIVw,JTT,JTTDCMut,LG,mtART,mtMAM,mtREV,mtZOA,mtMet,mtVer,mtInv
+,PMB,Q.bird,Q.insect,Q.mammal,Q.pfam,Q.plant,Q.yeast,rtREV,VT,WAG"
+
+# new 
+iqtree2 -seed 1 -T 8 -m MFP -pre test_new \
+	-S ../03_subset_loci/nitrospinota/testing_loci/ \
+	-mset ../04_Q_train/Q.bac_locus_i4
+```
+
+Parse outputs:  
+```
+../scripts/testing_parse_mf.sh test_existing_only.iqtree > mf_existing.txt
+../scripts/testing_parse_mf.sh test_new.iqtree > mf_new.txt
+../scripts/testing_parse_sub.sh test_existing_only.iqtree > sub_existing.txt
+../scripts/testing_parse_sub.sh test_new.iqtree > sub_new.txt
+../scripts/testing_parse_ml_tree.sh test_existing_only.iqtree > tree_existing.txt
+../scripts/testing_parse_ml_tree.sh test_new.iqtree > tree_new.txt
+```  
 
 ### Outputs  
 

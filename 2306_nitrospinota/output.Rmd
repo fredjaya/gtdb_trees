@@ -28,7 +28,7 @@ library(sem)
 library(tibble)
 
 #options(digits = 22) # For BIC precision
-options(digits = 4)
+options(digits = 8)
 
 aa <- c("A", "R", "N", "D", "C", "Q", "E", "G", "H", "I", 
         "L", "K", "M", "F", "P", "S", "T", "W", "Y", "V")
@@ -250,6 +250,82 @@ allF2_long %>%
   labs(x = "Amino acid", y = "Frequencies", 
        title = "Frequencies of new and existing Q-matrices", 
        caption = "Boxplot = 31 existing freqs\nRed diamond = Estimated freq") +
+  theme_fj
+```
+
+```{r}
+mf <- 
+  read.table("05_manual_test/mf_existing.txt", fill=T, skip=1) %>%
+  select(ID = V1, Model = V2, LogL = V3, AIC = V4, AICc = V7, BIC = V10)
+
+sub <- 
+  read.table("05_manual_test/sub_existing.txt", header=T)
+
+mf_sub_existing <- 
+  mf %>%
+  left_join(sub, by = c("ID", "Model")) %>%
+  mutate(`Test set` = "Existing")
+
+rm(mf, sub)
+
+mf <- 
+  read.table("05_manual_test/mf_new.txt", fill=T, skip=1) %>%
+  select(ID = V1, Model = V2, LogL = V3, AIC = V4, AICc = V7, BIC = V10)
+
+sub <- 
+  read.table("05_manual_test/sub_new.txt", header=T)
+
+mf_sub_new <- 
+  mf %>%
+  left_join(sub, by = c("ID", "Model")) %>%
+  mutate(`Test set` = "New") %>%
+  mutate(across(c(Model, Parameters), ~gsub(".*\\/", "", .)))
+
+mf_sub <- rbind(mf_sub_existing, mf_sub_new)
+rm(mf, sub, mf_sub_existing, mf_sub_new)
+
+#mlt <- read.table("05_manual_test/tree_existing.txt", header=T)
+```
+
+```{r}
+mf_sub_long <- 
+  mf_sub %>%
+  pivot_longer(cols = LogL:TreeLen)
+
+# MF LogL 
+mf_sub_long %>%
+  group_by(ID, name) %>%
+  summarise(Difference = value[`Test set` == "New"] - value[`Test set` == "Existing"]) %>%
+  mutate(Improved = if_else(Difference < 0, "Yes", "No")) %>%
+  filter(name == "LogL") %>%
+  ggplot(aes(x = ID, y = Difference, fill = Improved)) +
+  geom_col() +
+  labs(x = "Locus", y ="LogL(New model) - \nLogL(Existing model)",
+       title = "ModelFinder: LogL") +
+  theme_fj
+
+# BICs
+mf_sub_long %>%
+  group_by(ID, name) %>%
+  summarise(Difference = value[`Test set` == "New"] - value[`Test set` == "Existing"]) %>%
+  mutate(Improved = if_else(Difference < 0, "Yes", "No")) %>%
+  filter(name == "BIC") %>%
+  ggplot(aes(x = ID, y = Difference, fill = Improved)) +
+  geom_col() +
+  labs(x = "Locus", y ="BIC(New model) -\nBIC(Best existing model)",
+       title = "ModelFinder: BIC") +
+  theme_fj
+
+# Tree length
+mf_sub_long %>%
+  group_by(ID, name) %>%
+  summarise(Difference = value[`Test set` == "New"] - value[`Test set` == "Existing"]) %>%
+  mutate(Length = if_else(Difference > 0, "Longer", "Shorter")) %>%
+  filter(name == "TreeLen") %>%
+  ggplot(aes(x = ID, y = Difference, fill = Length)) +
+  geom_col() +
+  labs(x = "Locus", y ="TreeLen(New model) - \nTreeLen(Best existing model)",
+       title = "Substitution process: Tree length") +
   theme_fj
 ```
 
