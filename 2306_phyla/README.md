@@ -7,8 +7,8 @@ Estimating phylum-specific matrices.
 First pass:  
 - [x] Prepare taxa lists for all phyla with >50 taxa  
 - [x] Prune reference tree for each phyla   
-- [ ] Get branch lengths and total tree length  
-- [ ] Run treeshrink on all phyla  
+- [x] Get branch lengths and total tree length  
+- [x] Run treeshrink on all phyla  
 - [ ] ID phyla with shrunk trees  
 - [ ] Get branch lengths and total tree lengths for pruned phyla   
 - [ ] Identify resource usage vs. BIC across subsets of taxa in a big phyla  
@@ -56,4 +56,13 @@ done
 Compile tree lengths and manually add to master tsv:  
 ```
 for i in *; do echo $i `cat $i/pruned.tree.length`;done > all_tree_lengths.txt
+```  
+
+## Treeshrink  
+
+```
+for i in analysis/*; do 
+	echo $i
+	~/GitHub/TreeShrink/run_treeshrink.py -t $i/pruned.tree > $i/treeshrink.log
+done
 ```
