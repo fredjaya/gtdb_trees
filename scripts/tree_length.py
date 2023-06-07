@@ -27,4 +27,4 @@ plt.text(0.7, 0.9, f"{len(bl)} branches", transform=plt.gca().transAxes, fontsiz
 
 plt.savefig("branch_length_histogram.png")
 
-plt.show()
+#plt.show()

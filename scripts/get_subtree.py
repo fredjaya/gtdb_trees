@@ -32,6 +32,4 @@ subtree = get_subtree(tree, taxa_list)
 assert len([tip for tip in subtree.get_terminals()]) == len(taxa_list)
 
 Phylo.write(subtree, "pruned.tree", 'newick')
-Phylo.draw(subtree)
-
-
+#Phylo.draw(subtree)

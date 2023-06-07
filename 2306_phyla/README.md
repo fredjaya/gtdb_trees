@@ -5,12 +5,55 @@ Estimating phylum-specific matrices.
 ## To-do  
 
 First pass:  
-- [ ] Prepare taxa lists for all phyla with >50 taxa  
-- [ ] Prune reference tree for each phyla   
+- [x] Prepare taxa lists for all phyla with >50 taxa  
+- [x] Prune reference tree for each phyla   
 - [ ] Get branch lengths and total tree length  
 - [ ] Run treeshrink on all phyla  
 - [ ] ID phyla with shrunk trees  
 - [ ] Get branch lengths and total tree lengths for pruned phyla   
 - [ ] Identify resource usage vs. BIC across subsets of taxa in a big phyla  
 
-## Taxa lists
+## Taxa lists  
+`taxa/ge_50.phyla` - All phyla with 50 or more taxa.  
+
+```  
+for taxa in `cat ge_50.phyla`; do
+	grep $taxa ../data/gtdb_r207_bac120_curation_taxonomy_tabbed.tsv | \
+		cut -f1 > lists/${taxa}.phyla
+done
+```  
+
+45 taxa remain.  
+
+Make folders for each phyla under `analysis/`:  
+
+## Pruning  
+
+Make trees for each phyla by pruning from the r207 tree.  
+
+```  
+for phylum in taxa/lists/*; do
+	../scripts/get_subtree.py \
+		../data/trees/gtdb_r207_bac120_unscaled.decorated.tree \
+		${phylum}
+	mv pruned.tree analysis/`basename ${phylum} .phyla`
+done
+```
+
+## Branch lengths  
+
+**moving everything to /home/frederickjaya/Dropbox/gtdb/02_working/2306_phyla**  
+
+Calculate total tree length and branch length distributions:  
+```
+for i in analysis/*; do  
+	echo $i  
+	~/GitHub/gtdb_trees/scripts/tree_length.py $i/pruned.tree > $i/pruned.tree.length
+	mv branch_length_histogram $i
+done 
+```  
+
+Compile tree lengths and manually add to master tsv:  
+```
+for i in *; do echo $i `cat $i/pruned.tree.length`;done > all_tree_lengths.txt
+```
