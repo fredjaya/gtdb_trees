@@ -27,8 +27,8 @@ Training outputs:
 - [x] frequency PCA  
 
 Testing outputs:  
-- [ ] BIC and lnLs of locus trees best existing vs new  
-- [ ] branch and tree lengths of best existing vs new  
+- [x] BIC and lnLs of locus trees best existing vs new  
+- [x] branch and tree lengths of best existing vs new  
 - [ ] alignment size
 
 Second pass:  
@@ -129,16 +129,6 @@ iqtree2 -seed 1 -T 8 -m MFP -pre test_new \
 	-mset ../04_Q_train/Q.bac_locus_i4
 ```
 
-Parse outputs:  
-```
-../scripts/testing_parse_mf.sh test_existing_only.iqtree > mf_existing.txt
-../scripts/testing_parse_mf.sh test_new.iqtree > mf_new.txt
-../scripts/testing_parse_sub.sh test_existing_only.iqtree > sub_existing.txt
-../scripts/testing_parse_sub.sh test_new.iqtree > sub_new.txt
-../scripts/testing_parse_ml_tree.sh test_existing_only.iqtree > tree_existing.txt
-../scripts/testing_parse_ml_tree.sh test_new.iqtree > tree_new.txt
-```  
-
 ### Outputs  
 
 #### Training  
@@ -155,3 +145,21 @@ Fill `output.Rmd`
 ```
 
 #### Testing  
+
+Parse outputs for separate existing and QNew models:  
+```
+../scripts/testing_parse_mf.sh test_existing_only.iqtree > mf_existing.txt
+../scripts/testing_parse_mf.sh test_new.iqtree > mf_new.txt
+../scripts/testing_parse_sub.sh test_existing_only.iqtree > sub_existing.txt
+../scripts/testing_parse_sub.sh test_new.iqtree > sub_new.txt
+../scripts/testing_parse_ml_tree.sh test_existing_only.iqtree > tree_existing.txt
+../scripts/testing_parse_ml_tree.sh test_new.iqtree > tree_new.txt
+```  
+
+## Constrained per-locus trees  
+
+What happens if the topology is fixed according to the GTDB reference tree (r207)?  
+
+```
+
+```
