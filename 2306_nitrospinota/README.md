@@ -158,15 +158,28 @@ Parse outputs for separate existing and QNew models:
 
 ## Constrained per-locus trees  
 
+### Data filtering  
 What happens if the topology is fixed according to the GTDB reference tree (r207)?  
 
 First remove all empty sequences, because IQ-TREE will remove them anyway.
 ```
-cd /home/frederickjaya/Dropbox/gtdb/02_working/2306_constrained_nitrospinota/00_subset_taxa
+cd /home/frederickjaya/Dropbox/gtdb/02_working/2306_constrained_nitrospinota/01_remove_empties
 for i in ../../2306_nitrospinota/00_subset_taxa/nitrospinota/*; do 
 	~/GitHub/gtdb_trees/scripts/remove_empties.py $i; 
 done 
 ```
 
 Now prune trees for each locus so that each tip is present in the locus alignment:  
+```
+# Get taxa lists
+for i in 01_remove_empties/*; do
+	grep ">" $i | sed 's/^>//' > 02_taxa_lists/`basename $i`
+done
+
+# Prune trees
+for i in ../02_taxa_lists/*; do
+	~/GitHub/gtdb_trees/scripts/get_subtree.py ~/GitHub/gtdb_trees/scripts/get_subtree.py ~/GitHub/gtdb_trees/data/trees/gtdb_r207_bac120_unscaled.decorated.tree $i
+done
+```  
+
 

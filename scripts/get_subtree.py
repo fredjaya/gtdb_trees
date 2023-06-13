@@ -1,7 +1,15 @@
 #!/usr/bin/env python3
+"""
+Prunes a bigger tree based on a list of taxa.  
+
+Curently used for:
+    1. Subsetting group-specific taxa for treeshrink
+    2. Subsetting non-empty taxa for constrained locus tree estimation
+"""
 
 import sys
 from Bio import Phylo
+import re
 #import matplotlib # required for Phylo.draw
 
 def read_taxa_list(path_to_list):
@@ -31,5 +39,9 @@ subtree = get_subtree(tree, taxa_list)
 # Check number of subtree tips == number of taxa
 assert len([tip for tip in subtree.get_terminals()]) == len(taxa_list)
 
-Phylo.write(subtree, "pruned.tree", 'newick')
+out = re.sub(".*/", "", taxa_list_file)
+out += ".tree"
+print(f"Pruned tree saved to {out}")
+
+Phylo.write(subtree, out, 'newick')
 #Phylo.draw(subtree)
