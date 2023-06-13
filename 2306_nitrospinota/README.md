@@ -1,4 +1,4 @@
-# 2306_nitrospinota  
+# 2307_nitrospinota  
 
 Run a fast and complete pipeline for a decently sized phyla. Was going to choose Nitrospirota but it's a bit big. Chose Nitrospinota because it looks problematic (i.e. Nitrosponita and Nitrosponita_B).  
 
@@ -160,6 +160,13 @@ Parse outputs for separate existing and QNew models:
 
 What happens if the topology is fixed according to the GTDB reference tree (r207)?  
 
+First remove all empty sequences, because IQ-TREE will remove them anyway.
+```
+cd /home/frederickjaya/Dropbox/gtdb/02_working/2306_constrained_nitrospinota/00_subset_taxa
+for i in ../../2306_nitrospinota/00_subset_taxa/nitrospinota/*; do 
+	~/GitHub/gtdb_trees/scripts/remove_empties.py $i; 
+done 
 ```
 
-```
+Now prune trees for each locus so that each tip is present in the locus alignment:  
+
