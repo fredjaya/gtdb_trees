@@ -213,6 +213,7 @@ for i in `cat 06_test_train_loci/training_loci.txt | sort`; do cat 04_pruned_loc
 for i in `cat 06_test_train_loci/testing_loci.txt | sort`; do cat 04_pruned_locus_trees/${i}.tree; done > 08_testing.treefile
 ```  
 
+### Training  
 Run constrained training:  
 ```
 ~/GitHub/gtdb_trees/nf/bin/estimate_q.py -l ../07_training_loci/ -te ../08_training.treefile
@@ -220,4 +221,14 @@ Run constrained training:
 
 Two iterations ran - 1st iteration is best!  
 
+### Testing  
 
+Existing models:  
+```
+iqtree2 -seed 1 -T 8 -S 07_testing_loci/ -m MFP -pre 10_test/existing_Q
+```  
+
+Estimated models:  
+```
+iqtree2 -seed 1 -T 8 -S 07_testing_loci/ -m MFP -mset 09_train/Q.bac_locus_i1 -pre 10_test/existing_Q
+```  
