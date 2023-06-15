@@ -24,6 +24,7 @@ def grep_iqtree(string, filename):
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-l', '--loci', type=str, help='Path to original loci', required=True)
+parser.add_argument('-te', '--constrained', help='Estimate Q with a fixed topology.', required=False)
 parser.add_argument('-v', '--verbose', action='store_true', help='Print commands', required=False)
 
 args = parser.parse_args()
@@ -56,10 +57,15 @@ while bic_0 is None or bic_1 <= bic_0:
         mset = "LG,WAG,JTT"
         estimated_Q = "LG"
 
-    #run_command(f"mkdir -p i{iteration}")
-    # Construct per-locus trees
-    run_command(f"{iqtree_path} -seed {seed} -T {threads} -S {args.loci} \
-            -mset {mset} -cmax 4 -pre i{iteration}")
+    if args.constrained:
+        # Run joint-estimation across all loci with fixed locus trees
+        run_command(f"{iqtree_path} -seed {seed} -T {threads} -S {args.loci} \
+                -mset {mset} -cmax 4 -pre i{iteration} -te {args.constrained}")
+    else:
+        # Estimate locus trees from data directly
+        run_command(f"{iqtree_path} -seed {seed} -T {threads} -S {args.loci} \
+                -mset {mset} -cmax 4 -pre i{iteration}")
+
     # Estimate Q-matrix
     run_command(f"{iqtree_path} -seed {seed} -T {threads} -S {best_scheme} -te {tree_file} \
             --model-joint GTR20+FO --init-model {estimated_Q} -pre i{iteration}.GTR20")

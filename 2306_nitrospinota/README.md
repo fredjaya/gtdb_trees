@@ -35,7 +35,8 @@ Second pass:
 - [x] Run estimation on pruned (pre-treeshrinked) tree  
 	- Doesn't apply to this subset because no shrinking occurred  
 - [x] Run separate testing on nitrospinota
-- [ ] Run constrained estimation on treeshrinked tree  
+- [x] Run constrained estimation on treeshrinked tree  
+- [ ] Get tree/branch lengths of constrained trees
 - [ ] Implement constrained analysis in nf?  
 - [ ] rates over iterations (line graph)  
 - [ ] raw rates boxplots  
@@ -216,3 +217,7 @@ Run constrained training:
 ```
 ~/GitHub/gtdb_trees/nf/bin/estimate_q.py -l ../07_training_loci/ -te ../08_training.treefile
 ```
+
+Two iterations ran - 1st iteration is best!  
+
+
