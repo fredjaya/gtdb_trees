@@ -200,15 +200,19 @@ done | sed 's/01_remove_empties\///' > 05_alistats.csv
 # Subset loci  
 cd 06_test_train_loci
 Rscript ~/GitHub/gtdb_trees/nf/bin/subset_loci_ca/R 05_alistats.csv 100
+
+# Reorganise for analyses  
+for i in `cat 06_test_train_loci/training_loci.txt`; do cp 01_remove_empties/$i 07_training_loci/; done
+for i in `cat 06_test_train_loci/testing_loci.txt`; do cp 01_remove_empties/$i 07_testing_loci/; done
 ```  
 
 Make training and testing locus tree files:  
 ```
-for i in `cat 06_test_train_loci/training_loci.txt`; do head 04_pruned_locus_trees/${i}.tree; done > 07_training.treefile
-for i in `cat 06_test_train_loci/testing_loci.txt`; do head 04_pruned_locus_trees/${i}.tree; done > 07_testing.treefile
+for i in `cat 06_test_train_loci/training_loci.txt | sort`; do cat 04_pruned_locus_trees/${i}.tree; done > 08_training.treefile
+for i in `cat 06_test_train_loci/testing_loci.txt | sort`; do cat 04_pruned_locus_trees/${i}.tree; done > 08_testing.treefile
 ```  
 
 Run constrained training:  
 ```
-iqtree2 -seed 1 -T 8 
+~/GitHub/gtdb_trees/nf/bin/estimate_q.py -l ../07_training_loci/ -te ../08_training.treefile
 ```
