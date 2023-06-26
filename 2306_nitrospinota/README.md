@@ -232,3 +232,14 @@ Estimated models:
 ```
 iqtree2 -seed 1 -T 8 -S 07_testing_loci/ -m MFP -mset 09_train/Q.bac_locus_i1 -pre 10_test/existing_Q
 ```  
+
+### Output  
+
+Get size of training loci:  
+```
+scripts/training_iqtree_filter.sh 04_Q_train/nitrospinota/i4.GTR20.log > training_stats.txt
+```
+
+Now I can do stuff like:  
+- [ ] If it is reasonable to use topologies inferred from a small subset of the data by running constrained and unconstrained Qs on the same test data
+- [ ] Write up one bigger bash script to parse all the iqtree files to read into R

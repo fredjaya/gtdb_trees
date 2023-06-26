@@ -65,4 +65,13 @@ for i in analysis/*; do
 	echo $i
 	~/GitHub/TreeShrink/run_treeshrink.py -t $i/pruned.tree > $i/treeshrink.log
 done
+``` 
+
+Identify the number of taxa dropped for each phyla:  
 ```
+for i in *; do echo $i `grep -oP "\t" $i/analysis/pruned_treeshrink/output.txt | wc -l`; done > n_taxa_dropped_treeshrink.txt
+```  
+
+25/45 phyla had taxa removed. 0.09% - 1.59% of taxa were dropped.  
+
+
