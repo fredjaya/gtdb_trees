@@ -9,7 +9,7 @@ First pass:
 - [x] Prune reference tree for each phyla   
 - [x] Get branch lengths and total tree length  
 - [x] Run treeshrink on all phyla  
-- [ ] ID phyla with shrunk trees  
+- [x] ID phyla with shrunk trees  
 - [ ] Get branch lengths and total tree lengths for pruned phyla   
 - [ ] Identify resource usage vs. BIC across subsets of taxa in a big phyla  
 
@@ -73,5 +73,21 @@ for i in *; do echo $i `grep -oP "\t" $i/analysis/pruned_treeshrink/output.txt |
 ```  
 
 25/45 phyla had taxa removed. 0.09% - 1.59% of taxa were dropped.  
+
+Calculate total tree length and branch length distributions:  
+```
+for i in analysis/*; do  
+	echo $i
+	~/GitHub/gtdb_trees/scripts/tree_length.py $i/pruned_treshrink/output.tree > $i/pruned_treeshrink/pruned_treeshrink.tree.length
+	mv branch_length_histogram.png $i/pruned_treeshrink
+done 
+```  
+
+Compile tree lengths and manually add to master tsv:  
+```
+for i in analysis/*; do echo $i `cat $i/pruned_treeshrink/pruned.tree.length`; done > all_tree_lengths.txt
+```  
+
+Tree lengths reduction across phyla ranged from 0.11% - 7.65% of the original length. Phyla Fusobacteriota, Nitrospirota, Synergistota, Dormibacterota underwent the most shrinking (>2%).  
 
 
