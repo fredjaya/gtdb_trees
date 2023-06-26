@@ -23,6 +23,7 @@ workflow {
     loci = ${params.loci}
     taxa_list = ${params.taxa_list}
     n_training_loci = ${params.n_training_loci}
+    constraint_trees = ${params.constraint_tres}
     """
    
     loci_ch.combine(taxa_list_ch) | 
@@ -32,8 +33,15 @@ workflow {
         cat_stats | 
         combine(n_training_loci_ch) |
         id_train_test_loci
-        arrange_loci(id_train_test_loci.out[0]) |
-        estimate_Q //& test_loci_existing_Q
+
+        arrange_loci(id_train_test_loci.out[0])
+
+        if ( params.constraint_trees ) {
+            println "Topologies input, running constrained estimation"
+        }
+        else {
+            println "No topologies input, estimate a tree for each training locus (unconstrained)"
+            arrange_loci.out | estimate_Q & test_loci_existing_Q
 
     /*
      * Having only a single iteration is impossible outside of testing,
@@ -43,8 +51,9 @@ workflow {
         if( it[0].getClass() == sun.nio.fs.UnixPath) { 
             println "WARNING: Only a single iteration of Q estimated for ${it[1]}"
             return it
-        } else { 
+        } 
+        else { 
             return tuple(it[0][-2], it[1])
         }
-    } //| test_loci_estimated_Q
+    } | test_loci_estimated_Q
 }   

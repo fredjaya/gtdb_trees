@@ -40,7 +40,7 @@ for phylum in taxa/lists/*; do
 done
 ```
 
-## Branch lengths  
+### Pruned tree lengths
 
 **moving everything to /home/frederickjaya/Dropbox/gtdb/02_working/2306_phyla**  
 
@@ -88,6 +88,9 @@ Compile tree lengths and manually add to master tsv:
 for i in analysis/*; do echo $i `cat $i/pruned_treeshrink/pruned.tree.length`; done > all_tree_lengths.txt
 ```  
 
-Tree lengths reduction across phyla ranged from 0.11% - 7.65% of the original length. Phyla Fusobacteriota, Nitrospirota, Synergistota, Dormibacterota underwent the most shrinking (>2%).  
+Tree lengths reduction across phyla ranged from 0.11% - 7.65% of the original length. Phyla Fusobacteriota, Nitrospirota, Synergistota, Dormibacterota shrunk the most (>2%).  
 
-
+Create taxa list of shrunk taxa:  
+```
+for i in *; do echo $i; grep -oP "G\d+" $i/pruned_treeshrink/output.tree > $i/`basename $i`_treeshrunk.taxa; cp $i/`basename $i`_treeshrunk.taxa ../taxa/treeshrunk/; done
+```  
