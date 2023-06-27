@@ -1,21 +1,6 @@
 nextflow.enable.dsl=2
+
 process subset_taxa {
-    publishDir "${params.outdir}/${taxa_list.baseName}/00_subset_taxa/"
-
-    input:
-        tuple path(locus), path(taxa_list)
-
-    output:
-        tuple path("${locus}_subtaxa"), val("${taxa_list.baseName}")
-
-    script:
-    """
-    faSomeRecords.py --fasta $locus --list $taxa_list --outfile ${locus}_subtaxa
-    """
-
-}
-
-process remove_empties {
 
     publishDir "${params.outdir}/${taxa_list.baseName}/00_subset_taxa/"
 
@@ -31,6 +16,7 @@ process remove_empties {
     """
 
 }
+
 process alistat {
 
     publishDir "${params.outdir}/${taxa}/01_alistat/"
@@ -112,6 +98,7 @@ process arrange_loci {
 
 process estimate_Q {
 
+    executor = "${params.slurm_executor}"
     publishDir "${params.outdir}/${taxa}/04_Q_train/"
 
     input:
@@ -144,6 +131,7 @@ process estimate_Q {
 
 process test_loci_estimated_Q {
 
+    executor = "${params.slurm_executor}"
     publishDir "${params.outdir}/${taxa}/05_Q_test_loci"
 
     input:
@@ -169,6 +157,7 @@ process test_loci_estimated_Q {
 
 process test_loci_existing_Q {
 
+    executor = "${params.slurm_executor}"
     publishDir "${params.outdir}/${taxa}/05_Q_test_loci"
 
     input:
