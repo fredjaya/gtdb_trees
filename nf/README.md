@@ -7,11 +7,11 @@ Download repo:
 git clone https://github.com/fredjaya/gtdb_trees.git
 ```  
 
-Install conda environment:  
+Install mamba/conda environment:  
 ```
 cd gtdb_trees/nf/
-conda env create -f env.yml
-conda activate gtdb-nf
+mamba env create -f env.yml
+mamba activate gtdb-nf
 ```
 
 Install faSomeRecords and AliStat:
@@ -36,7 +36,8 @@ rm -r AliStat-1.14/
 
 ```
 nextflow run main.nf \
-	--loci "~/gtdb/00_data/r207_loci/*" \
-	--taxa_list "~/gtdb/02_working/2306_phyla_test/test_taxa/*" \
-	--n_threads 8
+	--loci "/mnt/data/dayhoff/home/u1070770/gtdb/00_data/r207_loci/*" \
+	--taxa_list "/mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/test_taxa/*" \
+	--n_threads 2 \ # For some reason IQ-TREE only detects 2 threads when sbatched
+	-profile slurm
 ```

@@ -18,12 +18,14 @@ n_training_loci_ch = Channel.from(params.n_training_loci)
 workflow {
 
     log.info"""
-    baseDir = ${baseDir}
-    outdir = ${params.outdir}
-    loci = ${params.loci}
-    taxa_list = ${params.taxa_list}
-    n_training_loci = ${params.n_training_loci}
-    constraint_trees = ${params.constraint_tres}
+    baseDir             = ${baseDir}
+    outdir              = ${params.outdir}
+    loci                = ${params.loci}
+    taxa_list           = ${params.taxa_list}
+    n_training_loci     = ${params.n_training_loci}
+    constraint_trees    = ${params.constraint_trees}
+    n_threads           = ${params.n_threads}
+    executor            = ${params.executor}
     """
    
     loci_ch.combine(taxa_list_ch) | 
@@ -42,6 +44,7 @@ workflow {
         else {
             println "No topologies input, estimate a tree for each training locus (unconstrained)"
             arrange_loci.out | estimate_Q & test_loci_existing_Q
+        }
 
     /*
      * Having only a single iteration is impossible outside of testing,

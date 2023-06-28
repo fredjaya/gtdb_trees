@@ -25,6 +25,7 @@ def grep_iqtree(string, filename):
 parser = argparse.ArgumentParser()
 parser.add_argument('-l', '--loci', type=str, help='Path to original loci', required=True)
 parser.add_argument('-te', '--constrained', help='Estimate Q with a fixed topology.', required=False)
+parser.add_argument('-T', '--threads', help='Threads to use (-T)', required=True)
 parser.add_argument('-v', '--verbose', action='store_true', help='Print commands', required=False)
 
 args = parser.parse_args()
@@ -39,10 +40,7 @@ iteration = 0
 """
 IQ-TREE related
 """
-#TODO: softcode bin path
-iqtree_path = "/home/frederickjaya/Downloads/iqtree-2.2.3.hmmster-Linux/bin/iqtree2" 
 seed = 1
-threads = 4
 
 while bic_0 is None or bic_1 <= bic_0:
     bic_0 = bic_1
@@ -59,15 +57,15 @@ while bic_0 is None or bic_1 <= bic_0:
 
     if args.constrained:
         # Run joint-estimation across all loci with fixed locus trees
-        run_command(f"{iqtree_path} -seed {seed} -T {threads} -S {args.loci} \
+        run_command(f"iqtree2 -seed {seed} -T {args.threads} -S {args.loci} \
                 -mset {mset} -cmax 4 -pre i{iteration} -te {args.constrained}")
     else:
         # Estimate locus trees from data directly
-        run_command(f"{iqtree_path} -seed {seed} -T {threads} -S {args.loci} \
+        run_command(f"iqtree2 -seed {seed} -T {args.threads} -S {args.loci} \
                 -mset {mset} -cmax 4 -pre i{iteration}")
 
     # Estimate Q-matrix
-    run_command(f"{iqtree_path} -seed {seed} -T {threads} -S {best_scheme} -te {tree_file} \
+    run_command(f"iqtree2 -seed {seed} -T {args.threads} -S {best_scheme} -te {tree_file} \
             --model-joint GTR20+FO --init-model {estimated_Q} -pre i{iteration}.GTR20")
     
     with open(f"i{iteration}.GTR20.iqtree") as iq:

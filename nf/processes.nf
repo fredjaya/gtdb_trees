@@ -98,7 +98,7 @@ process arrange_loci {
 
 process estimate_Q {
 
-    executor = "${params.slurm_executor}"
+    label "iqtree_${params.executor}"
     publishDir "${params.outdir}/${taxa}/04_Q_train/"
 
     input:
@@ -125,13 +125,13 @@ process estimate_Q {
 
     script:
     """
-    estimate_q.py --loci ${params.outdir}/${taxa}/03_subset_loci/training_loci/
+    estimate_q.py --loci ${params.outdir}/${taxa}/03_subset_loci/training_loci/ --threads ${params.n_threads}
     """      
 }
 
 process test_loci_estimated_Q {
 
-    executor = "${params.slurm_executor}"
+    label "iqtree_${params.executor}"
     publishDir "${params.outdir}/${taxa}/05_Q_test_loci"
 
     input:
@@ -150,14 +150,14 @@ process test_loci_estimated_Q {
 
     script:
     """
-    iqtree2 -seed 1 -T 4 -mset ${estimated_Q} -S ${params.outdir}/${taxa}/03_subset_loci/testing_loci/ -pre ${estimated_Q}
+    iqtree2 -seed 1 -T ${params.n_threads} -mset ${estimated_Q} -S ${params.outdir}/${taxa}/03_subset_loci/testing_loci/ -pre ${estimated_Q}
     """
 
 }
 
 process test_loci_existing_Q {
 
-    executor = "${params.slurm_executor}"
+    label "iqtree_${params.executor}"
     publishDir "${params.outdir}/${taxa}/05_Q_test_loci"
 
     input:
@@ -176,7 +176,7 @@ process test_loci_existing_Q {
 
     script:
     """
-    iqtree2 -seed 1 -T 4 -S ${params.outdir}/${taxa}/03_subset_loci/testing_loci/ -m MFP -pre existing_Q
+    iqtree2 -seed 1 -T ${params.n_threads} -S ${params.outdir}/${taxa}/03_subset_loci/testing_loci/ -m MFP -pre existing_Q
     """
 
 }
@@ -206,7 +206,7 @@ process test_loci_all_mset {
 
     script:
     """
-    iqtree2 -seed 1 -T 4 -m MFP -pre test_mset_all \
+    iqtree2 -seed 1 -T ${params.n_threads} -m MFP -pre test_mset_all \
         -S ${params.outdir}/03_subset_loci/${taxa}/testing_loci/ \
         -mset "${estimated_Q},Blosum62,cpREV,Dayhoff,DCMut,FLAVI,FLU,HIVb,HIVw,JTT,JTTDCMut,LG,mtART,mtMAM,mtREV,mtZOA,mtMet,mtVer,mtInv,PMB,Q.bird,Q.insect,Q.mammal,Q.pfam,Q.plant,Q.yeast,rtREV,VT,WAG"
     """
