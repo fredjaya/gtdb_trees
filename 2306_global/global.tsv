@@ -1,0 +1,7 @@
+Name/Step	Scaling	Taxa	Tree length
+original	Molecular	62291	6908.397739999869
+treeshrunk0.05	Molecular	62272	6899.0687299998635
+treeshrunk0.10	Molecular	62239	6895.788289999865
+original	Time		
+treeshrunk0.05	Time		
+treeshrunk0.10	Time		
