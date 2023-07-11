@@ -10,10 +10,11 @@ First pass:
 - [ ] Run PARNAS
 - [ ] Estimate with different parameters
 - [ ] Scale to ultrametric
-- [x] Run treeshrink
+- [ ] Run treeshrink
 - [ ] Output branch lengths before and after treeshrink  
 
-## r207 molecular
+
+## Unscaled r207 tree  
 
 ### Branch lengths  
 ```
@@ -22,9 +23,11 @@ First pass:
 Total tree length: 6908.397739999869  
 Distribution of branch lengths: `branch_length_histogram.png`  
 
-#### Removing long branches  
+## r207 molecular/unscaled
 
-##### alpha = 0.05
+### Removing long branches with treeshrink
+
+#### alpha = 0.05
 ```
 run_treeshrink.py -t ../data/trees/gtdb_r207_bac120_unscaled.decorated.tree
 ```  
@@ -47,7 +50,45 @@ for i in `sed 's/\t\/\n/g' gtdb_r207_bac120_unscaled.decorated_treeshrink/output
 
 Total tree length: 6899.0687299998635
 
-##### alpha = 0.10
+#### alpha = 0.10
 
+52 dropped:
 
+| Order/Family                                                                              | Count |
+| ----------------------------------------------------------------------------------------- | ----- |
+| p__Proteobacteria; c__Alphaproteobacteria; o__Rhodobacterales; f__Rhodobacteraceae        | 22    |
+| p__Proteobacteria; c__Alphaproteobacteria; o__Rickettsiales                               | 2     |
+| p__Proteobacteria; c__Gammaproteobacteria; o__Enterobacterales_A; f__Enterobacteriaceae_A | 3     |
+| p__Firmicutes; c__Bacilli; o__Mycoplasmatales                                             | 25    |
 
+### Downsampling with PARNAS  
+
+## r207 RED-scaled  
+
+The relative evolutionary distance (RED) scales trees so that terminal branches are `RED=1` and the root node is `RED=0`. Everything inbetween is interpolated. 
+
+Rescale:
+```
+phylorank outliers \
+        ../data/trees/gtdb_r207_bac120_unscaled.decorated.tree \
+	~/Dropbox/gtdb/00_raw_data/gtdb_r207_bac120_curation_taxonomy.tsv \
+	~/Dropbox/gtdb/01_data/r207_phylorank
+``` 
+
+Tree length: 5036.834222551443  
+
+### Treeshrink  
+
+```
+~/GitHub/TreeShrink/run_treeshrink.py -t red/gtdb_r207_bac120_unscaled.decorated.scaled.tree -o red_shrunk -q "0.05 0.10"
+```
+
+No abnormally long branches with either threshold!  
+
+### PARNAS   
+
+The median genus is ~0.925, hopefully this should downsample so that one sequence represents each genus?:  
+```
+parnas -t red/gtdb_r207_bac120_unscaled.decorated.scaled.tree --cover --radius 0.15 --subtree red_parnas/red_scaled_parnas_r0.15.tree
+```
+ 
