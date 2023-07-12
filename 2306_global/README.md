@@ -8,10 +8,14 @@ First pass:
 - [x] Run treeshrink
 - [x] Output branch lengths before and after treeshrink  
 - [x] Run PARNAS
-- [ ] Estimate with different parameters
-- [ ] Scale to ultrametric
-- [ ] Run treeshrink
-- [ ] Output branch lengths before and after treeshrink  
+- [x] Estimate with different parameters
+- [ ] Estimate r207 RED-scaled matrices
+
+Second pass:  
+- [ ] Make plots/tables on the downsampling per PARNAS threshold  
+- [ ] Visualise downsampled trees  
+- [ ] Look at unscaled estimations  
+- [ ] Look at ultrametric estimations  
 
 ## Unscaled r207 tree  
 
@@ -99,4 +103,29 @@ Median RED of families are ~0.76. RED<0.7 should give a single representative fo
 
 ```
 parnas -t red/gtdb_r207_bac120_unscaled.decorated.scaled.tree --cover --radius 0.3 --subtree red_parnas/red_r03.tree
+```  
+
+10,628 taxa retained!  
+
+Now do the rest of order, class and phylum:  
+
+| Rank   | Median RED | Chosen RED | Taxa selected |
+| ------ | ---------- | ---------- | ------------- |
+| Phylum | ~0.34      | 0.25       | 1665          |
+| Class  | ~0.46      | 0.38       | 2678          |
+| Order  | ~0.62      | 0.55       | 5644          |
+| Family | ~0.75      | 0.70       | 10,628        |
+| Genus  | ~0.93      | 0.15       | 20,571        |
+
+### Estimating Q-matrices  
+
+Chuck each PARNAS taxa list in a taxa folder and run the nf pipeline (on HPC):  
 ```
+nextflow run ~/GitHub/gtdb_trees/nf/main.nf \
+	--loci "/mnt/data/dayhoff/home/u1070770/gtdb/00_data/r207_loci/*" \
+	--taxa_list "/mnt/data/dayhoff/home/u1070770/gtdb/02_working/2307_global/taxa/*" \
+	--n_threads 8 \
+	--executor slurm
+```  
+
+
