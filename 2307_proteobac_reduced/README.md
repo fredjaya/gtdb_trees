@@ -42,6 +42,24 @@ parnas -t p__Proteobacteria.phyla.tree -n 1000 --diversity diversity_n1000.csv
 ```
 parnas -t p__Proteobacteria.phyla.tree -n 10000 --diversity diversity_n10000.csv > diversity_n10000.log
 ```  
+
+Chosen representatives cover 99.28% of overall diversity.  
+
+~6 hours with < 60GB RAM.  
+
+#### Diversity representation summary  
+
+| Representative taxa | % RED | Run time | Memory |
+| ------------------- | ----- | -------- | ------ |
+| 2                   | 28.18 |          |        |
+| 7                   | 51.51 | ~5m      | <32GB  |
+| 100                 | 75.66 |          |        |
+| 500                 | 85.93 |          |        |
+| 1000                | 89.63 | ~10m     | <35GB  |
+| 3033                | 95.00 |          |        |
+| 8873                | 99.00 |          |        |
+| 9958                | 99.28 | ~6h      | <60GB  |
+
 Planning ahead, select RED cut-offs according to RED distributions per GTDB's taxonomic rank.  
 
 **Genus**  
