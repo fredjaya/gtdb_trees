@@ -7,12 +7,11 @@ Estimating global bacterial matrices.
 First pass:  
 - [x] Run treeshrink
 - [x] Output branch lengths before and after treeshrink  
-- [ ] Run PARNAS
+- [x] Run PARNAS
 - [ ] Estimate with different parameters
 - [ ] Scale to ultrametric
 - [ ] Run treeshrink
 - [ ] Output branch lengths before and after treeshrink  
-
 
 ## Unscaled r207 tree  
 
@@ -87,8 +86,17 @@ No abnormally long branches with either threshold!
 
 ### PARNAS   
 
-The median genus is ~0.925, hopefully this should downsample so that one sequence represents each genus?:  
+**Genus**  
+The median RED of GTDB r207 genera is approximately ~0.925, hopefully this should downsample so that one sequence represents each genus?:  
 ```
-parnas -t red/gtdb_r207_bac120_unscaled.decorated.scaled.tree --cover --radius 0.15 --subtree red_parnas/red_scaled_parnas_r0.15.tree
+parnas -t red/gtdb_r207_bac120_unscaled.decorated.scaled.tree --cover --radius 0.15 --subtree red_parnas/red_r015.tree
 ```
- 
+
+20,571 taxa retained!
+
+**Family**  
+Median RED of families are ~0.76. RED<0.7 should give a single representative for > 85%ish of families. The rest are multiple species per family and like ~5% reps for orders:  
+
+```
+parnas -t red/gtdb_r207_bac120_unscaled.decorated.scaled.tree --cover --radius 0.3 --subtree red_parnas/red_r03.tree
+```
