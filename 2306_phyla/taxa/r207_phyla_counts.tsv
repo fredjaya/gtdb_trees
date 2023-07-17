@@ -1,4 +1,4 @@
-Index	Group	Taxa	Tree length	Taxa removed	Proportion of taxa removed	Shrunk tree length	Tree length difference	Proportion of tree length difference	QNew fits locus best (/20)	Train	Comment
+Index	Group	Taxa	Tree length	Taxa removed	Proportion of taxa removed	Shrunk tree length	Tree length difference	Proportion of tree length difference	QNew fits locus best (/20)	Trained	Comment
 1	p__Proteobacteria	17350	1329.95282000001	20	0.00115273775216138	1320.07831000001	9.8745100000001	0.00742470699073372			
 2	p__Proteobacteria; c__Gammaproteobacteria	9582									Split
 3	p__Proteobacteria; c__Alphaproteobacteria	7684									Split
@@ -51,14 +51,14 @@ Index	Group	Taxa	Tree length	Taxa removed	Proportion of taxa removed	Shrunk tree
 50	p__Armatimonadota; c__Chthonomonadetes	14									
 51	p__Armatimonadota; c__Aramatimonadia	13									
 52	p__Armatimonadota; c__UBA5377	13									
-53	p__Synergistota	132	18.89343	2	0.0151515151515152	18.32155	0.57188	0.0302687230428779			
+53	p__Synergistota	132	18.89343	2	0.0151515151515152	18.32155	0.57188	0.0302687230428779		Done	
 54	p__Synergistota; c__Synergistia	129									
 55	p__Synergistota; c__Sumerlaeia	19									
 56	p__Firmicutes_G	131	24.00729	0	0	24.00729	0	0			
 57	p__Firmicutes_G; c__Limnochordia	70									
 58	p__Firmicutes_G; c__SHA-98	26									
 59	p__Firmicutes_G; c__UBA4882	23									
-60	p__Fibrobacterota	120	15.82382	0	0	15.82382	0	0			
+60	p__Fibrobacterota	120	15.82382	0	0	15.82382	0	0		Done	
 61	p__Fibrobacterota; c__Fibrobacteria	88									
 62	p__Fibrobacterota; c__Chitinivibrionia	29									
 63	p__Firmicutes_D	104	16.84198	0	0	16.84198	0	0		Done	
@@ -70,18 +70,18 @@ Index	Group	Taxa	Tree length	Taxa removed	Proportion of taxa removed	Shrunk tree
 69	p__Eremiobacterota	81	14.90565	0	0	14.90565	0	0		Done	
 70	p__Eremiobacterota; c__Eremiobacteria	60									
 71	p__Eremiobacterota; c__Xenobia	17									
-72	p__WOR-3	77	25.11325	1	0.012987012987013	24.96154	0.151710000000008	0.00604103411545732			
+72	p__WOR-3	77	25.11325	1	0.012987012987013	24.96154	0.151710000000008	0.00604103411545732		Done	
 73	p__WOR-3; c__WOR-3	32									
 74	p__WOR-3; c__Hydrothermia	22									
 75	p__Aquificota	76	11.15273	0	0	11.15273	0	0		Done (pre-nf)	
 76	p__Aquificota; c__Aquificae	63									
 77	p__Aquificota; c__Desulfurobacteriia	13									
 78	p__Methylomirabilota	76	9.30321	0	0	9.30321	0	0		Done	
-79	p__Myxococcota_A	72	19.0142	0	0	19.0142	0	0			
-80	p__Desulfobacterota_B	66	11.80948	0	0	11.80948	0	0			
-81	p__Firmicutes_E	65	15.5766	0	0	15.5766	0	0			
-82	p__Dependentiae	61	20.70232	0	0	20.70232	0	0			
-83	p__Cloacimonadota	60	12.10927	0	0	12.10927	0	0			
+79	p__Myxococcota_A	72	19.0142	0	0	19.0142	0	0		Done	
+80	p__Desulfobacterota_B	66	11.80948	0	0	11.80948	0	0		Done	
+81	p__Firmicutes_E	65	15.5766	0	0	15.5766	0	0		Done	
+82	p__Dependentiae	61	20.70232	0	0	20.70232	0	0		Done	
+83	p__Cloacimonadota	60	12.10927	0	0	12.10927	0	0		Done	
 84	p__Nitrospinota	60	11.89895	0	0	11.89895	0	0		Done	
 85	p__Margulisbacteria	54	18.52574	0	0	18.52574	0	0		Done	
 86	p__Firmicutes_F	49									
