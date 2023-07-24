@@ -9,7 +9,12 @@ First pass:
 - [x] Output branch lengths before and after treeshrink  
 - [x] Run PARNAS
 - [x] Estimate with different parameters
-- [ ] Estimate r207 RED-scaled matrices
+~~-[ ] Estimate r207 RED-scaled matrices~~ too much for Dayhoff  
+- [ ] Move RED-scaled genus to a new folder  
+- [ ] Make SLURM script  
+- [ ] Re-run RED-scaled genus with checkpoint and sbatch  
+- [ ] Subset molecular according to PD so k = {1000, 2500, 5000} 
+- [ ] Run estimation on k = 1000  
 
 Second pass:  
 - [ ] Make plots/tables on the downsampling per PARNAS threshold  

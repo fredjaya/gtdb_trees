@@ -4,14 +4,12 @@ Estimating phylum-specific matrices.
 
 ## To-do  
 
-First pass:  
-- [x] Prepare taxa lists for all phyla with >50 taxa  
-- [x] Prune reference tree for each phyla   
-- [x] Get branch lengths and total tree length  
-- [x] Run treeshrink on all phyla  
-- [x] ID phyla with shrunk trees  
-- [ ] Get branch lengths and total tree lengths for pruned phyla   
-- [ ] Identify resource usage vs. BIC across subsets of taxa in a big phyla  
+- [ ] Run the next 10 phyla < 1000 taxa
+- [ ] Save completed phyla from HPC to Dropbox  
+- [ ] Filter all phyla with > 1000 taxa according to PD  
+- [ ] Run the next 10 phyla < 1000 taxa
+- [ ] Run the 10 phyla > 1000 taxa (filtered)  
+- [ ] Run tests/sanity checks  
 
 ## Taxa lists  
 `taxa/ge_50.phyla` - All phyla with 50 or more taxa.  
