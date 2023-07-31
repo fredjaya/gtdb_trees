@@ -28,7 +28,7 @@ index	group	pruned_taxa	pruned_tree_length	shrunk_taxa	shrunk_taxa_removed	shrun
 27	p__Armatimonadota	139	37.31529	139	0	0	37.31529	0	0	37.31529			Done				
 28	p__Synergistota	132	18.89343	130	2	0.015151515	18.32155	0.57188	0.030268723	18.32155	2303_nf/2307_phyla_smallest	90/b74cf9	1d 5h 20m 16s	789.30%	2.6 GB		
 29	p__Firmicutes_G	131	24.00729	131	0	0	24.00729	0	0	24.00729	2304_nf/2307_phyla_smallest	51/25fb07	2d 4h 33m 33s	589.10%	2.8 GB		
-30	p__Fibrobacterota	120	15.82382	120	0	0	15.82382	0	0	15.82382	2305_nf/2307_phyla_smallest	d9/def616	3d 18m 35s 	472.20%	2.6 GB		
+30	p__Fibrobacterota	120	15.82382	120	0	0	15.82382	0	0	15.82382	2305_nf/2307_phyla_smallest	d9/def616	3d 18m 35s	472.20%	2.6 GB		
 31	p__Firmicutes_D	104	16.84198	104	0	0	16.84198	0	0	16.84198			Done				
 32	p__Fusobacteriota; c__Fusobacteriia	96	9.21386	95	1	0.010416667	8.50878	0.70508	0.076523846	8.50878							
 33	p__Dormibacterota; c__Dormibacteria	88	9.68193	87	1	0.011363636	9.46854	0.21339	0.022040027	9.46854							

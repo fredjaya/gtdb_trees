@@ -1,0 +1,62 @@
+---
+title: "Phyla resource usage"
+author: "Fred Jaya"
+output: 
+  html_document:
+    theme: spacelab
+    code_folding: hide
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = T,
+  warning = F,
+  fig.width = 8,
+  fig.path = "")
+
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(viridis)
+library(stringr)
+
+theme_fj <- theme_minimal() +
+  theme(panel.border = element_rect(fill = NA, color = 'grey'),
+        panel.grid = element_blank(), 
+        text = element_text(size = 18))
+
+convert_to_seconds <- function(x) {
+  days <- as.numeric(str_extract(x, "\\d+(?=d)")) %>% replace_na(0)
+  hours <- as.numeric(str_extract(x, "\\d+(?=h)")) %>% replace_na(0)
+  minutes <- as.numeric(str_extract(x, "\\d+(?=m)")) %>% replace_na(0)
+  seconds <- as.numeric(str_extract(x, "\\d+(?=s)")) %>% replace_na(0)
+  
+  total_seconds <- days*86400 + hours*3600 + minutes*60 + seconds
+  return(total_seconds)
+}
+
+```
+
+```{r}
+main <- 
+  readr::read_delim("~/GitHub/gtdb_trees/2306_phyla/taxa/r207_phyla_counts.tsv", delim = "\t", )
+
+cpu <- 
+  main %>%
+  filter(!is.na(batch)) %>%
+  select(group, shrunk_taxa, cpu_time, `cpu_%`, peak_rss) %>%
+  mutate(cpu_seconds = sapply(cpu_time, convert_to_seconds)) %>%
+  mutate(cpu_hours = cpu_seconds / 60 / 60) %>%
+  mutate(peak_rss = as.numeric(gsub(" GB", "", peak_rss)))
+```
+
+```{r resource_usage}
+cpu %>%
+  ggplot(aes(x = shrunk_taxa, y = cpu_hours, size = peak_rss)) +
+  geom_point() +
+  #geom_label(aes(label = group)) +
+  theme_fj
+```
+
+
+
