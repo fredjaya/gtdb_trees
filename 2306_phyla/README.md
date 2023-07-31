@@ -4,7 +4,7 @@ Estimating phylum-specific matrices.
 
 ## To-do  
 
-- [ ] Run the next 10 phyla < 1000 taxa
+- [x] Run the next 10 phyla < 1000 taxa
 - [ ] Save completed phyla from HPC to Dropbox  
 - [ ] Filter all phyla with > 1000 taxa according to PD  
 - [ ] Run the next 10 phyla < 1000 taxa
@@ -92,3 +92,12 @@ Create taxa list of shrunk taxa:
 ```
 for i in *; do echo $i; grep -oP "G\d+" $i/pruned_treeshrink/output.tree > $i/`basename $i`_treeshrunk.taxa; cp $i/`basename $i`_treeshrunk.taxa ../taxa/treeshrunk/; done
 ```  
+
+## Phylogenetic distant pruning  
+
+For taxa > 1000, choose the 1000 most phylogenetically distant taxa:  
+```
+for i in `cat ~/GitHub/gtdb_trees/2306_phyla/taxa/ge_1000.phyla`; do 
+	iqtree2 -te ~/Dropbox/gtdb/02_working/2306_phyla/${i}/pruned_treeshrink/output.tree -k 1000 -pre $i;
+done  
+```
