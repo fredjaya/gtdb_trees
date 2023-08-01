@@ -1,0 +1,185 @@
+---
+title: "Phylum plots"
+author: "Fred Jaya"
+output: 
+   html_document:
+     theme: spacelab
+     code_folding: hide
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = T,
+  warning = F, 
+  dev = 'png',
+  fig.width = 8,
+  fig.height = 4,
+  fig.path = "")
+
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(scales)
+library(ggfortify)
+library(ggrepel)
+#library(plotly)
+library(sem)
+library(tibble)
+library(ape)
+
+#options(digits = 22) # For BIC precision
+options(digits = 8)
+
+aa <- c("A", "R", "N", "D", "C", "Q", "E", "G", "H", "I", 
+        "L", "K", "M", "F", "P", "S", "T", "W", "Y", "V")
+
+read_qmatrix <- function(path_to_qmatrix, iteration) {
+  
+  q <- read.table(path_to_qmatrix, fill = T, col.names = aa) %>%
+    rbind(NA*20, .) %>%
+    mutate(A2 = c(aa, "Freq")) %>%
+    pivot_longer(cols = A:V, names_to = "A1", values_to = "Rate") %>%
+    filter(!is.na(Rate)) %>%
+    mutate(Iteration = iteration) %>%
+    add_row(A2 = "A", A1 = "V", Rate = NA, Iteration = iteration) %>%
+    mutate(A1 = factor(A1, levels = (c(aa,"Freq")))) %>%
+    mutate(A2 = factor(A2, levels = rev(c(aa, "Freq"))))
+}
+
+read_q_pca <- function(filename) {
+  # Rob's code for qMaker paper
+  # read lower-diagonal matrix
+  Q = readMoments(filename, diag=F)
+  pi = Q[nrow(Q), 1:(ncol(Q)-1)]
+  Q = Q[1:(nrow(Q)-1), 1:(ncol(Q)-1)]
+  # make Q symmetric
+  Q = (Q + t(Q))
+  diag(Q) <- 0
+  # normalise the matrix
+  Q=(Q/sum(Q))*100.0
+  return(rbind(Q, pi))
+}
+
+theme_fj <- 
+  theme_minimal() +
+  theme(text=element_text(size=18))
+```
+
+```{r pca_prep}
+# Read in pre-exsting Q-matrices
+q_dir = "~/GitHub/gtdb_trees/2306_phyla/Q"
+filenames <- list.files(path = q_dir, full.names = TRUE)
+
+allQ = NULL
+allF = NULL
+
+for (f in filenames) {
+  print(f)
+  Q_pi = read_q_pca(f)
+  Q = Q_pi[1:(nrow(Q_pi)-1),]
+  pi = Q_pi[nrow(Q_pi),]
+  allQ = rbind(allQ, Q[lower.tri(Q)])
+  allF = rbind(allF, pi)
+}
+
+rownames(allQ) <- c(gsub(".*\\/", "", filenames))
+rownames(allF) <- c(gsub(".*\\/", "", filenames))
+
+general = c("DAYHOFF", "VT", "PMB", "BLOSUM62", "DCMUT", "JTTDCMUT", "POISSON", 
+            "Q.PFAM", "Q.LG", "Q.PFAM_GB", "WAG", "JTT", "LG")
+#general_best = c("WAG", "JTT", "LG")
+mitochondrial = c("MTREV", "MTMAM", "MTART", "MTZOA", "MTMET" , "MTVER" , "MTINV")
+chloroplast = c("CPREV")
+viral = c("HIVB", "HIVW", "FLU", "RTREV", "FLAVI")
+clade = c("Q.BIRD", "Q.INSECT", "Q.MAMMAL", "Q.PLANT", "Q.YEAST")
+q_new = c("p__Cloacimonadota_i2.Q", "p__Deinococcota_i2.Q", "p__Dependentiae_i3.Q", "p__Desulfobacterota_B_i2.Q", "p__Eremiobacterota_i3.Q", "p__Fibrobacterota_i3.Q", "p__Firmicutes_D_i2.Q", "p__Firmicutes_E_i3.Q", "p__Firmicutes_G_i2.Q", "p__Margulisbacteria_i3.Q", "p__Methylomirabilota_i2.Q", "p__Myxococota_A_i2.Q", "p__Nitrospinota_i3.Q", "p__Synergistota_i2.Q", "p__WOR-3_i4.Q")
+
+allQ2 <- 
+  as.data.frame(allQ) %>% 
+  rownames_to_column(var = "Model") %>% 
+  mutate(category = case_when(
+    Model %in% general ~ "general",
+    #Model %in% general_best ~ "general_best",
+    Model %in% mitochondrial ~ "mitochondrial",
+    Model %in% chloroplast ~ "chloroplast",
+    Model %in% viral ~ "viral",
+    Model %in% clade ~ "clade",
+    Model %in% q_new ~ "q_new"
+  ))
+
+allF2 <- 
+  as.data.frame(allF) %>% 
+  rownames_to_column(var = "Model") %>% 
+  mutate(category = case_when(
+    Model %in% general ~ "general",
+    #Model %in% general_best ~ "general_best",
+    Model %in% mitochondrial ~ "mitochondrial",
+    Model %in% chloroplast ~ "chloroplast",
+    Model %in% viral ~ "viral",
+    Model %in% clade ~ "clade",
+    Model %in% q_new ~ "q_new"
+  ))
+```
+
+```{r, fig.height=5, eval=F}
+# This code has variable label sizes, bit cluttered with many
+autoplot(prcomp(allQ), data=allQ2, main="PCA of new and existing exchangeability rates", colour = "category") +
+  geom_text_repel(aes(label = Model, color=category), max.overlaps = Inf,
+                  size = ifelse(allQ2$category == "q_new", 6, 3)) +
+  theme_fj
+
+autoplot(prcomp(allF), data=allF2, main="PCA of new and existing frequencies", colour = "category") +
+  geom_text_repel(aes(label = Model, color=category), max.overlaps = Inf,
+                  size = ifelse(allF2$category == "q_new", 6, 3)) +
+  theme_fj
+```
+
+```{r q_pca, fig.height=5}
+# This code has variable label sizes, bit cluttered with many
+autoplot(prcomp(allQ), data=allQ2, main="PCA of new and existing exchangeability rates", colour = "category") +
+  geom_text_repel(aes(label = Model, color=category), max.overlaps = Inf) +
+  theme_minimal()
+```
+
+```{r f_pca, fig.height = 5}
+autoplot(prcomp(allF), data=allF2, main="PCA of new and existing frequencies", colour = "category") +
+  geom_text_repel(aes(label = Model, color=category), max.overlaps = Inf) +
+  theme_minimal()
+```
+
+```{r f_box, fig.height=10}
+colnames(allF2) <- c("Model", aa, "category")
+
+allF2_long <- 
+  pivot_longer(allF2, cols = A:V) %>%
+  mutate(Group = if_else(category == "q_new", "New", "Existing"))
+
+allF2_long %>%
+  ggplot(aes(x = name, y = value, fill = category, colour = category)) +
+  geom_boxplot(size=1, alpha = 0.2) +
+  #geom_point(size = 1, position = position_dodge(1), alpha = 0.7) +
+  coord_flip() +
+  labs(x = "Amino acid", y = "Frequencies", 
+       title = "Frequencies of new and existing Q-matrices") +
+  theme_minimal()
+```
+
+```{r q_box, fig.height=24}
+# Don't know if this actually works, but it's for the pairwise REs
+all_pairs <- combn(aa, 2)
+REs <- apply(all_pairs, 2, paste, collapse = "-")
+colnames(allQ2) <-  c("Model", REs, "category")
+
+allQ2_long <- 
+  pivot_longer(allQ2, cols = -c("category","Model")) %>%
+  mutate(Group = if_else(category == "q_new", "New", "Existing"))
+
+allQ2_long %>%
+  filter(Model != "POISSON") %>%
+  ggplot(aes(x = name, y = value, fill = Group, colour = Group)) +
+  geom_boxplot(size=1, alpha = 0.2) +
+  #geom_point(size = 1, position = position_dodge(1), alpha = 0.7) +
+  coord_flip() +
+  labs(x = "Amino acid", y = "Relative exchangeabilities") +
+  theme_minimal()
+```
