@@ -38,6 +38,6 @@ rm -r AliStat-1.14/
 nextflow run main.nf \
 	--loci "/mnt/data/dayhoff/home/u1070770/gtdb/00_data/r207_loci/*" \
 	--taxa_list "/mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/test_taxa/*" \
-	--n_threads 2 \ # For some reason IQ-TREE only detects 2 threads when sbatched
-	-profile slurm
+	--n_threads 2 \ # For some reason IQ-TREE only detects a minimum of 2 threads when sbatched \
+	--executor slurm
 ```
