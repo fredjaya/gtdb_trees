@@ -1,4 +1,4 @@
-index	group	pruned_taxa	pruned_tree_length	shrunk_taxa	shrunk_taxa_removed	shrunk_taxa_removed_prop	shrunk_tree_length	pruned_tree_length - shrunk_tree_length	(pruned_tree_length - shrunk_tree_length)/pruned_tree_length	pd1000_tree_length	batch	hash	cpu_time	cpu_%	peak_rss	GitHub?	QNew fits locus best (/20)
+index	group	pruned_taxa	pruned_tree_length	shrunk_taxa	shrunk_taxa_removed	shrunk_taxa_removed_prop	shrunk_tree_length	pruned_tree_length - shrunk_tree_length	(pruned_tree_length - shrunk_tree_length)/pruned_tree_length	pd1000_tree_length	batch	hash	cpu_time	cpu_%	peak_rss_GB	GitHub?	QNew fits locus best (/20)
 1	p__Proteobacteria	17350	1329.95282	17330	20	0.001152738	1320.07831	9.87451	0.007424707	414.013							
 2	p__Bacteroidota	8588	741.10793	8575	13	0.00151374	738.08999	3.01794	0.0040722	306.855							
 3	p__Firmicutes_A	8243	906.84818	8232	11	0.001334466	905.22479	1.62339	0.001790145	365.187							
@@ -14,36 +14,36 @@ index	group	pruned_taxa	pruned_tree_length	shrunk_taxa	shrunk_taxa_removed	shrun
 13	p__Spirochaetota	695	104.82359	692	3	0.004316547	103.22547	1.59812	0.015245805	103.22547	2307_medium						
 14	p__Campylobacterota	550	58.6646	550	0	0	58.6646	0	0	58.6646	2307_medium						
 15	p__Firmicutes_C	395	30.88888	395	0	0	30.88888	0	0	30.88888	2307_phyla_smaller						
-16	p__Myxococcota	393	101.39901	391	2	0.005089059	100.12949	1.26952	0.012520043	100.12949	2307_phyla_smaller						
+16	p__Myxococcota	393	101.39901	391	2	0.005089059	100.12949	1.26952	0.012520043	100.12949	2307_phyla_smaller	8a/5c9570	14d 14h 28m 41s	574.00	9.2	Y	
 17	p__Firmicutes_B	323	48.8757	322	1	0.003095975	48.78731	0.08839	0.001808465	48.78731	2307_phyla_smaller						
-18	p__Nitrospirota	314	42.81182	309	5	0.015923567	41.01183	1.79999	0.04204423	41.01183	2307_phyla_smaller	a6/93a5a4	12d 20h 45m 17s	397.80%	6.4 GB	Y	
-19	p__Omnitrophota	282	73.80699	280	2	0.007092199	72.99819	0.8088	0.010958312	72.99819	2307_phyla_smaller	10/0a20e0	11d 19h 28m 3s	518.80%	5.6 GB	Y	
-20	p__Gemmatimonadota	237	34.88107	236	1	0.004219409	34.23468	0.64639	0.018531255	34.23468	2307_phyla_smaller	fb/540fd1	10d 19h 4m 21s	499.50%	4.7 GB	Y	
-21	p__Desulfobacterota_I	236	29.03404	236	0	0	29.03404	0	0	29.03404	2307_phyla_smaller	0a/5d91a9	10d 23h 24m 19s	491.50%	4.8 GB	Y	
-22	p__Bdellovibrionota	224	62.90388	223	1	0.004464286	62.24687	0.65701	0.010444666	62.24687	2307_phyla_smaller	72/92b592	6d 14h 2m 28s	788.10%	5.4 GB	Y	
-23	p__Elusimicrobiota	189	34.77258	187	2	0.010582011	34.27981	0.49277	0.014171223	34.27981	2307_phyla_smaller	2c/915733	6d 20h 5m 28s	385.90%	3.9 GB	Y	
-24	p__Marinisomatota	186	32.7935	186	0	0	32.7935	0	0	32.7935	2307_phyla_smaller	33/b1b8ce	8d 11h 59m 5s	428.00%	3.7 GB	Y	
+18	p__Nitrospirota	314	42.81182	309	5	0.015923567	41.01183	1.79999	0.04204423	41.01183	2307_phyla_smaller	a6/93a5a4	12d 20h 45m 17s	397.80	6.4	Y	
+19	p__Omnitrophota	282	73.80699	280	2	0.007092199	72.99819	0.8088	0.010958312	72.99819	2307_phyla_smaller	10/0a20e0	11d 19h 28m 3s	518.80	5.6	Y	
+20	p__Gemmatimonadota	237	34.88107	236	1	0.004219409	34.23468	0.64639	0.018531255	34.23468	2307_phyla_smaller	fb/540fd1	10d 19h 4m 21s	499.50	4.7	Y	
+21	p__Desulfobacterota_I	236	29.03404	236	0	0	29.03404	0	0	29.03404	2307_phyla_smaller	0a/5d91a9	10d 23h 24m 19s	491.50	4.8	Y	
+22	p__Bdellovibrionota	224	62.90388	223	1	0.004464286	62.24687	0.65701	0.010444666	62.24687	2307_phyla_smaller	72/92b592	6d 14h 2m 28s	788.10	5.4	Y	
+23	p__Elusimicrobiota	189	34.77258	187	2	0.010582011	34.27981	0.49277	0.014171223	34.27981	2307_phyla_smaller	2c/915733	6d 20h 5m 28s	385.90	3.9	Y	
+24	p__Marinisomatota	186	32.7935	186	0	0	32.7935	0	0	32.7935	2307_phyla_smaller	33/b1b8ce	8d 11h 59m 5s	428.00	3.7	Y	
 25	p__Chlamydiota; c__Chlamydiia	171	40.97016	170	1	0.005847953	40.153	0.81716	0.019945248	40.153							
-26	p__Deinococcota; c__Deinococci	144	13.16877	142	2	0.013888889	12.97873	0.19004	0.014431112	12.97873	nf/2306_phyla_first_randoms	e0/74a6c1	4d 7h 18m 18s	361.90%	2.8 GB	Y	
-27	p__Armatimonadota	139	37.31529	139	0	0	37.31529	0	0	37.31529	nf/2306_phyla_first_randoms	4c/908464	4d 5h 26m 55s	396.20%	2.9 GB	Y	
-28	p__Synergistota	132	18.89343	130	2	0.015151515	18.32155	0.57188	0.030268723	18.32155	2303_nf/2307_phyla_smallest	90/b74cf9	1d 5h 20m 16s	789.30%	2.6 GB	Y	
-29	p__Firmicutes_G	131	24.00729	131	0	0	24.00729	0	0	24.00729	2303_nf/2307_phyla_smallest	51/25fb07	2d 4h 33m 33s	589.10%	2.8 GB	Y	
-30	p__Fibrobacterota	120	15.82382	120	0	0	15.82382	0	0	15.82382	2303_nf/2307_phyla_smallest	d9/def616	3d 18m 35s	472.20%	2.6 GB	Y	
-31	p__Firmicutes_D	104	16.84198	104	0	0	16.84198	0	0	16.84198	nf/2306_phyla_first_randoms	3e/11c878	1d 22h 4m 19s	397.80%	2 GB	Y	
+26	p__Deinococcota; c__Deinococci	144	13.16877	142	2	0.013888889	12.97873	0.19004	0.014431112	12.97873	nf/2306_phyla_first_randoms	e0/74a6c1	4d 7h 18m 18s	361.90	2.8	Y	
+27	p__Armatimonadota	139	37.31529	139	0	0	37.31529	0	0	37.31529	nf/2306_phyla_first_randoms	4c/908464	4d 5h 26m 55s	396.20	2.9	Y	
+28	p__Synergistota	132	18.89343	130	2	0.015151515	18.32155	0.57188	0.030268723	18.32155	2303_nf/2307_phyla_smallest	90/b74cf9	1d 5h 20m 16s	789.30	2.6	Y	
+29	p__Firmicutes_G	131	24.00729	131	0	0	24.00729	0	0	24.00729	2303_nf/2307_phyla_smallest	51/25fb07	2d 4h 33m 33s	589.10	2.8	Y	
+30	p__Fibrobacterota	120	15.82382	120	0	0	15.82382	0	0	15.82382	2303_nf/2307_phyla_smallest	d9/def616	3d 18m 35s	472.20	2.6	Y	
+31	p__Firmicutes_D	104	16.84198	104	0	0	16.84198	0	0	16.84198	nf/2306_phyla_first_randoms	3e/11c878	1d 22h 4m 19s	397.80	2	Y	
 32	p__Fusobacteriota; c__Fusobacteriia	96	9.21386	95	1	0.010416667	8.50878	0.70508	0.076523846	8.50878							
 33	p__Dormibacterota; c__Dormibacteria	88	9.68193	87	1	0.011363636	9.46854	0.21339	0.022040027	9.46854							
 34	p__Thermotogota; c__Thermotogae	83	14.00267	83	0	0	14.00267	0	0	14.00267							
-35	p__Eremiobacterota	81	14.90565	81	0	0	14.90565	0	0	14.90565	2303_nf/2307_phyla_smallest	12/e2ffea	1d 27m 30s	791.80%	1.8 GB	Y	
-36	p__WOR-3	77	25.11325	76	1	0.012987013	24.96154	0.15171	0.006041034	24.96154	2303_nf/2307_phyla_smallest	be/2b3070	2d 3h 15m 35s	495.90%	1.8 GB	Y	
+35	p__Eremiobacterota	81	14.90565	81	0	0	14.90565	0	0	14.90565	2303_nf/2307_phyla_smallest	12/e2ffea	1d 27m 30s	791.80	1.8	Y	
+36	p__WOR-3	77	25.11325	76	1	0.012987013	24.96154	0.15171	0.006041034	24.96154	2303_nf/2307_phyla_smallest	be/2b3070	2d 3h 15m 35s	495.90	1.8	Y	
 37	p__Aquificota	76	11.15273	76	0	0	11.15273	0	0	11.15273	pre-nf						
-38	p__Methylomirabilota	76	9.30321	76	0	0	9.30321	0	0	9.30321	nf/2306_phyla_first_randoms	48/5676db	1d 13h 18m 32s	398.30%	1.4 GB	Y	
+38	p__Methylomirabilota	76	9.30321	76	0	0	9.30321	0	0	9.30321	nf/2306_phyla_first_randoms	48/5676db	1d 13h 18m 32s	398.30	1.4	Y	
 39	p__Myxococcota_A	72	19.0142	72	0	0	19.0142	0	0	19.0142						Y	
-40	p__Desulfobacterota_B	66	11.80948	66	0	0	11.80948	0	0	11.80948	2303_nf/2307_phyla_smallest	69/28ad83	13h 5m 15s	792.40%	1.5 GB	Y	
-41	p__Firmicutes_E	65	15.5766	65	0	0	15.5766	0	0	15.5766	2303_nf/2307_phyla_smallest	a1/d1da0b	1d 3h 58m 35s	794.80%	1.6 GB	Y	
-42	p__Dependentiae	61	20.70232	61	0	0	20.70232	0	0	20.70232	2303_nf/2307_phyla_smallest	ff/99ba1e	2d 9h 38m 16s	395.50%	1.5 GB	Y	
-43	p__Cloacimonadota	60	12.10927	60	0	0	12.10927	0	0	12.10927	2303_nf/2307_phyla_smallest	f3/fa1605	1d 8h 52m 15s	378.00%	1.4 GB	Y	
-44	p__Nitrospinota	60	11.89895	60	0	0	11.89895	0	0	11.89895	2303_nf/2307_phyla_smallest	8f/33ba77	1d 13h 27m 25s	385.30%	1.7 GB	Y	
-45	p__Margulisbacteria	54	18.52574	54	0	0	18.52574	0	0	18.52574	nf/2306_phyla_first_randoms	33/00c92f	2d 21h 26m 58s	162.60%	1.1 GB	Y	
+40	p__Desulfobacterota_B	66	11.80948	66	0	0	11.80948	0	0	11.80948	2303_nf/2307_phyla_smallest	69/28ad83	13h 5m 15s	792.40	1.5	Y	
+41	p__Firmicutes_E	65	15.5766	65	0	0	15.5766	0	0	15.5766	2303_nf/2307_phyla_smallest	a1/d1da0b	1d 3h 58m 35s	794.80	1.6	Y	
+42	p__Dependentiae	61	20.70232	61	0	0	20.70232	0	0	20.70232	2303_nf/2307_phyla_smallest	ff/99ba1e	2d 9h 38m 16s	395.50	1.5	Y	
+43	p__Cloacimonadota	60	12.10927	60	0	0	12.10927	0	0	12.10927	2303_nf/2307_phyla_smallest	f3/fa1605	1d 8h 52m 15s	378.00	1.4	Y	
+44	p__Nitrospinota	60	11.89895	60	0	0	11.89895	0	0	11.89895	2303_nf/2307_phyla_smallest	8f/33ba77	1d 13h 27m 25s	385.30	1.7	Y	
+45	p__Margulisbacteria	54	18.52574	54	0	0	18.52574	0	0	18.52574	nf/2306_phyla_first_randoms	33/00c92f	2d 21h 26m 58s	162.60	1.1	Y	
 46	p__Firmicutes_F	49															
 47	p__Zixibacteria	47															
 48	p__Bipolaricaulota	46															

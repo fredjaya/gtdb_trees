@@ -5,71 +5,23 @@ Estimating global bacterial matrices.
 ## To-do  
 
 First pass:  
-- [x] Run treeshrink
-- [x] Output branch lengths before and after treeshrink  
-- [x] Run PARNAS
-- [x] Estimate with different parameters
-~~-[ ] Estimate r207 RED-scaled matrices~~ too much for Dayhoff  
-- [ ] Move RED-scaled genus to a new folder  
-- [ ] Make SLURM script  
-- [ ] Re-run RED-scaled genus with checkpoint and sbatch  
-- [ ] Subset molecular according to PD so k = {1000, 2500, 5000} 
-- [ ] Run estimation on k = 1000  
+- [x] Run treeshrink on r207 tree  
+- [ ] Subset shrunk tree according to PD so $k = {25, 50, 100, 250, 500, 1000, 2500, 5000}$  
+- [x] Script for results diagnostics  
+- [ ] Implement Rscript in pipeline to automate diagnostics  
+- [ ] Output text-based diagnostics (for master spreadsheet)  
+- [ ] Run/test on $k=25$ unconstrained (U)  
+- [ ] Run on other $k=25$ constrained (C)  
+- [ ] Compare $k=25$ U/C results  
+- [ ] Run $k={100,500}$ U and C  
+- [ ] Can we determine whether U or C runs are better?  
 
 Second pass:  
-- [ ] Make plots/tables on the downsampling per PARNAS threshold  
-- [ ] Visualise downsampled trees  
-- [ ] Look at unscaled estimations  
-- [ ] Look at ultrametric estimations  
-
-## Unscaled r207 tree  
-
-### Branch lengths  
-```
-../scripts/tree_length.py ../data/trees/gtdb_r207_bac120_unscaled.decorated.tree
-```  
-Total tree length: 6908.397739999869  
-Distribution of branch lengths: `branch_length_histogram.png`  
-
-## r207 molecular/unscaled
-
-### Removing long branches with treeshrink
-
-#### alpha = 0.05
-```
-run_treeshrink.py -t ../data/trees/gtdb_r207_bac120_unscaled.decorated.tree
-```  
-
-Check number of taxa dropped:
-```
-grep -oP "\t" gtdb_r207_bac120_unscaled.decorated_treeshrink/output.txt | wc -l
-```  
-
-19 dropped. Check which species:
-```
-for i in `sed 's/\t\/\n/g' gtdb_r207_bac120_unscaled.decorated_treeshrink/output.txt`; do grep $i ~/Dropbox/gtdb/01_data/gtdb_r207_bac120_curation_taxonomy_tabbed.tsv; done > dropped_spp.txt
-```  
-
-| Order                                                            | Count |
-| ---------------------------------------------------------------- | ----- |
-| p__Firmicutes; c__Bacilli; o__Mycoplasmatales                    | 16    |
-| p__Proteobacteria; c__Alphaproteobacteria; o__Rickettsiales      | 2     |
-| p__Proteobacteria  c__Gammaproteobacteria  o__Enterobacterales_A | 1     |  
-
-Total tree length: 6899.0687299998635
-
-#### alpha = 0.10
-
-52 dropped:
-
-| Order/Family                                                                              | Count |
-| ----------------------------------------------------------------------------------------- | ----- |
-| p__Proteobacteria; c__Alphaproteobacteria; o__Rhodobacterales; f__Rhodobacteraceae        | 22    |
-| p__Proteobacteria; c__Alphaproteobacteria; o__Rickettsiales                               | 2     |
-| p__Proteobacteria; c__Gammaproteobacteria; o__Enterobacterales_A; f__Enterobacteriaceae_A | 3     |
-| p__Firmicutes; c__Bacilli; o__Mycoplasmatales                                             | 25    |
+- [ ] Depending on results, modify pipeline so either U or C are run, or both simultaneously  
 
 ### Downsampling with PARNAS  
+
+**DISCONTINUED**  
 
 ## r207 RED-scaled  
 
@@ -133,4 +85,51 @@ nextflow run ~/GitHub/gtdb_trees/nf/main.nf \
 	--executor slurm
 ```  
 
+
+## Unscaled r207 tree  
+
+### Branch lengths  
+```
+../scripts/tree_length.py ../data/trees/gtdb_r207_bac120_unscaled.decorated.tree
+```  
+Total tree length: 6908.397739999869  
+Distribution of branch lengths: `branch_length_histogram.png`  
+
+## r207 molecular/unscaled
+
+### Removing long branches with treeshrink
+
+#### alpha = 0.05
+```
+run_treeshrink.py -t ../data/trees/gtdb_r207_bac120_unscaled.decorated.tree
+```  
+
+Check number of taxa dropped:
+```
+grep -oP "\t" gtdb_r207_bac120_unscaled.decorated_treeshrink/output.txt | wc -l
+```  
+
+19 dropped. Check which species:
+```
+for i in `sed 's/\t\/\n/g' gtdb_r207_bac120_unscaled.decorated_treeshrink/output.txt`; do grep $i ~/Dropbox/gtdb/01_data/gtdb_r207_bac120_curation_taxonomy_tabbed.tsv; done > dropped_spp.txt
+```  
+
+| Order                                                            | Count |
+| ---------------------------------------------------------------- | ----- |
+| p__Firmicutes; c__Bacilli; o__Mycoplasmatales                    | 16    |
+| p__Proteobacteria; c__Alphaproteobacteria; o__Rickettsiales      | 2     |
+| p__Proteobacteria  c__Gammaproteobacteria  o__Enterobacterales_A | 1     |  
+
+Total tree length: 6899.0687299998635
+
+#### alpha = 0.10
+
+52 dropped:
+
+| Order/Family                                                                              | Count |
+| ----------------------------------------------------------------------------------------- | ----- |
+| p__Proteobacteria; c__Alphaproteobacteria; o__Rhodobacterales; f__Rhodobacteraceae        | 22    |
+| p__Proteobacteria; c__Alphaproteobacteria; o__Rickettsiales                               | 2     |
+| p__Proteobacteria; c__Gammaproteobacteria; o__Enterobacterales_A; f__Enterobacteriaceae_A | 3     |
+| p__Firmicutes; c__Bacilli; o__Mycoplasmatales                                             | 25    |
 

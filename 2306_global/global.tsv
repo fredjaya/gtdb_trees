@@ -1,7 +1,15 @@
 Name/Step	Scaling	Taxa	Tree length
-unscaled	Molecular	62291	6908.397739999869
-unscaled_shrunk0.05	Molecular	62272	6899.0687299998635
-unscaled_shrunk0.10	Molecular	62239	6895.788289999865
-red	RED	62291	5036.834222551443
-red_shrunk0.05	RED	62291	5036.834222551443
-red_shrunk0.10	RED	62291	5036.834222551443
+unscaled	Molecular	62291	6908.39773999987
+unscaled_shrunk0.05	Molecular	62272	6899.06872999986
+unscaled_shrunk0.10	Molecular	62239	6895.78828999986
+red	RED	62291	5036.83422255144
+red_shrunk0.05	RED	62291	5036.83422255144
+red_shrunk0.10	RED	62291	5036.83422255144
+unscaled_shrunk0.05_pd25	Molecular	25	
+unscaled_shrunk0.05_pd50	Molecular	50	
+unscaled_shrunk0.05_pd100	Molecular	125	
+unscaled_shrunk0.05_pd250	Molecular	250	
+unscaled_shrunk0.05_pd500	Molecular	500	
+unscaled_shrunk0.05_pd1000	Molecular	1000	
+unscaled_shrunk0.05_pd2500	Molecular	2500	
+unscaled_shrunk0.05_pd5000	Molecular	5000	

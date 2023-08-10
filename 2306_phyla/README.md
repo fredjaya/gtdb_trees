@@ -5,9 +5,9 @@ Estimating phylum-specific matrices.
 ## To-do  
 
 - [x] Run the next 10 phyla < 1000 taxa
-- [ ] Save completed phyla from HPC to Dropbox  
-- [ ] Filter all phyla with > 1000 taxa according to PD  
-- [ ] Run the next 10 phyla < 1000 taxa
+- [x] Save completed phyla from HPC to Dropbox  
+- [x] Filter all phyla with > 1000 taxa according to PD  
+- [x] Run the next 10 phyla < 1000 taxa
 - [ ] Run the 10 phyla > 1000 taxa (filtered)  
 - [ ] Run tests/sanity checks  
 
