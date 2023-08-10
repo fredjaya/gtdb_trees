@@ -6,18 +6,18 @@ Estimating global bacterial matrices.
 
 First pass:  
 - [x] Run treeshrink on r207 tree  
-- [ ] Subset shrunk tree according to PD so $k = {25, 50, 100, 250, 500, 1000, 2500, 5000}$  
+- [x] Subset shrunk tree according to PD so $k = {25, 50, 100, 250, 500, 1000, 2500, 5000}$  
 - [x] Script for results diagnostics  
-- [ ] Implement Rscript in pipeline to automate diagnostics  
+- [ ] Add flags to determine running unconstrained (U), constrained (C) and/or
+existing (E)  
+- [ ] Run/test on $k=25$ U and E  
 - [ ] Output text-based diagnostics (for master spreadsheet)  
-- [ ] Run/test on $k=25$ unconstrained (U)  
-- [ ] Run on other $k=25$ constrained (C)  
-- [ ] Compare $k=25$ U/C results  
-- [ ] Run $k={100,500}$ U and C  
+- [ ] Implement Rscript in pipeline to automate diagnostics  
+- [ ] Run $k=25$ C
+- [ ] Compare $k=25$ U/C/E results  
+- [ ] Run $k={100,500}$ U/C/E  
 - [ ] Can we determine whether U or C runs are better?  
-
-Second pass:  
-- [ ] Depending on results, modify pipeline so either U or C are run, or both simultaneously  
+- [ ] Run other $k$ U/C/E  
 
 ## Unscaled r207 tree  
 
