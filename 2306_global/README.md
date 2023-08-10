@@ -8,9 +8,10 @@ First pass:
 - [x] Run treeshrink on r207 tree  
 - [x] Subset shrunk tree according to PD so $k = {25, 50, 100, 250, 500, 1000, 2500, 5000}$  
 - [x] Script for results diagnostics  
-- [ ] Add flags to determine running unconstrained (U), constrained (C) and/or
+- [x] Add flags to determine running unconstrained (U), constrained (C) and/or
 existing (E)  
 - [ ] Run/test on $k=25$ U and E  
+- [ ] Concatenate training loci for constrained run 
 - [ ] Output text-based diagnostics (for master spreadsheet)  
 - [ ] Implement Rscript in pipeline to automate diagnostics  
 - [ ] Run $k=25$ C

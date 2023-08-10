@@ -3,6 +3,7 @@ nextflow.enable.dsl=2
 process subset_taxa {
 
     publishDir "${params.outdir}/${taxa_list.baseName}/00_subset_taxa/"
+    tag "${taxa_list.baseName}"
 
     input:
         tuple path(locus), path(taxa_list)
@@ -20,7 +21,8 @@ process subset_taxa {
 process alistat {
 
     publishDir "${params.outdir}/${taxa}/01_alistat/"
-    
+    tag "${taxa}"
+
     input:
         tuple path(locus_subtaxa), val(taxa)
 
@@ -37,6 +39,7 @@ process alistat {
 process cat_stats {
 
     publishDir "${params.outdir}/${taxa}/01_alistat/"
+    tag "${taxa}"
 
     input:
         tuple path(alistats), val(taxa)
@@ -54,6 +57,7 @@ process cat_stats {
 process id_train_test_loci {
 
     publishDir "${params.outdir}/${taxa}/02_loci_assignment", saveAs: { filename -> "${taxa}_${filename}"}
+    tag "${taxa}"
 
     input:
         tuple path(combined_stats), val(taxa), val(n_training_loci)
@@ -70,6 +74,8 @@ process id_train_test_loci {
 }
 
 process arrange_loci {
+
+    tag "${taxa}"
 
     input:
         tuple path(training_loci), path(testing_loci), val(taxa)
@@ -96,10 +102,11 @@ process arrange_loci {
 
 }
 
-process estimate_Q {
+process estimate_Q_unconstrained {
 
     label "iqtree_${params.executor}"
-    publishDir "${params.outdir}/${taxa}/04_Q_train/"
+    publishDir "${params.outdir}/${taxa}/04_Q_train/constrained"
+    tag "${taxa}"
 
     input:
         val taxa
@@ -126,6 +133,63 @@ process estimate_Q {
     script:
     """
     estimate_q.py --loci ${params.outdir}/${taxa}/03_subset_loci/training_loci/ --threads ${params.n_threads}
+    """      
+}
+
+process concat_loci {
+
+    publishDir "${params.outdir}/${taxa}/03_subset_loci"
+    tag "${taxa}"
+
+    input:
+        val taxa
+
+    output:
+        path "*_concat.faa"
+        path "*.partitions"
+        
+    script:
+    """
+    AMAS.py --in-files ${params.outdir}/${taxa}/03_subset_loci/training_loci/* \
+            --in-format fasta \
+            --data-type aa \
+            --concat-part ${taxa}.partitions \
+            --concat-out ${taxa}_concat.faa \
+            --out-format fasta \
+            --part-format nexus
+    """
+}
+
+process estimate_Q_constrained {
+
+    label "iqtree_${params.executor}"
+    publishDir "${params.outdir}/${taxa}/04_Q_train/constrained"
+
+    input:
+        tuple val(taxa), val(constraint_tree)
+
+    output:
+        tuple path("Q.bac_locus_i*"), val(taxa)
+        path "i*.parstree"
+        path "i*.model.gz"
+        path "i*.best_scheme.nex"
+        path "i*.best_scheme"
+        path "i*.treefile"
+        path "i*.log"
+        path "i*.iqtree"
+        path "i*.ckp.gz"
+        path "i*.best_model.nex"
+        path "Q.bac_locus_i*"
+        path "i*.GTR20.treefile"
+        path "i*.GTR20.log"
+        path "i*.GTR20.iqtree"
+        path "i*.GTR20.ckp.gz"
+        path "i*.GTR20.best_model.nex"
+        path "F.bac_locus_i*"
+
+    script:
+    """
+    estimate_q.py --loci ${params.outdir}/${taxa}/03_subset_loci/training_loci/ -te ${constraint_tree} --threads ${params.n_threads}
     """      
 }
 
