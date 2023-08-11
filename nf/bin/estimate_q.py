@@ -56,7 +56,7 @@ while bic_0 is None or bic_1 <= bic_0:
         estimated_Q = "LG"
 
     if args.constrained:
-        # Run joint-estimation across all loci with fixed locus trees
+        # Run joint-estimation across concatenated loci with fixed species trees
         run_command(f"iqtree2 -seed {seed} -T {args.threads} -S {args.loci} \
                 -mset {mset} -cmax 4 -pre i{iteration} -te {args.constrained}")
     else:

@@ -64,6 +64,31 @@ cd /home/frederickjaya/Dropbox/gtdb/02_working/2308_global/unscaled_shrunk0.05
 scripts/subset_taxa_phydiv.sh
 ```  
 
+## Nextflow  
+
+### $k=250:$  
+```
+cd ~/gtdb/02_working/2308_global/nf 
+nextflow run ~/gtdb_trees/nf/main.nf \
+	--loci "/home/fred/gtdb/00_data/r207_all_loci/*.faa" \
+	--taxa_list "/home/fred/gtdb/02_working/2308_global/unscaled_shrunk0.05/250/unscaled_shrunk0.05_pd250.txt" \
+	--constraint_tree "/home/fred/gtdb/02_working/2308_global/unscaled_shrunk0.05/250/unscaled_shrunk0.05_pd250.tree" \
+	--unconstrained \
+	--existing \	
+	--n_threads 8
+```
+
+### $k=500:$  
+```
+cd ~/gtdb/02_working/2308_global/nf 
+nextflow run ~/gtdb_trees/nf/main.nf \
+	--loci "/home/fred/gtdb/00_data/r207_all_loci/*.faa" \
+	--taxa_list "/home/fred/gtdb/02_working/2308_global/unscaled_shrunk0.05/500/unscaled_shrunk0.05_pd500.txt" \
+	--constraint_tree "/home/fred/gtdb/02_working/2308_global/unscaled_shrunk0.05/500/unscaled_shrunk0.05_pd500.tree" \
+	--unconstrained \
+	--existing \	
+	--n_threads 8
+```
 #### alpha = 0.10
 
 52 dropped:

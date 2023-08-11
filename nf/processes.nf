@@ -105,7 +105,7 @@ process arrange_loci {
 process estimate_Q_unconstrained {
 
     label "iqtree_${params.executor}"
-    publishDir "${params.outdir}/${taxa}/04_Q_train/constrained"
+    publishDir "${params.outdir}/${taxa}/04_Q_train/unconstrained"
     tag "${taxa}"
 
     input:
@@ -137,8 +137,11 @@ process estimate_Q_unconstrained {
 }
 
 process concat_loci {
-
+    
+    // Needs to be in own dir because iqtree -S
     publishDir "${params.outdir}/${taxa}/03_subset_loci"
+    publishDir "${params.outdir}/${taxa}/03_subset_loci/training_concat",
+        pattern: "*_concat.faa"
     tag "${taxa}"
 
     input:
@@ -150,7 +153,8 @@ process concat_loci {
         
     script:
     """
-    AMAS.py --in-files ${params.outdir}/${taxa}/03_subset_loci/training_loci/* \
+    AMAS.py concat \
+            --in-files ${params.outdir}/${taxa}/03_subset_loci/training_loci/* \
             --in-format fasta \
             --data-type aa \
             --concat-part ${taxa}.partitions \
@@ -164,9 +168,11 @@ process estimate_Q_constrained {
 
     label "iqtree_${params.executor}"
     publishDir "${params.outdir}/${taxa}/04_Q_train/constrained"
+    tag "${taxa}"
 
     input:
-        tuple val(taxa), val(constraint_tree)
+        // concat_loci actually not used, see main.nf
+        tuple val(concat_loci), val(taxa), val(constraint_tree)
 
     output:
         tuple path("Q.bac_locus_i*"), val(taxa)
@@ -189,7 +195,7 @@ process estimate_Q_constrained {
 
     script:
     """
-    estimate_q.py --loci ${params.outdir}/${taxa}/03_subset_loci/training_loci/ -te ${constraint_tree} --threads ${params.n_threads}
+    estimate_q.py --loci ${params.outdir}/${taxa}/03_subset_loci/training_concat/ -te ${constraint_tree} --threads ${params.n_threads}
     """      
 }
 
@@ -197,6 +203,7 @@ process test_loci_estimated_Q {
 
     label "iqtree_${params.executor}"
     publishDir "${params.outdir}/${taxa}/05_Q_test_loci"
+    tag "${taxa}"
 
     input:
         tuple path(estimated_Q), val(taxa)
@@ -223,6 +230,7 @@ process test_loci_existing_Q {
 
     label "iqtree_${params.executor}"
     publishDir "${params.outdir}/${taxa}/05_Q_test_loci"
+    tag "${taxa}"
 
     input:
         val(taxa)
@@ -253,6 +261,7 @@ process test_loci_all_mset {
      */
     
     publishDir "${params.outdir}/${taxa}/05_Q_test_loci"
+    tag "${taxa}"
 
     input:
         tuple path(estimated_Q), val(taxa)
