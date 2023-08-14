@@ -5,11 +5,11 @@ unscaled_shrunk0.10	Molecular	62239	6895.78828999986
 red	RED	62291	5036.83422255144
 red_shrunk0.05	RED	62291	5036.83422255144
 red_shrunk0.10	RED	62291	5036.83422255144
-unscaled_shrunk0.05_pd25	Molecular	25	
-unscaled_shrunk0.05_pd50	Molecular	50	
-unscaled_shrunk0.05_pd100	Molecular	125	
-unscaled_shrunk0.05_pd250	Molecular	250	
-unscaled_shrunk0.05_pd500	Molecular	500	
-unscaled_shrunk0.05_pd1000	Molecular	1000	
-unscaled_shrunk0.05_pd2500	Molecular	2500	
-unscaled_shrunk0.05_pd5000	Molecular	5000	
+unscaled_shrunk0.05_pd25	Molecular	25	46.12
+unscaled_shrunk0.05_pd50	Molecular	50	79.766
+unscaled_shrunk0.05_pd100	Molecular	125	139.01
+unscaled_shrunk0.05_pd250	Molecular	250	281.934
+unscaled_shrunk0.05_pd500	Molecular	500	481.103
+unscaled_shrunk0.05_pd1000	Molecular	1000	811.097
+unscaled_shrunk0.05_pd2500	Molecular	2500	1551.915
+unscaled_shrunk0.05_pd5000	Molecular	5000	2444.849
