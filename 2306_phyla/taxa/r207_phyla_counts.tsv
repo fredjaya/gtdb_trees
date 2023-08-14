@@ -1,170 +1,170 @@
-index	group	pruned_taxa	pruned_tree_length	shrunk_taxa	shrunk_taxa_removed	shrunk_taxa_removed_prop	shrunk_tree_length	pruned_tree_length - shrunk_tree_length	(pruned_tree_length - shrunk_tree_length)/pruned_tree_length	pd1000_tree_length	batch	hash	cpu_time	cpu_%	peak_rss_GB	GitHub?	QNew fits locus best (/20)
-1	p__Proteobacteria	17350	1329.95282	17330	20	0.001152738	1320.07831	9.87451	0.007424707	414.013							
-2	p__Bacteroidota	8588	741.10793	8575	13	0.00151374	738.08999	3.01794	0.0040722	306.855							
-3	p__Firmicutes_A	8243	906.84818	8232	11	0.001334466	905.22479	1.62339	0.001790145	365.187							
-4	p__Actinobacteriota	7328	489.77902	7320	8	0.001091703	488.74194	1.03708	0.002117445	248.435							
-5	p__Firmicutes	4216	1447.36892	4203	13	0.003083491	1441.92935	5.43957	0.003758247	445.337							
-6	p__Patescibacteria	2485	731.40676	2480	5	0.002012072	730.51195	0.89481	0.00122341	490.315							
-7	p__Chloroflexota	1387	249.85182	1387	0	0	249.85182	0	0	235.013							
-8	p__Cyanobacteria	1372	102.6624	1369	3	0.002186589	101.24326	1.41914	0.013823367	97.051							
-9	p__Verrucomicrobiota	1325	182.30794	1323	2	0.001509434	182.09039	0.21755	0.001193311	175.71							
-10	p__Planctomycetota	1071	216.5018	1070	1	0.000933707	215.71873	0.78307	0.003616921	214.929							
-11	p__Desulfobacterota	939	196.31852	934	5	0.005324814	195.3439	0.97462	0.004964483	195.3439	2307_medium						
-12	p__Acidobacteriota	873	126.51946	871	2	0.002290951	126.26098	0.25848	0.002043006	126.26098	2307_medium						
-13	p__Spirochaetota	695	104.82359	692	3	0.004316547	103.22547	1.59812	0.015245805	103.22547	2307_medium						
-14	p__Campylobacterota	550	58.6646	550	0	0	58.6646	0	0	58.6646	2307_medium						
-15	p__Firmicutes_C	395	30.88888	395	0	0	30.88888	0	0	30.88888	2307_phyla_smaller						
-16	p__Myxococcota	393	101.39901	391	2	0.005089059	100.12949	1.26952	0.012520043	100.12949	2307_phyla_smaller	8a/5c9570	14d 14h 28m 41s	574.00	9.2	Y	
-17	p__Firmicutes_B	323	48.8757	322	1	0.003095975	48.78731	0.08839	0.001808465	48.78731	2307_phyla_smaller						
-18	p__Nitrospirota	314	42.81182	309	5	0.015923567	41.01183	1.79999	0.04204423	41.01183	2307_phyla_smaller	a6/93a5a4	12d 20h 45m 17s	397.80	6.4	Y	
-19	p__Omnitrophota	282	73.80699	280	2	0.007092199	72.99819	0.8088	0.010958312	72.99819	2307_phyla_smaller	10/0a20e0	11d 19h 28m 3s	518.80	5.6	Y	
-20	p__Gemmatimonadota	237	34.88107	236	1	0.004219409	34.23468	0.64639	0.018531255	34.23468	2307_phyla_smaller	fb/540fd1	10d 19h 4m 21s	499.50	4.7	Y	
-21	p__Desulfobacterota_I	236	29.03404	236	0	0	29.03404	0	0	29.03404	2307_phyla_smaller	0a/5d91a9	10d 23h 24m 19s	491.50	4.8	Y	
-22	p__Bdellovibrionota	224	62.90388	223	1	0.004464286	62.24687	0.65701	0.010444666	62.24687	2307_phyla_smaller	72/92b592	6d 14h 2m 28s	788.10	5.4	Y	
-23	p__Elusimicrobiota	189	34.77258	187	2	0.010582011	34.27981	0.49277	0.014171223	34.27981	2307_phyla_smaller	2c/915733	6d 20h 5m 28s	385.90	3.9	Y	
-24	p__Marinisomatota	186	32.7935	186	0	0	32.7935	0	0	32.7935	2307_phyla_smaller	33/b1b8ce	8d 11h 59m 5s	428.00	3.7	Y	
-25	p__Chlamydiota; c__Chlamydiia	171	40.97016	170	1	0.005847953	40.153	0.81716	0.019945248	40.153							
-26	p__Deinococcota; c__Deinococci	144	13.16877	142	2	0.013888889	12.97873	0.19004	0.014431112	12.97873	nf/2306_phyla_first_randoms	e0/74a6c1	4d 7h 18m 18s	361.90	2.8	Y	
-27	p__Armatimonadota	139	37.31529	139	0	0	37.31529	0	0	37.31529	nf/2306_phyla_first_randoms	4c/908464	4d 5h 26m 55s	396.20	2.9	Y	
-28	p__Synergistota	132	18.89343	130	2	0.015151515	18.32155	0.57188	0.030268723	18.32155	2303_nf/2307_phyla_smallest	90/b74cf9	1d 5h 20m 16s	789.30	2.6	Y	
-29	p__Firmicutes_G	131	24.00729	131	0	0	24.00729	0	0	24.00729	2303_nf/2307_phyla_smallest	51/25fb07	2d 4h 33m 33s	589.10	2.8	Y	
-30	p__Fibrobacterota	120	15.82382	120	0	0	15.82382	0	0	15.82382	2303_nf/2307_phyla_smallest	d9/def616	3d 18m 35s	472.20	2.6	Y	
-31	p__Firmicutes_D	104	16.84198	104	0	0	16.84198	0	0	16.84198	nf/2306_phyla_first_randoms	3e/11c878	1d 22h 4m 19s	397.80	2	Y	
-32	p__Fusobacteriota; c__Fusobacteriia	96	9.21386	95	1	0.010416667	8.50878	0.70508	0.076523846	8.50878							
-33	p__Dormibacterota; c__Dormibacteria	88	9.68193	87	1	0.011363636	9.46854	0.21339	0.022040027	9.46854							
-34	p__Thermotogota; c__Thermotogae	83	14.00267	83	0	0	14.00267	0	0	14.00267							
-35	p__Eremiobacterota	81	14.90565	81	0	0	14.90565	0	0	14.90565	2303_nf/2307_phyla_smallest	12/e2ffea	1d 27m 30s	791.80	1.8	Y	
-36	p__WOR-3	77	25.11325	76	1	0.012987013	24.96154	0.15171	0.006041034	24.96154	2303_nf/2307_phyla_smallest	be/2b3070	2d 3h 15m 35s	495.90	1.8	Y	
-37	p__Aquificota	76	11.15273	76	0	0	11.15273	0	0	11.15273	pre-nf						
-38	p__Methylomirabilota	76	9.30321	76	0	0	9.30321	0	0	9.30321	nf/2306_phyla_first_randoms	48/5676db	1d 13h 18m 32s	398.30	1.4	Y	
-39	p__Myxococcota_A	72	19.0142	72	0	0	19.0142	0	0	19.0142						Y	
-40	p__Desulfobacterota_B	66	11.80948	66	0	0	11.80948	0	0	11.80948	2303_nf/2307_phyla_smallest	69/28ad83	13h 5m 15s	792.40	1.5	Y	
-41	p__Firmicutes_E	65	15.5766	65	0	0	15.5766	0	0	15.5766	2303_nf/2307_phyla_smallest	a1/d1da0b	1d 3h 58m 35s	794.80	1.6	Y	
-42	p__Dependentiae	61	20.70232	61	0	0	20.70232	0	0	20.70232	2303_nf/2307_phyla_smallest	ff/99ba1e	2d 9h 38m 16s	395.50	1.5	Y	
-43	p__Cloacimonadota	60	12.10927	60	0	0	12.10927	0	0	12.10927	2303_nf/2307_phyla_smallest	f3/fa1605	1d 8h 52m 15s	378.00	1.4	Y	
-44	p__Nitrospinota	60	11.89895	60	0	0	11.89895	0	0	11.89895	2303_nf/2307_phyla_smallest	8f/33ba77	1d 13h 27m 25s	385.30	1.7	Y	
-45	p__Margulisbacteria	54	18.52574	54	0	0	18.52574	0	0	18.52574	nf/2306_phyla_first_randoms	33/00c92f	2d 21h 26m 58s	162.60	1.1	Y	
-46	p__Firmicutes_F	49															
-47	p__Zixibacteria	47															
-48	p__Bipolaricaulota	46															
-49	p__Hydrogenedentota	42															
-50	p__SAR324	40															
-51	p__Atribacterota	37															
-52	p__Latescibacterota	37															
-53	p__KSB1	36															
-54	p__Krumholzibacteriota	35															
-55	p__Poribacteria	34															
-56	p__UBA10199	33															
-57	p__Eisenbacteria	31															
-58	p__Desulfobacterota_G	30															
-59	p__Caldisericota	26															
-60	p__Desulfobacterota_D	26															
-61	p__Riflebacteria	22															
-62	p__AABM5-125-24	21															
-63	p__CSP1-3	21															
-64	p__Desulfobacterota_E	21															
-65	p__Deferribacterota	19															
-66	p__Sumerlaeota	19															
-67	p__Calditrichota	18															
-68	p__UBP6	18															
-69	p__Bdellovibrionota_C	17															
-70	p__Firmicutes_H	17															
-71	p__Desulfobacterota_C	16															
-72	p__Fermentibacterota	15															
-73	p__CG03	13															
-74	p__UBA3054	13															
-75	p__Delongbacteria	11															
-76	p__DTU030	11															
-77	p__QNDG01	11															
-78	p__UBA8248	10															
-79	p__Aerophobota	9															
-80	p__Bdellovibrionota_E	9															
-81	p__Ratteibacteria	9															
-82	p__CSSED10-310	8															
-83	p__Firestonebacteria	8															
-84	p__Goldbacteria	8															
-85	p__UBP14	8															
-86	p__Edwardsbacteria	7															
-87	p__JAAXHH01	7															
-88	p__OLB16	7															
-89	p__UBA9089	7															
-90	p__UBP17	7															
-91	p__CLD3	6															
-92	p__Coprothermobacterota	6															
-93	p__SZUA-79	6															
-94	p__Thermosulfidibacterota	6															
-95	p__BMS3Abin14	5															
-96	p__Dictyoglomota	5															
-97	p__FCPU426	5															
-98	p__JdFR-76	5															
-99	p__Nitrospirota_A	5															
-100	p__RBG-13-61-14	5															
-101	p__RBG-13-66-14	5															
-102	p__SZUA-182	5															
-103	p__UBA6262	5															
-104	p__Calescibacterota	4															
-105	p__DUMJ01	4															
-106	p__Moduliflexota	4															
-107	p__Schekmanbacteria	4															
-108	p__Tectomicrobia	4															
-109	p__Abyssubacteria	3															
-110	p__CAIJMQ01	3															
-111	p__Chrysiogenota	3															
-112	p__Desantisbacteria	3															
-113	p__JABDJQ01	3															
-114	p__Mcinerneyibacteriota	3															
-115	p__Thermodesulfobiota	3															
-116	p__UBP15	3															
-117	p__UBP18	3															
-118	p__UBP7	3															
-119	p__VGIX01	3															
-120	p__Wallbacteria	3															
-121	p__4484-113	2															
-122	p__4572-55	2															
-123	p__Aureabacteria	2															
-124	p__B130-G9	2															
-125	p__CG2-30-53-67	2															
-126	p__DRYD01	2															
-127	p__FEN-1099	2															
-128	p__HKB111	2															
-129	p__JABMQX01	2															
-130	p__JACIXR01	2															
-131	p__JACPQY01	2															
-132	p__JACPWU01	2															
-133	p__JACRDZ01	2															
-134	p__JAFGBW01	2															
-135	p__Lindowbacteria	2															
-136	p__Nitrospinota_B	2															
-137	p__NPL-UPA2	2															
-138	p__PUNC01	2															
-139	p__SM23-31	2															
-140	p__T1Sed10-126	2															
-141	p__TA06	2															
-142	p__UBA2233	2															
-143	p__UBA6266	2															
-144	p__UBA8481	2															
-145	p__ARS69	1															
-146	p__BS750m-G25	1															
-147	p__BS750m-G34	1															
-148	p__CG2-30-70-394	1															
-149	p__GCA-001730085	1															
-150	p__Gemmatimonadota_A	1															
-151	p__J088	1															
-152	p__JACPSX01	1															
-153	p__JACPUC01	1															
-154	p__JACQOV01	1															
-155	p__JADJOY01	1															
-156	p__JAFGND01	1															
-157	p__JAFGOL01	1															
-158	p__JAGOBX01	1															
-159	p__JAGOEH01	1															
-160	p__JAHJDO01	1															
-161	p__Muirbacteria	1															
-162	p__RUG730	1															
-163	p__SLNR01	1															
-164	p__SpSt-318	1															
-165	p__T1SED10-198M	1															
-166	p__TA06_A	1															
-167	p__UBA1439	1															
-168	p__UBP13	1															
-169	p__UBP4	1															
+index	group	pruned_taxa	pruned_tree_length	shrunk_taxa	shrunk_taxa_removed	shrunk_taxa_removed_prop	shrunk_tree_length	pruned_tree_length - shrunk_tree_length	(pruned_tree_length - shrunk_tree_length)/pruned_tree_length	pd1000_tree_length	batch	hash	cpu_time	cpu_%	peak_rss_GB	GitHub	Dropbox	QNew fits locus best (/20)
+1	p__Proteobacteria	17350	1329.95282	17330	20	0.001152738	1320.07831	9.87451	0.007424707	414.013								
+2	p__Bacteroidota	8588	741.10793	8575	13	0.00151374	738.08999	3.01794	0.0040722	306.855								
+3	p__Firmicutes_A	8243	906.84818	8232	11	0.001334466	905.22479	1.62339	0.001790145	365.187								
+4	p__Actinobacteriota	7328	489.77902	7320	8	0.001091703	488.74194	1.03708	0.002117445	248.435								
+5	p__Firmicutes	4216	1447.36892	4203	13	0.003083491	1441.92935	5.43957	0.003758247	445.337								
+6	p__Patescibacteria	2485	731.40676	2480	5	0.002012072	730.51195	0.89481	0.00122341	490.315								
+7	p__Chloroflexota	1387	249.85182	1387	0	0	249.85182	0	0	235.013								
+8	p__Cyanobacteria	1372	102.6624	1369	3	0.002186589	101.24326	1.41914	0.013823367	97.051								
+9	p__Verrucomicrobiota	1325	182.30794	1323	2	0.001509434	182.09039	0.21755	0.001193311	175.71								
+10	p__Planctomycetota	1071	216.5018	1070	1	0.000933707	215.71873	0.78307	0.003616921	214.929								
+11	p__Desulfobacterota	939	196.31852	934	5	0.005324814	195.3439	0.97462	0.004964483	195.3439	2307_medium							
+12	p__Acidobacteriota	873	126.51946	871	2	0.002290951	126.26098	0.25848	0.002043006	126.26098	2307_medium							
+13	p__Spirochaetota	695	104.82359	692	3	0.004316547	103.22547	1.59812	0.015245805	103.22547	2307_medium							
+14	p__Campylobacterota	550	58.6646	550	0	0	58.6646	0	0	58.6646	2307_medium							
+15	p__Firmicutes_C	395	30.88888	395	0	0	30.88888	0	0	30.88888	2307_phyla_smaller							
+16	p__Myxococcota	393	101.39901	391	2	0.005089059	100.12949	1.26952	0.012520043	100.12949	2307_phyla_smaller	8a/5c9570	14d 14h 28m 41s	574.00	9.2	Y	Y	
+17	p__Firmicutes_B	323	48.8757	322	1	0.003095975	48.78731	0.08839	0.001808465	48.78731	2307_phyla_smaller							
+18	p__Nitrospirota	314	42.81182	309	5	0.015923567	41.01183	1.79999	0.04204423	41.01183	2307_phyla_smaller	a6/93a5a4	12d 20h 45m 17s	397.80	6.4	Y	Y	
+19	p__Omnitrophota	282	73.80699	280	2	0.007092199	72.99819	0.8088	0.010958312	72.99819	2307_phyla_smaller	10/0a20e0	11d 19h 28m 3s	518.80	5.6	Y	Y	
+20	p__Gemmatimonadota	237	34.88107	236	1	0.004219409	34.23468	0.64639	0.018531255	34.23468	2307_phyla_smaller	fb/540fd1	10d 19h 4m 21s	499.50	4.7	Y	Y	
+21	p__Desulfobacterota_I	236	29.03404	236	0	0	29.03404	0	0	29.03404	2307_phyla_smaller	0a/5d91a9	10d 23h 24m 19s	491.50	4.8	Y	Y	
+22	p__Bdellovibrionota	224	62.90388	223	1	0.004464286	62.24687	0.65701	0.010444666	62.24687	2307_phyla_smaller	72/92b592	6d 14h 2m 28s	788.10	5.4	Y	Y	
+23	p__Elusimicrobiota	189	34.77258	187	2	0.010582011	34.27981	0.49277	0.014171223	34.27981	2307_phyla_smaller	2c/915733	6d 20h 5m 28s	385.90	3.9	Y	Y	
+24	p__Marinisomatota	186	32.7935	186	0	0	32.7935	0	0	32.7935	2307_phyla_smaller	33/b1b8ce	8d 11h 59m 5s	428.00	3.7	Y	Y	
+25	p__Chlamydiota; c__Chlamydiia	171	40.97016	170	1	0.005847953	40.153	0.81716	0.019945248	40.153								
+26	p__Deinococcota; c__Deinococci	144	13.16877	142	2	0.013888889	12.97873	0.19004	0.014431112	12.97873	nf/2306_phyla_first_randoms	e0/74a6c1	4d 7h 18m 18s	361.90	2.8	Y	Y	
+27	p__Armatimonadota	139	37.31529	139	0	0	37.31529	0	0	37.31529	nf/2306_phyla_first_randoms	4c/908464	4d 5h 26m 55s	396.20	2.9	Y	Y	
+28	p__Synergistota	132	18.89343	130	2	0.015151515	18.32155	0.57188	0.030268723	18.32155	2303_nf/2307_phyla_smallest	90/b74cf9	1d 5h 20m 16s	789.30	2.6	Y	Y	
+29	p__Firmicutes_G	131	24.00729	131	0	0	24.00729	0	0	24.00729	2303_nf/2307_phyla_smallest	51/25fb07	2d 4h 33m 33s	589.10	2.8	Y	Y	
+30	p__Fibrobacterota	120	15.82382	120	0	0	15.82382	0	0	15.82382	2303_nf/2307_phyla_smallest	d9/def616	3d 18m 35s	472.20	2.6	Y	Y	
+31	p__Firmicutes_D	104	16.84198	104	0	0	16.84198	0	0	16.84198	nf/2306_phyla_first_randoms	3e/11c878	1d 22h 4m 19s	397.80	2	Y	Y	
+32	p__Fusobacteriota; c__Fusobacteriia	96	9.21386	95	1	0.010416667	8.50878	0.70508	0.076523846	8.50878								
+33	p__Dormibacterota; c__Dormibacteria	88	9.68193	87	1	0.011363636	9.46854	0.21339	0.022040027	9.46854								
+34	p__Thermotogota; c__Thermotogae	83	14.00267	83	0	0	14.00267	0	0	14.00267								
+35	p__Eremiobacterota	81	14.90565	81	0	0	14.90565	0	0	14.90565	2303_nf/2307_phyla_smallest	12/e2ffea	1d 27m 30s	791.80	1.8	Y	Y	
+36	p__WOR-3	77	25.11325	76	1	0.012987013	24.96154	0.15171	0.006041034	24.96154	2303_nf/2307_phyla_smallest	be/2b3070	2d 3h 15m 35s	495.90	1.8	Y	Y	
+37	p__Aquificota	76	11.15273	76	0	0	11.15273	0	0	11.15273	pre-nf							
+38	p__Methylomirabilota	76	9.30321	76	0	0	9.30321	0	0	9.30321	nf/2306_phyla_first_randoms	48/5676db	1d 13h 18m 32s	398.30	1.4	Y	Y	
+39	p__Myxococcota_A	72	19.0142	72	0	0	19.0142	0	0	19.0142						Y		
+40	p__Desulfobacterota_B	66	11.80948	66	0	0	11.80948	0	0	11.80948	2303_nf/2307_phyla_smallest	69/28ad83	13h 5m 15s	792.40	1.5	Y	Y	
+41	p__Firmicutes_E	65	15.5766	65	0	0	15.5766	0	0	15.5766	2303_nf/2307_phyla_smallest	a1/d1da0b	1d 3h 58m 35s	794.80	1.6	Y	Y	
+42	p__Dependentiae	61	20.70232	61	0	0	20.70232	0	0	20.70232	2303_nf/2307_phyla_smallest	ff/99ba1e	2d 9h 38m 16s	395.50	1.5	Y	Y	
+43	p__Cloacimonadota	60	12.10927	60	0	0	12.10927	0	0	12.10927	2303_nf/2307_phyla_smallest	f3/fa1605	1d 8h 52m 15s	378.00	1.4	Y	Y	
+44	p__Nitrospinota	60	11.89895	60	0	0	11.89895	0	0	11.89895	nf/2306_phyla_first_randoms	8f/33ba77	1d 13h 27m 25s	385.30	1.7	Y		
+45	p__Margulisbacteria	54	18.52574	54	0	0	18.52574	0	0	18.52574	nf/2306_phyla_first_randoms	33/00c92f	2d 21h 26m 58s	162.60	1.1	Y	Y	
+46	p__Firmicutes_F	49																
+47	p__Zixibacteria	47																
+48	p__Bipolaricaulota	46																
+49	p__Hydrogenedentota	42																
+50	p__SAR324	40																
+51	p__Atribacterota	37																
+52	p__Latescibacterota	37																
+53	p__KSB1	36																
+54	p__Krumholzibacteriota	35																
+55	p__Poribacteria	34																
+56	p__UBA10199	33																
+57	p__Eisenbacteria	31																
+58	p__Desulfobacterota_G	30																
+59	p__Caldisericota	26																
+60	p__Desulfobacterota_D	26																
+61	p__Riflebacteria	22																
+62	p__AABM5-125-24	21																
+63	p__CSP1-3	21																
+64	p__Desulfobacterota_E	21																
+65	p__Deferribacterota	19																
+66	p__Sumerlaeota	19																
+67	p__Calditrichota	18																
+68	p__UBP6	18																
+69	p__Bdellovibrionota_C	17																
+70	p__Firmicutes_H	17																
+71	p__Desulfobacterota_C	16																
+72	p__Fermentibacterota	15																
+73	p__CG03	13																
+74	p__UBA3054	13																
+75	p__Delongbacteria	11																
+76	p__DTU030	11																
+77	p__QNDG01	11																
+78	p__UBA8248	10																
+79	p__Aerophobota	9																
+80	p__Bdellovibrionota_E	9																
+81	p__Ratteibacteria	9																
+82	p__CSSED10-310	8																
+83	p__Firestonebacteria	8																
+84	p__Goldbacteria	8																
+85	p__UBP14	8																
+86	p__Edwardsbacteria	7																
+87	p__JAAXHH01	7																
+88	p__OLB16	7																
+89	p__UBA9089	7																
+90	p__UBP17	7																
+91	p__CLD3	6																
+92	p__Coprothermobacterota	6																
+93	p__SZUA-79	6																
+94	p__Thermosulfidibacterota	6																
+95	p__BMS3Abin14	5																
+96	p__Dictyoglomota	5																
+97	p__FCPU426	5																
+98	p__JdFR-76	5																
+99	p__Nitrospirota_A	5																
+100	p__RBG-13-61-14	5																
+101	p__RBG-13-66-14	5																
+102	p__SZUA-182	5																
+103	p__UBA6262	5																
+104	p__Calescibacterota	4																
+105	p__DUMJ01	4																
+106	p__Moduliflexota	4																
+107	p__Schekmanbacteria	4																
+108	p__Tectomicrobia	4																
+109	p__Abyssubacteria	3																
+110	p__CAIJMQ01	3																
+111	p__Chrysiogenota	3																
+112	p__Desantisbacteria	3																
+113	p__JABDJQ01	3																
+114	p__Mcinerneyibacteriota	3																
+115	p__Thermodesulfobiota	3																
+116	p__UBP15	3																
+117	p__UBP18	3																
+118	p__UBP7	3																
+119	p__VGIX01	3																
+120	p__Wallbacteria	3																
+121	p__4484-113	2																
+122	p__4572-55	2																
+123	p__Aureabacteria	2																
+124	p__B130-G9	2																
+125	p__CG2-30-53-67	2																
+126	p__DRYD01	2																
+127	p__FEN-1099	2																
+128	p__HKB111	2																
+129	p__JABMQX01	2																
+130	p__JACIXR01	2																
+131	p__JACPQY01	2																
+132	p__JACPWU01	2																
+133	p__JACRDZ01	2																
+134	p__JAFGBW01	2																
+135	p__Lindowbacteria	2																
+136	p__Nitrospinota_B	2																
+137	p__NPL-UPA2	2																
+138	p__PUNC01	2																
+139	p__SM23-31	2																
+140	p__T1Sed10-126	2																
+141	p__TA06	2																
+142	p__UBA2233	2																
+143	p__UBA6266	2																
+144	p__UBA8481	2																
+145	p__ARS69	1																
+146	p__BS750m-G25	1																
+147	p__BS750m-G34	1																
+148	p__CG2-30-70-394	1																
+149	p__GCA-001730085	1																
+150	p__Gemmatimonadota_A	1																
+151	p__J088	1																
+152	p__JACPSX01	1																
+153	p__JACPUC01	1																
+154	p__JACQOV01	1																
+155	p__JADJOY01	1																
+156	p__JAFGND01	1																
+157	p__JAFGOL01	1																
+158	p__JAGOBX01	1																
+159	p__JAGOEH01	1																
+160	p__JAHJDO01	1																
+161	p__Muirbacteria	1																
+162	p__RUG730	1																
+163	p__SLNR01	1																
+164	p__SpSt-318	1																
+165	p__T1SED10-198M	1																
+166	p__TA06_A	1																
+167	p__UBA1439	1																
+168	p__UBP13	1																
+169	p__UBP4	1																
