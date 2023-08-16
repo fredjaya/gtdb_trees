@@ -1,0 +1,242 @@
+---
+title: "{taxa} Diagnostics and Results"
+author: "Fred Jaya"
+output: 
+   html_document:
+     theme: spacelab
+     code_folding: hide
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = T,
+  warning = F, 
+  dev = 'png',
+  fig.width = 8,
+  fig.height = 4
+  )
+
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(scales)
+library(sem)
+library(tibble)
+
+#options(digits = 22) # For BIC precision
+options(digits = 8)
+
+aa <- c("A", "R", "N", "D", "C", "Q", "E", "G", "H", "I", 
+        "L", "K", "M", "F", "P", "S", "T", "W", "Y", "V")
+
+read_qmatrix <- function(path_to_qmatrix, iteration) {
+  
+  q <- read.table(path_to_qmatrix, fill = T, col.names = aa) %>%
+    rbind(NA*20, .) %>%
+    mutate(A2 = c(aa, "Freq")) %>%
+    pivot_longer(cols = A:V, names_to = "A1", values_to = "Rate") %>%
+    filter(!is.na(Rate)) %>%
+    mutate(Iteration = iteration) %>%
+    add_row(A2 = "A", A1 = "V", Rate = NA, Iteration = iteration) %>%
+    mutate(A1 = factor(A1, levels = (c(aa,"Freq")))) %>%
+    mutate(A2 = factor(A2, levels = rev(c(aa, "Freq"))))
+}
+
+read_q_pca <- function(filename) {
+  # Rob's code for qMaker paper
+  # read lower-diagonal matrix
+  Q = readMoments(filename, diag=F)
+  pi = Q[nrow(Q), 1:(ncol(Q)-1)]
+  Q = Q[1:(nrow(Q)-1), 1:(ncol(Q)-1)]
+  # make Q symmetric
+  Q = (Q + t(Q))
+  diag(Q) <- 0
+  # normalise the matrix
+  Q=(Q/sum(Q))*100.0
+  return(rbind(Q, pi))
+}
+
+theme_fj <- 
+  theme_minimal() +
+  theme(text=element_text(size=18))
+```
+
+# Branch lengths  
+- [ ] Read in pruned tree  
+- [ ] Get total branch length
+- [ ] Distribution of branch length  
+
+# Locus stats  
+
+```{r, alistat}
+alistat <- 
+  read.csv("{taxa}/alistats.csv", header = F)
+colnames(alistat) <- c("Locus", "Sequences", "Sites", "Ca", "Cr_max", "Cr_min", "Cc_max", "Cc_min", "Cij_max", "Cij_min")
+
+alistat <- 
+  alistat[order(-alistat$Ca), ] %>%
+  mutate(Set = if_else(Locus %in% tail(Locus, 20), "Testing", "Training"))
+
+alistat %>%
+  ggplot(aes(x = Sites, y = Ca, col = Set)) +
+  geom_point(size = 2) +
+  coord_cartesian(ylim = c(0,1)) +
+  labs(x = "Number of sites in locus", y = "Completenes (Ca)", title = "Alistat: subsetting loci for training/testing") +
+  theme_fj
+```
+
+$C_a=$ Number of unambiguous characters in the alignment $(m*n)$  
+$C_r=$ Number of unambiguous characters in a sequence $(n)$  
+$C_c=$ Number of unambiguous characters in a site $(m)$  
+$C_{ij}=$ Pairwise matrix of unambiguous characters between sequences  
+
+## Training  
+```{r training_loci, eval=F}
+#TODO: softcode training_stats.txt
+train_stats <- 
+  read.table("{taxa}/training_stats.txt", sep="\t", header = T) %>%
+  select(Locus = Name, `Training sequences` = Seqs, `Training sites` = Sites, Infor, Invar) %>%
+  mutate(Prop_informative = Infor/`Training sites`)
+
+ali_train <- 
+  alistat %>%
+  left_join(train_stats, by = "Locus") 
+
+ali_train %>%
+  ggplot(aes(y = `Training sequences`, x = `Training sites`, col = Prop_informative)) +
+  geom_point(size = 2) +
+  scale_color_viridis_c() +
+  labs(title = "IQ-TREE-filtered training loci for the best Q-matrix") +
+  theme_fj
+```
+
+
+```{r bic_iter}
+bic <- read.table("{taxa}/bic_per_iter.txt", header = T)
+bic %>%
+  ggplot(aes(x = Iteration, y = BIC)) +
+  geom_line(size = 1) +
+  labs(title = "Training Q BIC over iterations") +
+  theme_fj
+```
+
+```{r q_iter_prep,eval=F}
+#TODO: Softcode best iterations
+q1 <- read_qmatrix("work/24/dabaa964db04fc10bd9a40a3f65ae6/Q.bac_locus_i1", 1)
+#plot_qmatrix(q1, 1)
+qbest <- read_qmatrix("work/24/dabaa964db04fc10bd9a40a3f65ae6/Q.bac_locus_i4", 4)
+#plot_qmatrix(qbest, 4)
+
+q1_qbest <- rbind(q1, qbest) %>% mutate(Iteration = as.factor(Iteration))
+rm(q1, qbest)  
+```
+
+```{r q_dist,eval=F}
+q1_qbest %>%
+  filter(A2 != "Freq") %>%
+  ggplot(aes(x=Rate, fill=Iteration, col =Iteration)) +
+  #\geom_histogram(position = "dodge", bins = 100) +
+  geom_density(alpha = 0.2, size = 1) +
+  labs(title = "Distribution of rates between the first and best iteration",
+       y = "Density") +
+  theme_fj
+```
+
+```{r q_rates, fig.height=5,eval=F}
+q1_qbest %>%
+  filter(A2 != "Freq") %>%
+  ggplot(aes(x=A1, y=A2,size=Rate, color=Iteration)) +
+  geom_jitter(alpha=0.7, width = 0.15, height = 0.15) +
+  theme_fj +
+  labs(title = "Substitution rates between the first and best iteration")
+```
+
+```{r freqs, fig.height=3,eval=F}
+q1_qbest %>%
+  filter(A2 == "Freq") %>%
+  ggplot(aes(x=A1, y=Rate, fill=Iteration)) +
+  geom_col(position = "dodge") +
+  labs(y= "Frequency") +
+  labs(title = "Frequencies between the first and best iteration") +
+  theme_fj
+```
+
+# Unconstrained 
+```{r}
+## Read in and prepare e
+mf <- 
+  read.table("{taxa}/existing_models.txt", fill=T, skip=1) %>%
+  select(ID = V1, Model = V2, LogL = V3, AIC = V4, AICc = V7, BIC = V10)
+
+sub <- 
+  read.table("{taxa}/existing_substitutions.txt", header=T)
+
+mf_sub_existing <- 
+  mf %>%
+  left_join(sub, by = c("ID", "Model")) %>%
+  mutate(`Test set` = "Existing")
+
+rm(mf, sub)
+
+## CONTINUE HERE WITH ADDING {taxa} ##
+mf <- 
+  read.table("05_manual_test/mf_new.txt", fill=T, skip=1) %>%
+  select(ID = V1, Model = V2, LogL = V3, AIC = V4, AICc = V7, BIC = V10)
+
+sub <- 
+  read.table("05_manual_test/sub_new.txt", header=T)
+
+mf_sub_new <- 
+  mf %>%
+  left_join(sub, by = c("ID", "Model")) %>%
+  mutate(`Test set` = "New") %>%
+  mutate(across(c(Model, Parameters), ~gsub(".*\\/", "", .)))
+
+mf_sub <- rbind(mf_sub_existing, mf_sub_new)
+rm(mf, sub, mf_sub_existing, mf_sub_new)
+
+#mlt <- read.table("05_manual_test/tree_existing.txt", header=T)
+```
+
+```{r}
+mf_sub_long <- 
+  mf_sub %>%
+  pivot_longer(cols = LogL:TreeLen)
+
+# MF LogL 
+mf_sub_long %>%
+  group_by(ID, name) %>%
+  summarise(Difference = value[`Test set` == "New"] - value[`Test set` == "Existing"]) %>%
+  mutate(Improved = if_else(Difference < 0, "Yes", "No")) %>%
+  filter(name == "LogL") %>%
+  ggplot(aes(x = ID, y = Difference, fill = Improved)) +
+  geom_col() +
+  labs(x = "Locus", y ="LogL(New model) - \nLogL(Existing model)",
+       title = "ModelFinder: LogL") +
+  theme_fj
+
+# BICs
+mf_sub_long %>%
+  group_by(ID, name) %>%
+  summarise(Difference = value[`Test set` == "New"] - value[`Test set` == "Existing"]) %>%
+  mutate(Improved = if_else(Difference < 0, "Yes", "No")) %>%
+  filter(name == "BIC") %>%
+  ggplot(aes(x = ID, y = Difference, fill = Improved)) +
+  geom_col() +
+  labs(x = "Locus", y ="BIC(New model) -\nBIC(Best existing model)",
+       title = "ModelFinder: BIC") +
+  theme_fj
+
+# Tree length
+mf_sub_long %>%
+  group_by(ID, name) %>%
+  summarise(Difference = value[`Test set` == "New"] - value[`Test set` == "Existing"]) %>%
+  mutate(Length = if_else(Difference > 0, "Longer", "Shorter")) %>%
+  filter(name == "TreeLen") %>%
+  ggplot(aes(x = ID, y = Difference, fill = Length)) +
+  geom_col() +
+  labs(x = "Locus", y ="TreeLen(New model) - \nTreeLen(Best existing model)",
+       title = "Substitution process: Tree length") +
+  theme_fj
+```
+
