@@ -1,5 +1,22 @@
 nextflow.enable.dsl=2
 
+process get_subtree {
+
+    publishDir "${params.outdir}/${taxa_list.baseName}/00_subset_taxa/"
+    tag "${taxa_list.baseName}"
+
+    input:
+        tuple path(gtdb_tree), path(taxa_list)
+
+    output:
+       path "${taxa_list.baseName}.tree"
+
+    script:
+    """
+    get_subtree.py $gtdb_tree $taxa_list
+    """
+}
+
 process subset_taxa {
 
     publishDir "${params.outdir}/${taxa_list.baseName}/00_subset_taxa/"

@@ -33,13 +33,14 @@ tree = Phylo.read(tree_file, "newick")
 #taxa_list_file = "/home/fredjaya/GitHub/gtdb_trees/2306_nitrospinota/nitrospinota.taxa"
 taxa_list = read_taxa_list(taxa_list_file)
 
-#print(len(taxa_list))
-#print(taxa_list[0:4])
 subtree = get_subtree(tree, taxa_list)
+
 # Check number of subtree tips == number of taxa
 assert len([tip for tip in subtree.get_terminals()]) == len(taxa_list)
 
+# Get taxa_list basename
 out = re.sub(".*/", "", taxa_list_file)
+out = re.sub("\..+?$", "", taxa_list_file)
 out += ".tree"
 print(f"Pruned tree saved to {out}")
 
