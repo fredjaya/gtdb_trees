@@ -176,7 +176,6 @@ process estimate_Q_constrained {
 
     output:
         tuple path("Q.bac_locus_i*"), val(taxa)
-        path "i*.parstree"
         path "i*.model.gz"
         path "i*.best_scheme.nex"
         path "i*.best_scheme"
