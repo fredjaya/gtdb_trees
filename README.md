@@ -44,10 +44,20 @@ Extract subtree from GTDB r207 tree for each phyla > 50 taxa:
 scripts/get_subtree.py data/gtdb_r207_bac120_unscaled.decorated.tree [phyla_taxa_list]
 ```
 
+Output tree length and branch length distributions:  
+```
+scripts/tree_length.py [tree_file]
+```  
+
 Run treeshrink for each phyla:
 ```
 run_treeshrink.py --tree [pruned_phyla_tree]
 ```
+
+Output tree length and branch length distributions:  
+```
+scripts/tree_length.py [tree_file]
+```  
 
 Downsample phyla to $k=1000$ of the most phylogenetically diverse taxa:  
 ```
@@ -59,9 +69,37 @@ done
 
 # Parse subtree  
 for i in p__*; do
-	grep -A1 "Corresponding sub-tree" ${i}/${i}_pd1000.pda > ${i}/pruned_pd1000.tree
+	grep -A1 "Corresponding sub-tree" ${i}/${i}_pd1000.pda | \
+	tail -1 > ${i}/pruned_pd1000.tree
 done
 ```  
+
+Subset taxa across all 120 loci:  
+```
+mkdir -p 00_subset_taxa
+for loc in ~/Dropbox/gtdb/01_data/gtdb_r207_full_concat/*.faa; do
+	faSomeRecords.py --fasta $loc --list [taxa_list] --outfile 00_subset_taxa/${loc}
+```
+
+### 2. Subset loci  
+Run AliStat to identify most complete loci:
+```
+mkdir -p 01_alistat
+alistat ${locus_subtaxa} 6 -b | tail -n1 > ${locus_subtaxa}_alistat
+cat $alistats > ${taxa}_alistats.csv
+subset_loci_ca.R $combined_stats $n_training_loci
+
+# Arrange loci into training and testing directories  
+for fasta in ${LOCIDIR}/*; do
+	if grep `basename $fasta` !{training_loci}; then
+            cp -P $fasta ${PUBLISHDIR}/training_loci
+        elif grep `basename $fasta` !{testing_loci}; then
+            cp -P $fasta ${PUBLISHDIR}/testing_loci
+        else
+            echo "$fasta not found. Possibly Ca == 0"
+        fi
+    done
+```
 
 ### 3. Initial model selection  
 
