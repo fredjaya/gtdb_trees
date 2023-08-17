@@ -2,3 +2,4 @@
 .Rproj.user
 alistat
 faSomeRecords.py
+*.~lock*

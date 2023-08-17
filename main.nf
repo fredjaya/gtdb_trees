@@ -2,6 +2,7 @@ nextflow.enable.dsl=2
 
 include { 
     get_subtree
+    treeshrink
 } from "./processes.nf"
 
 workflow {
@@ -30,5 +31,6 @@ workflow {
     
     gtdb_tree_ch
         .combine(taxa_list_ch) |
-        get_subtree
+        get_subtree | // taxa_list.baseName output here, renamed $group_name
+        treeshrink
 }   

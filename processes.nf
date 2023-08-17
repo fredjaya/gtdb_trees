@@ -9,11 +9,31 @@ process get_subtree {
         tuple path(gtdb_tree), path(taxa_list)
 
     output:
-       path "${taxa_list.baseName}.tree"
+        tuple path("${taxa_list.baseName}.tree"), val("${taxa_list.baseName}")
 
     script:
     """
     get_subtree.py $gtdb_tree $taxa_list
+    """
+}
+
+process treeshrink {
+
+    publishDir "${params.outdir}/${group_name}/00_subset_taxa/"
+    tag "${group_name}"
+
+    input:
+        tuple path(pruned_tree), val(group_name)
+
+    output:
+        path "*.tree" // Return either a shrunk or unshrunk tree
+        // If treeshrink runs
+        path "*.txt", optional: true
+        path "*_summary.txt", optional: true
+
+    script:
+    """
+    treeshrink_handler.py $pruned_tree $group_name
     """
 }
 
