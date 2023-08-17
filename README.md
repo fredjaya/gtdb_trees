@@ -51,11 +51,18 @@ run_treeshrink.py --tree [pruned_phyla_tree]
 
 Downsample phyla to $k=1000$ of the most phylogenetically diverse taxa:  
 ```
+# Identify the k taxa
 cd phyla/ge_1000/
 for i in p__*; do 
 	iqtree2 -k 1000 -te ${i}/pruned_treeshrink/output.tree -pre ${i}/${i}_pd1000
 done
-```
+
+# Parse subtree  
+for i in p__*; do
+	grep -A1 "Corresponding sub-tree" ${i}/${i}_pd1000.pda > ${i}/pruned_pd1000.tree
+done
+```  
+
 ### 3. Initial model selection  
 
 
