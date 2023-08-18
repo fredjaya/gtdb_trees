@@ -1,0 +1,23 @@
+IQ-TREE multicore version 2.2.3 COVID-edition for Linux 64-bit built Aug 13 2023
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan.
+
+Host:    rsb-072749 (AVX2, FMA3, 62 GB RAM)
+Command: iqtree2 -k 1000 -te p__Planctomycetota/pruned_treeshrink/output.tree -pre p__Planctomycetota/
+Seed:    827497 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Aug 17 16:24:31 2023
+Kernel:  AVX+FMA - 1 threads (20 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 20 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+
+Running PD algorithm on ROOTED tree...
+
+Pruning Algorithm...
+Time used: 0.001 seconds.
+Resulting tree length = 214.929
+
+Results are summarized in p__Planctomycetota/.pda
+
+Date and Time: Thu Aug 17 16:24:31 2023

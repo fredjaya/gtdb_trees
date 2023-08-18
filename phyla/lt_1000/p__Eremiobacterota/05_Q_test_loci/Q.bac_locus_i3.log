@@ -1,0 +1,2719 @@
+IQ-TREE multicore version 2.2.2.7 COVID-edition for Linux 64-bit built Jun  7 2023
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan.
+
+Host:    dayhoff.uds.anu.edu.au (AVX2, FMA3, 1007 GB RAM)
+Command: iqtree2 -seed 1 -T 8 -mset Q.bac_locus_i3 -S /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/ -pre Q.bac_locus_i3
+Seed:    1 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Jul 11 12:17:05 2023
+Kernel:  AVX+FMA - 8 threads (8 CPU cores detected)
+
+Reading 20 alignment files in directory /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_PF01025.20.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.000399493 secs
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.00023945 secs using 3968% CPU
+WARNING: 4 sites contain only gaps or ambiguous characters.
+Alignment has 81 sequences with 166 columns, 162 distinct patterns
+139 parsimony-informative, 11 singleton sites, 16 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0119244 secs using 699.6% CPU
+   1  G016183865  100.00%    passed      -nan%
+   2  G016183885    6.02%    failed      0.00%
+   3  G003136655   41.57%    passed     99.70%
+   4  G003161555    8.43%    passed     99.15%
+   5  G014304875    9.64%    passed     97.90%
+   6  G019236975   10.24%    passed     99.85%
+   7  G019240525    5.42%    passed     88.51%
+   8  G900772775  100.00%    passed      -nan%
+   9  G003168375    7.83%    passed     99.99%
+  10  G019235885    7.23%    passed     99.90%
+  11  G002329445  100.00%    passed      -nan%
+  12  G003244105    4.82%    passed     32.35%
+  13  G004297985    7.23%    passed     90.60%
+  14  G014305025    7.83%    passed     95.05%
+  15  G019235715    3.01%    passed     45.65%
+  16  G019236495   10.84%    passed     21.07%
+  17  G019237415    6.02%    passed     32.98%
+  18  G900313515  100.00%    passed      -nan%
+  19  G902791745  100.00%    passed      -nan%
+  20  G003133745    7.83%    passed     54.57%
+  21  G003164495   10.24%    passed     99.54%
+  22  G004554425  100.00%    passed      -nan%
+  23  G010028905  100.00%    passed      -nan%
+  24  G018266105  100.00%    passed      -nan%
+  25  G019233165    9.04%    passed     46.65%
+  26  G902790465  100.00%    passed      -nan%
+  27  G002407045  100.00%    passed      -nan%
+  28  G002413145  100.00%    passed      -nan%
+  29  G003158175    6.63%    passed    100.00%
+  30  G013044185  100.00%    passed      -nan%
+  31  G019232905  100.00%    passed      -nan%
+  32  G003136895    4.82%    passed     95.33%
+  33  G003140835    6.02%    passed     98.71%
+  34  G013036315  100.00%    passed      -nan%
+  35  G017444165    3.01%    failed      1.76%
+  36  G903829325    9.64%    passed     51.35%
+  37  G003134035    7.23%    passed     97.28%
+  38  G003166915    4.82%    passed    100.00%
+  39  G003167055    9.64%    passed     96.30%
+  40  G004298665    7.23%    passed     85.46%
+  41  G013036095    4.82%    passed     93.54%
+  42  G013290125    4.82%    passed     56.21%
+  43  G003136355    5.42%    passed     94.12%
+  44  G003167155    4.82%    passed    100.00%
+  45  G003155175   10.24%    passed     99.41%
+  46  G003156715   10.84%    passed     20.82%
+  47  G011343225  100.00%    passed      -nan%
+  48  G017458675  100.00%    passed      -nan%
+  49  G902812405    5.42%    passed     97.90%
+  50  G903970385    9.04%    passed     96.71%
+  51  G003140215    6.63%    passed     94.73%
+  52  G003151115    4.82%    passed     93.50%
+  53  G003164045   12.05%    passed     98.37%
+  54  G003243975    9.64%    passed     99.63%
+  55  G014304965   21.69%    passed     97.20%
+  56  G019247395    6.63%    passed     93.72%
+  57  G003140855    4.22%    passed     99.07%
+  58  G004298675    6.02%    passed     97.22%
+  59  G012799975  100.00%    passed      -nan%
+  60  G013043945  100.00%    passed      -nan%
+  61  G013286945  100.00%    passed      -nan%
+  62  G018780265  100.00%    passed      -nan%
+  63  G019233415   71.69%    passed     50.43%
+  64  G019240755    6.63%    passed     99.69%
+  65  G002423485  100.00%    passed      -nan%
+  66  G003134695    6.02%    passed     99.11%
+  67  G003158195    6.02%    passed     62.74%
+  68  G013289785    4.82%    passed     99.99%
+  69  G014305015   17.47%    passed     54.73%
+  70  G019232725    6.02%    passed     98.84%
+  71  G019237435    7.83%    passed     99.80%
+  72  G013036105    4.82%    passed     98.17%
+  73  G016868975  100.00%    passed      -nan%
+  74  G017307785  100.00%    passed      -nan%
+  75  G019235995    4.22%    passed     99.97%
+  76  G003161435  100.00%    passed      -nan%
+  77  G019245275    7.23%    passed     99.99%
+  78  G003133185    5.42%    passed    100.00%
+  79  G017444045  100.00%    passed      -nan%
+  80  G019241305    8.43%    passed     85.57%
+  81  G019245995    6.63%    passed     97.97%
+WARNING: 26 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        37.19%  2 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.000151085 secs using 99.28% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_PF02576.18.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.000201892 secs using 99.06% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000121208 secs using 99% CPU
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 81 sequences with 73 columns, 73 distinct patterns
+66 parsimony-informative, 2 singleton sites, 5 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 2.5548e-05 secs using 117.4% CPU
+   1  G016183865  100.00%    passed      -nan%
+   2  G016183885    4.11%    failed      0.00%
+   3  G003136655   17.81%    passed     98.30%
+   4  G003161555   17.81%    passed     98.32%
+   5  G014304875   15.07%    passed     49.55%
+   6  G019236975   15.07%    passed     91.81%
+   7  G019240525   15.07%    passed     84.11%
+   8  G900772775   12.33%    passed      8.37%
+   9  G003168375   16.44%    passed     97.90%
+  10  G019235885   17.81%    passed     81.33%
+  11  G002329445    4.11%    passed     76.49%
+  12  G003244105   10.96%    passed     86.44%
+  13  G004297985  100.00%    passed      -nan%
+  14  G014305025   15.07%    passed     94.78%
+  15  G019235715   13.70%    passed     58.04%
+  16  G019236495   16.44%    passed     67.30%
+  17  G019237415   13.70%    passed     97.67%
+  18  G900313515    5.48%    passed     41.60%
+  19  G902791745    5.48%    failed      0.00%
+  20  G003133745  100.00%    passed      -nan%
+  21  G003164495   30.14%    passed     98.60%
+  22  G004554425   12.33%    passed      6.77%
+  23  G010028905  100.00%    passed      -nan%
+  24  G018266105  100.00%    passed      -nan%
+  25  G019233165   13.70%    passed     99.80%
+  26  G902790465    2.74%    failed      0.00%
+  27  G002407045   10.96%    passed     14.69%
+  28  G002413145   43.84%    passed     98.63%
+  29  G003158175   13.70%    passed     50.43%
+  30  G013044185   17.81%    passed     99.03%
+  31  G019232905   15.07%    passed     96.87%
+  32  G003136895   16.44%    passed     96.27%
+  33  G003140835   17.81%    passed     98.05%
+  34  G013036315   15.07%    passed     97.22%
+  35  G017444165    8.22%    failed      1.53%
+  36  G903829325  100.00%    passed      -nan%
+  37  G003134035   16.44%    passed     99.65%
+  38  G003166915   15.07%    passed     39.29%
+  39  G003167055   13.70%    passed     98.41%
+  40  G004298665   56.16%    passed     92.68%
+  41  G013036095   16.44%    passed     98.83%
+  42  G013290125   13.70%    passed     41.85%
+  43  G003136355   15.07%    passed     99.27%
+  44  G003167155   16.44%    passed     92.84%
+  45  G003155175  100.00%    passed      -nan%
+  46  G003156715   17.81%    passed     70.22%
+  47  G011343225    6.85%    failed      0.00%
+  48  G017458675    8.22%    failed      2.48%
+  49  G902812405   12.33%    passed     82.34%
+  50  G903970385  100.00%    passed      -nan%
+  51  G003140215   17.81%    passed     93.72%
+  52  G003151115   16.44%    passed     97.46%
+  53  G003164045   28.77%    passed     62.67%
+  54  G003243975   17.81%    passed     98.95%
+  55  G014304965  100.00%    passed      -nan%
+  56  G019247395   17.81%    passed     81.15%
+  57  G003140855   15.07%    passed     99.51%
+  58  G004298675   15.07%    passed     99.75%
+  59  G012799975    4.11%    passed     65.96%
+  60  G013043945  100.00%    passed      -nan%
+  61  G013286945    2.74%    passed     31.28%
+  62  G018780265  100.00%    passed      -nan%
+  63  G019233415   39.73%    passed     99.88%
+  64  G019240755   17.81%    passed     94.60%
+  65  G002423485    4.11%    passed     62.30%
+  66  G003134695   19.18%    passed     93.49%
+  67  G003158195   15.07%    passed     99.93%
+  68  G013289785   16.44%    passed     92.75%
+  69  G014305015   15.07%    passed     17.77%
+  70  G019232725    9.59%    passed     99.47%
+  71  G019237435   15.07%    passed     77.70%
+  72  G013036105   16.44%    passed     98.99%
+  73  G016868975  100.00%    passed      -nan%
+  74  G017307785  100.00%    passed      -nan%
+  75  G019235995   16.44%    passed     99.54%
+  76  G003161435   17.81%    passed     99.14%
+  77  G019245275   17.81%    passed     54.24%
+  78  G003133185   15.07%    passed     45.07%
+  79  G017444045  100.00%    passed      -nan%
+  80  G019241305   13.70%    passed     89.53%
+  81  G019245995  100.00%    passed      -nan%
+WARNING: 16 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        31.20%  6 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 8.44784e-05 secs using 98.25% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00054.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.000952547 secs using 99.73% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000820678 secs using 99.92% CPU
+WARNING: 2 sites contain only gaps or ambiguous characters.
+Alignment has 81 sequences with 421 columns, 412 distinct patterns
+382 parsimony-informative, 13 singleton sites, 26 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0121201 secs using 704.2% CPU
+   1  G016183865   47.27%    failed      0.52%
+   2  G016183885  100.00%    passed      -nan%
+   3  G003136655   48.69%    passed     99.48%
+   4  G003161555   19.95%    passed     94.04%
+   5  G014304875   21.62%    passed     81.80%
+   6  G019236975   15.20%    passed     86.56%
+   7  G019240525   19.71%    passed     88.88%
+   8  G900772775    4.28%    failed      2.87%
+   9  G003168375   21.14%    passed     90.36%
+  10  G019235885   19.71%    passed     99.20%
+  11  G002329445    6.89%    passed     92.01%
+  12  G003244105   19.48%    passed     85.09%
+  13  G004297985   20.19%    passed     93.00%
+  14  G014305025   12.35%    passed     99.17%
+  15  G019235715   20.90%    passed     87.96%
+  16  G019236495   18.29%    passed     99.13%
+  17  G019237415   21.62%    passed     66.99%
+  18  G900313515    3.56%    passed     17.31%
+  19  G902791745   13.06%    failed      0.00%
+  20  G003133745   18.29%    passed     97.78%
+  21  G003164495   19.71%    passed     85.68%
+  22  G004554425  100.00%    passed      -nan%
+  23  G010028905   18.76%    passed     58.89%
+  24  G018266105    2.38%    passed     33.78%
+  25  G019233165   20.67%    passed     91.51%
+  26  G902790465   13.54%    failed      0.00%
+  27  G002407045   49.64%    passed     68.30%
+  28  G002413145  100.00%    passed      -nan%
+  29  G003158175   19.71%    passed     99.02%
+  30  G013044185   19.24%    passed     87.38%
+  31  G019232905   20.19%    passed     99.97%
+  32  G003136895   19.00%    passed     99.83%
+  33  G003140835   19.95%    passed     98.92%
+  34  G013036315  100.00%    passed      -nan%
+  35  G017444165    6.18%    failed      0.76%
+  36  G903829325   19.71%    passed     89.56%
+  37  G003134035    8.79%    passed     91.68%
+  38  G003166915   19.71%    passed     97.76%
+  39  G003167055   19.71%    passed     97.87%
+  40  G004298665   19.48%    passed     53.23%
+  41  G013036095   20.67%    passed     92.30%
+  42  G013290125   19.24%    passed     81.95%
+  43  G003136355   20.67%    passed     93.60%
+  44  G003167155   19.71%    passed     98.29%
+  45  G003155175   19.48%    passed     91.96%
+  46  G003156715  100.00%    passed      -nan%
+  47  G011343225  100.00%    passed      -nan%
+  48  G017458675    5.23%    failed      2.94%
+  49  G902812405   20.67%    failed      0.93%
+  50  G903970385   20.67%    passed     99.63%
+  51  G003140215   19.71%    passed     89.56%
+  52  G003151115   20.67%    passed     81.67%
+  53  G003164045   19.71%    passed     82.71%
+  54  G003243975   19.48%    passed     92.17%
+  55  G014304965   19.24%    passed     97.82%
+  56  G019247395  100.00%    passed      -nan%
+  57  G003140855   20.90%    passed     97.05%
+  58  G004298675   19.48%    passed     98.77%
+  59  G012799975    5.46%    passed     84.00%
+  60  G013043945   19.24%    passed     94.41%
+  61  G013286945   75.06%    passed      9.61%
+  62  G018780265    4.28%    passed      7.26%
+  63  G019233415   19.95%    passed     98.56%
+  64  G019240755   19.00%    passed     78.07%
+  65  G002423485    7.13%    passed     89.61%
+  66  G003134695   19.95%    passed     95.57%
+  67  G003158195   19.00%    passed     99.75%
+  68  G013289785  100.00%    passed      -nan%
+  69  G014305015   19.71%    passed     94.34%
+  70  G019232725   21.85%    passed     75.71%
+  71  G019237435   20.19%    passed     99.03%
+  72  G013036105   21.62%    passed     99.27%
+  73  G016868975  100.00%    passed      -nan%
+  74  G017307785    2.14%    passed     65.45%
+  75  G019235995   20.43%    passed     99.13%
+  76  G003161435   20.67%    passed     82.17%
+  77  G019245275   20.67%    passed     88.08%
+  78  G003133185   19.71%    passed     97.04%
+  79  G017444045    5.46%    failed      3.32%
+  80  G019241305   19.24%    passed     96.05%
+  81  G019245995   19.24%    passed     91.98%
+WARNING: 10 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        28.08%  8 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.000520371 secs using 99.74% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00084.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.000474544 secs using 99.67% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000320012 secs using 100% CPU
+WARNING: 2 sites contain only gaps or ambiguous characters.
+Alignment has 81 sequences with 192 columns, 188 distinct patterns
+173 parsimony-informative, 6 singleton sites, 13 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 1.97068e-05 secs using 91.34% CPU
+   1  G016183865  100.00%    passed      -nan%
+   2  G016183885    1.04%    failed      0.00%
+   3  G003136655  100.00%    passed      -nan%
+   4  G003161555  100.00%    passed      -nan%
+   5  G014304875  100.00%    passed      -nan%
+   6  G019236975  100.00%    passed      -nan%
+   7  G019240525    8.33%    passed     98.67%
+   8  G900772775    9.38%    passed     80.21%
+   9  G003168375  100.00%    passed      -nan%
+  10  G019235885  100.00%    passed      -nan%
+  11  G002329445   11.98%    passed     21.56%
+  12  G003244105  100.00%    passed      -nan%
+  13  G004297985  100.00%    passed      -nan%
+  14  G014305025   11.46%    passed     98.38%
+  15  G019235715    8.85%    passed     85.79%
+  16  G019236495    7.29%    passed     85.40%
+  17  G019237415    8.85%    passed     74.99%
+  18  G900313515   11.46%    passed     92.87%
+  19  G902791745    2.08%    failed      0.00%
+  20  G003133745  100.00%    passed      -nan%
+  21  G003164495  100.00%    passed      -nan%
+  22  G004554425    9.38%    passed     88.69%
+  23  G010028905  100.00%    passed      -nan%
+  24  G018266105   10.94%    passed     30.81%
+  25  G019233165  100.00%    passed      -nan%
+  26  G902790465    2.08%    failed      0.00%
+  27  G002407045    9.38%    passed     88.69%
+  28  G002413145  100.00%    passed      -nan%
+  29  G003158175    5.73%    passed     95.60%
+  30  G013044185   10.42%    passed     86.65%
+  31  G019232905  100.00%    passed      -nan%
+  32  G003136895  100.00%    passed      -nan%
+  33  G003140835  100.00%    passed      -nan%
+  34  G013036315  100.00%    passed      -nan%
+  35  G017444165    6.25%    passed     92.91%
+  36  G903829325  100.00%    passed      -nan%
+  37  G003134035   10.94%    passed     66.07%
+  38  G003166915    6.25%    passed     98.22%
+  39  G003167055   10.42%    passed     91.51%
+  40  G004298665  100.00%    passed      -nan%
+  41  G013036095  100.00%    passed      -nan%
+  42  G013290125  100.00%    passed      -nan%
+  43  G003136355  100.00%    passed      -nan%
+  44  G003167155    5.21%    passed     90.30%
+  45  G003155175  100.00%    passed      -nan%
+  46  G003156715  100.00%    passed      -nan%
+  47  G011343225  100.00%    passed      -nan%
+  48  G017458675   11.98%    passed     46.59%
+  49  G902812405  100.00%    passed      -nan%
+  50  G903970385  100.00%    passed      -nan%
+  51  G003140215  100.00%    passed      -nan%
+  52  G003151115  100.00%    passed      -nan%
+  53  G003164045  100.00%    passed      -nan%
+  54  G003243975  100.00%    passed      -nan%
+  55  G014304965  100.00%    passed      -nan%
+  56  G019247395  100.00%    passed      -nan%
+  57  G003140855  100.00%    passed      -nan%
+  58  G004298675  100.00%    passed      -nan%
+  59  G012799975    2.60%    passed     14.25%
+  60  G013043945    9.90%    passed     82.96%
+  61  G013286945   33.33%    passed     31.90%
+  62  G018780265   11.46%    passed     80.24%
+  63  G019233415  100.00%    passed      -nan%
+  64  G019240755  100.00%    passed      -nan%
+  65  G002423485    2.60%    passed     15.70%
+  66  G003134695    7.29%    passed     97.23%
+  67  G003158195  100.00%    passed      -nan%
+  68  G013289785    5.73%    passed     97.66%
+  69  G014305015  100.00%    passed      -nan%
+  70  G019232725  100.00%    passed      -nan%
+  71  G019237435  100.00%    passed      -nan%
+  72  G013036105  100.00%    passed      -nan%
+  73  G016868975    2.08%    passed     48.42%
+  74  G017307785    1.56%    passed     22.57%
+  75  G019235995   10.42%    passed     88.01%
+  76  G003161435  100.00%    passed      -nan%
+  77  G019245275  100.00%    passed      -nan%
+  78  G003133185  100.00%    passed      -nan%
+  79  G017444045    7.29%    passed     31.90%
+  80  G019241305  100.00%    passed      -nan%
+  81  G019245995  100.00%    passed      -nan%
+WARNING: 48 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        62.64%  3 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.000139302 secs using 99.07% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00116.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.000629226 secs using 99.81% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000456231 secs using 99.73% CPU
+WARNING: 17 sites contain only gaps or ambiguous characters.
+Alignment has 81 sequences with 293 columns, 272 distinct patterns
+217 parsimony-informative, 32 singleton sites, 44 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 2.01985e-05 secs using 94.07% CPU
+   1  G016183865   57.00%    passed     84.60%
+   2  G016183885   64.16%    passed     43.11%
+   3  G003136655  100.00%    passed      -nan%
+   4  G003161555   57.34%    passed     64.39%
+   5  G014304875   65.19%    passed     97.91%
+   6  G019236975   65.53%    passed     97.54%
+   7  G019240525   63.82%    passed     98.64%
+   8  G900772775   64.51%    passed     57.80%
+   9  G003168375   57.34%    passed     40.30%
+  10  G019235885   55.63%    passed     41.45%
+  11  G002329445    6.83%    failed      0.00%
+  12  G003244105   66.55%    passed     85.55%
+  13  G004297985   65.19%    passed     90.80%
+  14  G014305025   57.68%    passed     91.85%
+  15  G019235715   58.70%    passed     63.84%
+  16  G019236495   63.82%    passed     99.92%
+  17  G019237415   63.82%    passed     95.25%
+  18  G900313515   64.85%    passed     62.76%
+  19  G902791745    6.48%    failed      0.09%
+  20  G003133745  100.00%    passed      -nan%
+  21  G003164495  100.00%    passed      -nan%
+  22  G004554425   65.53%    passed     30.59%
+  23  G010028905   58.36%    passed     99.80%
+  24  G018266105   53.58%    passed     73.30%
+  25  G019233165   64.51%    passed     92.82%
+  26  G902790465    6.48%    failed      0.13%
+  27  G002407045   65.53%    passed     13.17%
+  28  G002413145  100.00%    passed      -nan%
+  29  G003158175   53.24%    passed     92.84%
+  30  G013044185   57.34%    passed     85.88%
+  31  G019232905   63.14%    passed     97.69%
+  32  G003136895   56.66%    passed     87.95%
+  33  G003140835   56.31%    passed     94.91%
+  34  G013036315   59.39%    passed     84.48%
+  35  G017444165   56.31%    passed     89.81%
+  36  G903829325   63.82%    passed     92.43%
+  37  G003134035   64.85%    passed     97.64%
+  38  G003166915   53.58%    passed     87.71%
+  39  G003167055  100.00%    passed      -nan%
+  40  G004298665   65.19%    passed     86.35%
+  41  G013036095   66.21%    passed     99.31%
+  42  G013290125   65.53%    passed     70.87%
+  43  G003136355   56.31%    passed     95.12%
+  44  G003167155   53.58%    passed     99.39%
+  45  G003155175   57.34%    passed     96.26%
+  46  G003156715   65.19%    passed     99.44%
+  47  G011343225   45.73%    failed      0.55%
+  48  G017458675   59.04%    passed     73.49%
+  49  G902812405   64.85%    passed     55.50%
+  50  G903970385   72.70%    passed     71.62%
+  51  G003140215   49.49%    passed     95.50%
+  52  G003151115   40.27%    passed    100.00%
+  53  G003164045   63.82%    passed     99.94%
+  54  G003243975   62.12%    passed     99.90%
+  55  G014304965   61.77%    passed     99.77%
+  56  G019247395  100.00%    passed      -nan%
+  57  G003140855   51.19%    passed     99.97%
+  58  G004298675   63.82%    passed     98.77%
+  59  G012799975  100.00%    passed      -nan%
+  60  G013043945   57.34%    passed     85.88%
+  61  G013286945   63.82%    passed     96.91%
+  62  G018780265   62.80%    passed     91.77%
+  63  G019233415   50.85%    passed     95.07%
+  64  G019240755   53.58%    passed     99.69%
+  65  G002423485  100.00%    passed      -nan%
+  66  G003134695   64.16%    passed     89.60%
+  67  G003158195   64.85%    passed     96.53%
+  68  G013289785   53.92%    passed     98.57%
+  69  G014305015   66.55%    passed     98.95%
+  70  G019232725   65.87%    passed     79.87%
+  71  G019237435   64.51%    passed     99.44%
+  72  G013036105   55.29%    passed     99.47%
+  73  G016868975   62.46%    passed     60.97%
+  74  G017307785   55.97%    passed     87.04%
+  75  G019235995   57.00%    passed     72.27%
+  76  G003161435   57.34%    passed     68.82%
+  77  G019245275   66.21%    passed     94.21%
+  78  G003133185   53.92%    passed     96.07%
+  79  G017444045  100.00%    passed      -nan%
+  80  G019241305   53.92%    passed     99.32%
+  81  G019245995   57.00%    passed     67.50%
+WARNING: 75 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        62.40%  4 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.000355249 secs using 7981% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00382.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.000897493 secs using 96.27% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000556078 secs using 99.81% CPU
+WARNING: 4 sites contain only gaps or ambiguous characters.
+Alignment has 81 sequences with 414 columns, 365 distinct patterns
+217 parsimony-informative, 49 singleton sites, 148 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 3.82029e-05 secs using 96.85% CPU
+   1  G016183865    3.38%    passed     99.99%
+   2  G016183885    2.17%    passed     85.21%
+   3  G003136655  100.00%    passed      -nan%
+   4  G003161555   64.98%    passed     82.99%
+   5  G014304875    2.17%    passed    100.00%
+   6  G019236975   30.68%    passed     99.98%
+   7  G019240525    2.90%    passed    100.00%
+   8  G900772775  100.00%    passed      -nan%
+   9  G003168375    2.42%    passed    100.00%
+  10  G019235885    2.66%    passed    100.00%
+  11  G002329445    2.90%    passed     99.13%
+  12  G003244105    2.42%    passed     99.94%
+  13  G004297985    3.14%    passed    100.00%
+  14  G014305025    2.90%    passed    100.00%
+  15  G019235715    2.90%    passed     99.93%
+  16  G019236495    3.14%    passed    100.00%
+  17  G019237415  100.00%    passed      -nan%
+  18  G900313515    2.90%    passed     90.79%
+  19  G902791745    2.90%    passed     17.55%
+  20  G003133745  100.00%    passed      -nan%
+  21  G003164495   59.66%    passed     53.20%
+  22  G004554425  100.00%    passed      -nan%
+  23  G010028905    3.14%    passed     97.36%
+  24  G018266105    2.66%    passed     99.98%
+  25  G019233165  100.00%    passed      -nan%
+  26  G902790465    2.90%    passed      7.99%
+  27  G002407045    2.90%    passed     88.54%
+  28  G002413145  100.00%    passed      -nan%
+  29  G003158175    2.90%    passed    100.00%
+  30  G013044185    2.42%    passed     99.92%
+  31  G019232905    3.14%    passed    100.00%
+  32  G003136895    3.14%    passed    100.00%
+  33  G003140835   46.38%    passed     86.13%
+  34  G013036315  100.00%    passed      -nan%
+  35  G017444165    3.38%    passed     78.55%
+  36  G903829325    3.62%    passed     95.06%
+  37  G003134035   56.04%    passed     88.12%
+  38  G003166915    2.90%    passed    100.00%
+  39  G003167055   62.80%    passed     94.98%
+  40  G004298665    3.14%    passed    100.00%
+  41  G013036095    3.14%    passed    100.00%
+  42  G013290125    2.90%    passed    100.00%
+  43  G003136355    3.14%    passed    100.00%
+  44  G003167155  100.00%    passed      -nan%
+  45  G003155175   44.93%    passed     74.90%
+  46  G003156715  100.00%    passed      -nan%
+  47  G011343225    2.90%    passed     83.17%
+  48  G017458675    4.35%    passed     75.29%
+  49  G902812405    2.66%    passed     99.97%
+  50  G903970385    3.14%    passed    100.00%
+  51  G003140215    2.42%    passed    100.00%
+  52  G003151115    3.14%    passed    100.00%
+  53  G003164045    3.62%    passed    100.00%
+  54  G003243975    3.14%    passed    100.00%
+  55  G014304965    3.14%    passed    100.00%
+  56  G019247395    2.90%    passed    100.00%
+  57  G003140855    3.14%    passed    100.00%
+  58  G004298675    3.14%    passed    100.00%
+  59  G012799975    2.90%    passed     99.24%
+  60  G013043945    2.42%    passed     99.97%
+  61  G013286945  100.00%    passed      -nan%
+  62  G018780265    2.66%    passed     99.94%
+  63  G019233415   15.94%    passed    100.00%
+  64  G019240755    3.14%    passed    100.00%
+  65  G002423485   46.62%    passed     71.14%
+  66  G003134695  100.00%    passed      -nan%
+  67  G003158195   40.58%    passed     94.69%
+  68  G013289785   38.65%    passed     99.32%
+  69  G014305015    3.14%    passed    100.00%
+  70  G019232725   43.96%    passed     97.59%
+  71  G019237435    2.90%    passed    100.00%
+  72  G013036105    3.14%    passed    100.00%
+  73  G016868975    2.66%    passed     98.87%
+  74  G017307785    2.66%    passed     99.99%
+  75  G019235995    3.14%    passed    100.00%
+  76  G003161435   56.52%    passed     86.30%
+  77  G019245275  100.00%    passed      -nan%
+  78  G003133185  100.00%    passed      -nan%
+  79  G017444045    3.62%    passed     96.76%
+  80  G019241305    3.38%    passed    100.00%
+  81  G019245995  100.00%    passed      -nan%
+WARNING: 20 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        27.97%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.000416635 secs using 99.61% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00436.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.000595892 secs using 99.85% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000364337 secs using 99.63% CPU
+Alignment has 81 sequences with 270 columns, 246 distinct patterns
+201 parsimony-informative, 25 singleton sites, 44 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 1.89859e-05 secs using 94.81% CPU
+   1  G016183865    0.00%    passed     86.88%
+   2  G016183885  100.00%    passed      -nan%
+   3  G003136655  100.00%    passed      -nan%
+   4  G003161555  100.00%    passed      -nan%
+   5  G014304875  100.00%    passed      -nan%
+   6  G019236975  100.00%    passed      -nan%
+   7  G019240525  100.00%    passed      -nan%
+   8  G900772775    0.00%    passed     97.20%
+   9  G003168375  100.00%    passed      -nan%
+  10  G019235885  100.00%    passed      -nan%
+  11  G002329445    0.00%    passed     94.51%
+  12  G003244105  100.00%    passed      -nan%
+  13  G004297985  100.00%    passed      -nan%
+  14  G014305025  100.00%    passed      -nan%
+  15  G019235715  100.00%    passed      -nan%
+  16  G019236495  100.00%    passed      -nan%
+  17  G019237415  100.00%    passed      -nan%
+  18  G900313515   13.70%    passed     99.95%
+  19  G902791745  100.00%    passed      -nan%
+  20  G003133745  100.00%    passed      -nan%
+  21  G003164495  100.00%    passed      -nan%
+  22  G004554425    0.00%    passed     99.66%
+  23  G010028905    0.00%    passed     16.01%
+  24  G018266105    0.00%    passed     87.78%
+  25  G019233165  100.00%    passed      -nan%
+  26  G902790465    1.48%    failed      0.05%
+  27  G002407045    0.00%    passed     97.07%
+  28  G002413145  100.00%    passed      -nan%
+  29  G003158175  100.00%    passed      -nan%
+  30  G013044185  100.00%    passed      -nan%
+  31  G019232905  100.00%    passed      -nan%
+  32  G003136895  100.00%    passed      -nan%
+  33  G003140835  100.00%    passed      -nan%
+  34  G013036315  100.00%    passed      -nan%
+  35  G017444165    0.00%    passed     80.94%
+  36  G903829325  100.00%    passed      -nan%
+  37  G003134035  100.00%    passed      -nan%
+  38  G003166915  100.00%    passed      -nan%
+  39  G003167055  100.00%    passed      -nan%
+  40  G004298665  100.00%    passed      -nan%
+  41  G013036095  100.00%    passed      -nan%
+  42  G013290125  100.00%    passed      -nan%
+  43  G003136355  100.00%    passed      -nan%
+  44  G003167155  100.00%    passed      -nan%
+  45  G003155175  100.00%    passed      -nan%
+  46  G003156715  100.00%    passed      -nan%
+  47  G011343225    0.00%    failed      0.09%
+  48  G017458675    0.00%    passed     96.28%
+  49  G902812405  100.00%    passed      -nan%
+  50  G903970385  100.00%    passed      -nan%
+  51  G003140215  100.00%    passed      -nan%
+  52  G003151115  100.00%    passed      -nan%
+  53  G003164045  100.00%    passed      -nan%
+  54  G003243975  100.00%    passed      -nan%
+  55  G014304965  100.00%    passed      -nan%
+  56  G019247395  100.00%    passed      -nan%
+  57  G003140855  100.00%    passed      -nan%
+  58  G004298675  100.00%    passed      -nan%
+  59  G012799975    0.00%    passed     98.28%
+  60  G013043945  100.00%    passed      -nan%
+  61  G013286945    0.00%    passed     97.99%
+  62  G018780265    0.00%    passed     75.50%
+  63  G019233415  100.00%    passed      -nan%
+  64  G019240755  100.00%    passed      -nan%
+  65  G002423485    0.00%    passed     53.03%
+  66  G003134695  100.00%    passed      -nan%
+  67  G003158195  100.00%    passed      -nan%
+  68  G013289785  100.00%    passed      -nan%
+  69  G014305015  100.00%    passed      -nan%
+  70  G019232725  100.00%    passed      -nan%
+  71  G019237435  100.00%    passed      -nan%
+  72  G013036105  100.00%    passed      -nan%
+  73  G016868975    0.37%    passed     78.31%
+  74  G017307785    0.00%    passed     96.75%
+  75  G019235995  100.00%    passed      -nan%
+  76  G003161435  100.00%    passed      -nan%
+  77  G019245275  100.00%    passed      -nan%
+  78  G003133185  100.00%    passed      -nan%
+  79  G017444045    0.00%    passed     45.54%
+  80  G019241305  100.00%    passed      -nan%
+  81  G019245995  100.00%    passed      -nan%
+WARNING: 62 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        76.74%  2 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.000144582 secs using 98.91% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00593.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.0855795 secs using 2.164% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.0015448 secs using 99.95% CPU
+Alignment has 81 sequences with 890 columns, 875 distinct patterns
+790 parsimony-informative, 41 singleton sites, 59 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 6.7398e-05 secs using 97.93% CPU
+   1  G016183865    3.37%    passed     15.97%
+   2  G016183885    3.48%    failed      0.00%
+   3  G003136655    4.04%    passed     57.74%
+   4  G003161555  100.00%    passed      -nan%
+   5  G014304875    0.67%    failed      0.98%
+   6  G019236975    4.49%    passed     99.33%
+   7  G019240525    4.94%    passed     96.87%
+   8  G900772775  100.00%    passed      -nan%
+   9  G003168375    4.72%    passed     84.40%
+  10  G019235885    4.16%    passed     97.21%
+  11  G002329445  100.00%    passed      -nan%
+  12  G003244105    0.90%    passed     47.78%
+  13  G004297985    4.27%    passed     72.08%
+  14  G014305025    4.04%    passed     27.54%
+  15  G019235715   51.80%    passed     72.55%
+  16  G019236495   64.72%    passed     87.00%
+  17  G019237415  100.00%    passed      -nan%
+  18  G900313515  100.00%    passed      -nan%
+  19  G902791745    6.07%    failed      0.00%
+  20  G003133745    3.82%    passed     98.81%
+  21  G003164495    4.83%    passed     41.60%
+  22  G004554425  100.00%    passed      -nan%
+  23  G010028905    1.91%    failed      2.38%
+  24  G018266105  100.00%    passed      -nan%
+  25  G019233165   25.06%    passed     73.43%
+  26  G902790465    6.18%    failed      0.00%
+  27  G002407045  100.00%    passed      -nan%
+  28  G002413145   18.31%    passed     95.19%
+  29  G003158175    4.04%    passed     84.09%
+  30  G013044185  100.00%    passed      -nan%
+  31  G019232905    4.61%    passed     68.33%
+  32  G003136895    4.38%    passed     82.08%
+  33  G003140835    4.38%    passed     97.79%
+  34  G013036315    3.60%    passed     99.99%
+  35  G017444165  100.00%    passed      -nan%
+  36  G903829325    4.04%    passed     24.60%
+  37  G003134035    4.61%    passed     95.54%
+  38  G003166915    3.71%    passed     96.15%
+  39  G003167055    4.04%    passed     98.55%
+  40  G004298665   17.64%    passed     26.57%
+  41  G013036095    4.61%    passed    100.00%
+  42  G013290125    1.24%    passed     73.54%
+  43  G003136355   29.66%    passed     99.71%
+  44  G003167155    4.49%    passed     99.98%
+  45  G003155175    4.04%    passed     86.63%
+  46  G003156715    3.60%    passed     79.40%
+  47  G011343225    3.93%    failed      0.00%
+  48  G017458675  100.00%    passed      -nan%
+  49  G902812405    1.24%    failed      0.13%
+  50  G903970385   45.96%    passed     90.72%
+  51  G003140215    4.94%    passed     99.53%
+  52  G003151115    3.93%    passed     99.96%
+  53  G003164045    4.16%    passed     83.88%
+  54  G003243975    4.61%    passed     98.09%
+  55  G014304965    4.16%    passed     98.37%
+  56  G019247395  100.00%    passed      -nan%
+  57  G003140855    3.82%    passed     99.89%
+  58  G004298675    4.49%    passed     55.13%
+  59  G012799975    5.28%    failed      0.00%
+  60  G013043945    4.04%    passed     42.61%
+  61  G013286945    3.71%    failed      0.00%
+  62  G018780265  100.00%    passed      -nan%
+  63  G019233415   32.36%    passed     35.58%
+  64  G019240755    4.38%    passed     96.37%
+  65  G002423485    3.15%    failed      0.00%
+  66  G003134695    4.16%    passed     99.96%
+  67  G003158195   19.66%    passed     79.57%
+  68  G013289785   22.58%    passed     98.83%
+  69  G014305015    4.38%    passed     82.32%
+  70  G019232725   42.25%    passed     63.28%
+  71  G019237435  100.00%    passed      -nan%
+  72  G013036105    3.93%    passed    100.00%
+  73  G016868975    1.80%    passed      7.65%
+  74  G017307785  100.00%    passed      -nan%
+  75  G019235995    4.38%    passed     99.81%
+  76  G003161435    4.04%    passed     96.32%
+  77  G019245275    4.61%    passed     88.02%
+  78  G003133185  100.00%    passed      -nan%
+  79  G017444045  100.00%    passed      -nan%
+  80  G019241305   29.89%    passed     91.15%
+  81  G019245995   19.21%    passed     92.79%
+WARNING: 19 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        28.64%  10 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.000937467 secs using 99.1% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00717.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.00104876 secs using 99.26% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000586376 secs using 4872% CPU
+WARNING: 160 sites contain only gaps or ambiguous characters.
+Alignment has 81 sequences with 516 columns, 318 distinct patterns
+270 parsimony-informative, 26 singleton sites, 220 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 2.26423e-05 secs using 97.16% CPU
+   1  G016183865   35.27%    passed     81.38%
+   2  G016183885  100.00%    passed      -nan%
+   3  G003136655   37.60%    passed    100.00%
+   4  G003161555  100.00%    passed      -nan%
+   5  G014304875   36.24%    passed     96.67%
+   6  G019236975   37.79%    passed     99.94%
+   7  G019240525   39.34%    passed     99.85%
+   8  G900772775   33.33%    passed     45.86%
+   9  G003168375  100.00%    passed      -nan%
+  10  G019235885   38.76%    passed     99.99%
+  11  G002329445   35.08%    passed     47.62%
+  12  G003244105   36.63%    passed     99.26%
+  13  G004297985   35.85%    passed     99.92%
+  14  G014305025   35.85%    passed     99.99%
+  15  G019235715   37.98%    passed     99.16%
+  16  G019236495   34.50%    passed     99.99%
+  17  G019237415   37.21%    passed     99.31%
+  18  G900313515   31.78%    passed     23.68%
+  19  G902791745   34.50%    failed      0.06%
+  20  G003133745   35.66%    passed     98.42%
+  21  G003164495  100.00%    passed      -nan%
+  22  G004554425   33.33%    passed     37.99%
+  23  G010028905   35.27%    passed     48.21%
+  24  G018266105   35.47%    passed     99.42%
+  25  G019233165   36.24%    passed    100.00%
+  26  G902790465   34.50%    failed      1.48%
+  27  G002407045   33.33%    passed     41.49%
+  28  G002413145   34.88%    passed     99.86%
+  29  G003158175   39.15%    passed    100.00%
+  30  G013044185   37.60%    passed     99.97%
+  31  G019232905   39.15%    passed     99.96%
+  32  G003136895   34.30%    passed    100.00%
+  33  G003140835  100.00%    passed      -nan%
+  34  G013036315   35.47%    passed     99.95%
+  35  G017444165   32.75%    passed     10.68%
+  36  G903829325   36.05%    passed     99.96%
+  37  G003134035  100.00%    passed      -nan%
+  38  G003166915   39.34%    passed    100.00%
+  39  G003167055  100.00%    passed      -nan%
+  40  G004298665   35.85%    passed     99.82%
+  41  G013036095   35.47%    passed     99.98%
+  42  G013290125   36.05%    passed     94.78%
+  43  G003136355   35.47%    passed     99.96%
+  44  G003167155   34.30%    passed    100.00%
+  45  G003155175   39.15%    passed     99.84%
+  46  G003156715   34.50%    passed     99.98%
+  47  G011343225   35.27%    passed     46.71%
+  48  G017458675   33.72%    passed      5.19%
+  49  G902812405   35.47%    passed     78.73%
+  50  G903970385   35.85%    passed     99.99%
+  51  G003140215   40.70%    passed    100.00%
+  52  G003151115   35.47%    passed     99.98%
+  53  G003164045  100.00%    passed      -nan%
+  54  G003243975   34.30%    passed    100.00%
+  55  G014304965   37.21%    passed    100.00%
+  56  G019247395   39.73%    passed     99.92%
+  57  G003140855   35.47%    passed     99.96%
+  58  G004298675   35.47%    passed    100.00%
+  59  G012799975   34.88%    passed     53.80%
+  60  G013043945   37.60%    passed     99.97%
+  61  G013286945  100.00%    passed      -nan%
+  62  G018780265   35.08%    passed     98.92%
+  63  G019233415   34.69%    passed    100.00%
+  64  G019240755   37.02%    passed     99.98%
+  65  G002423485   35.08%    passed     24.21%
+  66  G003134695   33.72%    passed    100.00%
+  67  G003158195   37.40%    passed     99.99%
+  68  G013289785   38.95%    passed    100.00%
+  69  G014305015  100.00%    passed      -nan%
+  70  G019232725   36.05%    passed     96.51%
+  71  G019237435   37.02%    passed     99.97%
+  72  G013036105   35.47%    passed     99.97%
+  73  G016868975   35.85%    passed     92.87%
+  74  G017307785   35.47%    passed     98.55%
+  75  G019235995   36.82%    passed     99.96%
+  76  G003161435   38.57%    passed    100.00%
+  77  G019245275  100.00%    passed      -nan%
+  78  G003133185  100.00%    passed      -nan%
+  79  G017444045   35.66%    passed     92.43%
+  80  G019241305  100.00%    passed      -nan%
+  81  G019245995  100.00%    passed      -nan%
+WARNING: 14 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        47.10%  2 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.000378333 secs using 99.91% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00922.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.000404583 secs using 98.62% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000276601 secs using 99.06% CPU
+Alignment has 81 sequences with 172 columns, 163 distinct patterns
+114 parsimony-informative, 18 singleton sites, 40 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 1.29342e-05 secs using 100.5% CPU
+   1  G016183865    1.16%    passed     93.53%
+   2  G016183885  100.00%    passed      -nan%
+   3  G003136655   23.26%    passed     99.31%
+   4  G003161555    1.16%    passed    100.00%
+   5  G014304875    1.16%    passed     99.99%
+   6  G019236975    1.16%    passed    100.00%
+   7  G019240525    1.16%    passed    100.00%
+   8  G900772775    0.58%    passed     54.53%
+   9  G003168375    1.16%    passed    100.00%
+  10  G019235885    1.16%    passed    100.00%
+  11  G002329445    0.58%    passed     92.70%
+  12  G003244105    1.16%    passed    100.00%
+  13  G004297985    1.16%    passed    100.00%
+  14  G014305025    1.16%    passed    100.00%
+  15  G019235715    1.16%    passed     99.98%
+  16  G019236495  100.00%    passed      -nan%
+  17  G019237415  100.00%    passed      -nan%
+  18  G900313515    0.58%    failed      0.33%
+  19  G902791745    1.74%    passed     98.27%
+  20  G003133745    1.16%    passed    100.00%
+  21  G003164495   35.47%    passed     99.20%
+  22  G004554425    0.58%    passed     64.46%
+  23  G010028905    0.58%    passed     99.95%
+  24  G018266105    0.58%    passed     98.11%
+  25  G019233165  100.00%    passed      -nan%
+  26  G902790465    1.74%    passed     99.83%
+  27  G002407045    0.58%    passed     55.68%
+  28  G002413145  100.00%    passed      -nan%
+  29  G003158175    1.16%    passed    100.00%
+  30  G013044185    1.16%    passed    100.00%
+  31  G019232905    1.16%    passed    100.00%
+  32  G003136895  100.00%    passed      -nan%
+  33  G003140835    1.16%    passed    100.00%
+  34  G013036315    6.98%    passed     99.99%
+  35  G017444165  100.00%    passed      -nan%
+  36  G903829325    1.16%    passed    100.00%
+  37  G003134035    1.16%    passed    100.00%
+  38  G003166915    1.16%    passed    100.00%
+  39  G003167055  100.00%    passed      -nan%
+  40  G004298665    1.16%    passed    100.00%
+  41  G013036095    1.16%    passed    100.00%
+  42  G013290125    1.16%    passed     99.93%
+  43  G003136355    1.16%    passed    100.00%
+  44  G003167155    1.16%    passed    100.00%
+  45  G003155175  100.00%    passed      -nan%
+  46  G003156715    1.16%    passed    100.00%
+  47  G011343225    1.16%    passed     63.35%
+  48  G017458675    0.58%    failed      1.01%
+  49  G902812405    1.16%    passed     99.99%
+  50  G903970385  100.00%    passed      -nan%
+  51  G003140215    1.16%    passed    100.00%
+  52  G003151115    1.16%    passed    100.00%
+  53  G003164045    1.16%    passed    100.00%
+  54  G003243975    1.16%    passed    100.00%
+  55  G014304965    1.16%    passed    100.00%
+  56  G019247395  100.00%    passed      -nan%
+  57  G003140855    1.16%    passed    100.00%
+  58  G004298675    1.16%    passed    100.00%
+  59  G012799975    0.58%    passed     92.70%
+  60  G013043945  100.00%    passed      -nan%
+  61  G013286945  100.00%    passed      -nan%
+  62  G018780265    0.58%    passed     99.88%
+  63  G019233415  100.00%    passed      -nan%
+  64  G019240755    1.16%    passed    100.00%
+  65  G002423485  100.00%    passed      -nan%
+  66  G003134695    1.16%    passed    100.00%
+  67  G003158195  100.00%    passed      -nan%
+  68  G013289785    1.16%    passed    100.00%
+  69  G014305015  100.00%    passed      -nan%
+  70  G019232725  100.00%    passed      -nan%
+  71  G019237435  100.00%    passed      -nan%
+  72  G013036105    1.16%    passed    100.00%
+  73  G016868975    0.58%    passed     99.52%
+  74  G017307785    0.58%    passed     98.11%
+  75  G019235995  100.00%    passed      -nan%
+  76  G003161435    1.16%    passed    100.00%
+  77  G019245275    1.16%    passed    100.00%
+  78  G003133185    1.16%    passed    100.00%
+  79  G017444045  100.00%    passed      -nan%
+  80  G019241305    1.16%    passed    100.00%
+  81  G019245995  100.00%    passed      -nan%
+WARNING: 22 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        28.70%  2 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.000146827 secs using 98.76% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00928.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.00092789 secs using 1623% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000597427 secs using 99.93% CPU
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 81 sequences with 436 columns, 408 distinct patterns
+366 parsimony-informative, 21 singleton sites, 49 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 3.46638e-05 secs using 98.08% CPU
+   1  G016183865    1.83%    passed     25.95%
+   2  G016183885  100.00%    passed      -nan%
+   3  G003136655    1.38%    passed    100.00%
+   4  G003161555    1.15%    passed     99.94%
+   5  G014304875    2.06%    passed     52.12%
+   6  G019236975    2.06%    passed     99.38%
+   7  G019240525    2.06%    passed    100.00%
+   8  G900772775  100.00%    passed      -nan%
+   9  G003168375    1.38%    passed     98.33%
+  10  G019235885    1.38%    passed     98.46%
+  11  G002329445  100.00%    passed      -nan%
+  12  G003244105    2.98%    passed     87.69%
+  13  G004297985    1.61%    passed     99.51%
+  14  G014305025    6.65%    passed     97.82%
+  15  G019235715    3.67%    passed     94.42%
+  16  G019236495    2.06%    passed     99.63%
+  17  G019237415  100.00%    passed      -nan%
+  18  G900313515  100.00%    passed      -nan%
+  19  G902791745  100.00%    passed      -nan%
+  20  G003133745    2.06%    passed     90.30%
+  21  G003164495    1.61%    passed     99.99%
+  22  G004554425  100.00%    passed      -nan%
+  23  G010028905    2.06%    passed      9.76%
+  24  G018266105  100.00%    passed      -nan%
+  25  G019233165  100.00%    passed      -nan%
+  26  G902790465  100.00%    passed      -nan%
+  27  G002407045  100.00%    passed      -nan%
+  28  G002413145  100.00%    passed      -nan%
+  29  G003158175    2.06%    passed     99.69%
+  30  G013044185    2.06%    passed     99.65%
+  31  G019232905    2.06%    passed    100.00%
+  32  G003136895    1.38%    passed     99.99%
+  33  G003140835    2.06%    passed     99.35%
+  34  G013036315  100.00%    passed      -nan%
+  35  G017444165  100.00%    passed      -nan%
+  36  G903829325    2.06%    passed     98.39%
+  37  G003134035    1.61%    passed     99.21%
+  38  G003166915    2.06%    passed     99.15%
+  39  G003167055    2.06%    passed    100.00%
+  40  G004298665    2.06%    passed     97.67%
+  41  G013036095  100.00%    passed      -nan%
+  42  G013290125    2.06%    passed     99.56%
+  43  G003136355    2.29%    passed     99.99%
+  44  G003167155    2.06%    passed     99.71%
+  45  G003155175  100.00%    passed      -nan%
+  46  G003156715    2.06%    passed     94.09%
+  47  G011343225    3.44%    failed      0.00%
+  48  G017458675  100.00%    passed      -nan%
+  49  G902812405    2.06%    passed     97.77%
+  50  G903970385  100.00%    passed      -nan%
+  51  G003140215  100.00%    passed      -nan%
+  52  G003151115    2.06%    passed     99.85%
+  53  G003164045    1.61%    passed    100.00%
+  54  G003243975    2.29%    passed     99.24%
+  55  G014304965    2.06%    passed     99.76%
+  56  G019247395    2.52%    passed    100.00%
+  57  G003140855    1.83%    passed     96.95%
+  58  G004298675    1.83%    passed     99.60%
+  59  G012799975  100.00%    passed      -nan%
+  60  G013043945  100.00%    passed      -nan%
+  61  G013286945  100.00%    passed      -nan%
+  62  G018780265  100.00%    passed      -nan%
+  63  G019233415  100.00%    passed      -nan%
+  64  G019240755    2.06%    passed     99.94%
+  65  G002423485  100.00%    passed      -nan%
+  66  G003134695    1.38%    passed     82.69%
+  67  G003158195    2.06%    passed     99.99%
+  68  G013289785    2.06%    passed     96.38%
+  69  G014305015    1.15%    passed     96.97%
+  70  G019232725    2.06%    passed     96.47%
+  71  G019237435  100.00%    passed      -nan%
+  72  G013036105  100.00%    passed      -nan%
+  73  G016868975    2.06%    passed     12.62%
+  74  G017307785  100.00%    passed      -nan%
+  75  G019235995    2.29%    passed     96.04%
+  76  G003161435    1.15%    passed     98.38%
+  77  G019245275    2.06%    passed    100.00%
+  78  G003133185  100.00%    passed      -nan%
+  79  G017444045  100.00%    passed      -nan%
+  80  G019241305    2.06%    passed     99.70%
+  81  G019245995    2.06%    passed    100.00%
+WARNING: 30 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        38.35%  1 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.000378724 secs using 99.54% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00963.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.0170577 secs using 9.515% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.0011864 secs using 99.97% CPU
+Alignment has 81 sequences with 787 columns, 670 distinct patterns
+519 parsimony-informative, 102 singleton sites, 166 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 5.07068e-05 secs using 98.61% CPU
+   1  G016183865   13.85%    passed     96.56%
+   2  G016183885    4.70%    passed     13.08%
+   3  G003136655  100.00%    passed      -nan%
+   4  G003161555  100.00%    passed      -nan%
+   5  G014304875    5.72%    passed     99.98%
+   6  G019236975    5.72%    passed     99.99%
+   7  G019240525    5.72%    passed     99.98%
+   8  G900772775    5.46%    passed     99.97%
+   9  G003168375    5.59%    passed     99.98%
+  10  G019235885    5.59%    passed    100.00%
+  11  G002329445    2.16%    failed      0.00%
+  12  G003244105    5.59%    passed     97.83%
+  13  G004297985    5.59%    passed     99.29%
+  14  G014305025    5.84%    passed     99.63%
+  15  G019235715   31.00%    passed     99.50%
+  16  G019236495    5.72%    passed     99.97%
+  17  G019237415  100.00%    passed      -nan%
+  18  G900313515  100.00%    passed      -nan%
+  19  G902791745    4.45%    passed      5.89%
+  20  G003133745  100.00%    passed      -nan%
+  21  G003164495  100.00%    passed      -nan%
+  22  G004554425    5.46%    passed     99.95%
+  23  G010028905  100.00%    passed      -nan%
+  24  G018266105    4.96%    passed     80.63%
+  25  G019233165   27.95%    passed     99.67%
+  26  G902790465    4.45%    passed      6.05%
+  27  G002407045    5.46%    passed     99.97%
+  28  G002413145  100.00%    passed      -nan%
+  29  G003158175    5.72%    passed    100.00%
+  30  G013044185    5.72%    passed     99.97%
+  31  G019232905    5.72%    passed    100.00%
+  32  G003136895  100.00%    passed      -nan%
+  33  G003140835    5.59%    passed    100.00%
+  34  G013036315  100.00%    passed      -nan%
+  35  G017444165    4.96%    passed     50.52%
+  36  G903829325    5.84%    passed     98.82%
+  37  G003134035  100.00%    passed      -nan%
+  38  G003166915    5.72%    passed    100.00%
+  39  G003167055   17.41%    passed     99.99%
+  40  G004298665    5.59%    passed     99.41%
+  41  G013036095    5.84%    passed    100.00%
+  42  G013290125    5.84%    passed     99.76%
+  43  G003136355  100.00%    passed      -nan%
+  44  G003167155  100.00%    passed      -nan%
+  45  G003155175   36.34%    passed     99.98%
+  46  G003156715    5.84%    passed    100.00%
+  47  G011343225    1.40%    passed     54.59%
+  48  G017458675    5.34%    passed     80.01%
+  49  G902812405    5.59%    passed     87.88%
+  50  G903970385    5.84%    passed     99.99%
+  51  G003140215    5.59%    passed     97.38%
+  52  G003151115    5.84%    passed    100.00%
+  53  G003164045    5.84%    passed    100.00%
+  54  G003243975  100.00%    passed      -nan%
+  55  G014304965  100.00%    passed      -nan%
+  56  G019247395  100.00%    passed      -nan%
+  57  G003140855   23.76%    passed     99.99%
+  58  G004298675    5.59%    passed     99.84%
+  59  G012799975    4.70%    passed     99.88%
+  60  G013043945    5.72%    passed     99.89%
+  61  G013286945    4.19%    passed     98.30%
+  62  G018780265    4.96%    passed     98.21%
+  63  G019233415  100.00%    passed      -nan%
+  64  G019240755    5.72%    passed    100.00%
+  65  G002423485  100.00%    passed      -nan%
+  66  G003134695    6.23%    passed     99.93%
+  67  G003158195  100.00%    passed      -nan%
+  68  G013289785    5.72%    passed     99.97%
+  69  G014305015    5.84%    passed     99.97%
+  70  G019232725    5.72%    passed     99.96%
+  71  G019237435  100.00%    passed      -nan%
+  72  G013036105    5.84%    passed     99.99%
+  73  G016868975    1.27%    passed      8.04%
+  74  G017307785    4.96%    passed     70.84%
+  75  G019235995    5.72%    passed    100.00%
+  76  G003161435    5.59%    passed     99.60%
+  77  G019245275    5.84%    passed     99.88%
+  78  G003133185  100.00%    passed      -nan%
+  79  G017444045  100.00%    passed      -nan%
+  80  G019241305  100.00%    passed      -nan%
+  81  G019245995  100.00%    passed      -nan%
+WARNING: 24 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        34.81%  1 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.000690542 secs using 99.05% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00964.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.000151165 secs using 97.91% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 8.09431e-05 secs using 98.83% CPU
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 81 sequences with 57 columns, 57 distinct patterns
+49 parsimony-informative, 2 singleton sites, 6 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 7.72439e-06 secs using 103.6% CPU
+   1  G016183865    3.51%    passed     19.33%
+   2  G016183885  100.00%    passed      -nan%
+   3  G003136655    7.02%    passed     99.91%
+   4  G003161555    7.02%    passed     98.72%
+   5  G014304875   19.30%    passed      8.76%
+   6  G019236975    8.77%    passed     99.94%
+   7  G019240525    8.77%    passed     97.96%
+   8  G900772775   10.53%    passed     51.45%
+   9  G003168375    5.26%    passed     94.08%
+  10  G019235885    5.26%    passed     96.84%
+  11  G002329445   10.53%    passed     84.52%
+  12  G003244105   26.32%    passed     97.35%
+  13  G004297985    5.26%    passed     85.91%
+  14  G014305025    7.02%    passed     99.18%
+  15  G019235715   15.79%    passed     17.02%
+  16  G019236495  100.00%    passed      -nan%
+  17  G019237415  100.00%    passed      -nan%
+  18  G900313515   10.53%    passed     89.78%
+  19  G902791745   19.30%    passed     17.11%
+  20  G003133745    7.02%    passed     98.60%
+  21  G003164495    5.26%    passed     99.71%
+  22  G004554425    8.77%    passed     69.50%
+  23  G010028905   10.53%    passed     14.52%
+  24  G018266105   15.79%    passed     79.24%
+  25  G019233165    5.26%    passed     95.43%
+  26  G902790465    8.77%    failed      0.77%
+  27  G002407045    8.77%    passed     69.50%
+  28  G002413145   22.81%    passed     99.99%
+  29  G003158175    8.77%    passed     83.56%
+  30  G013044185    8.77%    passed     89.49%
+  31  G019232905    8.77%    passed     94.48%
+  32  G003136895   10.53%    passed     97.12%
+  33  G003140835    8.77%    passed     96.58%
+  34  G013036315  100.00%    passed      -nan%
+  35  G017444165  100.00%    passed      -nan%
+  36  G903829325    5.26%    passed     98.05%
+  37  G003134035    5.26%    passed     28.87%
+  38  G003166915    8.77%    passed     94.00%
+  39  G003167055  100.00%    passed      -nan%
+  40  G004298665  100.00%    passed      -nan%
+  41  G013036095    7.02%    passed     99.30%
+  42  G013290125   17.54%    passed     80.40%
+  43  G003136355    7.02%    passed     99.30%
+  44  G003167155    8.77%    passed     97.24%
+  45  G003155175  100.00%    passed      -nan%
+  46  G003156715   10.53%    passed     99.96%
+  47  G011343225    5.26%    failed      0.82%
+  48  G017458675   10.53%    passed     53.05%
+  49  G902812405   22.81%    passed     96.44%
+  50  G903970385  100.00%    passed      -nan%
+  51  G003140215    5.26%    passed     84.28%
+  52  G003151115    7.02%    passed     98.67%
+  53  G003164045    5.26%    passed     99.78%
+  54  G003243975    7.02%    passed     99.68%
+  55  G014304965   12.28%    passed     99.91%
+  56  G019247395  100.00%    passed      -nan%
+  57  G003140855    8.77%    passed     45.89%
+  58  G004298675    5.26%    passed     98.42%
+  59  G012799975   10.53%    passed     80.43%
+  60  G013043945  100.00%    passed      -nan%
+  61  G013286945  100.00%    passed      -nan%
+  62  G018780265   14.04%    passed     21.09%
+  63  G019233415  100.00%    passed      -nan%
+  64  G019240755    8.77%    passed     98.43%
+  65  G002423485  100.00%    passed      -nan%
+  66  G003134695    8.77%    passed     99.97%
+  67  G003158195  100.00%    passed      -nan%
+  68  G013289785    8.77%    passed     91.04%
+  69  G014305015  100.00%    passed      -nan%
+  70  G019232725  100.00%    passed      -nan%
+  71  G019237435  100.00%    passed      -nan%
+  72  G013036105    7.02%    passed     99.16%
+  73  G016868975   14.04%    passed     90.10%
+  74  G017307785   15.79%    passed     70.81%
+  75  G019235995    8.77%    passed     93.41%
+  76  G003161435    7.02%    passed     99.75%
+  77  G019245275    5.26%    passed     96.59%
+  78  G003133185    8.77%    passed     90.22%
+  79  G017444045  100.00%    passed      -nan%
+  80  G019241305   12.28%    passed     99.40%
+  81  G019245995  100.00%    passed      -nan%
+WARNING: 20 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        32.08%  2 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 5.08055e-05 secs using 96.45% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR01059.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.0183296 secs using 7.589% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000946844 secs using 100% CPU
+WARNING: 3 sites contain only gaps or ambiguous characters.
+Alignment has 81 sequences with 639 columns, 532 distinct patterns
+436 parsimony-informative, 40 singleton sites, 163 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 3.64389e-05 secs using 98.8% CPU
+   1  G016183865    1.88%    passed     99.68%
+   2  G016183885  100.00%    passed      -nan%
+   3  G003136655  100.00%    passed      -nan%
+   4  G003161555    1.88%    passed     95.85%
+   5  G014304875    2.19%    passed     95.76%
+   6  G019236975    2.03%    passed     99.58%
+   7  G019240525    2.03%    passed     99.89%
+   8  G900772775    1.88%    passed     97.12%
+   9  G003168375    1.88%    passed     98.47%
+  10  G019235885    1.88%    passed     96.33%
+  11  G002329445  100.00%    passed      -nan%
+  12  G003244105    2.66%    passed     93.82%
+  13  G004297985    1.56%    passed    100.00%
+  14  G014305025    1.72%    passed     98.85%
+  15  G019235715    2.19%    passed     99.98%
+  16  G019236495    1.88%    passed     99.90%
+  17  G019237415    7.82%    passed     99.90%
+  18  G900313515    1.88%    passed     88.10%
+  19  G902791745    1.88%    passed     19.03%
+  20  G003133745    2.03%    passed     99.56%
+  21  G003164495  100.00%    passed      -nan%
+  22  G004554425    1.88%    passed     94.32%
+  23  G010028905    2.66%    passed     92.36%
+  24  G018266105    4.38%    passed     81.21%
+  25  G019233165    1.88%    passed     99.82%
+  26  G902790465    1.88%    passed     14.88%
+  27  G002407045    1.88%    passed     96.37%
+  28  G002413145    8.45%    passed     99.73%
+  29  G003158175    2.03%    passed     99.47%
+  30  G013044185  100.00%    passed      -nan%
+  31  G019232905    1.88%    passed     96.40%
+  32  G003136895    1.88%    passed     99.57%
+  33  G003140835    1.88%    passed     97.16%
+  34  G013036315  100.00%    passed      -nan%
+  35  G017444165    2.50%    passed     71.17%
+  36  G903829325    2.35%    passed     99.97%
+  37  G003134035    2.97%    passed     99.75%
+  38  G003166915  100.00%    passed      -nan%
+  39  G003167055  100.00%    passed      -nan%
+  40  G004298665    1.56%    passed    100.00%
+  41  G013036095    2.03%    passed     99.97%
+  42  G013290125    2.19%    passed     99.33%
+  43  G003136355    2.03%    passed     99.99%
+  44  G003167155    2.03%    passed     93.95%
+  45  G003155175    2.97%    passed     99.99%
+  46  G003156715  100.00%    passed      -nan%
+  47  G011343225  100.00%    passed      -nan%
+  48  G017458675    1.88%    passed     93.08%
+  49  G902812405    2.19%    passed     90.70%
+  50  G903970385  100.00%    passed      -nan%
+  51  G003140215  100.00%    passed      -nan%
+  52  G003151115    1.88%    passed     99.98%
+  53  G003164045  100.00%    passed      -nan%
+  54  G003243975    2.03%    passed     99.98%
+  55  G014304965    1.88%    passed     99.75%
+  56  G019247395    2.03%    passed     99.98%
+  57  G003140855  100.00%    passed      -nan%
+  58  G004298675    1.56%    passed    100.00%
+  59  G012799975    2.03%    passed     61.85%
+  60  G013043945  100.00%    passed      -nan%
+  61  G013286945    1.88%    passed     97.14%
+  62  G018780265    2.03%    passed     92.96%
+  63  G019233415  100.00%    passed      -nan%
+  64  G019240755    2.03%    passed     99.98%
+  65  G002423485  100.00%    passed      -nan%
+  66  G003134695    1.88%    passed     99.92%
+  67  G003158195    1.72%    passed     99.93%
+  68  G013289785  100.00%    passed      -nan%
+  69  G014305015    1.88%    passed     98.45%
+  70  G019232725    2.19%    passed     96.90%
+  71  G019237435  100.00%    passed      -nan%
+  72  G013036105    2.03%    passed     99.98%
+  73  G016868975   13.62%    passed     33.38%
+  74  G017307785    2.03%    passed     76.04%
+  75  G019235995    2.03%    passed     99.86%
+  76  G003161435    1.88%    passed     95.28%
+  77  G019245275    1.56%    passed     99.99%
+  78  G003133185  100.00%    passed      -nan%
+  79  G017444045    2.03%    passed     90.61%
+  80  G019241305    1.56%    passed     99.87%
+  81  G019245995  100.00%    passed      -nan%
+WARNING: 21 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        27.73%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.000582179 secs using 99.8% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR01128.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.000650145 secs using 99.82% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000569403 secs using 3901% CPU
+WARNING: 2 sites contain only gaps or ambiguous characters.
+Alignment has 81 sequences with 314 columns, 313 distinct patterns
+297 parsimony-informative, 12 singleton sites, 5 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 2.26609e-05 secs using 92.67% CPU
+   1  G016183865    1.27%    failed      0.88%
+   2  G016183885  100.00%    passed      -nan%
+   3  G003136655   24.84%    passed      5.88%
+   4  G003161555  100.00%    passed      -nan%
+   5  G014304875  100.00%    passed      -nan%
+   6  G019236975  100.00%    passed      -nan%
+   7  G019240525   24.52%    passed     89.95%
+   8  G900772775    2.23%    failed      0.00%
+   9  G003168375  100.00%    passed      -nan%
+  10  G019235885  100.00%    passed      -nan%
+  11  G002329445    1.59%    passed     80.77%
+  12  G003244105  100.00%    passed      -nan%
+  13  G004297985   22.93%    passed     10.88%
+  14  G014305025  100.00%    passed      -nan%
+  15  G019235715    5.10%    passed     24.59%
+  16  G019236495   23.89%    passed     78.68%
+  17  G019237415  100.00%    passed      -nan%
+  18  G900313515    1.91%    failed      0.00%
+  19  G902791745  100.00%    passed      -nan%
+  20  G003133745   23.57%    passed     20.72%
+  21  G003164495  100.00%    passed      -nan%
+  22  G004554425    2.23%    failed      0.00%
+  23  G010028905   10.51%    passed     12.40%
+  24  G018266105    2.23%    passed     13.48%
+  25  G019233165  100.00%    passed      -nan%
+  26  G902790465    4.78%    failed      0.00%
+  27  G002407045    2.55%    failed      0.00%
+  28  G002413145  100.00%    passed      -nan%
+  29  G003158175  100.00%    passed      -nan%
+  30  G013044185   24.52%    passed     55.66%
+  31  G019232905   24.20%    passed     76.15%
+  32  G003136895   23.89%    failed      2.47%
+  33  G003140835  100.00%    passed      -nan%
+  34  G013036315  100.00%    passed      -nan%
+  35  G017444165   40.13%    failed      0.00%
+  36  G903829325  100.00%    passed      -nan%
+  37  G003134035  100.00%    passed      -nan%
+  38  G003166915  100.00%    passed      -nan%
+  39  G003167055  100.00%    passed      -nan%
+  40  G004298665   22.93%    passed      7.77%
+  41  G013036095   23.57%    passed     85.40%
+  42  G013290125    3.82%    failed      1.73%
+  43  G003136355  100.00%    passed      -nan%
+  44  G003167155  100.00%    passed      -nan%
+  45  G003155175  100.00%    passed      -nan%
+  46  G003156715   23.89%    failed      0.14%
+  47  G011343225    1.91%    failed      0.00%
+  48  G017458675    1.59%    failed      0.64%
+  49  G902812405  100.00%    passed      -nan%
+  50  G903970385  100.00%    passed      -nan%
+  51  G003140215  100.00%    passed      -nan%
+  52  G003151115   23.57%    passed     88.13%
+  53  G003164045  100.00%    passed      -nan%
+  54  G003243975  100.00%    passed      -nan%
+  55  G014304965  100.00%    passed      -nan%
+  56  G019247395  100.00%    passed      -nan%
+  57  G003140855  100.00%    passed      -nan%
+  58  G004298675   22.29%    passed     53.58%
+  59  G012799975    2.23%    passed     73.72%
+  60  G013043945   24.52%    passed     28.46%
+  61  G013286945   60.51%    passed     56.17%
+  62  G018780265    1.91%    passed      5.37%
+  63  G019233415   24.20%    passed      8.58%
+  64  G019240755  100.00%    passed      -nan%
+  65  G002423485    1.59%    passed     56.14%
+  66  G003134695  100.00%    passed      -nan%
+  67  G003158195  100.00%    passed      -nan%
+  68  G013289785   23.57%    passed     38.08%
+  69  G014305015   24.84%    passed     97.52%
+  70  G019232725  100.00%    passed      -nan%
+  71  G019237435  100.00%    passed      -nan%
+  72  G013036105  100.00%    passed      -nan%
+  73  G016868975    7.32%    passed     54.07%
+  74  G017307785    2.23%    passed     14.58%
+  75  G019235995  100.00%    passed      -nan%
+  76  G003161435  100.00%    passed      -nan%
+  77  G019245275   24.20%    passed     38.05%
+  78  G003133185  100.00%    passed      -nan%
+  79  G017444045    1.91%    failed      0.03%
+  80  G019241305   23.25%    passed     15.15%
+  81  G019245995  100.00%    passed      -nan%
+WARNING: 42 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        58.18%  13 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.000238078 secs using 98.71% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR01302.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.000933791 secs using 98.95% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000530038 secs using 98.86% CPU
+WARNING: 3 sites contain only gaps or ambiguous characters.
+Alignment has 81 sequences with 450 columns, 319 distinct patterns
+112 parsimony-informative, 195 singleton sites, 143 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 2.29031e-05 secs using 96.06% CPU
+   1  G016183865    6.89%    failed      0.02%
+   2  G016183885    1.33%    failed      0.00%
+   3  G003136655  100.00%    passed      -nan%
+   4  G003161555  100.00%    passed      -nan%
+   5  G014304875  100.00%    passed      -nan%
+   6  G019236975  100.00%    passed      -nan%
+   7  G019240525  100.00%    passed      -nan%
+   8  G900772775  100.00%    passed      -nan%
+   9  G003168375  100.00%    passed      -nan%
+  10  G019235885  100.00%    passed      -nan%
+  11  G002329445  100.00%    passed      -nan%
+  12  G003244105  100.00%    passed      -nan%
+  13  G004297985  100.00%    passed      -nan%
+  14  G014305025  100.00%    passed      -nan%
+  15  G019235715  100.00%    passed      -nan%
+  16  G019236495  100.00%    passed      -nan%
+  17  G019237415  100.00%    passed      -nan%
+  18  G900313515  100.00%    passed      -nan%
+  19  G902791745  100.00%    passed      -nan%
+  20  G003133745  100.00%    passed      -nan%
+  21  G003164495  100.00%    passed      -nan%
+  22  G004554425  100.00%    passed      -nan%
+  23  G010028905    1.33%    failed      0.00%
+  24  G018266105  100.00%    passed      -nan%
+  25  G019233165  100.00%    passed      -nan%
+  26  G902790465  100.00%    passed      -nan%
+  27  G002407045  100.00%    passed      -nan%
+  28  G002413145  100.00%    passed      -nan%
+  29  G003158175  100.00%    passed      -nan%
+  30  G013044185  100.00%    passed      -nan%
+  31  G019232905  100.00%    passed      -nan%
+  32  G003136895  100.00%    passed      -nan%
+  33  G003140835  100.00%    passed      -nan%
+  34  G013036315  100.00%    passed      -nan%
+  35  G017444165  100.00%    passed      -nan%
+  36  G903829325  100.00%    passed      -nan%
+  37  G003134035  100.00%    passed      -nan%
+  38  G003166915  100.00%    passed      -nan%
+  39  G003167055  100.00%    passed      -nan%
+  40  G004298665  100.00%    passed      -nan%
+  41  G013036095  100.00%    passed      -nan%
+  42  G013290125  100.00%    passed      -nan%
+  43  G003136355  100.00%    passed      -nan%
+  44  G003167155  100.00%    passed      -nan%
+  45  G003155175  100.00%    passed      -nan%
+  46  G003156715  100.00%    passed      -nan%
+  47  G011343225    0.67%    failed      0.00%
+  48  G017458675  100.00%    passed      -nan%
+  49  G902812405  100.00%    passed      -nan%
+  50  G903970385  100.00%    passed      -nan%
+  51  G003140215  100.00%    passed      -nan%
+  52  G003151115  100.00%    passed      -nan%
+  53  G003164045  100.00%    passed      -nan%
+  54  G003243975  100.00%    passed      -nan%
+  55  G014304965  100.00%    passed      -nan%
+  56  G019247395  100.00%    passed      -nan%
+  57  G003140855  100.00%    passed      -nan%
+  58  G004298675  100.00%    passed      -nan%
+  59  G012799975  100.00%    passed      -nan%
+  60  G013043945  100.00%    passed      -nan%
+  61  G013286945    1.11%    failed      0.00%
+  62  G018780265  100.00%    passed      -nan%
+  63  G019233415  100.00%    passed      -nan%
+  64  G019240755  100.00%    passed      -nan%
+  65  G002423485    1.33%    failed      0.00%
+  66  G003134695  100.00%    passed      -nan%
+  67  G003158195  100.00%    passed      -nan%
+  68  G013289785  100.00%    passed      -nan%
+  69  G014305015  100.00%    passed      -nan%
+  70  G019232725  100.00%    passed      -nan%
+  71  G019237435  100.00%    passed      -nan%
+  72  G013036105  100.00%    passed      -nan%
+  73  G016868975  100.00%    passed      -nan%
+  74  G017307785  100.00%    passed      -nan%
+  75  G019235995  100.00%    passed      -nan%
+  76  G003161435  100.00%    passed      -nan%
+  77  G019245275  100.00%    passed      -nan%
+  78  G003133185  100.00%    passed      -nan%
+  79  G017444045  100.00%    passed      -nan%
+  80  G019241305  100.00%    passed      -nan%
+  81  G019245995  100.00%    passed      -nan%
+WARNING: 75 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        92.75%  6 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.000195859 secs using 99.56% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR02013.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.0142386 secs using 16.44% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.00176246 secs using 527.8% CPU
+WARNING: 123 sites contain only gaps or ambiguous characters.
+Alignment has 81 sequences with 1238 columns, 882 distinct patterns
+539 parsimony-informative, 111 singleton sites, 588 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 7.1073e-05 secs using 97.08% CPU
+   1  G016183865   16.07%    passed     98.52%
+   2  G016183885   59.85%    passed     14.72%
+   3  G003136655  100.00%    passed      -nan%
+   4  G003161555  100.00%    passed      -nan%
+   5  G014304875   52.18%    passed     93.38%
+   6  G019236975   22.13%    passed     99.98%
+   7  G019240525   15.02%    passed     99.99%
+   8  G900772775   15.11%    passed     96.29%
+   9  G003168375   14.54%    passed    100.00%
+  10  G019235885   15.27%    passed    100.00%
+  11  G002329445  100.00%    passed      -nan%
+  12  G003244105   15.43%    passed    100.00%
+  13  G004297985   15.67%    passed     99.95%
+  14  G014305025   15.27%    passed     99.99%
+  15  G019235715   15.35%    passed     99.99%
+  16  G019236495   24.56%    passed     99.88%
+  17  G019237415   35.22%    passed     99.47%
+  18  G900313515   15.67%    passed     83.12%
+  19  G902791745   14.62%    passed     45.09%
+  20  G003133745   32.15%    passed     82.71%
+  21  G003164495  100.00%    passed      -nan%
+  22  G004554425   15.11%    passed     96.91%
+  23  G010028905   14.86%    passed     98.90%
+  24  G018266105   22.21%    passed     86.76%
+  25  G019233165  100.00%    passed      -nan%
+  26  G902790465   14.62%    passed     41.18%
+  27  G002407045   15.11%    passed     97.96%
+  28  G002413145   64.46%    passed     78.19%
+  29  G003158175   29.64%    passed     98.46%
+  30  G013044185   60.82%    passed     80.18%
+  31  G019232905  100.00%    passed      -nan%
+  32  G003136895  100.00%    passed      -nan%
+  33  G003140835   50.24%    passed     91.64%
+  34  G013036315   15.35%    passed     99.99%
+  35  G017444165   15.59%    passed     99.88%
+  36  G903829325   15.35%    passed     99.99%
+  37  G003134035  100.00%    passed      -nan%
+  38  G003166915  100.00%    passed      -nan%
+  39  G003167055  100.00%    passed      -nan%
+  40  G004298665   15.67%    passed     99.97%
+  41  G013036095   15.35%    passed     99.99%
+  42  G013290125   33.60%    passed     99.76%
+  43  G003136355  100.00%    passed      -nan%
+  44  G003167155  100.00%    passed      -nan%
+  45  G003155175  100.00%    passed      -nan%
+  46  G003156715   23.83%    passed     99.81%
+  47  G011343225   16.07%    passed     85.02%
+  48  G017458675   15.99%    passed     99.14%
+  49  G902812405   15.27%    passed     99.99%
+  50  G903970385  100.00%    passed      -nan%
+  51  G003140215   14.70%    passed     99.99%
+  52  G003151115   57.51%    passed     88.65%
+  53  G003164045   21.24%    passed     99.14%
+  54  G003243975   15.35%    passed    100.00%
+  55  G014304965  100.00%    passed      -nan%
+  56  G019247395  100.00%    passed      -nan%
+  57  G003140855   15.35%    passed     99.99%
+  58  G004298675   15.67%    passed     99.99%
+  59  G012799975   15.67%    passed     99.87%
+  60  G013043945   67.53%    passed     86.41%
+  61  G013286945  100.00%    passed      -nan%
+  62  G018780265   15.83%    passed     96.68%
+  63  G019233415   63.49%    passed     80.60%
+  64  G019240755  100.00%    passed      -nan%
+  65  G002423485   56.70%    passed     48.15%
+  66  G003134695   21.41%    passed    100.00%
+  67  G003158195  100.00%    passed      -nan%
+  68  G013289785  100.00%    passed      -nan%
+  69  G014305015  100.00%    passed      -nan%
+  70  G019232725   15.35%    passed    100.00%
+  71  G019237435  100.00%    passed      -nan%
+  72  G013036105   15.35%    passed     99.99%
+  73  G016868975  100.00%    passed      -nan%
+  74  G017307785   15.91%    passed     95.26%
+  75  G019235995  100.00%    passed      -nan%
+  76  G003161435  100.00%    passed      -nan%
+  77  G019245275  100.00%    passed      -nan%
+  78  G003133185  100.00%    passed      -nan%
+  79  G017444045   13.97%    passed     88.98%
+  80  G019241305   43.30%    passed     97.26%
+  81  G019245995  100.00%    passed      -nan%
+WARNING: 37 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        51.20%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.000946684 secs using 98.87% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR02350.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.00121693 secs using 2069% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000751706 secs using 98.58% CPU
+WARNING: 15 sites contain only gaps or ambiguous characters.
+Alignment has 81 sequences with 596 columns, 473 distinct patterns
+295 parsimony-informative, 76 singleton sites, 225 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 3.35127e-05 secs using 95.49% CPU
+   1  G016183865  100.00%    passed      -nan%
+   2  G016183885    3.86%    passed     45.62%
+   3  G003136655  100.00%    passed      -nan%
+   4  G003161555   27.52%    passed     99.84%
+   5  G014304875    3.86%    passed     99.78%
+   6  G019236975    3.86%    passed    100.00%
+   7  G019240525    3.86%    passed    100.00%
+   8  G900772775  100.00%    passed      -nan%
+   9  G003168375    4.03%    passed    100.00%
+  10  G019235885   11.24%    passed     99.95%
+  11  G002329445    3.69%    passed     43.26%
+  12  G003244105    3.86%    passed     99.94%
+  13  G004297985    3.86%    passed     99.97%
+  14  G014305025    3.86%    passed     99.79%
+  15  G019235715    3.86%    passed     99.62%
+  16  G019236495    4.03%    passed    100.00%
+  17  G019237415   10.23%    passed     99.96%
+  18  G900313515  100.00%    passed      -nan%
+  19  G902791745  100.00%    passed      -nan%
+  20  G003133745  100.00%    passed      -nan%
+  21  G003164495  100.00%    passed      -nan%
+  22  G004554425  100.00%    passed      -nan%
+  23  G010028905  100.00%    passed      -nan%
+  24  G018266105  100.00%    passed      -nan%
+  25  G019233165    3.86%    passed    100.00%
+  26  G902790465  100.00%    passed      -nan%
+  27  G002407045  100.00%    passed      -nan%
+  28  G002413145  100.00%    passed      -nan%
+  29  G003158175    3.86%    passed    100.00%
+  30  G013044185  100.00%    passed      -nan%
+  31  G019232905  100.00%    passed      -nan%
+  32  G003136895   11.24%    passed     99.20%
+  33  G003140835    6.54%    passed    100.00%
+  34  G013036315  100.00%    passed      -nan%
+  35  G017444165    3.52%    passed     11.74%
+  36  G903829325    3.86%    passed     99.96%
+  37  G003134035    6.54%    passed     99.95%
+  38  G003166915    3.86%    passed    100.00%
+  39  G003167055  100.00%    passed      -nan%
+  40  G004298665    3.86%    passed     99.96%
+  41  G013036095    4.03%    passed     99.98%
+  42  G013290125    4.03%    passed     99.30%
+  43  G003136355   13.59%    passed     99.99%
+  44  G003167155    3.86%    passed     99.99%
+  45  G003155175   32.38%    passed     99.99%
+  46  G003156715   27.52%    passed     99.90%
+  47  G011343225  100.00%    passed      -nan%
+  48  G017458675  100.00%    passed      -nan%
+  49  G902812405    3.86%    passed     99.96%
+  50  G903970385    3.86%    passed     95.55%
+  51  G003140215    4.03%    passed     99.99%
+  52  G003151115    4.03%    passed     99.98%
+  53  G003164045    4.03%    passed     99.87%
+  54  G003243975    4.03%    passed    100.00%
+  55  G014304965    3.86%    passed     99.94%
+  56  G019247395   11.41%    passed    100.00%
+  57  G003140855    4.03%    passed    100.00%
+  58  G004298675    3.86%    passed     99.90%
+  59  G012799975  100.00%    passed      -nan%
+  60  G013043945  100.00%    passed      -nan%
+  61  G013286945  100.00%    passed      -nan%
+  62  G018780265  100.00%    passed      -nan%
+  63  G019233415   33.05%    passed     99.81%
+  64  G019240755    3.86%    passed    100.00%
+  65  G002423485  100.00%    passed      -nan%
+  66  G003134695    3.86%    passed     99.98%
+  67  G003158195   26.68%    passed     96.71%
+  68  G013289785    3.86%    passed    100.00%
+  69  G014305015  100.00%    passed      -nan%
+  70  G019232725   20.13%    passed     97.84%
+  71  G019237435    3.86%    passed    100.00%
+  72  G013036105    4.03%    passed    100.00%
+  73  G016868975  100.00%    passed      -nan%
+  74  G017307785  100.00%    passed      -nan%
+  75  G019235995    3.86%    passed    100.00%
+  76  G003161435  100.00%    passed      -nan%
+  77  G019245275    3.86%    passed    100.00%
+  78  G003133185  100.00%    passed      -nan%
+  79  G017444045    3.86%    passed     29.79%
+  80  G019241305    3.86%    passed    100.00%
+  81  G019245995    7.89%    passed    100.00%
+WARNING: 29 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        40.66%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.000418417 secs using 98.47% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR02386.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.0109859 secs using 18.46% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.00165108 secs using 437.2% CPU
+WARNING: 3 sites contain only gaps or ambiguous characters.
+Alignment has 81 sequences with 1147 columns, 872 distinct patterns
+563 parsimony-informative, 98 singleton sites, 486 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 6.91507e-05 secs using 99.78% CPU
+   1  G016183865   38.54%    passed     47.42%
+   2  G016183885    1.83%    failed      0.20%
+   3  G003136655  100.00%    passed      -nan%
+   4  G003161555   40.28%    passed     90.60%
+   5  G014304875    1.66%    passed    100.00%
+   6  G019236975  100.00%    passed      -nan%
+   7  G019240525    1.74%    passed    100.00%
+   8  G900772775    1.66%    passed     99.94%
+   9  G003168375    1.74%    passed    100.00%
+  10  G019235885    1.74%    passed     99.99%
+  11  G002329445  100.00%    passed      -nan%
+  12  G003244105    1.66%    passed     99.98%
+  13  G004297985    2.96%    passed    100.00%
+  14  G014305025    1.74%    passed     99.95%
+  15  G019235715    1.74%    passed    100.00%
+  16  G019236495    1.74%    passed     99.98%
+  17  G019237415  100.00%    passed      -nan%
+  18  G900313515    1.74%    passed     99.66%
+  19  G902791745   18.22%    passed     93.95%
+  20  G003133745   27.55%    passed     97.50%
+  21  G003164495  100.00%    passed      -nan%
+  22  G004554425    1.66%    passed     99.95%
+  23  G010028905    1.39%    passed     99.65%
+  24  G018266105  100.00%    passed      -nan%
+  25  G019233165  100.00%    passed      -nan%
+  26  G902790465    0.96%    passed     94.68%
+  27  G002407045    1.66%    passed     99.92%
+  28  G002413145  100.00%    passed      -nan%
+  29  G003158175  100.00%    passed      -nan%
+  30  G013044185    1.83%    passed    100.00%
+  31  G019232905   58.24%    passed     19.85%
+  32  G003136895   40.10%    passed     32.76%
+  33  G003140835    1.74%    passed    100.00%
+  34  G013036315  100.00%    passed      -nan%
+  35  G017444165    1.57%    passed     99.87%
+  36  G903829325    1.83%    passed     98.73%
+  37  G003134035  100.00%    passed      -nan%
+  38  G003166915  100.00%    passed      -nan%
+  39  G003167055  100.00%    passed      -nan%
+  40  G004298665    2.96%    passed    100.00%
+  41  G013036095    2.01%    passed     99.94%
+  42  G013290125    1.74%    passed    100.00%
+  43  G003136355   40.54%    passed     55.62%
+  44  G003167155  100.00%    passed      -nan%
+  45  G003155175  100.00%    passed      -nan%
+  46  G003156715   38.45%    passed     78.42%
+  47  G011343225    1.83%    passed     53.94%
+  48  G017458675    1.66%    passed     99.95%
+  49  G902812405    1.66%    passed     99.54%
+  50  G903970385    1.74%    passed     99.97%
+  51  G003140215    1.74%    passed    100.00%
+  52  G003151115    2.01%    passed    100.00%
+  53  G003164045    4.01%    passed    100.00%
+  54  G003243975    1.83%    passed     99.86%
+  55  G014304965   39.76%    passed     30.03%
+  56  G019247395   19.79%    passed     99.94%
+  57  G003140855    2.01%    passed    100.00%
+  58  G004298675    1.74%    passed     99.88%
+  59  G012799975    1.83%    passed     82.56%
+  60  G013043945  100.00%    passed      -nan%
+  61  G013286945  100.00%    passed      -nan%
+  62  G018780265    1.83%    passed     94.45%
+  63  G019233415   21.88%    passed     99.80%
+  64  G019240755  100.00%    passed      -nan%
+  65  G002423485  100.00%    passed      -nan%
+  66  G003134695    1.74%    passed     99.98%
+  67  G003158195   25.89%    passed     99.70%
+  68  G013289785   14.91%    passed    100.00%
+  69  G014305015  100.00%    passed      -nan%
+  70  G019232725   19.88%    passed     99.15%
+  71  G019237435   27.03%    passed     99.81%
+  72  G013036105    2.01%    passed     99.99%
+  73  G016868975   33.13%    passed     77.36%
+  74  G017307785    1.83%    passed     90.99%
+  75  G019235995   30.25%    passed     99.56%
+  76  G003161435  100.00%    passed      -nan%
+  77  G019245275   32.87%    passed     79.59%
+  78  G003133185   40.10%    passed     49.84%
+  79  G017444045  100.00%    passed      -nan%
+  80  G019241305  100.00%    passed      -nan%
+  81  G019245995  100.00%    passed      -nan%
+WARNING: 25 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        38.00%  1 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.000919692 secs using 99.82% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR03725.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.00046741 secs
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000351302 secs
+Alignment has 81 sequences with 212 columns, 210 distinct patterns
+201 parsimony-informative, 3 singleton sites, 8 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 1.73226e-05 secs
+   1  G016183865    1.89%    passed     14.11%
+   2  G016183885  100.00%    passed      -nan%
+   3  G003136655   48.58%    passed     99.37%
+   4  G003161555    8.96%    passed     10.31%
+   5  G014304875   47.64%    passed     50.24%
+   6  G019236975  100.00%    passed      -nan%
+   7  G019240525   15.09%    passed     42.18%
+   8  G900772775    2.36%    passed     31.16%
+   9  G003168375   41.04%    passed     94.00%
+  10  G019235885   43.40%    passed     92.59%
+  11  G002329445    4.25%    passed     53.64%
+  12  G003244105   24.53%    passed     39.12%
+  13  G004297985    7.08%    passed     52.95%
+  14  G014305025   52.36%    passed     82.32%
+  15  G019235715    8.49%    passed     58.77%
+  16  G019236495    8.96%    passed     36.21%
+  17  G019237415    9.91%    passed     52.47%
+  18  G900313515    2.83%    failed      4.78%
+  19  G902791745    5.19%    failed      0.00%
+  20  G003133745   41.04%    passed     80.88%
+  21  G003164495   43.87%    passed     68.47%
+  22  G004554425    2.36%    passed     55.97%
+  23  G010028905   63.21%    passed     59.66%
+  24  G018266105    3.30%    failed      3.97%
+  25  G019233165    6.60%    passed     78.23%
+  26  G902790465    7.08%    failed      0.00%
+  27  G002407045    2.36%    passed     55.69%
+  28  G002413145  100.00%    passed      -nan%
+  29  G003158175   12.74%    passed     87.33%
+  30  G013044185   25.00%    passed     40.45%
+  31  G019232905   13.21%    passed     87.73%
+  32  G003136895   54.25%    passed     85.86%
+  33  G003140835   25.47%    passed     99.49%
+  34  G013036315    6.13%    passed     98.80%
+  35  G017444165    1.89%    passed     68.01%
+  36  G903829325   34.91%    passed     49.81%
+  37  G003134035    8.96%    passed     57.59%
+  38  G003166915   10.85%    passed     79.71%
+  39  G003167055   33.02%    passed     98.79%
+  40  G004298665    8.02%    passed     38.65%
+  41  G013036095    8.49%    passed     94.94%
+  42  G013290125   27.36%    passed     59.93%
+  43  G003136355    8.02%    passed     93.19%
+  44  G003167155  100.00%    passed      -nan%
+  45  G003155175   27.83%    passed     99.50%
+  46  G003156715   50.00%    passed     96.78%
+  47  G011343225    2.36%    failed      0.00%
+  48  G017458675    3.30%    passed     13.43%
+  49  G902812405   55.19%    passed     68.28%
+  50  G903970385   45.28%    passed     58.39%
+  51  G003140215    8.96%    passed     59.08%
+  52  G003151115    9.43%    passed     97.08%
+  53  G003164045    7.55%    passed     42.32%
+  54  G003243975    8.02%    passed     80.94%
+  55  G014304965  100.00%    passed      -nan%
+  56  G019247395  100.00%    passed      -nan%
+  57  G003140855    6.60%    passed     99.49%
+  58  G004298675    8.49%    passed     40.80%
+  59  G012799975    3.77%    passed     28.93%
+  60  G013043945   12.26%    passed     13.71%
+  61  G013286945  100.00%    passed      -nan%
+  62  G018780265    4.72%    failed      0.08%
+  63  G019233415    9.43%    passed     15.27%
+  64  G019240755   10.38%    passed     82.48%
+  65  G002423485    4.25%    passed     54.68%
+  66  G003134695   53.77%    passed     74.70%
+  67  G003158195   53.30%    passed     64.87%
+  68  G013289785   23.11%    passed     97.15%
+  69  G014305015  100.00%    passed      -nan%
+  70  G019232725  100.00%    passed      -nan%
+  71  G019237435   41.04%    passed     94.66%
+  72  G013036105    8.02%    passed     63.87%
+  73  G016868975    0.47%    passed     17.93%
+  74  G017307785    3.30%    failed      0.02%
+  75  G019235995   24.06%    passed     68.42%
+  76  G003161435  100.00%    passed      -nan%
+  77  G019245275   43.40%    passed     35.76%
+  78  G003133185  100.00%    passed      -nan%
+  79  G017444045    3.30%    passed     35.49%
+  80  G019241305    7.55%    passed     98.35%
+  81  G019245995   13.68%    passed     89.24%
+WARNING: 17 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        30.04%  7 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.00020632 secs
+Subset	Type	Seqs	Sites	Infor	Invar	Model	Name
+1		56	166	139	16		gtdb_r207_bac120_PF01025.20.faa_subtaxa
+2		66	73	66	5		gtdb_r207_bac120_PF02576.18.faa_subtaxa
+3		72	421	382	26		gtdb_r207_bac120_TIGR00054.faa_subtaxa
+4		33	192	173	13		gtdb_r207_bac120_TIGR00084.faa_subtaxa
+5		72	293	217	44		gtdb_r207_bac120_TIGR00116.faa_subtaxa
+6		66	414	217	148		gtdb_r207_bac120_TIGR00382.faa_subtaxa
+7		19	270	201	44		gtdb_r207_bac120_TIGR00436.faa_subtaxa
+8		64	890	790	59		gtdb_r207_bac120_TIGR00593.faa_subtaxa
+9		67	516	270	220		gtdb_r207_bac120_TIGR00717.faa_subtaxa
+10		59	172	114	40		gtdb_r207_bac120_TIGR00922.faa_subtaxa
+11		51	436	366	49		gtdb_r207_bac120_TIGR00928.faa_subtaxa
+12		57	787	519	166		gtdb_r207_bac120_TIGR00963.faa_subtaxa
+13		61	57	49	6		gtdb_r207_bac120_TIGR00964.faa_subtaxa
+14		60	639	436	163		gtdb_r207_bac120_TIGR01059.faa_subtaxa
+15		40	314	297	5		gtdb_r207_bac120_TIGR01128.faa_subtaxa
+16		6	450	112	143		gtdb_r207_bac120_TIGR01302.faa_subtaxa
+17		53	1238	539	588		gtdb_r207_bac120_TIGR02013.faa_subtaxa
+18		52	596	295	225		gtdb_r207_bac120_TIGR02350.faa_subtaxa
+19		57	1147	563	486		gtdb_r207_bac120_TIGR02386.faa_subtaxa
+20		70	212	201	8		gtdb_r207_bac120_TIGR03725.faa_subtaxa
+Linked 81 total sequences
+
+Creating fast initial parsimony tree by random order stepwise addition...
+0.086 seconds, parsimony score: 59089 (based on 6829 sites)
+Perform fast likelihood tree search using LG+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Optimizing NNI: done in 1.79644 secs using 773.1% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 1.82351 secs using 772.1% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 1.94744 secs using 775.7% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 2.30633 secs using 779.4% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 2.91135 secs using 775% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 3.39984 secs using 776.6% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 3.45338 secs using 776.9% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 0.999792 secs using 780.4% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 1.60662 secs using 779.8% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 4.22025 secs using 777.6% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 0.475854 secs using 759.7% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 1.10087 secs using 771% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 0.886916 secs using 763.1% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 0.215094 secs using 794.6% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 0.0347915 secs using 796.6% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 1.11273 secs using 769.6% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 2.21258 secs using 749.6% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 0.814618 secs using 698.8% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 0.450281 secs using 490.3% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 3.04752 secs using 678.4% CPU
+Estimate model parameters (epsilon = 1.000)
+Log-likelihood: -308892.531
+Time for fast ML tree search: 13.029 seconds
+
+NOTE: ModelFinder requires 480 MB RAM!
+Selecting individual models for 20 charsets using BIC...
+ No. Model        Score       TreeLen     Charset
+Reading model parameters from file Q.bac_locus_i3
+Reading model parameters from file Q.bac_locus_i3
+zing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+ Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+   1 Q.bac_locus_i3+I+R4 17433.462   5.303       gtdb_r207_bac120_TIGR00382.faa_subtaxa
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+   2 Q.bac_locus_i3+I+R3 24870.512   4.756       gtdb_r207_bac120_TIGR02350.faa_subtaxa
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+   3 Q.bac_locus_i3+I+G4 21647.777   10.677      gtdb_r207_bac120_TIGR00717.faa_subtaxa
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+   4 Q.bac_locus_i3+I+R4 35560.673   16.385      gtdb_r207_bac120_TIGR00928.faa_subtaxa
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+   5 Q.bac_locus_i3+G4 16677.630   20.056      gtdb_r207_bac120_TIGR00116.faa_subtaxa
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+   6 Q.bac_locus_i3+G4 33286.225   25.304      gtdb_r207_bac120_TIGR01128.faa_subtaxa
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+   7 Q.bac_locus_i3+F+I+R5 35480.849   55.335      gtdb_r207_bac120_TIGR03725.faa_subtaxa
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+   8 Q.bac_locus_i3+R3 6890.681    4.325       gtdb_r207_bac120_TIGR00922.faa_subtaxa
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+   9 Q.bac_locus_i3+I+G4 13749.750   15.889      gtdb_r207_bac120_TIGR00084.faa_subtaxa
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+  10 Q.bac_locus_i3+G4 9492.016    17.588      gtdb_r207_bac120_PF02576.18.faa_subtaxa	0h:5m:9s (0h:5m:9s left)
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+  11 Q.bac_locus_i3+I+R4 16783.413   19.803      gtdb_r207_bac120_PF01025.20.faa_subtaxa	0h:5m:12s (0h:4m:15s left)
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+  12 Q.bac_locus_i3+I+G4 12311.093   8.543       gtdb_r207_bac120_TIGR00436.faa_subtaxa	0h:5m:13s (0h:3m:28s left)
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+  13 Q.bac_locus_i3+G4 8664.499    2.941       gtdb_r207_bac120_TIGR01302.faa_subtaxa	0h:5m:14s (0h:2m:49s left)
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+  14 Q.bac_locus_i3+R5 53008.968   12.237      gtdb_r207_bac120_TIGR00963.faa_subtaxa	0h:5m:16s (0h:2m:15s left)
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+  15 Q.bac_locus_i3+I+G4 5909.567    19.874      gtdb_r207_bac120_TIGR00964.faa_subtaxa	0h:5m:19s (0h:1m:46s left)
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+  16 Q.bac_locus_i3+F+I+R6 61178.112   39.282      gtdb_r207_bac120_TIGR00054.faa_subtaxa	0h:5m:54s (0h:1m:28s left)
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Log-likelihood -27806.3 of Q.bac_locus_i3+R6 worse than Q.bac_locus_i3+R5 -27778.6
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+  17 Q.bac_locus_i3+R6 106812.754  32.579      gtdb_r207_bac120_TIGR00593.faa_subtaxa	0h:6m:47s (0h:1m:11s left)
+  18 Q.bac_locus_i3+F+I+R5 45316.739   9.224       gtdb_r207_bac120_TIGR01059.faa_subtaxa	0h:6m:51s (0h:0m:45s left)
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+  19 Q.bac_locus_i3+F+I+R5 56360.140   7.585       gtdb_r207_bac120_TIGR02386.faa_subtaxa	0h:7m:17s (0h:0m:23s left)
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+  20 Q.bac_locus_i3+F+I+R4 45149.686   6.911       gtdb_r207_bac120_TIGR02013.faa_subtaxa	0h:7m:40s (0h:0m:0s left)
+Full partition model BIC score: 634064.087 (LnL: -306516.576  df:2302)
+Partition information was printed to Q.bac_locus_i3.best_scheme.nex
+Partition information in Raxml format was printed to Q.bac_locus_i3.best_scheme
+
+All model information printed to Q.bac_locus_i3.model.gz
+CPU time for ModelFinder: 3084.565 seconds (0h:51m:24s)
+Wall-clock time for ModelFinder: 473.627 seconds (0h:7m:53s)
+WARNING: States(s) W rarely appear in partition gtdb_r207_bac120_TIGR00382.faa_subtaxa and may cause numerical problems
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+
+NOTE: 323 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Partition gtdb_r207_bac120_TIGR02350.faa_subtaxa / Model: Q.bac_locus_i3+I+R3 / df: 106 / LogL: -12096.571
+Partition gtdb_r207_bac120_TIGR00382.faa_subtaxa / Model: Q.bac_locus_i3+I+R4 / df: 136 / LogL: -8306.927
+Partition gtdb_r207_bac120_TIGR00928.faa_subtaxa / Model: Q.bac_locus_i3+I+R4 / df: 106 / LogL: -17458.204
+Partition gtdb_r207_bac120_TIGR00116.faa_subtaxa / Model: Q.bac_locus_i3+G4 / df: 142 / LogL: -7935.512
+Partition gtdb_r207_bac120_TIGR00963.faa_subtaxa / Model: Q.bac_locus_i3+R5 / df: 119 / LogL: -26107.667
+Partition gtdb_r207_bac120_TIGR01128.faa_subtaxa / Model: Q.bac_locus_i3+G4 / df: 78 / LogL: -16418.886
+Partition gtdb_r207_bac120_TIGR01059.faa_subtaxa / Model: Q.bac_locus_i3+F+I+R5 / df: 145 / LogL: -22189.930
+Partition gtdb_r207_bac120_PF01025.20.faa_subtaxa / Model: Q.bac_locus_i3+I+R4 / df: 116 / LogL: -8095.191
+Partition gtdb_r207_bac120_TIGR00922.faa_subtaxa / Model: Q.bac_locus_i3+R3 / df: 119 / LogL: -3138.968
+Partition gtdb_r207_bac120_PF02576.18.faa_subtaxa / Model: Q.bac_locus_i3+G4 / df: 130 / LogL: -4467.124
+Partition gtdb_r207_bac120_TIGR00593.faa_subtaxa / Model: Q.bac_locus_i3+R6 / df: 135 / LogL: -52947.951
+Partition gtdb_r207_bac120_TIGR00084.faa_subtaxa / Model: Q.bac_locus_i3+I+G4 / df: 65 / LogL: -6704.002
+Partition gtdb_r207_bac120_TIGR01302.faa_subtaxa / Model: Q.bac_locus_i3+G4 / df: 10 / LogL: -4301.703
+Partition gtdb_r207_bac120_TIGR00964.faa_subtaxa / Model: Q.bac_locus_i3+I+G4 / df: 121 / LogL: -2710.165
+Partition gtdb_r207_bac120_TIGR00436.faa_subtaxa / Model: Q.bac_locus_i3+I+G4 / df: 37 / LogL: -6051.970
+Partition gtdb_r207_bac120_TIGR02013.faa_subtaxa / Model: Q.bac_locus_i3+F+I+R4 / df: 129 / LogL: -22115.036
+Partition gtdb_r207_bac120_TIGR00717.faa_subtaxa / Model: Q.bac_locus_i3+I+G4 / df: 133 / LogL: -10408.524
+Partition gtdb_r207_bac120_TIGR03725.faa_subtaxa / Model: Q.bac_locus_i3+F+I+R5 / df: 165 / LogL: -17297.377
+Partition gtdb_r207_bac120_TIGR00054.faa_subtaxa / Model: Q.bac_locus_i3+F+I+R6 / df: 171 / LogL: -30072.145
+Partition gtdb_r207_bac120_TIGR02386.faa_subtaxa / Model: Q.bac_locus_i3+F+I+R5 / df: 139 / LogL: -27688.860
+Optimal log-likelihood: -306512.712
+Wrote distance file to... 
+--------------------------------------------------------------------
+|                SEPARATE TREE SEARCH FOR PARTITIONS               |
+--------------------------------------------------------------------
+Partition gtdb_r207_bac120_TIGR02350.faa_subtaxa / Iterations: 119 / LogL: -12093.5 / Time: 0h:3m:45s
+Partition gtdb_r207_bac120_TIGR00382.faa_subtaxa / Iterations: 133 / LogL: -8274.19 / Time: 0h:6m:45s
+Partition gtdb_r207_bac120_TIGR02013.faa_subtaxa / Iterations: 102 / LogL: -22112.7 / Time: 0h:7m:45s
+Partition gtdb_r207_bac120_TIGR00963.faa_subtaxa / Iterations: 103 / LogL: -26095.8 / Time: 0h:7m:52s
+Partition gtdb_r207_bac120_TIGR01059.faa_subtaxa / Iterations: 148 / LogL: -22179.7 / Time: 0h:9m:27s
+Partition gtdb_r207_bac120_TIGR00054.faa_subtaxa / Iterations: 124 / LogL: -30026.6 / Time: 0h:10m:21s
+Partition gtdb_r207_bac120_TIGR02386.faa_subtaxa / Iterations: 105 / LogL: -27675.2 / Time: 0h:10m:28s
+Partition gtdb_r207_bac120_TIGR00928.faa_subtaxa / Iterations: 125 / LogL: -17450.7 / Time: 0h:10m:41s
+Partition gtdb_r207_bac120_TIGR00717.faa_subtaxa / Iterations: 166 / LogL: -10402.1 / Time: 0h:11m:23s
+Partition gtdb_r207_bac120_TIGR01128.faa_subtaxa / Iterations: 103 / LogL: -16397.1 / Time: 0h:11m:25s
+Partition gtdb_r207_bac120_TIGR00084.faa_subtaxa / Iterations: 107 / LogL: -6702.11 / Time: 0h:11m:39s
+Partition gtdb_r207_bac120_TIGR00436.faa_subtaxa / Iterations: 103 / LogL: -6050.73 / Time: 0h:11m:57s
+Partition gtdb_r207_bac120_TIGR01302.faa_subtaxa / Iterations: 102 / LogL: -4301.7 / Time: 0h:12m:1s
+Partition gtdb_r207_bac120_PF01025.20.faa_subtaxa / Iterations: 134 / LogL: -8081.8 / Time: 0h:12m:37s
+Partition gtdb_r207_bac120_TIGR00593.faa_subtaxa / Iterations: 102 / LogL: -52941.3 / Time: 0h:12m:52s
+Partition gtdb_r207_bac120_TIGR03725.faa_subtaxa / Iterations: 144 / LogL: -17277.5 / Time: 0h:12m:54s
+Partition gtdb_r207_bac120_TIGR00922.faa_subtaxa / Iterations: 187 / LogL: -3124.67 / Time: 0h:13m:15s
+Partition gtdb_r207_bac120_TIGR00964.faa_subtaxa / Iterations: 333 / LogL: -2677.79 / Time: 0h:13m:29s
+Partition gtdb_r207_bac120_PF02576.18.faa_subtaxa / Iterations: 299 / LogL: -4434.88 / Time: 0h:13m:53s
+Partition gtdb_r207_bac120_TIGR00116.faa_subtaxa / Iterations: 191 / LogL: -7905.24 / Time: 0h:15m:0s
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+Partition gtdb_r207_bac120_TIGR02350.faa_subtaxa / Model: Q.bac_locus_i3+I+R3 / df: 106 / LogL: -12093.473
+Partition gtdb_r207_bac120_TIGR00717.faa_subtaxa / Model: Q.bac_locus_i3+I+G4 / df: 133 / LogL: -10402.089
+Partition gtdb_r207_bac120_TIGR00593.faa_subtaxa / Model: Q.bac_locus_i3+R6 / df: 135 / LogL: -52941.265
+Partition gtdb_r207_bac120_TIGR00116.faa_subtaxa / Model: Q.bac_locus_i3+G4 / df: 142 / LogL: -7905.236
+Partition gtdb_r207_bac120_TIGR00928.faa_subtaxa / Model: Q.bac_locus_i3+I+R4 / df: 106 / LogL: -17450.729
+Partition gtdb_r207_bac120_TIGR01128.faa_subtaxa / Model: Q.bac_locus_i3+G4 / df: 78 / LogL: -16397.068
+Partition gtdb_r207_bac120_TIGR00922.faa_subtaxa / Model: Q.bac_locus_i3+R3 / df: 119 / LogL: -3124.672
+Partition gtdb_r207_bac120_TIGR03725.faa_subtaxa / Model: Q.bac_locus_i3+F+I+R5 / df: 165 / LogL: -17277.452
+Partition gtdb_r207_bac120_TIGR00084.faa_subtaxa / Model: Q.bac_locus_i3+I+G4 / df: 65 / LogL: -6702.109
+Partition gtdb_r207_bac120_PF02576.18.faa_subtaxa / Model: Q.bac_locus_i3+G4 / df: 130 / LogL: -4434.875
+Partition gtdb_r207_bac120_TIGR00436.faa_subtaxa / Model: Q.bac_locus_i3+I+G4 / df: 37 / LogL: -6050.731
+Partition gtdb_r207_bac120_TIGR00964.faa_subtaxa / Model: Q.bac_locus_i3+I+G4 / df: 121 / LogL: -2677.781
+Partition gtdb_r207_bac120_TIGR01302.faa_subtaxa / Model: Q.bac_locus_i3+G4 / df: 10 / LogL: -4301.703
+Partition gtdb_r207_bac120_TIGR02013.faa_subtaxa / Model: Q.bac_locus_i3+F+I+R4 / df: 129 / LogL: -22112.737
+Partition gtdb_r207_bac120_TIGR00382.faa_subtaxa / Model: Q.bac_locus_i3+I+R4 / df: 136 / LogL: -8274.171
+Partition gtdb_r207_bac120_TIGR00054.faa_subtaxa / Model: Q.bac_locus_i3+F+I+R6 / df: 171 / LogL: -30026.555
+Partition gtdb_r207_bac120_TIGR00963.faa_subtaxa / Model: Q.bac_locus_i3+R5 / df: 119 / LogL: -26095.799
+Partition gtdb_r207_bac120_PF01025.20.faa_subtaxa / Model: Q.bac_locus_i3+I+R4 / df: 116 / LogL: -8081.744
+Partition gtdb_r207_bac120_TIGR02386.faa_subtaxa / Model: Q.bac_locus_i3+F+I+R5 / df: 139 / LogL: -27675.128
+Partition gtdb_r207_bac120_TIGR01059.faa_subtaxa / Model: Q.bac_locus_i3+F+I+R5 / df: 145 / LogL: -22179.620
+Optimal log-likelihood: -306204.935
+Partition information was printed to Q.bac_locus_i3.best_model.nex
+BEST SCORE FOUND : -306204.935
+Total tree length: 333.634
+
+Total number of iterations: 0
+CPU time used for tree search: 5894.048 sec (1h:38m:14s)
+Wall-clock time used for tree search: 847.036 sec (0h:14m:7s)
+Total CPU time used: 6134.960 sec (1h:42m:14s)
+Total wall-clock time used: 911.181 sec (0h:15m:11s)
+
+Analysis results written to: 
+  IQ-TREE report:                Q.bac_locus_i3.iqtree
+  Maximum-likelihood tree:       Q.bac_locus_i3.treefile
+  Screen log file:               Q.bac_locus_i3.log
+
+Date and Time: Tue Jul 11 12:40:11 2023

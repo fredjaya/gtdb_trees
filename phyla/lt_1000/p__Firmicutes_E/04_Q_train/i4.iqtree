@@ -1,0 +1,405 @@
+IQ-TREE 2.2.2.7 COVID-edition built Jun  7 2023
+
+Partition file name: /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Firmicutes_E_treeshrunk/03_subset_loci/training_loci/
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 1
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 65 taxa with 100 partitions and 33229 total sites (7.09158% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	AA	59	121	103	74	37	37	gtdb_r207_bac120_PF00380.20.faa_subtaxa
+   2	AA	62	126	114	90	29	29	gtdb_r207_bac120_PF00410.20.faa_subtaxa
+   3	AA	61	100	100	82	9	9	gtdb_r207_bac120_PF00466.21.faa_subtaxa
+   4	AA	58	166	161	150	12	12	gtdb_r207_bac120_PF01025.20.faa_subtaxa
+   5	AA	61	83	80	72	8	8	gtdb_r207_bac120_PF03726.15.faa_subtaxa
+   6	AA	63	310	286	250	44	44	gtdb_r207_bac120_TIGR00006.faa_subtaxa
+   7	AA	63	361	320	270	72	72	gtdb_r207_bac120_TIGR00019.faa_subtaxa
+   8	AA	61	365	322	261	88	88	gtdb_r207_bac120_TIGR00020.faa_subtaxa
+   9	AA	58	87	87	78	7	7	gtdb_r207_bac120_TIGR00029.faa_subtaxa
+  10	AA	62	111	108	93	12	12	gtdb_r207_bac120_TIGR00043.faa_subtaxa
+  11	AA	62	112	107	85	15	15	gtdb_r207_bac120_TIGR00059.faa_subtaxa
+  12	AA	63	101	97	82	13	13	gtdb_r207_bac120_TIGR00061.faa_subtaxa
+  13	AA	58	279	254	211	45	45	gtdb_r207_bac120_TIGR00064.faa_subtaxa
+  14	AA	60	115	114	99	10	10	gtdb_r207_bac120_TIGR00082.faa_subtaxa
+  15	AA	64	290	285	258	16	16	gtdb_r207_bac120_TIGR00083.faa_subtaxa
+  16	AA	61	192	186	171	11	11	gtdb_r207_bac120_TIGR00084.faa_subtaxa
+  17	AA	58	144	138	114	20	20	gtdb_r207_bac120_TIGR00086.faa_subtaxa
+  18	AA	62	233	213	184	36	36	gtdb_r207_bac120_TIGR00088.faa_subtaxa
+  19	AA	60	99	97	83	8	8	gtdb_r207_bac120_TIGR00090.faa_subtaxa
+  20	AA	57	368	358	327	22	22	gtdb_r207_bac120_TIGR00092.faa_subtaxa
+  21	AA	62	410	405	395	9	9	gtdb_r207_bac120_TIGR00115.faa_subtaxa
+  22	AA	63	148	145	132	11	11	gtdb_r207_bac120_TIGR00158.faa_subtaxa
+  23	AA	65	95	93	85	7	7	gtdb_r207_bac120_TIGR00166.faa_subtaxa
+  24	AA	60	165	158	118	33	33	gtdb_r207_bac120_TIGR00168.faa_subtaxa
+  25	AA	59	240	236	214	18	18	gtdb_r207_bac120_TIGR00186.faa_subtaxa
+  26	AA	56	574	531	471	69	69	gtdb_r207_bac120_TIGR00194.faa_subtaxa
+  27	AA	60	130	129	111	9	9	gtdb_r207_bac120_TIGR00250.faa_subtaxa
+  28	AA	59	526	447	357	141	141	gtdb_r207_bac120_TIGR00337.faa_subtaxa
+  29	AA	63	847	772	660	139	139	gtdb_r207_bac120_TIGR00344.faa_subtaxa
+  30	AA	62	437	376	321	93	93	gtdb_r207_bac120_TIGR00362.faa_subtaxa
+  31	AA	62	414	312	214	171	171	gtdb_r207_bac120_TIGR00382.faa_subtaxa
+  32	AA	63	861	825	765	77	77	gtdb_r207_bac120_TIGR00392.faa_subtaxa
+  33	AA	56	843	728	635	171	171	gtdb_r207_bac120_TIGR00396.faa_subtaxa
+  34	AA	55	418	406	352	41	41	gtdb_r207_bac120_TIGR00414.faa_subtaxa
+  35	AA	62	351	335	282	49	49	gtdb_r207_bac120_TIGR00420.faa_subtaxa
+  36	AA	63	210	208	175	16	16	gtdb_r207_bac120_TIGR00431.faa_subtaxa
+  37	AA	60	466	440	398	49	49	gtdb_r207_bac120_TIGR00435.faa_subtaxa
+  38	AA	59	406	363	329	62	62	gtdb_r207_bac120_TIGR00442.faa_subtaxa
+  39	AA	63	321	303	266	42	42	gtdb_r207_bac120_TIGR00445.faa_subtaxa
+  40	AA	61	569	559	484	41	41	gtdb_r207_bac120_TIGR00456.faa_subtaxa
+  41	AA	60	586	536	455	104	104	gtdb_r207_bac120_TIGR00459.faa_subtaxa
+  42	AA	62	315	308	276	24	24	gtdb_r207_bac120_TIGR00460.faa_subtaxa
+  43	AA	61	324	266	223	88	88	gtdb_r207_bac120_TIGR00468.faa_subtaxa
+  44	AA	62	798	782	732	44	44	gtdb_r207_bac120_TIGR00472.faa_subtaxa
+  45	AA	62	587	555	449	99	99	gtdb_r207_bac120_TIGR00487.faa_subtaxa
+  46	AA	61	176	167	147	20	20	gtdb_r207_bac120_TIGR00496.faa_subtaxa
+  47	AA	61	923	818	750	139	139	gtdb_r207_bac120_TIGR00580.faa_subtaxa
+  48	AA	61	890	846	736	113	113	gtdb_r207_bac120_TIGR00593.faa_subtaxa
+  49	AA	64	196	184	153	35	35	gtdb_r207_bac120_TIGR00615.faa_subtaxa
+  50	AA	61	658	530	399	215	215	gtdb_r207_bac120_TIGR00631.faa_subtaxa
+  51	AA	62	563	553	517	29	29	gtdb_r207_bac120_TIGR00634.faa_subtaxa
+  52	AA	61	305	243	200	83	83	gtdb_r207_bac120_TIGR00635.faa_subtaxa
+  53	AA	54	367	367	355	6	6	gtdb_r207_bac120_TIGR00663.faa_subtaxa
+  54	AA	61	256	246	229	21	21	gtdb_r207_bac120_TIGR00755.faa_subtaxa
+  55	AA	60	73	73	70	1	1	gtdb_r207_bac120_TIGR00810.faa_subtaxa
+  56	AA	57	172	154	132	31	31	gtdb_r207_bac120_TIGR00922.faa_subtaxa
+  57	AA	59	436	388	334	84	84	gtdb_r207_bac120_TIGR00928.faa_subtaxa
+  58	AA	59	428	372	330	73	73	gtdb_r207_bac120_TIGR00959.faa_subtaxa
+  59	AA	60	787	636	544	183	183	gtdb_r207_bac120_TIGR00963.faa_subtaxa
+  60	AA	64	414	382	327	62	62	gtdb_r207_bac120_TIGR00967.faa_subtaxa
+  61	AA	62	212	189	148	45	45	gtdb_r207_bac120_TIGR01009.faa_subtaxa
+  62	AA	64	225	185	118	92	92	gtdb_r207_bac120_TIGR01011.faa_subtaxa
+  63	AA	59	200	183	158	34	34	gtdb_r207_bac120_TIGR01017.faa_subtaxa
+  64	AA	64	156	137	110	37	37	gtdb_r207_bac120_TIGR01021.faa_subtaxa
+  65	AA	62	154	134	113	36	36	gtdb_r207_bac120_TIGR01029.faa_subtaxa
+  66	AA	58	114	103	82	23	23	gtdb_r207_bac120_TIGR01032.faa_subtaxa
+  67	AA	62	103	96	79	18	18	gtdb_r207_bac120_TIGR01044.faa_subtaxa
+  68	AA	59	639	503	420	170	170	gtdb_r207_bac120_TIGR01059.faa_subtaxa
+  69	AA	61	800	703	599	140	140	gtdb_r207_bac120_TIGR01063.faa_subtaxa
+  70	AA	61	141	128	98	27	27	gtdb_r207_bac120_TIGR01066.faa_subtaxa
+  71	AA	63	144	132	110	27	27	gtdb_r207_bac120_TIGR01071.faa_subtaxa
+  72	AA	63	104	99	88	12	12	gtdb_r207_bac120_TIGR01079.faa_subtaxa
+  73	AA	59	449	437	398	34	34	gtdb_r207_bac120_TIGR01082.faa_subtaxa
+  74	AA	62	441	425	375	48	48	gtdb_r207_bac120_TIGR01087.faa_subtaxa
+  75	AA	57	314	314	308	3	3	gtdb_r207_bac120_TIGR01128.faa_subtaxa
+  76	AA	62	126	105	79	33	33	gtdb_r207_bac120_TIGR01164.faa_subtaxa
+  77	AA	58	227	196	157	52	52	gtdb_r207_bac120_TIGR01169.faa_subtaxa
+  78	AA	62	275	242	177	69	69	gtdb_r207_bac120_TIGR01171.faa_subtaxa
+  79	AA	62	450	364	274	139	139	gtdb_r207_bac120_TIGR01302.faa_subtaxa
+  80	AA	58	414	401	356	38	38	gtdb_r207_bac120_TIGR01391.faa_subtaxa
+  81	AA	60	155	150	121	23	23	gtdb_r207_bac120_TIGR01510.faa_subtaxa
+  82	AA	59	140	125	101	31	31	gtdb_r207_bac120_TIGR01632.faa_subtaxa
+  83	AA	59	131	131	116	7	7	gtdb_r207_bac120_TIGR01951.faa_subtaxa
+  84	AA	60	340	314	247	58	58	gtdb_r207_bac120_TIGR01953.faa_subtaxa
+  85	AA	60	321	223	184	118	118	gtdb_r207_bac120_TIGR02012.faa_subtaxa
+  86	AA	63	298	278	226	49	49	gtdb_r207_bac120_TIGR02027.faa_subtaxa
+  87	AA	62	233	205	145	71	71	gtdb_r207_bac120_TIGR02075.faa_subtaxa
+  88	AA	59	219	210	187	19	19	gtdb_r207_bac120_TIGR02191.faa_subtaxa
+  89	AA	56	596	467	377	174	174	gtdb_r207_bac120_TIGR02350.faa_subtaxa
+  90	AA	59	1147	842	612	442	442	gtdb_r207_bac120_TIGR02386.faa_subtaxa
+  91	AA	58	355	332	291	53	53	gtdb_r207_bac120_TIGR02397.faa_subtaxa
+  92	AA	62	189	181	165	21	21	gtdb_r207_bac120_TIGR02432.faa_subtaxa
+  93	AA	60	329	281	242	73	73	gtdb_r207_bac120_TIGR02729.faa_subtaxa
+  94	AA	60	432	415	365	51	51	gtdb_r207_bac120_TIGR03594.faa_subtaxa
+  95	AA	60	202	184	153	36	36	gtdb_r207_bac120_TIGR03625.faa_subtaxa
+  96	AA	62	117	92	63	46	46	gtdb_r207_bac120_TIGR03632.faa_subtaxa
+  97	AA	63	175	162	141	25	25	gtdb_r207_bac120_TIGR03654.faa_subtaxa
+  98	AA	60	314	287	248	53	53	gtdb_r207_bac120_TIGR03723.faa_subtaxa
+  99	AA	60	212	210	204	6	6	gtdb_r207_bac120_TIGR03725.faa_subtaxa
+ 100	AA	60	188	177	153	23	23	gtdb_r207_bac120_TIGR03953.faa_subtaxa
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: Q.bac_locus_i3+I+G4:gtdb_r207_bac120_PF00380.20.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_PF00410.20.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_PF00466.21.faa_subtaxa,Q.bac_locus_i3+R4:gtdb_r207_bac120_PF01025.20.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_PF03726.15.faa_subtaxa,Q.bac_locus_i3+R4:gtdb_r207_bac120_TIGR00006.faa_subtaxa,Q.bac_locus_i3+I+R4:gtdb_r207_bac120_TIGR00019.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR00020.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR00029.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR00043.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR00059.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR00061.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR00064.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR00082.faa_subtaxa,Q.bac_locus_i3+I+R4:gtdb_r207_bac120_TIGR00083.faa_subtaxa,Q.bac_locus_i3+R4:gtdb_r207_bac120_TIGR00084.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR00086.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR00088.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR00090.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR00092.faa_subtaxa,Q.bac_locus_i3+F+I+R4:gtdb_r207_bac120_TIGR00115.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR00158.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR00166.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR00168.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR00186.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR00194.faa_subtaxa,Q.bac_locus_i3+G4:gtdb_r207_bac120_TIGR00250.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR00337.faa_subtaxa,Q.bac_locus_i3+I+R4:gtdb_r207_bac120_TIGR00344.faa_subtaxa,Q.bac_locus_i3+F+I+R4:gtdb_r207_bac120_TIGR00362.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR00382.faa_subtaxa,Q.bac_locus_i3+I+R4:gtdb_r207_bac120_TIGR00392.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR00396.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR00414.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR00420.faa_subtaxa,Q.bac_locus_i3+R4:gtdb_r207_bac120_TIGR00431.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR00435.faa_subtaxa,Q.bac_locus_i3+I+R4:gtdb_r207_bac120_TIGR00442.faa_subtaxa,Q.bac_locus_i3+F+I+G4:gtdb_r207_bac120_TIGR00445.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR00456.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR00459.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR00460.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR00468.faa_subtaxa,Q.bac_locus_i3+I+R4:gtdb_r207_bac120_TIGR00472.faa_subtaxa,Q.bac_locus_i3+I+R4:gtdb_r207_bac120_TIGR00487.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR00496.faa_subtaxa,Q.bac_locus_i3+I+R4:gtdb_r207_bac120_TIGR00580.faa_subtaxa,Q.bac_locus_i3+I+R4:gtdb_r207_bac120_TIGR00593.faa_subtaxa,Q.bac_locus_i3+I+R4:gtdb_r207_bac120_TIGR00615.faa_subtaxa,Q.bac_locus_i3+I+R4:gtdb_r207_bac120_TIGR00631.faa_subtaxa,Q.bac_locus_i3+F+I+R4:gtdb_r207_bac120_TIGR00634.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR00635.faa_subtaxa,Q.bac_locus_i3+F+I+G4:gtdb_r207_bac120_TIGR00663.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR00755.faa_subtaxa,Q.bac_locus_i3+F+G4:gtdb_r207_bac120_TIGR00810.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR00922.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR00928.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR00959.faa_subtaxa,Q.bac_locus_i3+I+R4:gtdb_r207_bac120_TIGR00963.faa_subtaxa,Q.bac_locus_i3+F+I+G4:gtdb_r207_bac120_TIGR00967.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR01009.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR01011.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR01017.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR01021.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR01029.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR01032.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR01044.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR01059.faa_subtaxa,Q.bac_locus_i3+I+R4:gtdb_r207_bac120_TIGR01063.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR01066.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR01071.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR01079.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR01082.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR01087.faa_subtaxa,Q.bac_locus_i3+I+R4:gtdb_r207_bac120_TIGR01128.faa_subtaxa,Q.bac_locus_i3+G4:gtdb_r207_bac120_TIGR01164.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR01169.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR01171.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR01302.faa_subtaxa,Q.bac_locus_i3+I+R4:gtdb_r207_bac120_TIGR01391.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR01510.faa_subtaxa,Q.bac_locus_i3+G4:gtdb_r207_bac120_TIGR01632.faa_subtaxa,Q.bac_locus_i3+G4:gtdb_r207_bac120_TIGR01951.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR01953.faa_subtaxa,Q.bac_locus_i3+I+R4:gtdb_r207_bac120_TIGR02012.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR02027.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR02075.faa_subtaxa,Q.bac_locus_i3+G4:gtdb_r207_bac120_TIGR02191.faa_subtaxa,Q.bac_locus_i3+F+I+R4:gtdb_r207_bac120_TIGR02350.faa_subtaxa,Q.bac_locus_i3+I+R4:gtdb_r207_bac120_TIGR02386.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR02397.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR02432.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR02729.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR03594.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR03625.faa_subtaxa,Q.bac_locus_i3+R4:gtdb_r207_bac120_TIGR03632.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR03654.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR03723.faa_subtaxa,Q.bac_locus_i3+F+I+G4:gtdb_r207_bac120_TIGR03725.faa_subtaxa,Q.bac_locus_i3+I+G4:gtdb_r207_bac120_TIGR03953.faa_subtaxa
+
+List of best-fit models per partition:
+
+  ID  Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+   1  Q.bac_locus_i3+I+G4   -5140.980   10515.960 + 4.69e-310   19719.960 + 6.9e-310   10843.067 +        0
+   2  Q.bac_locus_i3+I+G4   -4639.510    9525.019 + 4.69e-310   24777.019 + 6.9e-310    9873.882 +        0
+   3  Q.bac_locus_i3+I+G4   -5872.855   11987.709 + 4.69e-310   41511.709 + 6.9e-310   12302.935 +        0
+   4  Q.bac_locus_i3+R4  -11606.547   23451.094 + 4.69e-310   24071.963 + 6.9e-310   23821.420 +        0
+   5  Q.bac_locus_i3+I+G4   -5978.846   12199.691 + 4.69e-310   41723.691 + 6.9e-310   12492.371 +        0
+   6  Q.bac_locus_i3+R4  -20414.082   41086.163 + 4.69e-310   41272.497 + 6.9e-310   41568.181 +        0
+   7  Q.bac_locus_i3+I+R4  -18441.736   37143.472 + 4.69e-310   37291.559 + 6.9e-310   37649.026 +        0
+   8  Q.bac_locus_i3+I+G4  -15699.757   31641.515 + 4.69e-310   31763.013 + 6.9e-310   32113.402 +        0
+   9  Q.bac_locus_i3+I+G4   -5152.946   10535.892 + 4.69e-310   37215.892 + 6.9e-310   10819.471 +        0
+  10  Q.bac_locus_i3+I+G4   -7796.847   15839.695 + 4.69e-310   46343.695 + 6.9e-310   16172.967 +        0
+  11  Q.bac_locus_i3+I+G4   -4810.721    9867.442 + 4.69e-310   40371.442 + 6.9e-310   10201.817 +        0
+  12  Q.bac_locus_i3+I+G4   -5723.717   11697.434 + 4.69e-310   43197.434 + 6.9e-310   12024.324 +        0
+  13  Q.bac_locus_i3+I+G4  -14803.955   29837.911 + 4.69e-310   30001.591 + 6.9e-310   30255.500 +        0
+  14  Q.bac_locus_i3+I+G4   -6567.906   13373.813 + 4.69e-310   41933.813 + 6.9e-310   13700.460 +        0
+  15  Q.bac_locus_i3+I+R4  -25320.430   50904.861 + 4.69e-310   51128.504 + 6.9e-310   51389.285 +        0
+  16  Q.bac_locus_i3+R4  -14609.610   29469.220 + 4.69e-310   29946.493 + 6.9e-310   29876.407 +        0
+  17  Q.bac_locus_i3+I+G4   -6153.280   12536.560 + 4.69e-310   13489.417 + 6.9e-310   12878.089 +        0
+  18  Q.bac_locus_i3+I+G4  -12929.193   26104.386 + 4.69e-310   26384.239 + 6.9e-310   26528.863 +        0
+  19  Q.bac_locus_i3+I+G4   -6067.580   12373.161 + 4.69e-310   40933.161 + 6.9e-310   12681.980 +        0
+  20  Q.bac_locus_i3+I+G4  -23533.344   47292.688 + 4.69e-310   47394.121 + 6.9e-310   47734.302 +        0
+  21  Q.bac_locus_i3+F+I+R4  -33707.653   67709.306 + 4.69e-310   67875.382 + 6.9e-310   68299.681 +        0
+  22  Q.bac_locus_i3+I+G4  -10253.779   20757.557 + 4.69e-310   22189.376 + 6.9e-310   21132.209 +        0
+  23  Q.bac_locus_i3+I+G4   -6428.235   13114.471 + 4.69e-310   46654.471 + 6.9e-310   13443.921 +        0
+  24  Q.bac_locus_i3+I+G4   -6511.506   13261.012 + 4.69e-310   13895.679 + 6.9e-310   13630.620 +        0
+  25  Q.bac_locus_i3+I+G4  -16629.934   33493.869 + 4.69e-310   33720.197 + 6.9e-310   33901.104 +        0
+  26  Q.bac_locus_i3+I+G4  -32789.921   65801.842 + 4.69e-310   65855.660 + 6.9e-310   66284.983 +        0
+  27  Q.bac_locus_i3+G4   -9057.550   18351.099 + 4.69e-310   20904.190 + 6.9e-310   18689.468 +        0
+  28  Q.bac_locus_i3+I+G4  -21724.155   43682.310 + 4.69e-310   43749.987 + 6.9e-310   44181.350 +        0
+  29  Q.bac_locus_i3+I+R4  -55284.995  110829.991 + 4.69e-310  110877.560 + 6.9e-310  111446.412 +        0
+  30  Q.bac_locus_i3+F+I+R4  -22398.910   45091.819 + 4.69e-310   45242.380 + 6.9e-310   45691.570 +        0
+  31  Q.bac_locus_i3+I+G4  -10929.253   22104.506 + 4.69e-310   22209.693 + 6.9e-310   22599.688 +        0
+  32  Q.bac_locus_i3+I+R4  -49240.173   98740.346 + 4.69e-310   98787.003 + 6.9e-310   99358.898 +        0
+  33  Q.bac_locus_i3+I+G4  -40981.151   82184.302 + 4.69e-310   82218.316 + 6.9e-310   82710.105 +        0
+  34  Q.bac_locus_i3+I+G4  -21249.263   42716.525 + 4.69e-310   42794.382 + 6.9e-310   43156.393 +        0
+  35  Q.bac_locus_i3+I+G4  -24115.991   48477.982 + 4.69e-310   48612.361 + 6.9e-310   48952.859 +        0
+  36  Q.bac_locus_i3+R4  -15986.340   32230.680 + 4.69e-310   32649.930 + 6.9e-310   32662.456 +        0
+  37  Q.bac_locus_i3+I+G4  -30816.667   61871.334 + 4.69e-310   61953.877 + 6.9e-310   62364.492 +        0
+  38  Q.bac_locus_i3+I+R4  -23955.141   48154.283 + 4.69e-310   48260.332 + 6.9e-310   48643.058 +        0
+  39  Q.bac_locus_i3+F+I+G4  -19863.443   40014.885 + 4.69e-310   40252.158 + 6.9e-310   40557.973 +        0
+  40  Q.bac_locus_i3+I+G4  -34165.985   68573.969 + 4.69e-310   68640.018 + 6.9e-310   69099.579 +        0
+  41  Q.bac_locus_i3+I+G4  -32391.816   65021.632 + 4.69e-310   65082.920 + 6.9e-310   65542.057 +        0
+  42  Q.bac_locus_i3+I+G4  -23207.732   46661.463 + 4.69e-310   46821.170 + 6.9e-310   47123.030 +        0
+  43  Q.bac_locus_i3+I+G4  -14601.478   29444.956 + 4.69e-310   29591.114 + 6.9e-310   29902.426 +        0
+  44  Q.bac_locus_i3+I+R4  -62411.098  125078.196 + 4.69e-310  125127.559 + 6.9e-310  125677.505 +        0
+  45  Q.bac_locus_i3+I+R4  -27102.992   54461.984 + 4.69e-310   54534.089 + 6.9e-310   55021.987 +        0
+  46  Q.bac_locus_i3+I+G4   -8498.619   17239.238 + 4.69e-310   17785.979 + 6.9e-310   17622.867 +        0
+  47  Q.bac_locus_i3+I+R4  -57272.214  114796.428 + 4.69e-310  114836.634 + 6.9e-310  115404.709 +        0
+  48  Q.bac_locus_i3+I+R4  -61158.048  122568.096 + 4.69e-310  122610.041 + 6.9e-310  123171.790 +        0
+  49  Q.bac_locus_i3+I+R4   -9108.563   18481.125 + 4.69e-310   19038.459 + 6.9e-310   18913.836 +        0
+  50  Q.bac_locus_i3+I+R4  -24007.959   48267.919 + 4.69e-310   48328.190 + 6.9e-310   48833.559 +        0
+  51  Q.bac_locus_i3+F+I+R4  -44254.260   88802.520 + 4.69e-310   88907.368 + 6.9e-310   89439.512 +        0
+  52  Q.bac_locus_i3+I+G4  -11653.765   23549.530 + 4.69e-310   23710.863 + 6.9e-310   23999.688 +        0
+  53  Q.bac_locus_i3+F+I+G4  -25329.947   50911.895 + 4.69e-310   51045.245 + 6.9e-310   51403.970 +        0
+  54  Q.bac_locus_i3+I+G4  -20721.077   41684.155 + 4.69e-310   41904.483 + 6.9e-310   42113.121 +        0
+  55  Q.bac_locus_i3+F+G4   -4045.492    8364.983 + 4.69e-310   46176.983 + 6.9e-310    8678.776 +        0
+  56  Q.bac_locus_i3+I+G4   -5793.969   11813.938 + 4.69e-310   12258.145 + 6.9e-310   12169.605 +        0
+  57  Q.bac_locus_i3+I+G4  -22723.764   45681.529 + 4.69e-310   45768.359 + 6.9e-310   46158.613 +        0
+  58  Q.bac_locus_i3+I+G4  -20199.658   40633.316 + 4.69e-310   40722.387 + 6.9e-310   41108.233 +        0
+  59  Q.bac_locus_i3+I+R4  -34206.334   68660.669 + 4.69e-310   68707.497 + 6.9e-310   69239.529 +        0
+  60  Q.bac_locus_i3+F+I+G4  -18690.055   37672.109 + 4.69e-310   37832.873 + 6.9e-310   38259.886 +        0
+  61  Q.bac_locus_i3+I+G4   -7850.265   15946.529 + 4.69e-310   16293.166 + 6.9e-310   16359.389 +        0
+  62  Q.bac_locus_i3+I+G4   -6703.295   13660.590 + 4.69e-310   13995.765 + 6.9e-310   14094.435 +        0
+  63  Q.bac_locus_i3+I+G4   -8701.354   17636.709 + 4.69e-310   17973.441 + 6.9e-310   18022.612 +        0
+  64  Q.bac_locus_i3+I+G4   -5388.327   11030.655 + 4.69e-310   12191.798 + 6.9e-310   11417.986 +        0
+  65  Q.bac_locus_i3+I+G4   -6215.643   12677.285 + 4.69e-310   13694.085 + 6.9e-310   13050.830 +        0
+  66  Q.bac_locus_i3+I+G4   -4086.518    8403.035 + 4.69e-310   35083.035 + 6.9e-310    8717.698 +        0
+  67  Q.bac_locus_i3+I+G4   -4679.235    9604.470 + 4.69e-310   40108.470 + 6.9e-310    9928.542 +        0
+  68  Q.bac_locus_i3+I+G4  -24196.668   48627.335 + 4.69e-310   48680.333 + 6.9e-310   49149.144 +        0
+  69  Q.bac_locus_i3+I+R4  -37413.976   75079.952 + 4.69e-310   75127.506 + 6.9e-310   75670.213 +        0
+  70  Q.bac_locus_i3+I+G4   -6417.387   13076.775 + 4.69e-310   14630.670 + 6.9e-310   13433.575 +        0
+  71  Q.bac_locus_i3+I+G4   -6952.100   14154.201 + 4.69e-310   15904.201 + 6.9e-310   14525.428 +        0
+  72  Q.bac_locus_i3+I+G4   -5285.463   10820.926 + 4.69e-310   42320.926 + 6.9e-310   11151.475 +        0
+  73  Q.bac_locus_i3+I+G4  -31976.554   64187.107 + 4.69e-310   64270.527 + 6.9e-310   64667.629 +        0
+  74  Q.bac_locus_i3+I+G4  -33571.678   67389.357 + 4.69e-310   67485.584 + 6.9e-310   67892.309 +        0
+  75  Q.bac_locus_i3+I+R4  -28103.812   56443.624 + 4.69e-310   56587.645 + 6.9e-310   56886.053 +        0
+  76  Q.bac_locus_i3+G4   -3728.824    7701.648 + 4.69e-310   17705.648 + 6.9e-310    8047.674 +        0
+  77  Q.bac_locus_i3+I+G4   -8449.367   17128.733 + 4.69e-310   17369.093 + 6.9e-310   17522.602 +        0
+  78  Q.bac_locus_i3+I+G4  -10915.501   22077.002 + 4.69e-310   22279.015 + 6.9e-310   22521.865 +        0
+  79  Q.bac_locus_i3+I+G4  -16298.535   32843.071 + 4.69e-310   32936.641 + 6.9e-310   33348.508 +        0
+  80  Q.bac_locus_i3+I+R4  -27289.655   54819.311 + 4.69e-310   54918.423 + 6.9e-310   55302.414 +        0
+  81  Q.bac_locus_i3+I+G4   -7952.228   16142.456 + 4.69e-310   16958.456 + 6.9e-310   16504.624 +        0
+  82  Q.bac_locus_i3+G4   -4429.628    9091.257 + 4.69e-310   10271.431 + 6.9e-310    9432.487 +        0
+  83  Q.bac_locus_i3+G4   -9147.662   18527.325 + 4.69e-310   20466.182 + 6.9e-310   18860.848 +        0
+  84  Q.bac_locus_i3+I+G4  -13271.205   26780.409 + 4.69e-310   26910.228 + 6.9e-310   27236.054 +        0
+  85  Q.bac_locus_i3+I+R4   -8752.926   17753.852 + 4.69e-310   17912.015 + 6.9e-310   18221.510 +        0
+  86  Q.bac_locus_i3+I+G4  -12427.992   25105.983 + 4.69e-310   25289.123 + 6.9e-310   25568.120 +        0
+  87  Q.bac_locus_i3+I+G4   -7506.414   15258.828 + 4.69e-310   15538.681 + 6.9e-310   15683.306 +        0
+  88  Q.bac_locus_i3+G4  -14147.144   28526.287 + 4.69e-310   28792.405 + 6.9e-310   28919.420 +        0
+  89  Q.bac_locus_i3+F+I+R4  -17934.663   36139.326 + 4.69e-310   36219.152 + 6.9e-310   36732.008 +        0
+  90  Q.bac_locus_i3+I+R4  -35068.101   70380.203 + 4.69e-310   70409.511 + 6.9e-310   70995.681 +        0
+  91  Q.bac_locus_i3+I+G4  -19604.509   39439.019 + 4.69e-310   39550.651 + 6.9e-310   39884.312 +        0
+  92  Q.bac_locus_i3+I+G4  -13938.620   28123.240 + 4.69e-310   28592.533 + 6.9e-310   28521.975 +        0
+  93  Q.bac_locus_i3+I+G4  -18016.881   36271.762 + 4.69e-310   36408.413 + 6.9e-310   36723.493 +        0
+  94  Q.bac_locus_i3+I+G4  -27068.758   54375.516 + 4.69e-310   54467.055 + 6.9e-310   54859.659 +        0
+  95  Q.bac_locus_i3+I+G4   -9660.017   19558.035 + 4.69e-310   19906.327 + 6.9e-310   19951.719 +        0
+  96  Q.bac_locus_i3+R4   -3170.809    6595.617 + 4.69e-310   39107.617 + 6.9e-310    6946.413 +        0
+  97  Q.bac_locus_i3+I+G4   -9406.519   19063.037 + 4.69e-310   19705.894 + 6.9e-310   19458.635 +        0
+  98  Q.bac_locus_i3+I+G4  -18613.278   37464.556 + 4.69e-310   37611.773 + 6.9e-310   37910.734 +        0
+  99  Q.bac_locus_i3+F+I+G4  -18596.269   37468.537 + 4.69e-310   37994.071 + 6.9e-310   37931.746 +        0
+ 100  Q.bac_locus_i3+I+G4  -10647.506   21533.012 + 4.69e-310   21953.012 + 6.9e-310   21918.149 +        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Topology-unlinked partition model with separate substitution models and separate rates across sites
+
+  ID  Model         TreeLen  Parameters
+   1  Q.bac_locus_i3+I+G4 13.9977  Q.bac_locus_i3+I{0.278704}+G4{0.934141}
+   2  Q.bac_locus_i3+I+G4 10.6884  Q.bac_locus_i3+I{0.190683}+G4{1.15139}
+   3  Q.bac_locus_i3+I+G4 19.9927  Q.bac_locus_i3+I{0.0537679}+G4{1.12093}
+   4  Q.bac_locus_i3+R4 28.2158  Q.bac_locus_i3+R4{0.13874,0.0488114,0.215831,0.401166,0.471433,1.03792,0.173995,2.39855}
+   5  Q.bac_locus_i3+I+G4 24.5847  Q.bac_locus_i3+I{0.0852141}+G4{1.60593}
+   6  Q.bac_locus_i3+R4 24.2443  Q.bac_locus_i3+R4{0.208053,0.0221207,0.237471,0.34159,0.291781,1.00341,0.262696,2.36586}
+   7  Q.bac_locus_i3+I+R4 16.4179  Q.bac_locus_i3+I{0.168407}+R4{0.228555,0.162268,0.266013,0.744171,0.254661,1.76408,0.0823639,3.83313}
+   8  Q.bac_locus_i3+I+G4 18.6885  Q.bac_locus_i3+I{0.164349}+G4{0.857659}
+   9  Q.bac_locus_i3+I+G4 25.6952  Q.bac_locus_i3+I{0.0619736}+G4{0.966634}
+  10  Q.bac_locus_i3+I+G4 36.0749  Q.bac_locus_i3+I{0.0972114}+G4{1.01969}
+  11  Q.bac_locus_i3+I+G4 10.8038  Q.bac_locus_i3+I{0.0899494}+G4{1.35216}
+  12  Q.bac_locus_i3+I+G4 15.7275  Q.bac_locus_i3+I{0.113668}+G4{1.25472}
+  13  Q.bac_locus_i3+I+G4 20.7188  Q.bac_locus_i3+I{0.135858}+G4{0.864168}
+  14  Q.bac_locus_i3+I+G4 17.7777  Q.bac_locus_i3+I{0.0614681}+G4{1.29409}
+  15  Q.bac_locus_i3+I+R4 39.6062  Q.bac_locus_i3+I{0.0497266}+R4{0.19586,0.122204,0.276524,0.53481,0.303968,1.33248,0.173922,2.43296}
+  16  Q.bac_locus_i3+R4 36.7826  Q.bac_locus_i3+R4{0.153867,0.0547525,0.392744,0.439605,0.3213,1.22062,0.132089,3.23068}
+  17  Q.bac_locus_i3+I+G4 11.7173  Q.bac_locus_i3+I{0.104742}+G4{1.28056}
+  18  Q.bac_locus_i3+I+G4 19.9171  Q.bac_locus_i3+I{0.105049}+G4{0.827807}
+  19  Q.bac_locus_i3+I+G4 24.9509  Q.bac_locus_i3+I{0.0554584}+G4{1.06321}
+  20  Q.bac_locus_i3+I+G4 24.6761  Q.bac_locus_i3+I{0.0531475}+G4{1.20467}
+  21  Q.bac_locus_i3+F+I+R4 31.7328  Q.bac_locus_i3+F+I{0.0178085}+R4{0.172196,0.288386,0.377147,0.760492,0.37264,1.39688,0.0602086,2.37492}
+  22  Q.bac_locus_i3+I+G4 18.7729  Q.bac_locus_i3+I{0.0517724}+G4{1.27464}
+  23  Q.bac_locus_i3+I+G4 18.2857  Q.bac_locus_i3+I{0.0536165}+G4{1.51034}
+  24  Q.bac_locus_i3+I+G4 11.7093  Q.bac_locus_i3+I{0.139985}+G4{0.911677}
+  25  Q.bac_locus_i3+I+G4 30.2916  Q.bac_locus_i3+I{0.0656289}+G4{1.1476}
+  26  Q.bac_locus_i3+I+G4 20.2308  Q.bac_locus_i3+I{0.100208}+G4{1.20039}
+  27  Q.bac_locus_i3+G4 26.9370  Q.bac_locus_i3+G4{0.696349}
+  28  Q.bac_locus_i3+I+G4 14.4397  Q.bac_locus_i3+I{0.22725}+G4{0.822862}
+  29  Q.bac_locus_i3+I+R4 24.5734  Q.bac_locus_i3+I{0.134311}+R4{0.21009,0.11816,0.236742,0.567145,0.216605,1.33861,0.202252,2.72412}
+  30  Q.bac_locus_i3+F+I+R4 21.5344  Q.bac_locus_i3+F+I{0.187074}+R4{0.257466,0.130749,0.296881,0.631862,0.20138,1.88485,0.0571974,6.97893}
+  31  Q.bac_locus_i3+I+G4 7.3345  Q.bac_locus_i3+I{0.364668}+G4{1.00639}
+  32  Q.bac_locus_i3+I+R4 20.8292  Q.bac_locus_i3+I{0.0681407}+R4{0.247932,0.173278,0.33462,0.620897,0.227878,1.51371,0.121429,3.32978}
+  33  Q.bac_locus_i3+I+G4 17.7827  Q.bac_locus_i3+I{0.13517}+G4{0.842769}
+  34  Q.bac_locus_i3+I+G4 17.7585  Q.bac_locus_i3+I{0.0636582}+G4{0.940532}
+  35  Q.bac_locus_i3+I+G4 27.2185  Q.bac_locus_i3+I{0.129226}+G4{1.07953}
+  36  Q.bac_locus_i3+R4 30.0772  Q.bac_locus_i3+R4{0.231582,0.062209,0.299022,0.51853,0.300331,1.30621,0.169065,2.59218}
+  37  Q.bac_locus_i3+I+G4 26.5558  Q.bac_locus_i3+I{0.0892502}+G4{0.912757}
+  38  Q.bac_locus_i3+I+R4 22.4133  Q.bac_locus_i3+I{0.13431}+R4{0.250708,0.175788,0.25423,0.650469,0.270057,1.67254,0.0906946,3.73647}
+  39  Q.bac_locus_i3+F+I+G4 26.8642  Q.bac_locus_i3+F+I{0.106498}+G4{0.961888}
+  40  Q.bac_locus_i3+I+G4 28.7581  Q.bac_locus_i3+I{0.0431637}+G4{0.878569}
+  41  Q.bac_locus_i3+I+G4 19.7442  Q.bac_locus_i3+I{0.157031}+G4{1.02694}
+  42  Q.bac_locus_i3+I+G4 28.9203  Q.bac_locus_i3+I{0.0567902}+G4{1.18797}
+  43  Q.bac_locus_i3+I+G4 17.3474  Q.bac_locus_i3+I{0.170783}+G4{0.96639}
+  44  Q.bac_locus_i3+I+R4 33.9519  Q.bac_locus_i3+I{0.0459292}+R4{0.139178,0.103826,0.264295,0.440393,0.339087,1.08056,0.211511,2.37695}
+  45  Q.bac_locus_i3+I+R4 13.1095  Q.bac_locus_i3+I{0.123036}+R4{0.242287,0.170563,0.302691,0.767901,0.277868,1.88024,0.0541173,3.76549}
+  46  Q.bac_locus_i3+I+G4 11.5001  Q.bac_locus_i3+I{0.0950865}+G4{1.6318}
+  47  Q.bac_locus_i3+I+R4 25.7795  Q.bac_locus_i3+I{0.130251}+R4{0.19173,0.111928,0.278322,0.553345,0.262548,1.40355,0.137149,3.32509}
+  48  Q.bac_locus_i3+I+R4 37.8450  Q.bac_locus_i3+I{0.118522}+R4{0.20836,0.112024,0.297037,0.468263,0.245048,1.29678,0.131033,3.96689}
+  49  Q.bac_locus_i3+I+R4 14.5761  Q.bac_locus_i3+I{0.135807}+R4{0.23899,0.159773,0.363352,0.722053,0.197429,2.0234,0.0644222,4.65644}
+  50  Q.bac_locus_i3+I+R4 10.2452  Q.bac_locus_i3+I{0.280404}+R4{0.239132,0.188141,0.251229,0.883034,0.194487,2.51403,0.0347482,7.02827}
+  51  Q.bac_locus_i3+F+I+R4 35.3014  Q.bac_locus_i3+F+I{0.0381779}+R4{0.11949,0.0752987,0.278875,0.361804,0.336928,1.0667,0.22653,2.34275}
+  52  Q.bac_locus_i3+I+G4 14.1463  Q.bac_locus_i3+I{0.222833}+G4{0.842798}
+  53  Q.bac_locus_i3+F+I+G4 30.8403  Q.bac_locus_i3+F+I{0.0108166}+G4{1.55602}
+  54  Q.bac_locus_i3+I+G4 32.4214  Q.bac_locus_i3+I{0.0746416}+G4{1.18141}
+  55  Q.bac_locus_i3+F+G4 18.1754  Q.bac_locus_i3+F+G4{1.95306}
+  56  Q.bac_locus_i3+I+G4 8.9982  Q.bac_locus_i3+I{0.113184}+G4{1.06768}
+  57  Q.bac_locus_i3+I+G4 17.6663  Q.bac_locus_i3+I{0.16268}+G4{0.956641}
+  58  Q.bac_locus_i3+I+G4 13.9939  Q.bac_locus_i3+I{0.134404}+G4{1.04239}
+  59  Q.bac_locus_i3+I+R4 13.0452  Q.bac_locus_i3+I{0.192981}+R4{0.26848,0.176636,0.230857,0.714249,0.190638,1.78615,0.117045,3.82059}
+  60  Q.bac_locus_i3+F+I+G4 20.8798  Q.bac_locus_i3+F+I{0.0915732}+G4{0.78329}
+  61  Q.bac_locus_i3+I+G4 10.1223  Q.bac_locus_i3+I{0.149563}+G4{1.06787}
+  62  Q.bac_locus_i3+I+G4 9.3655  Q.bac_locus_i3+I{0.371883}+G4{0.890617}
+  63  Q.bac_locus_i3+I+G4 11.7016  Q.bac_locus_i3+I{0.120886}+G4{0.991325}
+  64  Q.bac_locus_i3+I+G4 7.7327  Q.bac_locus_i3+I{0.168642}+G4{1.08505}
+  65  Q.bac_locus_i3+I+G4 12.3036  Q.bac_locus_i3+I{0.195413}+G4{0.994765}
+  66  Q.bac_locus_i3+I+G4 11.2546  Q.bac_locus_i3+I{0.136883}+G4{0.858306}
+  67  Q.bac_locus_i3+I+G4 13.0549  Q.bac_locus_i3+I{0.164703}+G4{1.56159}
+  68  Q.bac_locus_i3+I+G4 10.3413  Q.bac_locus_i3+I{0.209801}+G4{0.947506}
+  69  Q.bac_locus_i3+I+R4 12.9779  Q.bac_locus_i3+I{0.134652}+R4{0.247391,0.17285,0.245953,0.659304,0.24684,1.51592,0.125163,3.36272}
+  70  Q.bac_locus_i3+I+G4 12.7449  Q.bac_locus_i3+I{0.137833}+G4{1.00924}
+  71  Q.bac_locus_i3+I+G4 13.9207  Q.bac_locus_i3+I{0.15097}+G4{1.1206}
+  72  Q.bac_locus_i3+I+G4 11.8837  Q.bac_locus_i3+I{0.083094}+G4{1.53952}
+  73  Q.bac_locus_i3+I+G4 27.8241  Q.bac_locus_i3+I{0.0557592}+G4{0.930507}
+  74  Q.bac_locus_i3+I+G4 31.5997  Q.bac_locus_i3+I{0.096366}+G4{0.886451}
+  75  Q.bac_locus_i3+I+R4 43.0086  Q.bac_locus_i3+I{0.00926346}+R4{0.0888334,0.215483,0.362389,0.581814,0.423099,1.24044,0.116415,2.10612}
+  76  Q.bac_locus_i3+G4 8.0674  Q.bac_locus_i3+G4{0.595687}
+  77  Q.bac_locus_i3+I+G4 10.6666  Q.bac_locus_i3+I{0.152994}+G4{0.890747}
+  78  Q.bac_locus_i3+I+G4 9.3985  Q.bac_locus_i3+I{0.191724}+G4{1.0471}
+  79  Q.bac_locus_i3+I+G4 10.8831  Q.bac_locus_i3+I{0.272253}+G4{0.962789}
+  80  Q.bac_locus_i3+I+R4 25.2205  Q.bac_locus_i3+I{0.0669468}+R4{0.136038,0.090056,0.264382,0.41726,0.330474,1.147,0.202159,2.46528}
+  81  Q.bac_locus_i3+I+G4 18.0929  Q.bac_locus_i3+I{0.123178}+G4{0.925335}
+  82  Q.bac_locus_i3+G4 7.0597  Q.bac_locus_i3+G4{0.654398}
+  83  Q.bac_locus_i3+G4 30.6071  Q.bac_locus_i3+G4{0.82293}
+  84  Q.bac_locus_i3+I+G4 11.8740  Q.bac_locus_i3+I{0.10367}+G4{0.862191}
+  85  Q.bac_locus_i3+I+R4 5.9192  Q.bac_locus_i3+I{0.311543}+R4{0.278217,0.320728,0.301393,1.43919,0.095588,3.82078,0.0132595,8.43053}
+  86  Q.bac_locus_i3+I+G4 11.5153  Q.bac_locus_i3+I{0.113359}+G4{1.03758}
+  87  Q.bac_locus_i3+I+G4 9.8588  Q.bac_locus_i3+I{0.188956}+G4{0.634115}
+  88  Q.bac_locus_i3+G4 24.9485  Q.bac_locus_i3+G4{0.632517}
+  89  Q.bac_locus_i3+F+I+R4 7.5495  Q.bac_locus_i3+F+I{0.216259}+R4{0.255417,0.195066,0.288055,0.82028,0.189047,2.32459,0.051222,5.35774}
+  90  Q.bac_locus_i3+I+R4 8.3427  Q.bac_locus_i3+I{0.313851}+R4{0.272544,0.191831,0.18295,0.944177,0.140153,2.1777,0.090502,5.1907}
+  91  Q.bac_locus_i3+I+G4 25.8974  Q.bac_locus_i3+I{0.134737}+G4{0.879661}
+  92  Q.bac_locus_i3+I+G4 31.7645  Q.bac_locus_i3+I{0.109033}+G4{1.28714}
+  93  Q.bac_locus_i3+I+G4 19.3042  Q.bac_locus_i3+I{0.196617}+G4{0.981477}
+  94  Q.bac_locus_i3+I+G4 26.9812  Q.bac_locus_i3+I{0.10506}+G4{0.959404}
+  95  Q.bac_locus_i3+I+G4 13.2473  Q.bac_locus_i3+I{0.142057}+G4{1.20036}
+  96  Q.bac_locus_i3+R4 5.6019  Q.bac_locus_i3+R4{0.464758,0.0371913,0.285097,0.701049,0.23249,2.68047,0.0176558,9.04331}
+  97  Q.bac_locus_i3+I+G4 18.6534  Q.bac_locus_i3+I{0.110518}+G4{0.93162}
+  98  Q.bac_locus_i3+I+G4 26.2544  Q.bac_locus_i3+I{0.144819}+G4{0.779774}
+  99  Q.bac_locus_i3+F+I+G4 51.9832  Q.bac_locus_i3+F+I{0.027453}+G4{1.21979}
+ 100  Q.bac_locus_i3+I+G4 19.4418  Q.bac_locus_i3+I{0.109528}+G4{1.26413}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -1794933.4507 (s.e. 7332.6543)
+Unconstrained log-likelihood (without tree): -193165.4223
+Number of free parameters (#branches + #model parameters): 12306
+Akaike information criterion (AIC) score: 3614478.9014
+Corrected Akaike information criterion (AICc) score: 3628956.4793
+Bayesian information criterion (BIC) score: 3717986.8612
+
+Total tree length (sum of branch lengths): 1982.8344
+Sum of internal branch lengths: 725.7613 (36.6022% of tree length)
+
+Tree topologies are unlinked across partitions, thus no drawing will be displayed here
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t i4.treefile
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s <alignment.phy> --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s <alignment.phy> --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Tue Jul 11 09:41:42 2023
+Total CPU time used: 2.771e+04 seconds (7h:41m:46s)
+Total wall-clock time used: 3588 seconds (0h:59m:48s)
+

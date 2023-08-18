@@ -1,0 +1,44 @@
+#nexus
+begin sets;
+  charset gtdb_r207_bac120_PF01025.20.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Firmicutes_G_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_PF01025.20.faa_subtaxa: , ;
+  charset gtdb_r207_bac120_TIGR00020.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Firmicutes_G_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00020.faa_subtaxa: , ;
+  charset gtdb_r207_bac120_TIGR00054.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Firmicutes_G_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00054.faa_subtaxa: , ;
+  charset gtdb_r207_bac120_TIGR00092.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Firmicutes_G_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00092.faa_subtaxa: , ;
+  charset gtdb_r207_bac120_TIGR00116.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Firmicutes_G_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00116.faa_subtaxa: , ;
+  charset gtdb_r207_bac120_TIGR00398.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Firmicutes_G_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00398.faa_subtaxa: , ;
+  charset gtdb_r207_bac120_TIGR00436.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Firmicutes_G_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00436.faa_subtaxa: , ;
+  charset gtdb_r207_bac120_TIGR00468.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Firmicutes_G_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00468.faa_subtaxa: , ;
+  charset gtdb_r207_bac120_TIGR00539.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Firmicutes_G_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00539.faa_subtaxa: , ;
+  charset gtdb_r207_bac120_TIGR00643.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Firmicutes_G_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00643.faa_subtaxa: , ;
+  charset gtdb_r207_bac120_TIGR00717.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Firmicutes_G_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00717.faa_subtaxa: , ;
+  charset gtdb_r207_bac120_TIGR00928.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Firmicutes_G_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00928.faa_subtaxa: , ;
+  charset gtdb_r207_bac120_TIGR00963.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Firmicutes_G_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00963.faa_subtaxa: , ;
+  charset gtdb_r207_bac120_TIGR00964.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Firmicutes_G_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00964.faa_subtaxa: , ;
+  charset gtdb_r207_bac120_TIGR01039.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Firmicutes_G_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR01039.faa_subtaxa: , ;
+  charset gtdb_r207_bac120_TIGR01082.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Firmicutes_G_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR01082.faa_subtaxa: , ;
+  charset gtdb_r207_bac120_TIGR01146.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Firmicutes_G_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR01146.faa_subtaxa: , ;
+  charset gtdb_r207_bac120_TIGR01394.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Firmicutes_G_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR01394.faa_subtaxa: , ;
+  charset gtdb_r207_bac120_TIGR02013.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Firmicutes_G_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR02013.faa_subtaxa: , ;
+  charset gtdb_r207_bac120_TIGR02397.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Firmicutes_G_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR02397.faa_subtaxa: , ;
+  charpartition mymodels =
+    Q.yeast+F+R5{0.116859,0.0313755,0.154548,0.287412,0.228306,0.625831,0.373306,1.23814,0.126982,2.73132}: gtdb_r207_bac120_PF01025.20.faa_subtaxa{47.5136},
+    LG+F+R7{0.246197,0.00721621,0.14167,0.165079,0.148909,0.525497,0.185305,0.956992,0.136141,1.65111,0.107646,3.01363,0.0341316,4.98252}: gtdb_r207_bac120_TIGR00020.faa_subtaxa{25.318},
+    LG+F+I{0.0406226}+R6{0.0678559,0.0768578,0.114414,0.20199,0.254247,0.464844,0.187423,0.916574,0.220425,1.64436,0.115013,2.77573}: gtdb_r207_bac120_TIGR00054.faa_subtaxa{53.938},
+    LG+F+R5{0.0911378,0.0274539,0.227747,0.252079,0.37314,0.707243,0.197372,1.61048,0.110602,3.23973}: gtdb_r207_bac120_TIGR00092.faa_subtaxa{22.3522},
+    LG+R5{0.222984,0.0488983,0.270494,0.425823,0.219558,1.05563,0.227179,1.97684,0.0597845,3.22903}: gtdb_r207_bac120_TIGR00116.faa_subtaxa{21.1895},
+    Q.pfam+R7{0.138385,0.0268863,0.232456,0.154142,0.204732,0.475192,0.170985,0.943318,0.127206,1.78713,0.0733463,2.85466,0.0528893,5.0134}: gtdb_r207_bac120_TIGR00398.faa_subtaxa{27.4575},
+    Q.pfam+R6{0.185708,0.0152812,0.174556,0.163801,0.235753,0.600905,0.191535,1.12942,0.153318,2.30209,0.0591296,4.35701}: gtdb_r207_bac120_TIGR00436.faa_subtaxa{26.9247},
+    Q.pfam+I{0.110952}+R6{0.183544,0.0816543,0.252397,0.294961,0.147956,0.778908,0.137945,1.48224,0.110878,2.96055,0.0563279,4.6619}: gtdb_r207_bac120_TIGR00468.faa_subtaxa{23.8611},
+    Q.pfam+F+R6{0.127296,0.00305642,0.12958,0.158804,0.190378,0.414116,0.203319,0.846612,0.182494,1.67363,0.166933,2.53177}: gtdb_r207_bac120_TIGR00539.faa_subtaxa{57.956},
+    LG+F+R6{0.129227,0.0195972,0.153851,0.161783,0.194468,0.418539,0.211558,0.886974,0.220458,1.80455,0.0904384,3.38033}: gtdb_r207_bac120_TIGR00643.faa_subtaxa{22.8577},
+    LG+I{0.0683083}+G4{1.15761}: gtdb_r207_bac120_TIGR00717.faa_subtaxa{25.097},
+    LG+I{0.0354543}+G4{1.02818}: gtdb_r207_bac120_TIGR00928.faa_subtaxa{16.9229},
+    LG+I{0.207084}+R6{0.178255,0.0687035,0.164001,0.371584,0.169709,0.898428,0.160314,1.81678,0.0897059,3.42527,0.0309309,5.68428}: gtdb_r207_bac120_TIGR00963.faa_subtaxa{21.1164},
+    Q.insect+F+I{0.0445615}+G4{1.19838}: gtdb_r207_bac120_TIGR00964.faa_subtaxa{27.1452},
+    LG+I{0.196375}+R5{0.28681,0.0935336,0.215893,0.526521,0.148982,1.38535,0.0799595,3.03405,0.0719791,5.70315}: gtdb_r207_bac120_TIGR01039.faa_subtaxa{11.4393},
+    Q.pfam+I{0.0610453}+R7{0.111319,0.0644197,0.162315,0.219024,0.195122,0.52229,0.151443,0.986824,0.13613,1.57643,0.143409,2.35637,0.0392173,3.91146}: gtdb_r207_bac120_TIGR01082.faa_subtaxa{41.1755},
+    Q.pfam+I{0.0354323}+R6{0.136923,0.120842,0.233854,0.405125,0.203452,0.744343,0.233447,1.31554,0.13666,2.40262,0.0202327,5.03275}: gtdb_r207_bac120_TIGR01146.faa_subtaxa{34.7454},
+    LG+I{0.106969}+R6{0.189855,0.087858,0.235952,0.417175,0.19409,0.916054,0.143247,1.70354,0.104521,3.0435,0.0253667,5.71438}: gtdb_r207_bac120_TIGR01394.faa_subtaxa{15.5024},
+    LG+F+I{0.225424}+R6{0.301209,0.10545,0.144981,0.503626,0.100858,1.11996,0.114465,2.13383,0.0978175,4.27815,0.0152454,7.84081}: gtdb_r207_bac120_TIGR02013.faa_subtaxa{10.1335},
+    LG+F+I{0.141414}+R5{0.121382,0.0659223,0.196429,0.293197,0.188423,0.760461,0.186212,1.52141,0.16614,3.05652}: gtdb_r207_bac120_TIGR02397.faa_subtaxa{36.68};
+end;

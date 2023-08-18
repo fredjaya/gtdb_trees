@@ -33,7 +33,7 @@ cd ../
 rm -r AliStat-1.14/
 ```
 
-## Pipeline  
+## Steps  
 
 ### 1. Input data  
 
@@ -82,30 +82,46 @@ for loc in ~/Dropbox/gtdb/01_data/gtdb_r207_full_concat/*.faa; do
 ```
 
 ### 2. Subset loci  
-Run AliStat to identify most complete loci:
+Run AliStat to identify most complete loci:  
 ```
-mkdir -p 01_alistat
-alistat ${locus_subtaxa} 6 -b | tail -n1 > ${locus_subtaxa}_alistat
-cat $alistats > ${taxa}_alistats.csv
-subset_loci_ca.R $combined_stats $n_training_loci
+# cd to a phyla dir  
+for i in 00_subset_taxa/*; alistat $i 6 -b | tail -n1; done > 01_alistat.csv
+subset_loci_ca.R 01_alistat 100
+
+mkdir 02_loci_assignment/training_loci 02_loci_assignment/testing_loci
 
 # Arrange loci into training and testing directories  
-for fasta in ${LOCIDIR}/*; do
-	if grep `basename $fasta` !{training_loci}; then
-            cp -P $fasta ${PUBLISHDIR}/training_loci
-        elif grep `basename $fasta` !{testing_loci}; then
-            cp -P $fasta ${PUBLISHDIR}/testing_loci
-        else
-            echo "$fasta not found. Possibly Ca == 0"
-        fi
-    done
+for i in `cat 01_alistat/training_loci.txt`; do 
+	cp $i 02_loci_assignment/training_loci/
+done
+
+for i in `cat 01_alistat/testing_loci.txt`; do 
+	cp $i 02_loci_assignment/testing_loci/
+done
 ```
 
 ### 3. Initial model selection  
 
+Test the best-fitting model per-locus to determine the starting models
+for training:  
+```
+# Run model selection
+mkdir 04_model_selection
+iqtree2 -S 03_subset_loci/training_loci -T 4 -pre 04_model_selection/training_loci 
+iqtree2 -S 03_subset_loci/testing_loci -T 4 -pre 04_model_selection/testing_loci   
 
-### 3.  
+# Parse outputs  
+for i in 04_model_selection/*.best_scheme; do
+	cut -f1 -d, $i;
+done | sort | uniq -c | sort -hr > 04_model_selection/best_scheme_counts.txt
+```
 
-## Usage  
+### 4. Training  
+
+First concatenate training and testing loci and generate partition files:  
+```
+
+```
+
 
 

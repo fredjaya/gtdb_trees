@@ -1,0 +1,16 @@
+#nexus
+begin sets;
+  charset gtdb_r207_bac120_PF03726.15.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Dependentiae_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_PF03726.15.faa_subtaxa: ;
+  charset gtdb_r207_bac120_TIGR00431.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Dependentiae_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00431.faa_subtaxa: ;
+  charset gtdb_r207_bac120_TIGR00580.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Dependentiae_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00580.faa_subtaxa: ;
+  charset gtdb_r207_bac120_TIGR00928.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Dependentiae_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00928.faa_subtaxa: ;
+  charset gtdb_r207_bac120_TIGR01302.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Dependentiae_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR01302.faa_subtaxa: ;
+  charset gtdb_r207_bac120_TIGR02191.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Dependentiae_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR02191.faa_subtaxa: ;
+  charpartition mymodels =
+    Q.yeast+I+G4: gtdb_r207_bac120_PF03726.15.faa_subtaxa,
+    Q.yeast+G4: gtdb_r207_bac120_TIGR00431.faa_subtaxa,
+    LG: gtdb_r207_bac120_TIGR00580.faa_subtaxa,
+    Q.insect: gtdb_r207_bac120_TIGR00928.faa_subtaxa,
+    LG: gtdb_r207_bac120_TIGR01302.faa_subtaxa,
+    LG: gtdb_r207_bac120_TIGR02191.faa_subtaxa;
+end;

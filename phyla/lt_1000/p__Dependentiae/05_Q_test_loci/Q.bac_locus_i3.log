@@ -1,0 +1,720 @@
+IQ-TREE multicore version 2.2.2.7 COVID-edition for Linux 64-bit built Jun  7 2023
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan.
+
+Host:    dayhoff.uds.anu.edu.au (AVX2, FMA3, 1007 GB RAM)
+Command: iqtree2 -seed 1 -T 8 -mset Q.bac_locus_i3 -S /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Dependentiae_treeshrunk/03_subset_loci/testing_loci/ -pre Q.bac_locus_i3
+Seed:    1 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed Jul 12 21:27:56 2023
+Kernel:  AVX+FMA - 8 threads (8 CPU cores detected)
+
+Reading 6 alignment files in directory /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Dependentiae_treeshrunk/03_subset_loci/testing_loci/
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Dependentiae_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_PF03726.15.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.000197317 secs
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000123594 secs using 98.71% CPU
+WARNING: 2 sites contain only gaps or ambiguous characters.
+Alignment has 61 sequences with 83 columns, 81 distinct patterns
+75 parsimony-informative, 1 singleton sites, 6 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0178752 secs using 557.7% CPU
+   1  G000385635  100.00%    passed      -nan%
+   2  G001468855    3.61%    passed     99.46%
+   3  G003484685  100.00%    passed      -nan%
+   4  G016191325  100.00%    passed      -nan%
+   5  G016933915  100.00%    passed      -nan%
+   6  G017992075   13.25%    passed     98.44%
+   7  G018062405  100.00%    passed      -nan%
+   8  G903873255  100.00%    passed      -nan%
+   9  G002441565    2.41%    passed     96.78%
+  10  G014728525    3.61%    passed     77.28%
+  11  G013286935  100.00%    passed      -nan%
+  12  G013290085  100.00%    passed      -nan%
+  13  G016183005  100.00%    passed      -nan%
+  14  G018656485  100.00%    passed      -nan%
+  15  G903831405  100.00%    passed      -nan%
+  16  G001468925    4.82%    passed     91.74%
+  17  G013287265   20.48%    passed     92.69%
+  18  G016929235  100.00%    passed      -nan%
+  19  G018663245  100.00%    passed      -nan%
+  20  G000996275  100.00%    passed      -nan%
+  21  G002401785    4.82%    passed     94.82%
+  22  G013288045  100.00%    passed      -nan%
+  23  G016763165  100.00%    passed      -nan%
+  24  G018897535    4.82%    passed     94.56%
+  25  G001000065  100.00%    passed      -nan%
+  26  G003174035  100.00%    passed      -nan%
+  27  G003366055  100.00%    passed      -nan%
+  28  G013213985    6.02%    passed     92.92%
+  29  G000991575  100.00%    passed      -nan%
+  30  G000992305  100.00%    passed      -nan%
+  31  G003511165  100.00%    passed      -nan%
+  32  G003963225  100.00%    passed      -nan%
+  33  G010027825   24.10%    passed     95.94%
+  34  G016871815  100.00%    passed      -nan%
+  35  G000989525  100.00%    passed      -nan%
+  36  G004375875  100.00%    passed      -nan%
+  37  G013289515   15.66%    passed     90.66%
+  38  G014730005    6.02%    passed     93.21%
+  39  G018660415   24.10%    passed     23.71%
+  40  G001771315   25.30%    passed     48.23%
+  41  G016699045  100.00%    passed      -nan%
+  42  G000513475  100.00%    passed      -nan%
+  43  G013815795  100.00%    passed      -nan%
+  44  G013821315  100.00%    passed      -nan%
+  45  G018061805   12.05%    passed     93.31%
+  46  G018647505  100.00%    passed      -nan%
+  47  G000989185    3.61%    passed     56.24%
+  48  G903825355    7.23%    passed     61.88%
+  49  G000989955    4.82%    passed     95.34%
+  50  G003165355  100.00%    passed      -nan%
+  51  G013286795  100.00%    passed      -nan%
+  52  G018266175    4.82%    passed      5.25%
+  53  G018817025    4.82%    passed     72.64%
+  54  G000989195   19.28%    passed     72.52%
+  55  G000996695  100.00%    passed      -nan%
+  56  G002721975   13.25%    passed     47.59%
+  57  G007116155  100.00%    passed      -nan%
+  58  G013287855  100.00%    passed      -nan%
+  59  G016699125   13.25%    passed     93.61%
+  60  G018266085   10.84%    passed     42.74%
+  61  G001468865    3.61%    passed     82.61%
+WARNING: 36 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        63.22%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 6.4116e-05 secs using 99.82% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Dependentiae_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00431.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.00040292 secs using 99.77% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000270238 secs using 99.17% CPU
+Alignment has 61 sequences with 210 columns, 195 distinct patterns
+167 parsimony-informative, 11 singleton sites, 32 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.00611839 secs using 839.4% CPU
+   1  G000385635  100.00%    passed      -nan%
+   2  G001468855    1.43%    passed     75.95%
+   3  G003484685  100.00%    passed      -nan%
+   4  G016191325  100.00%    passed      -nan%
+   5  G016933915  100.00%    passed      -nan%
+   6  G017992075  100.00%    passed      -nan%
+   7  G018062405  100.00%    passed      -nan%
+   8  G903873255  100.00%    passed      -nan%
+   9  G002441565  100.00%    passed      -nan%
+  10  G014728525    1.43%    failed      2.64%
+  11  G013286935  100.00%    passed      -nan%
+  12  G013290085  100.00%    passed      -nan%
+  13  G016183005  100.00%    passed      -nan%
+  14  G018656485    1.43%    passed     23.78%
+  15  G903831405  100.00%    passed      -nan%
+  16  G001468925    0.48%    passed     25.17%
+  17  G013287265  100.00%    passed      -nan%
+  18  G016929235  100.00%    passed      -nan%
+  19  G018663245  100.00%    passed      -nan%
+  20  G000996275  100.00%    passed      -nan%
+  21  G002401785  100.00%    passed      -nan%
+  22  G013288045  100.00%    passed      -nan%
+  23  G016763165  100.00%    passed      -nan%
+  24  G018897535    0.48%    passed     23.84%
+  25  G001000065  100.00%    passed      -nan%
+  26  G003174035  100.00%    passed      -nan%
+  27  G003366055  100.00%    passed      -nan%
+  28  G013213985    1.90%    failed      3.78%
+  29  G000991575    1.90%    passed     73.60%
+  30  G000992305  100.00%    passed      -nan%
+  31  G003511165  100.00%    passed      -nan%
+  32  G003963225  100.00%    passed      -nan%
+  33  G010027825  100.00%    passed      -nan%
+  34  G016871815    1.43%    passed     88.68%
+  35  G000989525  100.00%    passed      -nan%
+  36  G004375875    1.90%    passed     83.49%
+  37  G013289515  100.00%    passed      -nan%
+  38  G014730005    1.90%    passed     22.41%
+  39  G018660415    3.33%    passed     94.92%
+  40  G001771315    6.67%    passed     86.77%
+  41  G016699045    0.95%    passed     71.50%
+  42  G000513475    1.43%    passed     85.62%
+  43  G013815795  100.00%    passed      -nan%
+  44  G013821315  100.00%    passed      -nan%
+  45  G018061805  100.00%    passed      -nan%
+  46  G018647505    0.95%    passed     35.57%
+  47  G000989185    0.95%    failed      0.35%
+  48  G903825355  100.00%    passed      -nan%
+  49  G000989955  100.00%    passed      -nan%
+  50  G003165355  100.00%    passed      -nan%
+  51  G013286795  100.00%    passed      -nan%
+  52  G018266175  100.00%    passed      -nan%
+  53  G018817025    0.95%    passed     99.79%
+  54  G000989195  100.00%    passed      -nan%
+  55  G000996695  100.00%    passed      -nan%
+  56  G002721975    0.95%    passed     58.00%
+  57  G007116155  100.00%    passed      -nan%
+  58  G013287855  100.00%    passed      -nan%
+  59  G016699125  100.00%    passed      -nan%
+  60  G018266085  100.00%    passed      -nan%
+  61  G001468865    1.90%    passed     30.49%
+WARNING: 42 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        69.38%  3 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.000144772 secs using 98.78% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Dependentiae_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00580.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.0479723 secs using 24.11% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000726193 secs using 99.15% CPU
+WARNING: 36 sites contain only gaps or ambiguous characters.
+Alignment has 61 sequences with 923 columns, 21 distinct patterns
+0 parsimony-informative, 0 singleton sites, 923 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0178708 secs using 693.9% CPU
+   1  G000385635  100.00%    passed      -nan%
+   2  G001468855  100.00%    passed      -nan%
+   3  G003484685  100.00%    passed      -nan%
+   4  G016191325  100.00%    passed      -nan%
+   5  G016933915  100.00%    passed      -nan%
+   6  G017992075  100.00%    passed      -nan%
+   7  G018062405  100.00%    passed      -nan%
+   8  G903873255  100.00%    passed      -nan%
+   9  G002441565  100.00%    passed      -nan%
+  10  G014728525  100.00%    passed      -nan%
+  11  G013286935  100.00%    passed      -nan%
+  12  G013290085  100.00%    passed      -nan%
+  13  G016183005  100.00%    passed      -nan%
+  14  G018656485  100.00%    passed      -nan%
+  15  G903831405  100.00%    passed      -nan%
+  16  G001468925  100.00%    passed      -nan%
+  17  G013287265  100.00%    passed      -nan%
+  18  G016929235  100.00%    passed      -nan%
+  19  G018663245  100.00%    passed      -nan%
+  20  G000996275  100.00%    passed      -nan%
+  21  G002401785  100.00%    passed      -nan%
+  22  G013288045  100.00%    passed      -nan%
+  23  G016763165  100.00%    passed      -nan%
+  24  G018897535  100.00%    passed      -nan%
+  25  G001000065  100.00%    passed      -nan%
+  26  G003174035  100.00%    passed      -nan%
+  27  G003366055  100.00%    passed      -nan%
+  28  G013213985  100.00%    passed      -nan%
+  29  G000991575  100.00%    passed      -nan%
+  30  G000992305  100.00%    passed      -nan%
+  31  G003511165  100.00%    passed      -nan%
+  32  G003963225  100.00%    passed      -nan%
+  33  G010027825  100.00%    passed      -nan%
+  34  G016871815  100.00%    passed      -nan%
+  35  G000989525  100.00%    passed      -nan%
+  36  G004375875  100.00%    passed      -nan%
+  37  G013289515  100.00%    passed      -nan%
+  38  G014730005  100.00%    passed      -nan%
+  39  G018660415  100.00%    passed      -nan%
+  40  G001771315  100.00%    passed      -nan%
+  41  G016699045  100.00%    passed      -nan%
+  42  G000513475  100.00%    passed      -nan%
+  43  G013815795  100.00%    passed      -nan%
+  44  G013821315  100.00%    passed      -nan%
+  45  G018061805  100.00%    passed      -nan%
+  46  G018647505  100.00%    passed      -nan%
+  47  G000989185  100.00%    passed      -nan%
+  48  G903825355  100.00%    passed      -nan%
+  49  G000989955  100.00%    passed      -nan%
+  50  G003165355  100.00%    passed      -nan%
+  51  G013286795  100.00%    passed      -nan%
+  52  G018266175  100.00%    passed      -nan%
+  53  G018817025  100.00%    passed      -nan%
+  54  G000989195  100.00%    passed      -nan%
+  55  G000996695  100.00%    passed      -nan%
+  56  G002721975  100.00%    passed      -nan%
+  57  G007116155  100.00%    passed      -nan%
+  58  G013287855    3.90%    failed      0.00%
+  59  G016699125  100.00%    passed      -nan%
+  60  G018266085  100.00%    passed      -nan%
+  61  G001468865  100.00%    passed      -nan%
+WARNING: 60 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        98.42%  1 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.000130575 secs using 99.56% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Dependentiae_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00928.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.000736663 secs using 99.91% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000336658 secs using 382.3% CPU
+WARNING: 7 sites contain only gaps or ambiguous characters.
+Alignment has 61 sequences with 436 columns, 21 distinct patterns
+0 parsimony-informative, 0 singleton sites, 436 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0119357 secs using 708.8% CPU
+   1  G000385635  100.00%    passed      -nan%
+   2  G001468855  100.00%    passed      -nan%
+   3  G003484685  100.00%    passed      -nan%
+   4  G016191325  100.00%    passed      -nan%
+   5  G016933915  100.00%    passed      -nan%
+   6  G017992075  100.00%    passed      -nan%
+   7  G018062405  100.00%    passed      -nan%
+   8  G903873255  100.00%    passed      -nan%
+   9  G002441565  100.00%    passed      -nan%
+  10  G014728525  100.00%    passed      -nan%
+  11  G013286935  100.00%    passed      -nan%
+  12  G013290085  100.00%    passed      -nan%
+  13  G016183005  100.00%    passed      -nan%
+  14  G018656485  100.00%    passed      -nan%
+  15  G903831405  100.00%    passed      -nan%
+  16  G001468925  100.00%    passed      -nan%
+  17  G013287265  100.00%    passed      -nan%
+  18  G016929235  100.00%    passed      -nan%
+  19  G018663245  100.00%    passed      -nan%
+  20  G000996275  100.00%    passed      -nan%
+  21  G002401785  100.00%    passed      -nan%
+  22  G013288045  100.00%    passed      -nan%
+  23  G016763165  100.00%    passed      -nan%
+  24  G018897535  100.00%    passed      -nan%
+  25  G001000065  100.00%    passed      -nan%
+  26  G003174035  100.00%    passed      -nan%
+  27  G003366055  100.00%    passed      -nan%
+  28  G013213985  100.00%    passed      -nan%
+  29  G000991575  100.00%    passed      -nan%
+  30  G000992305  100.00%    passed      -nan%
+  31  G003511165  100.00%    passed      -nan%
+  32  G003963225  100.00%    passed      -nan%
+  33  G010027825  100.00%    passed      -nan%
+  34  G016871815  100.00%    passed      -nan%
+  35  G000989525  100.00%    passed      -nan%
+  36  G004375875  100.00%    passed      -nan%
+  37  G013289515  100.00%    passed      -nan%
+  38  G014730005  100.00%    passed      -nan%
+  39  G018660415  100.00%    passed      -nan%
+  40  G001771315  100.00%    passed      -nan%
+  41  G016699045  100.00%    passed      -nan%
+  42  G000513475  100.00%    passed      -nan%
+  43  G013815795  100.00%    passed      -nan%
+  44  G013821315  100.00%    passed      -nan%
+  45  G018061805  100.00%    passed      -nan%
+  46  G018647505  100.00%    passed      -nan%
+  47  G000989185  100.00%    passed      -nan%
+  48  G903825355  100.00%    passed      -nan%
+  49  G000989955  100.00%    passed      -nan%
+  50  G003165355  100.00%    passed      -nan%
+  51  G013286795    1.61%    failed      0.00%
+  52  G018266175  100.00%    passed      -nan%
+  53  G018817025  100.00%    passed      -nan%
+  54  G000989195  100.00%    passed      -nan%
+  55  G000996695  100.00%    passed      -nan%
+  56  G002721975  100.00%    passed      -nan%
+  57  G007116155  100.00%    passed      -nan%
+  58  G013287855  100.00%    passed      -nan%
+  59  G016699125  100.00%    passed      -nan%
+  60  G018266085  100.00%    passed      -nan%
+  61  G001468865  100.00%    passed      -nan%
+WARNING: 60 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        98.39%  1 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 7.25314e-05 secs using 99.27% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Dependentiae_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR01302.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.0620704 secs
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000401616 secs using 998.7% CPU
+WARNING: 5 sites contain only gaps or ambiguous characters.
+Alignment has 61 sequences with 450 columns, 112 distinct patterns
+0 parsimony-informative, 174 singleton sites, 276 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0119876 secs using 697.2% CPU
+   1  G000385635  100.00%    passed      -nan%
+   2  G001468855  100.00%    passed      -nan%
+   3  G003484685  100.00%    passed      -nan%
+   4  G016191325  100.00%    passed      -nan%
+   5  G016933915  100.00%    passed      -nan%
+   6  G017992075  100.00%    passed      -nan%
+   7  G018062405  100.00%    passed      -nan%
+   8  G903873255  100.00%    passed      -nan%
+   9  G002441565  100.00%    passed      -nan%
+  10  G014728525  100.00%    passed      -nan%
+  11  G013286935  100.00%    passed      -nan%
+  12  G013290085    1.33%    failed      0.00%
+  13  G016183005  100.00%    passed      -nan%
+  14  G018656485  100.00%    passed      -nan%
+  15  G903831405  100.00%    passed      -nan%
+  16  G001468925  100.00%    passed      -nan%
+  17  G013287265  100.00%    passed      -nan%
+  18  G016929235  100.00%    passed      -nan%
+  19  G018663245  100.00%    passed      -nan%
+  20  G000996275  100.00%    passed      -nan%
+  21  G002401785  100.00%    passed      -nan%
+  22  G013288045  100.00%    passed      -nan%
+  23  G016763165  100.00%    passed      -nan%
+  24  G018897535  100.00%    passed      -nan%
+  25  G001000065  100.00%    passed      -nan%
+  26  G003174035  100.00%    passed      -nan%
+  27  G003366055  100.00%    passed      -nan%
+  28  G013213985  100.00%    passed      -nan%
+  29  G000991575  100.00%    passed      -nan%
+  30  G000992305  100.00%    passed      -nan%
+  31  G003511165  100.00%    passed      -nan%
+  32  G003963225  100.00%    passed      -nan%
+  33  G010027825  100.00%    passed      -nan%
+  34  G016871815  100.00%    passed      -nan%
+  35  G000989525  100.00%    passed      -nan%
+  36  G004375875  100.00%    passed      -nan%
+  37  G013289515  100.00%    passed      -nan%
+  38  G014730005  100.00%    passed      -nan%
+  39  G018660415  100.00%    passed      -nan%
+  40  G001771315  100.00%    passed      -nan%
+  41  G016699045  100.00%    passed      -nan%
+  42  G000513475  100.00%    passed      -nan%
+  43  G013815795  100.00%    passed      -nan%
+  44  G013821315  100.00%    passed      -nan%
+  45  G018061805  100.00%    passed      -nan%
+  46  G018647505  100.00%    passed      -nan%
+  47  G000989185  100.00%    passed      -nan%
+  48  G903825355  100.00%    passed      -nan%
+  49  G000989955  100.00%    passed      -nan%
+  50  G003165355  100.00%    passed      -nan%
+  51  G013286795    1.33%    failed      0.00%
+  52  G018266175  100.00%    passed      -nan%
+  53  G018817025  100.00%    passed      -nan%
+  54  G000989195  100.00%    passed      -nan%
+  55  G000996695  100.00%    passed      -nan%
+  56  G002721975  100.00%    passed      -nan%
+  57  G007116155  100.00%    passed      -nan%
+  58  G013287855  100.00%    passed      -nan%
+  59  G016699125  100.00%    passed      -nan%
+  60  G018266085  100.00%    passed      -nan%
+  61  G001468865  100.00%    passed      -nan%
+WARNING: 59 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        96.77%  2 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.000118654 secs using 99.45% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Dependentiae_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR02191.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.00685163 secs using 6.816% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000235727 secs using 99.27% CPU
+WARNING: 11 sites contain only gaps or ambiguous characters.
+Alignment has 61 sequences with 219 columns, 110 distinct patterns
+0 parsimony-informative, 93 singleton sites, 126 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0119671 secs using 753.4% CPU
+   1  G000385635  100.00%    passed      -nan%
+   2  G001468855  100.00%    passed      -nan%
+   3  G003484685  100.00%    passed      -nan%
+   4  G016191325  100.00%    passed      -nan%
+   5  G016933915    5.48%    failed      0.01%
+   6  G017992075  100.00%    passed      -nan%
+   7  G018062405  100.00%    passed      -nan%
+   8  G903873255  100.00%    passed      -nan%
+   9  G002441565  100.00%    passed      -nan%
+  10  G014728525  100.00%    passed      -nan%
+  11  G013286935  100.00%    passed      -nan%
+  12  G013290085  100.00%    passed      -nan%
+  13  G016183005  100.00%    passed      -nan%
+  14  G018656485  100.00%    passed      -nan%
+  15  G903831405  100.00%    passed      -nan%
+  16  G001468925  100.00%    passed      -nan%
+  17  G013287265  100.00%    passed      -nan%
+  18  G016929235  100.00%    passed      -nan%
+  19  G018663245  100.00%    passed      -nan%
+  20  G000996275  100.00%    passed      -nan%
+  21  G002401785  100.00%    passed      -nan%
+  22  G013288045  100.00%    passed      -nan%
+  23  G016763165  100.00%    passed      -nan%
+  24  G018897535  100.00%    passed      -nan%
+  25  G001000065  100.00%    passed      -nan%
+  26  G003174035  100.00%    passed      -nan%
+  27  G003366055  100.00%    passed      -nan%
+  28  G013213985  100.00%    passed      -nan%
+  29  G000991575  100.00%    passed      -nan%
+  30  G000992305  100.00%    passed      -nan%
+  31  G003511165  100.00%    passed      -nan%
+  32  G003963225  100.00%    passed      -nan%
+  33  G010027825  100.00%    passed      -nan%
+  34  G016871815  100.00%    passed      -nan%
+  35  G000989525  100.00%    passed      -nan%
+  36  G004375875  100.00%    passed      -nan%
+  37  G013289515  100.00%    passed      -nan%
+  38  G014730005  100.00%    passed      -nan%
+  39  G018660415  100.00%    passed      -nan%
+  40  G001771315  100.00%    passed      -nan%
+  41  G016699045   39.27%    failed      2.49%
+  42  G000513475  100.00%    passed      -nan%
+  43  G013815795  100.00%    passed      -nan%
+  44  G013821315  100.00%    passed      -nan%
+  45  G018061805  100.00%    passed      -nan%
+  46  G018647505  100.00%    passed      -nan%
+  47  G000989185  100.00%    passed      -nan%
+  48  G903825355  100.00%    passed      -nan%
+  49  G000989955  100.00%    passed      -nan%
+  50  G003165355  100.00%    passed      -nan%
+  51  G013286795  100.00%    passed      -nan%
+  52  G018266175  100.00%    passed      -nan%
+  53  G018817025  100.00%    passed      -nan%
+  54  G000989195  100.00%    passed      -nan%
+  55  G000996695  100.00%    passed      -nan%
+  56  G002721975  100.00%    passed      -nan%
+  57  G007116155  100.00%    passed      -nan%
+  58  G013287855  100.00%    passed      -nan%
+  59  G016699125  100.00%    passed      -nan%
+  60  G018266085  100.00%    passed      -nan%
+  61  G001468865  100.00%    passed      -nan%
+WARNING: 59 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        97.45%  2 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 8.07252e-05 secs using 99.1% CPU
+Subset	Type	Seqs	Sites	Infor	Invar	Model	Name
+1		25	83	75	7		gtdb_r207_bac120_PF03726.15.faa_subtaxa
+2		19	210	167	32		gtdb_r207_bac120_TIGR00431.faa_subtaxa
+3		3	923	0	923		gtdb_r207_bac120_TIGR00580.faa_subtaxa
+WARNING: No variant sites in partition gtdb_r207_bac120_TIGR00580.faa_subtaxa
+4		3	436	0	436		gtdb_r207_bac120_TIGR00928.faa_subtaxa
+WARNING: No variant sites in partition gtdb_r207_bac120_TIGR00928.faa_subtaxa
+5		3	450	0	276		gtdb_r207_bac120_TIGR01302.faa_subtaxa
+WARNING: No parsimony-informative sites in partition gtdb_r207_bac120_TIGR01302.faa_subtaxa
+6		3	219	0	126		gtdb_r207_bac120_TIGR02191.faa_subtaxa
+WARNING: No parsimony-informative sites in partition gtdb_r207_bac120_TIGR02191.faa_subtaxa
+Linked 37 total sequences
+
+WARNING: 8 threads for alignment length 21 will slow down analysis
+WARNING: 8 threads for alignment length 21 will slow down analysis
+Creating fast initial parsimony tree by random order stepwise addition...
+WARNING: Constraint tree has all taxa and is bifurcating, which strictly enforces final tree!
+WARNING: Constraint tree has all taxa and is bifurcating, which strictly enforces final tree!
+WARNING: Constraint tree has all taxa and is bifurcating, which strictly enforces final tree!
+WARNING: Constraint tree has all taxa and is bifurcating, which strictly enforces final tree!
+0.002 seconds, parsimony score: 1910 (based on 521 sites)
+Perform fast likelihood tree search using LG+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Optimizing NNI: done in 14.0218 secs using 104.2% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 6.83953 secs using 104.6% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 1.67005e-05 secs using 179.6% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 1.23922e-05 secs using 201.7% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 1.09691e-05 secs using 72.93% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 8.79541e-06 secs using 79.59% CPU
+Estimate model parameters (epsilon = 1.000)
+Log-likelihood: -15759.562
+Time for fast ML tree search: 25.946 seconds
+
+NOTE: ModelFinder requires 12 MB RAM!
+Selecting individual models for 6 charsets using BIC...
+ No. Model        Score       TreeLen     Charset
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+   1 Q.bac_locus_i3+G4 11886.346   12.806      gtdb_r207_bac120_TIGR00431.faa_subtaxa
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+   2 Q.bac_locus_i3+I+G4 6662.705    19.439      gtdb_r207_bac120_PF03726.15.faa_subtaxa
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+   3 Q.bac_locus_i3 3910.338    10.563      gtdb_r207_bac120_TIGR01302.faa_subtaxa
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+   4 Q.bac_locus_i3+G4 1866.645    3.109       gtdb_r207_bac120_TIGR02191.faa_subtaxa
+WARNING: 8 threads for alignment length 21 will slow down analysis
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+WARNING: 8 threads for alignment length 21 will slow down analysis
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+   5 Q.bac_locus_i3 5145.524    13.750      gtdb_r207_bac120_TIGR00580.faa_subtaxa
+WARNING: 8 threads for alignment length 21 will slow down analysis
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+WARNING: 8 threads for alignment length 21 will slow down analysis
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+   6 Q.bac_locus_i3 2492.577    10.000      gtdb_r207_bac120_TIGR00928.faa_subtaxa
+Full partition model BIC score: 32235.992 (LnL: -15738.258  df:98)
+Partition information was printed to Q.bac_locus_i3.best_scheme.nex
+Partition information in Raxml format was printed to Q.bac_locus_i3.best_scheme
+
+All model information printed to Q.bac_locus_i3.model.gz
+CPU time for ModelFinder: 83.832 seconds (0h:1m:23s)
+Wall-clock time for ModelFinder: 70.625 seconds (0h:1m:10s)
+WARNING: 8 threads for alignment length 21 will slow down analysis
+WARNING: 8 threads for alignment length 21 will slow down analysis
+WARNING: 8 threads for alignment length 21 will slow down analysis
+WARNING: 8 threads for alignment length 21 will slow down analysis
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+Reading model parameters from file Q.bac_locus_i3
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+
+NOTE: 4 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Partition gtdb_r207_bac120_TIGR00431.faa_subtaxa / Model: Q.bac_locus_i3+G4 / df: 36 / LogL: -5846.923
+Partition gtdb_r207_bac120_PF03726.15.faa_subtaxa / Model: Q.bac_locus_i3+I+G4 / df: 49 / LogL: -3223.089
+Partition gtdb_r207_bac120_TIGR01302.faa_subtaxa / Model: Q.bac_locus_i3 / df: 3 / LogL: -1946.005
+Partition gtdb_r207_bac120_TIGR02191.faa_subtaxa / Model: Q.bac_locus_i3+G4 / df: 4 / LogL: -922.536
+Partition gtdb_r207_bac120_TIGR00580.faa_subtaxa / Model: Q.bac_locus_i3 / df: 3 / LogL: -2562.521
+Partition gtdb_r207_bac120_TIGR00928.faa_subtaxa / Model: Q.bac_locus_i3 / df: 3 / LogL: -1237.172
+Optimal log-likelihood: -15738.246
+Wrote distance file to... 
+--------------------------------------------------------------------
+|                SEPARATE TREE SEARCH FOR PARTITIONS               |
+--------------------------------------------------------------------
+Partition gtdb_r207_bac120_TIGR00431.faa_subtaxa / Iterations: 107 / LogL: -5838.44 / Time: 0h:9m:25s
+Partition gtdb_r207_bac120_PF03726.15.faa_subtaxa / Iterations: 126 / LogL: -3217.55 / Time: 0h:23m:48s
+Partition gtdb_r207_bac120_TIGR01302.faa_subtaxa / Iterations: 101 / LogL: -1946.01 / Time: 0h:23m:48s
+Partition gtdb_r207_bac120_TIGR02191.faa_subtaxa / Iterations: 101 / LogL: -922.536 / Time: 0h:23m:48s
+Partition gtdb_r207_bac120_TIGR00580.faa_subtaxa / Iterations: 101 / LogL: -2562.52 / Time: 0h:23m:48s
+Partition gtdb_r207_bac120_TIGR00928.faa_subtaxa / Iterations: 101 / LogL: -1237.17 / Time: 0h:23m:48s
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+Partition gtdb_r207_bac120_TIGR00431.faa_subtaxa / Model: Q.bac_locus_i3+G4 / df: 36 / LogL: -5838.441
+Partition gtdb_r207_bac120_PF03726.15.faa_subtaxa / Model: Q.bac_locus_i3+I+G4 / df: 49 / LogL: -3217.553
+Partition gtdb_r207_bac120_TIGR01302.faa_subtaxa / Model: Q.bac_locus_i3 / df: 3 / LogL: -1946.005
+Partition gtdb_r207_bac120_TIGR02191.faa_subtaxa / Model: Q.bac_locus_i3+G4 / df: 4 / LogL: -922.531
+Partition gtdb_r207_bac120_TIGR00580.faa_subtaxa / Model: Q.bac_locus_i3 / df: 3 / LogL: -2562.521
+Partition gtdb_r207_bac120_TIGR00928.faa_subtaxa / Model: Q.bac_locus_i3 / df: 3 / LogL: -1237.172
+Optimal log-likelihood: -15724.223
+Partition information was printed to Q.bac_locus_i3.best_model.nex
+BEST SCORE FOUND : -15724.223
+Total tree length: 69.473
+
+Total number of iterations: 0
+CPU time used for tree search: 1533.956 sec (0h:25m:33s)
+Wall-clock time used for tree search: 1420.844 sec (0h:23m:40s)
+Total CPU time used: 1545.794 sec (0h:25m:45s)
+Total wall-clock time used: 1429.282 sec (0h:23m:49s)
+
+Analysis results written to: 
+  IQ-TREE report:                Q.bac_locus_i3.iqtree
+  Maximum-likelihood tree:       Q.bac_locus_i3.treefile
+  Screen log file:               Q.bac_locus_i3.log
+
+Date and Time: Wed Jul 12 21:52:58 2023

@@ -1,0 +1,204 @@
+#nexus
+begin sets;
+  charset gtdb_r207_bac120_PF00380.20.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_PF00380.20.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_PF00410.20.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_PF00410.20.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_PF02576.18.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_PF02576.18.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_PF03726.15.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_PF03726.15.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00006.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00006.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00019.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00019.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00020.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00020.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00029.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00029.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00043.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00043.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00059.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00059.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00061.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00061.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00064.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00064.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00065.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00065.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00082.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00082.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00083.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00083.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00084.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00084.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00086.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00086.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00088.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00088.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00090.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00090.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00092.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00092.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00095.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00095.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00115.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00115.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00158.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00158.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00166.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00166.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00186.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00186.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00194.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00194.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00250.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00250.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00337.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00337.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00344.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00344.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00362.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00362.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00396.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00396.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00414.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00414.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00420.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00420.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00435.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00435.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00436.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00436.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00442.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00442.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00445.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00445.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00456.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00456.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00459.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00459.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00460.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00460.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00468.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00468.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00472.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00472.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00487.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00487.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00496.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00496.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00580.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00580.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00593.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00593.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00615.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00615.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00631.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00631.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00634.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00634.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00635.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00635.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00663.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00663.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00755.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00755.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00810.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00810.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00922.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00922.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00928.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00928.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00959.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00959.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00963.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00963.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR00967.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR00967.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR01009.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR01009.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR01011.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR01011.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR01017.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR01017.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR01021.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR01021.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR01029.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR01029.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR01032.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR01032.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR01039.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR01039.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR01044.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR01044.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR01059.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR01059.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR01063.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR01063.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR01066.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR01066.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR01071.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR01071.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR01079.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR01079.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR01082.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR01082.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR01087.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR01087.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR01128.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR01128.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR01146.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR01146.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR01164.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR01164.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR01169.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR01169.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR01171.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR01171.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR01302.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR01302.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR01393.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR01393.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR01394.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR01394.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR01510.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR01510.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR01632.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR01632.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR01951.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR01951.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR01953.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR01953.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR02027.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR02027.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR02075.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR02075.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR02191.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR02191.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR02273.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR02273.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR02397.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR02397.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR02432.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR02432.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR02729.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR02729.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR03263.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR03263.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR03594.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR03594.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR03625.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR03625.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR03632.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR03632.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR03654.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR03654.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR03723.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR03723.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR03725.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR03725.faa_subtaxa: AA, ;
+  charset gtdb_r207_bac120_TIGR03953.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Myxococcota_treeshrunk/03_subset_loci/training_loci/gtdb_r207_bac120_TIGR03953.faa_subtaxa: AA, ;
+  charpartition mymodels =
+    GTR20+FO+I{0.139714}+R4{0.272267,0.117719,0.233669,0.643233,0.230363,1.6798,0.123987,3.47362}: gtdb_r207_bac120_PF00380.20.faa_subtaxa{75.0318},
+    GTR20+FO+I{0.0792469}+R4{0.212341,0.122361,0.276074,0.550798,0.267919,1.3816,0.16442,2.74785}: gtdb_r207_bac120_PF00410.20.faa_subtaxa{87.5934},
+    GTR20+FO+I{0.0136743}+R4{0.164298,0.108064,0.292163,0.617022,0.346534,1.18385,0.18333,2.13675}: gtdb_r207_bac120_PF02576.18.faa_subtaxa{127.368},
+    GTR20+FO+I{0.0481926}+R4{0.0963857,0.135371,0.25035,0.582521,0.22437,0.977213,0.380703,1.63346}: gtdb_r207_bac120_PF03726.15.faa_subtaxa{168.279},
+    GTR20+FO+I{0.0364043}+R4{0.151336,0.0560556,0.222027,0.381186,0.32654,1.00911,0.263692,2.18955}: gtdb_r207_bac120_TIGR00006.faa_subtaxa{158.322},
+    GTR20+FO+I{0.10411}+R4{0.203392,0.121321,0.258871,0.557752,0.275884,1.38906,0.157743,2.83828}: gtdb_r207_bac120_TIGR00019.faa_subtaxa{87.6085},
+    GTR20+FO+I{0.0799907}+R4{0.205818,0.121797,0.291196,0.534077,0.270434,1.34029,0.152561,2.9952}: gtdb_r207_bac120_TIGR00020.faa_subtaxa{90.2376},
+    GTR20+FO+G4{0.92369}: gtdb_r207_bac120_TIGR00029.faa_subtaxa{90.1689},
+    GTR20+FO+I{0.028184}+G4{0.781515}: gtdb_r207_bac120_TIGR00043.faa_subtaxa{123.554},
+    GTR20+FO+I{0.0266906}+R4{0.214653,0.144465,0.342321,0.613559,0.260729,1.36933,0.155607,2.583}: gtdb_r207_bac120_TIGR00059.faa_subtaxa{82.1235},
+    GTR20+FO+I{0.0396013}+G4{1.25467}: gtdb_r207_bac120_TIGR00061.faa_subtaxa{90.2467},
+    GTR20+FO+I{0.105734}+R4{0.236531,0.106823,0.292347,0.590959,0.216888,1.51509,0.1485,3.18763}: gtdb_r207_bac120_TIGR00064.faa_subtaxa{96.4407},
+    GTR20+FO+I{0.050129}+G4{0.712121}: gtdb_r207_bac120_TIGR00065.faa_subtaxa{78.7096},
+    GTR20+FO+I{0.00876921}+R4{0.0955794,0.109946,0.32063,0.513253,0.358653,1.09616,0.216369,1.99561}: gtdb_r207_bac120_TIGR00082.faa_subtaxa{157.552},
+    GTR20+FO+I{0.031032}+R4{0.167772,0.0879907,0.300865,0.496834,0.224023,1.1443,0.276308,2.09697}: gtdb_r207_bac120_TIGR00083.faa_subtaxa{188.361},
+    GTR20+FO+I{0.0156849}+R4{0.146344,0.0795337,0.251583,0.389017,0.347444,0.986,0.238943,2.29306}: gtdb_r207_bac120_TIGR00084.faa_subtaxa{167.34},
+    GTR20+FO+I{0.0484478}+R4{0.102411,0.0895179,0.165252,0.362836,0.343604,0.834063,0.340285,1.89337}: gtdb_r207_bac120_TIGR00086.faa_subtaxa{106.167},
+    GTR20+FO+I{0.0651065}+R4{0.242505,0.100929,0.275456,0.567906,0.254441,1.3403,0.162492,2.94207}: gtdb_r207_bac120_TIGR00088.faa_subtaxa{121.63},
+    GTR20+FO+G4{0.992315}: gtdb_r207_bac120_TIGR00090.faa_subtaxa{106.825},
+    GTR20+FO+I{0.0326454}+R4{0.232229,0.144159,0.313341,0.52941,0.265855,1.26676,0.15593,2.97482}: gtdb_r207_bac120_TIGR00092.faa_subtaxa{89.4038},
+    GTR20+FO+I{0.0267373}+R4{0.162953,0.0943193,0.261491,0.412811,0.305002,1.15749,0.243817,2.14771}: gtdb_r207_bac120_TIGR00095.faa_subtaxa{213.478},
+    GTR20+FO+I{0.00487805}+R4{0.0737333,0.222556,0.295196,0.595002,0.357325,1.03817,0.268868,1.62528}: gtdb_r207_bac120_TIGR00115.faa_subtaxa{168.831},
+    GTR20+FO+I{0.0266759}+R4{0.116248,0.0795607,0.254263,0.457742,0.336343,1.04001,0.26647,1.96857}: gtdb_r207_bac120_TIGR00158.faa_subtaxa{105.674},
+    GTR20+FO+I{0.0106381}+R4{0.234966,0.219113,0.295563,0.670366,0.284255,1.31182,0.174578,2.16229}: gtdb_r207_bac120_TIGR00166.faa_subtaxa{102.755},
+    GTR20+FO+I{0.0272875}+G4{0.9037}: gtdb_r207_bac120_TIGR00186.faa_subtaxa{128.935},
+    GTR20+FO+I{0.0531813}+R4{0.208045,0.138789,0.273257,0.580801,0.280923,1.25536,0.184594,2.49065}: gtdb_r207_bac120_TIGR00194.faa_subtaxa{130.447},
+    GTR20+FO+I{0.0461538}+R4{0.169053,0.181178,0.29455,0.606773,0.212172,1.11195,0.278071,1.99489}: gtdb_r207_bac120_TIGR00250.faa_subtaxa{151.519},
+    GTR20+FO+I{0.138591}+R4{0.250351,0.0997613,0.232797,0.503462,0.210628,1.33542,0.167632,3.43934}: gtdb_r207_bac120_TIGR00337.faa_subtaxa{65.6111},
+    GTR20+FO+I{0.0766934}+R4{0.209021,0.107976,0.231891,0.496141,0.261443,1.19695,0.220951,2.48673}: gtdb_r207_bac120_TIGR00344.faa_subtaxa{120.068},
+    GTR20+FO+I{0.018305}+R4{0.29294,0.167071,0.340317,0.600784,0.27417,1.50732,0.0742681,4.48834}: gtdb_r207_bac120_TIGR00362.faa_subtaxa{144.307},
+    GTR20+FO+I{0.0788518}+R4{0.243553,0.0961358,0.210479,0.474192,0.243024,1.18015,0.224092,2.63272}: gtdb_r207_bac120_TIGR00396.faa_subtaxa{98.5444},
+    GTR20+FO+I{0.0405452}+R4{0.195126,0.100466,0.26285,0.448864,0.258173,1.08368,0.243307,2.39465}: gtdb_r207_bac120_TIGR00414.faa_subtaxa{103.367},
+    GTR20+FO+I{0.0454989}+R4{0.168541,0.0693395,0.302244,0.409169,0.273089,1.15983,0.210627,2.60132}: gtdb_r207_bac120_TIGR00420.faa_subtaxa{154.023},
+    GTR20+FO+I{0.0666214}+R4{0.166509,0.0887225,0.268003,0.446448,0.25574,1.11449,0.243127,2.38788}: gtdb_r207_bac120_TIGR00435.faa_subtaxa{130.683},
+    GTR20+FO+I{0.0518506}+R4{0.218168,0.139573,0.327511,0.618541,0.233389,1.33107,0.169082,2.69878}: gtdb_r207_bac120_TIGR00436.faa_subtaxa{141.624},
+    GTR20+FO+I{0.0469135}+R4{0.229933,0.180913,0.331553,0.649916,0.254678,1.4437,0.136922,2.74055}: gtdb_r207_bac120_TIGR00442.faa_subtaxa{136.004},
+    GTR20+FO+I{0.08681}+R4{0.217915,0.123712,0.347463,0.624046,0.230068,1.56746,0.117744,3.35972}: gtdb_r207_bac120_TIGR00445.faa_subtaxa{73.9267},
+    GTR20+FO+I{0.0105361}+R4{0.200512,0.14619,0.294035,0.539295,0.291926,1.15329,0.202991,2.34218}: gtdb_r207_bac120_TIGR00456.faa_subtaxa{144.628},
+    GTR20+FO+I{0.0904833}+R4{0.203951,0.11089,0.27283,0.571534,0.277111,1.39258,0.155625,2.79874}: gtdb_r207_bac120_TIGR00459.faa_subtaxa{87.7559},
+    GTR20+FO+I{0.0350961}+R4{0.123415,0.0731107,0.199012,0.311947,0.317183,0.832557,0.325294,2.04376}: gtdb_r207_bac120_TIGR00460.faa_subtaxa{155.895},
+    GTR20+FO+I{0.0274959}+R4{0.221083,0.08536,0.304421,0.470923,0.231343,1.15046,0.215658,2.65058}: gtdb_r207_bac120_TIGR00468.faa_subtaxa{109.915},
+    GTR20+FO+I{0.0150262}+R4{0.165895,0.100213,0.280838,0.486278,0.304214,1.1003,0.234026,2.18814}: gtdb_r207_bac120_TIGR00472.faa_subtaxa{174.068},
+    GTR20+FO+I{0.0626192}+R4{0.18812,0.113199,0.265132,0.525928,0.329864,1.29633,0.154265,2.66847}: gtdb_r207_bac120_TIGR00487.faa_subtaxa{71.9409},
+    GTR20+FO+I{0.039541}+R4{0.119408,0.121556,0.23113,0.427711,0.363336,1.0022,0.246584,2.11892}: gtdb_r207_bac120_TIGR00496.faa_subtaxa{77.4491},
+    GTR20+FO+I{0.059583}+R4{0.196441,0.116582,0.30358,0.519074,0.279263,1.28237,0.161134,2.86346}: gtdb_r207_bac120_TIGR00580.faa_subtaxa{142.638},
+    GTR20+FO+I{0.0381934}+R4{0.216951,0.0892016,0.284812,0.45888,0.289049,1.24105,0.170994,2.87278}: gtdb_r207_bac120_TIGR00593.faa_subtaxa{177.442},
+    GTR20+FO+I{0.0462268}+R4{0.282622,0.141793,0.298292,0.6115,0.224198,1.36113,0.148662,3.17741}: gtdb_r207_bac120_TIGR00615.faa_subtaxa{103.969},
+    GTR20+FO+I{0.12682}+R4{0.312918,0.10558,0.240911,0.611593,0.18309,1.6801,0.136261,3.75759}: gtdb_r207_bac120_TIGR00631.faa_subtaxa{79.473},
+    GTR20+FO+I{0.0337476}+R4{0.186362,0.121251,0.238877,0.445138,0.293878,1.07799,0.247136,2.24279}: gtdb_r207_bac120_TIGR00634.faa_subtaxa{177.3},
+    GTR20+FO+I{0.102717}+R4{0.327199,0.15613,0.318988,0.714315,0.172933,1.962,0.0781633,4.88418}: gtdb_r207_bac120_TIGR00635.faa_subtaxa{69.6609},
+    GTR20+FO+I{0.0109288}+R4{0.217741,0.182602,0.343185,0.606624,0.251863,1.30487,0.176281,2.40187}: gtdb_r207_bac120_TIGR00663.faa_subtaxa{116.561},
+    GTR20+FO+I{0.0439395}+R4{0.158393,0.107374,0.304767,0.521831,0.273029,1.14841,0.219872,2.32138}: gtdb_r207_bac120_TIGR00755.faa_subtaxa{171.625},
+    GTR20+FO+I{0.0136986}+R4{0.246567,0.18113,0.24972,0.62755,0.301681,1.16051,0.188334,2.38154}: gtdb_r207_bac120_TIGR00810.faa_subtaxa{68.4887},
+    GTR20+FO+I{0.0290033}+G4{1.11561}: gtdb_r207_bac120_TIGR00922.faa_subtaxa{75.1747},
+    GTR20+FO+I{0.0389818}+R4{0.275685,0.161251,0.331315,0.60077,0.189531,1.44294,0.164488,2.93651}: gtdb_r207_bac120_TIGR00928.faa_subtaxa{91.503},
+    GTR20+FO+I{0.0995485}+R4{0.200687,0.0943538,0.236856,0.489205,0.256959,1.19414,0.20595,2.7111}: gtdb_r207_bac120_TIGR00959.faa_subtaxa{62.0539},
+    GTR20+FO+I{0.133428}+R4{0.249515,0.0910834,0.278941,0.573841,0.170935,1.54181,0.167181,3.31173}: gtdb_r207_bac120_TIGR00963.faa_subtaxa{79.547},
+    GTR20+FO+I{0.0739731}+G4{0.860877}: gtdb_r207_bac120_TIGR00967.faa_subtaxa{68.5556},
+    GTR20+FO+I{0.0482472}+R4{0.290984,0.128926,0.317136,0.626425,0.258435,1.51352,0.0851977,4.37425}: gtdb_r207_bac120_TIGR01009.faa_subtaxa{38.605},
+    GTR20+FO+I{0.0436365}+G4{0.907872}: gtdb_r207_bac120_TIGR01011.faa_subtaxa{67.0178},
+    GTR20+FO+I{0.014397}+R4{0.170166,0.0736245,0.249486,0.386749,0.286523,0.982484,0.279428,2.18117}: gtdb_r207_bac120_TIGR01017.faa_subtaxa{67.7742},
+    GTR20+FO+I{0.0891511}+R4{0.311861,0.11464,0.275075,0.635128,0.21323,1.70101,0.110683,3.85636}: gtdb_r207_bac120_TIGR01021.faa_subtaxa{45.927},
+    GTR20+FO+I{0.0713083}+R4{0.319979,0.132711,0.287844,0.756379,0.263841,1.81348,0.0570288,4.58274}: gtdb_r207_bac120_TIGR01029.faa_subtaxa{44.8071},
+    GTR20+FO+I{0.0602829}+R4{0.176639,0.112744,0.447079,0.783721,0.254253,1.66047,0.0617452,3.36089}: gtdb_r207_bac120_TIGR01032.faa_subtaxa{69.7254},
+    GTR20+FO+I{0.197783}+R4{0.315282,0.091862,0.183526,0.615382,0.22517,2.00553,0.0782378,5.19586}: gtdb_r207_bac120_TIGR01039.faa_subtaxa{37.3135},
+    GTR20+FO+I{0.0290225}+G4{1.06131}: gtdb_r207_bac120_TIGR01044.faa_subtaxa{77.8988},
+    GTR20+FO+I{0.0992334}+R4{0.250137,0.0998287,0.274327,0.512615,0.207259,1.3745,0.169043,3.25081}: gtdb_r207_bac120_TIGR01059.faa_subtaxa{62.5575},
+    GTR20+FO+I{0.0824471}+R4{0.276764,0.160291,0.285888,0.682401,0.239797,1.57134,0.115104,3.3339}: gtdb_r207_bac120_TIGR01063.faa_subtaxa{68.835},
+    GTR20+FO+I{0.0593709}+R4{0.234806,0.121113,0.254647,0.592112,0.286939,1.39845,0.164237,2.55433}: gtdb_r207_bac120_TIGR01066.faa_subtaxa{82.1876},
+    GTR20+FO+I{0.048186}+R4{0.236607,0.102589,0.186852,0.502167,0.300376,1.1181,0.227979,2.39516}: gtdb_r207_bac120_TIGR01071.faa_subtaxa{95.1504},
+    GTR20+FO+I{0.00961509}+G4{1.45446}: gtdb_r207_bac120_TIGR01079.faa_subtaxa{97.1098},
+    GTR20+FO+I{0.039871}+R4{0.210356,0.0965477,0.297374,0.476106,0.245961,1.16321,0.206438,2.67395}: gtdb_r207_bac120_TIGR01082.faa_subtaxa{96.5956},
+    GTR20+FO+I{0.0317131}+R4{0.148246,0.0710986,0.302014,0.404105,0.246825,1.0734,0.271202,2.22149}: gtdb_r207_bac120_TIGR01087.faa_subtaxa{182.061},
+    GTR20+FO+R4{0.0827867,0.193837,0.280255,0.529258,0.379324,0.984728,0.257634,1.79361}: gtdb_r207_bac120_TIGR01128.faa_subtaxa{177.821},
+    GTR20+FO+I{0.0384508}+R4{0.278033,0.115845,0.276493,0.60044,0.243595,1.43484,0.163428,2.76731}: gtdb_r207_bac120_TIGR01146.faa_subtaxa{119.523},
+    GTR20+FO+I{0.0924746}+G4{0.887086}: gtdb_r207_bac120_TIGR01164.faa_subtaxa{51.9898},
+    GTR20+FO+I{0.0704239}+G4{0.899842}: gtdb_r207_bac120_TIGR01169.faa_subtaxa{73.9189},
+    GTR20+FO+I{0.114869}+R4{0.258305,0.137549,0.274207,0.651986,0.244475,1.6817,0.108144,3.46351}: gtdb_r207_bac120_TIGR01171.faa_subtaxa{48.8441},
+    GTR20+FO+I{0.0653601}+R4{0.274812,0.0847447,0.270274,0.524117,0.222555,1.39097,0.166999,3.14666}: gtdb_r207_bac120_TIGR01302.faa_subtaxa{75.4368},
+    GTR20+FO+I{0.135422}+R4{0.299096,0.145205,0.28182,0.753067,0.16541,1.74869,0.118252,3.84847}: gtdb_r207_bac120_TIGR01393.faa_subtaxa{57.5933},
+    GTR20+FO+I{0.0775487}+R4{0.218913,0.113437,0.30869,0.56296,0.257558,1.40952,0.137291,3.1929}: gtdb_r207_bac120_TIGR01394.faa_subtaxa{63.7864},
+    GTR20+FO+I{0.0707175}+G4{0.765575}: gtdb_r207_bac120_TIGR01510.faa_subtaxa{100.831},
+    GTR20+FO+R4{0.271015,0.0509946,0.25008,0.34266,0.329326,1.27218,0.149579,3.21921}: gtdb_r207_bac120_TIGR01632.faa_subtaxa{41.1517},
+    GTR20+FO+I{0.0228539}+R4{0.245378,0.10113,0.281409,0.454898,0.204054,1.14612,0.246304,2.49002}: gtdb_r207_bac120_TIGR01951.faa_subtaxa{158.38},
+    GTR20+FO+I{0.068736}+R4{0.2843,0.119315,0.310581,0.621172,0.246352,1.65313,0.0900318,4.06416}: gtdb_r207_bac120_TIGR01953.faa_subtaxa{39.3816},
+    GTR20+FO+I{0.0552093}+R4{0.373509,0.145347,0.321534,0.829876,0.196334,2.15731,0.0534129,4.78018}: gtdb_r207_bac120_TIGR02027.faa_subtaxa{53.952},
+    GTR20+FO+I{0.0771065}+R4{0.282309,0.151968,0.35368,0.665459,0.177841,1.65093,0.109063,3.92558}: gtdb_r207_bac120_TIGR02075.faa_subtaxa{73.8084},
+    GTR20+FO+I{0.0273972}+R4{0.219947,0.113109,0.222214,0.423626,0.259844,1.03509,0.270598,2.26174}: gtdb_r207_bac120_TIGR02191.faa_subtaxa{181.59},
+    GTR20+FO+I{0.0120482}+R4{0.112576,0.173142,0.317743,0.499659,0.255024,1.03019,0.30261,1.84734}: gtdb_r207_bac120_TIGR02273.faa_subtaxa{243.743},
+    GTR20+FO+I{0.0636891}+R4{0.250725,0.0943701,0.255494,0.479833,0.294065,1.31799,0.136027,3.42704}: gtdb_r207_bac120_TIGR02397.faa_subtaxa{98.2723},
+    GTR20+FO+I{0.0634921}+R4{0.15057,0.138156,0.267884,0.484361,0.253673,1.13064,0.264381,2.12812}: gtdb_r207_bac120_TIGR02432.faa_subtaxa{196.831},
+    GTR20+FO+R4{0.300164,0.125114,0.238063,0.533332,0.231946,1.18438,0.229827,2.43996}: gtdb_r207_bac120_TIGR02729.faa_subtaxa{163.182},
+    GTR20+FO+I{0.0824108}+R4{0.190278,0.0972482,0.209022,0.454924,0.222544,0.977225,0.295746,2.26185}: gtdb_r207_bac120_TIGR03263.faa_subtaxa{123.634},
+    GTR20+FO+I{0.0531798}+R4{0.161476,0.0912785,0.327026,0.567504,0.286848,1.25626,0.171471,2.56206}: gtdb_r207_bac120_TIGR03594.faa_subtaxa{126.848},
+    GTR20+FO+I{0.049349}+R4{0.165662,0.120721,0.234128,0.514518,0.329129,1.18618,0.221732,2.11575}: gtdb_r207_bac120_TIGR03625.faa_subtaxa{94.0898},
+    GTR20+FO+I{0.0968725}+R4{0.277205,0.091494,0.237354,0.676517,0.241646,1.6457,0.146923,2.83405}: gtdb_r207_bac120_TIGR03632.faa_subtaxa{26.1702},
+    GTR20+FO+I{0.0571093}+R4{0.180772,0.130629,0.275637,0.488039,0.309099,1.28358,0.177382,2.50934}: gtdb_r207_bac120_TIGR03654.faa_subtaxa{96.6701},
+    GTR20+FO+I{0.0957678}+R4{0.183065,0.0967872,0.249192,0.395893,0.263071,1.15579,0.208904,2.77435}: gtdb_r207_bac120_TIGR03723.faa_subtaxa{112.501},
+    GTR20+FO+I{0.0235849}+R4{0.162496,0.161322,0.232586,0.465475,0.23338,0.964377,0.347953,1.84064}: gtdb_r207_bac120_TIGR03725.faa_subtaxa{281.038},
+    GTR20+FO+I{0.0319051}+R4{0.206769,0.173195,0.338955,0.609116,0.319154,1.35715,0.103217,3.1447}: gtdb_r207_bac120_TIGR03953.faa_subtaxa{83.2333};
+end;

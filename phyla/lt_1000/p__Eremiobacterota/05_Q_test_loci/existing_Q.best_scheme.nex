@@ -1,0 +1,44 @@
+#nexus
+begin sets;
+  charset gtdb_r207_bac120_PF01025.20.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_PF01025.20.faa_subtaxa: ;
+  charset gtdb_r207_bac120_PF02576.18.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_PF02576.18.faa_subtaxa: ;
+  charset gtdb_r207_bac120_TIGR00054.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00054.faa_subtaxa: ;
+  charset gtdb_r207_bac120_TIGR00084.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00084.faa_subtaxa: ;
+  charset gtdb_r207_bac120_TIGR00116.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00116.faa_subtaxa: ;
+  charset gtdb_r207_bac120_TIGR00382.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00382.faa_subtaxa: ;
+  charset gtdb_r207_bac120_TIGR00436.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00436.faa_subtaxa: ;
+  charset gtdb_r207_bac120_TIGR00593.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00593.faa_subtaxa: ;
+  charset gtdb_r207_bac120_TIGR00717.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00717.faa_subtaxa: ;
+  charset gtdb_r207_bac120_TIGR00922.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00922.faa_subtaxa: ;
+  charset gtdb_r207_bac120_TIGR00928.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00928.faa_subtaxa: ;
+  charset gtdb_r207_bac120_TIGR00963.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00963.faa_subtaxa: ;
+  charset gtdb_r207_bac120_TIGR00964.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00964.faa_subtaxa: ;
+  charset gtdb_r207_bac120_TIGR01059.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR01059.faa_subtaxa: ;
+  charset gtdb_r207_bac120_TIGR01128.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR01128.faa_subtaxa: ;
+  charset gtdb_r207_bac120_TIGR01302.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR01302.faa_subtaxa: ;
+  charset gtdb_r207_bac120_TIGR02013.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR02013.faa_subtaxa: ;
+  charset gtdb_r207_bac120_TIGR02350.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR02350.faa_subtaxa: ;
+  charset gtdb_r207_bac120_TIGR02386.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR02386.faa_subtaxa: ;
+  charset gtdb_r207_bac120_TIGR03725.faa_subtaxa = /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Eremiobacterota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR03725.faa_subtaxa: ;
+  charpartition mymodels =
+    Q.pfam+I+R4: gtdb_r207_bac120_PF01025.20.faa_subtaxa,
+    Q.pfam+G4: gtdb_r207_bac120_PF02576.18.faa_subtaxa,
+    WAG+F+I+R5: gtdb_r207_bac120_TIGR00054.faa_subtaxa,
+    Q.pfam+I+G4: gtdb_r207_bac120_TIGR00084.faa_subtaxa,
+    LG+G4: gtdb_r207_bac120_TIGR00116.faa_subtaxa,
+    Q.insect+R4: gtdb_r207_bac120_TIGR00382.faa_subtaxa,
+    LG+I+G4: gtdb_r207_bac120_TIGR00436.faa_subtaxa,
+    Q.pfam+F+R6: gtdb_r207_bac120_TIGR00593.faa_subtaxa,
+    Q.insect+I+G4: gtdb_r207_bac120_TIGR00717.faa_subtaxa,
+    Q.insect+R3: gtdb_r207_bac120_TIGR00922.faa_subtaxa,
+    Q.pfam+F+I+G4: gtdb_r207_bac120_TIGR00928.faa_subtaxa,
+    Q.pfam+R5: gtdb_r207_bac120_TIGR00963.faa_subtaxa,
+    LG+G4: gtdb_r207_bac120_TIGR00964.faa_subtaxa,
+    Q.insect+I+R5: gtdb_r207_bac120_TIGR01059.faa_subtaxa,
+    Q.pfam+G4: gtdb_r207_bac120_TIGR01128.faa_subtaxa,
+    LG+G4: gtdb_r207_bac120_TIGR01302.faa_subtaxa,
+    LG+I+R4: gtdb_r207_bac120_TIGR02013.faa_subtaxa,
+    Q.insect+I+R3: gtdb_r207_bac120_TIGR02350.faa_subtaxa,
+    LG+I+R5: gtdb_r207_bac120_TIGR02386.faa_subtaxa,
+    Q.pfam+F+I+R5: gtdb_r207_bac120_TIGR03725.faa_subtaxa;
+end;

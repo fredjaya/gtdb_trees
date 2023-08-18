@@ -1,0 +1,405 @@
+IQ-TREE 2.2.2.7 COVID-edition built Jun  7 2023
+
+Partition file name: /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Fibrobacterota_treeshrunk/03_subset_loci/training_loci/
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 1
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 120 taxa with 100 partitions and 33246 total sites (11.6457% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	AA	106	121	115	82	28	28	gtdb_r207_bac120_PF00380.20.faa_subtaxa
+   2	AA	90	126	123	102	16	16	gtdb_r207_bac120_PF00410.20.faa_subtaxa
+   3	AA	91	100	100	93	7	7	gtdb_r207_bac120_PF00466.21.faa_subtaxa
+   4	AA	98	166	163	141	16	16	gtdb_r207_bac120_PF01025.20.faa_subtaxa
+   5	AA	114	73	72	62	6	6	gtdb_r207_bac120_PF02576.18.faa_subtaxa
+   6	AA	109	310	297	269	28	28	gtdb_r207_bac120_TIGR00006.faa_subtaxa
+   7	AA	108	361	325	271	72	72	gtdb_r207_bac120_TIGR00019.faa_subtaxa
+   8	AA	108	365	310	257	83	83	gtdb_r207_bac120_TIGR00020.faa_subtaxa
+   9	AA	105	87	87	78	4	4	gtdb_r207_bac120_TIGR00029.faa_subtaxa
+  10	AA	108	111	107	84	19	19	gtdb_r207_bac120_TIGR00043.faa_subtaxa
+  11	AA	105	421	409	374	32	32	gtdb_r207_bac120_TIGR00054.faa_subtaxa
+  12	AA	107	112	108	93	13	13	gtdb_r207_bac120_TIGR00059.faa_subtaxa
+  13	AA	116	101	101	86	10	10	gtdb_r207_bac120_TIGR00061.faa_subtaxa
+  14	AA	111	279	248	207	55	55	gtdb_r207_bac120_TIGR00064.faa_subtaxa
+  15	AA	109	353	326	282	53	53	gtdb_r207_bac120_TIGR00065.faa_subtaxa
+  16	AA	110	115	114	105	7	7	gtdb_r207_bac120_TIGR00082.faa_subtaxa
+  17	AA	112	290	284	256	26	26	gtdb_r207_bac120_TIGR00083.faa_subtaxa
+  18	AA	108	192	188	174	14	14	gtdb_r207_bac120_TIGR00084.faa_subtaxa
+  19	AA	114	144	139	121	14	14	gtdb_r207_bac120_TIGR00086.faa_subtaxa
+  20	AA	113	233	219	179	40	40	gtdb_r207_bac120_TIGR00088.faa_subtaxa
+  21	AA	116	99	99	94	2	2	gtdb_r207_bac120_TIGR00090.faa_subtaxa
+  22	AA	107	368	356	278	40	40	gtdb_r207_bac120_TIGR00092.faa_subtaxa
+  23	AA	115	194	187	168	19	19	gtdb_r207_bac120_TIGR00095.faa_subtaxa
+  24	AA	111	410	405	386	16	16	gtdb_r207_bac120_TIGR00115.faa_subtaxa
+  25	AA	108	293	280	234	44	44	gtdb_r207_bac120_TIGR00116.faa_subtaxa
+  26	AA	115	148	146	126	14	14	gtdb_r207_bac120_TIGR00158.faa_subtaxa
+  27	AA	110	95	95	84	4	4	gtdb_r207_bac120_TIGR00166.faa_subtaxa
+  28	AA	108	165	154	134	27	27	gtdb_r207_bac120_TIGR00168.faa_subtaxa
+  29	AA	117	574	564	492	52	52	gtdb_r207_bac120_TIGR00194.faa_subtaxa
+  30	AA	113	130	128	115	10	10	gtdb_r207_bac120_TIGR00250.faa_subtaxa
+  31	AA	100	526	491	400	92	92	gtdb_r207_bac120_TIGR00337.faa_subtaxa
+  32	AA	98	847	770	620	183	183	gtdb_r207_bac120_TIGR00344.faa_subtaxa
+  33	AA	113	414	357	282	103	103	gtdb_r207_bac120_TIGR00382.faa_subtaxa
+  34	AA	103	530	521	468	52	52	gtdb_r207_bac120_TIGR00398.faa_subtaxa
+  35	AA	109	418	394	314	77	77	gtdb_r207_bac120_TIGR00414.faa_subtaxa
+  36	AA	106	454	410	354	82	82	gtdb_r207_bac120_TIGR00416.faa_subtaxa
+  37	AA	115	210	202	178	25	25	gtdb_r207_bac120_TIGR00431.faa_subtaxa
+  38	AA	107	466	433	346	90	90	gtdb_r207_bac120_TIGR00435.faa_subtaxa
+  39	AA	109	406	362	306	86	86	gtdb_r207_bac120_TIGR00442.faa_subtaxa
+  40	AA	110	321	305	273	35	35	gtdb_r207_bac120_TIGR00445.faa_subtaxa
+  41	AA	115	569	566	538	15	15	gtdb_r207_bac120_TIGR00456.faa_subtaxa
+  42	AA	94	586	547	440	127	127	gtdb_r207_bac120_TIGR00459.faa_subtaxa
+  43	AA	112	315	299	276	31	31	gtdb_r207_bac120_TIGR00460.faa_subtaxa
+  44	AA	104	324	286	224	85	85	gtdb_r207_bac120_TIGR00468.faa_subtaxa
+  45	AA	106	798	782	722	59	59	gtdb_r207_bac120_TIGR00472.faa_subtaxa
+  46	AA	108	587	529	438	110	110	gtdb_r207_bac120_TIGR00487.faa_subtaxa
+  47	AA	112	176	169	142	22	22	gtdb_r207_bac120_TIGR00496.faa_subtaxa
+  48	AA	110	361	341	305	43	43	gtdb_r207_bac120_TIGR00539.faa_subtaxa
+  49	AA	107	923	858	748	127	127	gtdb_r207_bac120_TIGR00580.faa_subtaxa
+  50	AA	107	890	841	757	109	109	gtdb_r207_bac120_TIGR00593.faa_subtaxa
+  51	AA	116	196	186	161	29	29	gtdb_r207_bac120_TIGR00615.faa_subtaxa
+  52	AA	110	658	568	457	168	168	gtdb_r207_bac120_TIGR00631.faa_subtaxa
+  53	AA	109	563	545	498	47	47	gtdb_r207_bac120_TIGR00634.faa_subtaxa
+  54	AA	110	305	269	207	78	78	gtdb_r207_bac120_TIGR00635.faa_subtaxa
+  55	AA	104	629	595	544	61	61	gtdb_r207_bac120_TIGR00643.faa_subtaxa
+  56	AA	107	367	366	343	13	13	gtdb_r207_bac120_TIGR00663.faa_subtaxa
+  57	AA	111	256	250	224	26	26	gtdb_r207_bac120_TIGR00755.faa_subtaxa
+  58	AA	109	73	71	64	7	7	gtdb_r207_bac120_TIGR00810.faa_subtaxa
+  59	AA	88	172	164	146	19	19	gtdb_r207_bac120_TIGR00922.faa_subtaxa
+  60	AA	98	436	401	345	73	73	gtdb_r207_bac120_TIGR00928.faa_subtaxa
+  61	AA	110	428	377	313	83	83	gtdb_r207_bac120_TIGR00959.faa_subtaxa
+  62	AA	105	787	629	551	190	190	gtdb_r207_bac120_TIGR00963.faa_subtaxa
+  63	AA	97	414	353	305	79	79	gtdb_r207_bac120_TIGR00967.faa_subtaxa
+  64	AA	89	212	193	150	42	42	gtdb_r207_bac120_TIGR01009.faa_subtaxa
+  65	AA	107	225	218	167	45	45	gtdb_r207_bac120_TIGR01011.faa_subtaxa
+  66	AA	104	200	194	173	18	18	gtdb_r207_bac120_TIGR01017.faa_subtaxa
+  67	AA	94	156	142	113	29	29	gtdb_r207_bac120_TIGR01021.faa_subtaxa
+  68	AA	100	154	145	108	33	33	gtdb_r207_bac120_TIGR01029.faa_subtaxa
+  69	AA	115	114	110	92	17	17	gtdb_r207_bac120_TIGR01032.faa_subtaxa
+  70	AA	88	103	102	93	6	6	gtdb_r207_bac120_TIGR01044.faa_subtaxa
+  71	AA	98	639	535	426	156	156	gtdb_r207_bac120_TIGR01059.faa_subtaxa
+  72	AA	102	800	725	612	131	131	gtdb_r207_bac120_TIGR01063.faa_subtaxa
+  73	AA	107	141	136	113	19	19	gtdb_r207_bac120_TIGR01066.faa_subtaxa
+  74	AA	98	144	133	116	21	21	gtdb_r207_bac120_TIGR01071.faa_subtaxa
+  75	AA	89	104	102	90	8	8	gtdb_r207_bac120_TIGR01079.faa_subtaxa
+  76	AA	106	441	436	392	35	35	gtdb_r207_bac120_TIGR01087.faa_subtaxa
+  77	AA	104	314	314	303	5	5	gtdb_r207_bac120_TIGR01128.faa_subtaxa
+  78	AA	89	126	121	87	22	22	gtdb_r207_bac120_TIGR01164.faa_subtaxa
+  79	AA	92	227	207	172	36	36	gtdb_r207_bac120_TIGR01169.faa_subtaxa
+  80	AA	87	275	235	197	59	59	gtdb_r207_bac120_TIGR01171.faa_subtaxa
+  81	AA	111	450	428	372	63	63	gtdb_r207_bac120_TIGR01302.faa_subtaxa
+  82	AA	108	414	402	360	28	28	gtdb_r207_bac120_TIGR01391.faa_subtaxa
+  83	AA	105	595	491	377	172	172	gtdb_r207_bac120_TIGR01393.faa_subtaxa
+  84	AA	108	594	535	450	107	107	gtdb_r207_bac120_TIGR01394.faa_subtaxa
+  85	AA	110	155	154	138	10	10	gtdb_r207_bac120_TIGR01510.faa_subtaxa
+  86	AA	91	140	121	94	40	40	gtdb_r207_bac120_TIGR01632.faa_subtaxa
+  87	AA	116	131	130	120	9	9	gtdb_r207_bac120_TIGR01951.faa_subtaxa
+  88	AA	115	340	329	298	30	30	gtdb_r207_bac120_TIGR01953.faa_subtaxa
+  89	AA	107	321	240	177	123	123	gtdb_r207_bac120_TIGR02012.faa_subtaxa
+  90	AA	103	298	285	220	47	47	gtdb_r207_bac120_TIGR02027.faa_subtaxa
+  91	AA	112	233	221	188	37	37	gtdb_r207_bac120_TIGR02075.faa_subtaxa
+  92	AA	115	219	211	191	18	18	gtdb_r207_bac120_TIGR02191.faa_subtaxa
+  93	AA	113	166	164	159	5	5	gtdb_r207_bac120_TIGR02273.faa_subtaxa
+  94	AA	90	1147	949	731	325	325	gtdb_r207_bac120_TIGR02386.faa_subtaxa
+  95	AA	115	355	329	274	67	67	gtdb_r207_bac120_TIGR02397.faa_subtaxa
+  96	AA	116	329	297	246	61	61	gtdb_r207_bac120_TIGR02729.faa_subtaxa
+  97	AA	118	180	164	135	34	34	gtdb_r207_bac120_TIGR03263.faa_subtaxa
+  98	AA	117	432	418	361	54	54	gtdb_r207_bac120_TIGR03594.faa_subtaxa
+  99	AA	100	117	102	83	28	28	gtdb_r207_bac120_TIGR03632.faa_subtaxa
+ 100	AA	115	314	283	243	61	61	gtdb_r207_bac120_TIGR03723.faa_subtaxa
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: LG+I+G4:gtdb_r207_bac120_PF00380.20.faa_subtaxa,LG+G4:gtdb_r207_bac120_PF00410.20.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_PF00466.21.faa_subtaxa,LG+I+R4:gtdb_r207_bac120_PF01025.20.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_PF02576.18.faa_subtaxa,LG+I+R4:gtdb_r207_bac120_TIGR00006.faa_subtaxa,LG+I+R4:gtdb_r207_bac120_TIGR00019.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR00020.faa_subtaxa,LG+G4:gtdb_r207_bac120_TIGR00029.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR00043.faa_subtaxa,LG+I+R4:gtdb_r207_bac120_TIGR00054.faa_subtaxa,LG+G4:gtdb_r207_bac120_TIGR00059.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR00061.faa_subtaxa,LG+I+R4:gtdb_r207_bac120_TIGR00064.faa_subtaxa,LG+I+R4:gtdb_r207_bac120_TIGR00065.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR00082.faa_subtaxa,LG+I+R4:gtdb_r207_bac120_TIGR00083.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR00084.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR00086.faa_subtaxa,LG+R4:gtdb_r207_bac120_TIGR00088.faa_subtaxa,LG+G4:gtdb_r207_bac120_TIGR00090.faa_subtaxa,LG+I+R4:gtdb_r207_bac120_TIGR00092.faa_subtaxa,LG+I+R4:gtdb_r207_bac120_TIGR00095.faa_subtaxa,LG+I+R4:gtdb_r207_bac120_TIGR00115.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR00116.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR00158.faa_subtaxa,LG+G4:gtdb_r207_bac120_TIGR00166.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR00168.faa_subtaxa,LG+I+R4:gtdb_r207_bac120_TIGR00194.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR00250.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR00337.faa_subtaxa,LG+I+R4:gtdb_r207_bac120_TIGR00344.faa_subtaxa,LG+I+R4:gtdb_r207_bac120_TIGR00382.faa_subtaxa,LG+I+R4:gtdb_r207_bac120_TIGR00398.faa_subtaxa,LG+I+R4:gtdb_r207_bac120_TIGR00414.faa_subtaxa,LG+F+I+R4:gtdb_r207_bac120_TIGR00416.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR00431.faa_subtaxa,WAG+I+R4:gtdb_r207_bac120_TIGR00435.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR00442.faa_subtaxa,LG+F+G4:gtdb_r207_bac120_TIGR00445.faa_subtaxa,LG+I+R4:gtdb_r207_bac120_TIGR00456.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR00459.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR00460.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR00468.faa_subtaxa,LG+I+R4:gtdb_r207_bac120_TIGR00472.faa_subtaxa,LG+I+R4:gtdb_r207_bac120_TIGR00487.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR00496.faa_subtaxa,LG+I+R4:gtdb_r207_bac120_TIGR00539.faa_subtaxa,LG+I+R4:gtdb_r207_bac120_TIGR00580.faa_subtaxa,LG+I+R4:gtdb_r207_bac120_TIGR00593.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR00615.faa_subtaxa,LG+I+R4:gtdb_r207_bac120_TIGR00631.faa_subtaxa,LG+F+I+G4:gtdb_r207_bac120_TIGR00634.faa_subtaxa,LG+I+R4:gtdb_r207_bac120_TIGR00635.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR00643.faa_subtaxa,LG+F+I+G4:gtdb_r207_bac120_TIGR00663.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR00755.faa_subtaxa,LG+F+G4:gtdb_r207_bac120_TIGR00810.faa_subtaxa,LG+R4:gtdb_r207_bac120_TIGR00922.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR00928.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR00959.faa_subtaxa,LG+I+R4:gtdb_r207_bac120_TIGR00963.faa_subtaxa,LG+F+I+R4:gtdb_r207_bac120_TIGR00967.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR01009.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR01011.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR01017.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR01021.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR01029.faa_subtaxa,LG+R4:gtdb_r207_bac120_TIGR01032.faa_subtaxa,LG+G4:gtdb_r207_bac120_TIGR01044.faa_subtaxa,LG+I+R4:gtdb_r207_bac120_TIGR01059.faa_subtaxa,LG+I+R4:gtdb_r207_bac120_TIGR01063.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR01066.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR01071.faa_subtaxa,LG+G4:gtdb_r207_bac120_TIGR01079.faa_subtaxa,LG+I+R4:gtdb_r207_bac120_TIGR01087.faa_subtaxa,LG+I+R4:gtdb_r207_bac120_TIGR01128.faa_subtaxa,LG+G4:gtdb_r207_bac120_TIGR01164.faa_subtaxa,LG+I+R4:gtdb_r207_bac120_TIGR01169.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR01171.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR01302.faa_subtaxa,LG+I+R4:gtdb_r207_bac120_TIGR01391.faa_subtaxa,LG+I+R4:gtdb_r207_bac120_TIGR01393.faa_subtaxa,LG+I+R4:gtdb_r207_bac120_TIGR01394.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR01510.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR01632.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR01951.faa_subtaxa,LG+I+R4:gtdb_r207_bac120_TIGR01953.faa_subtaxa,LG+R4:gtdb_r207_bac120_TIGR02012.faa_subtaxa,LG+R4:gtdb_r207_bac120_TIGR02027.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR02075.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR02191.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR02273.faa_subtaxa,LG+I+R4:gtdb_r207_bac120_TIGR02386.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR02397.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR02729.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR03263.faa_subtaxa,LG+I+R4:gtdb_r207_bac120_TIGR03594.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR03632.faa_subtaxa,LG+I+G4:gtdb_r207_bac120_TIGR03723.faa_subtaxa
+
+List of best-fit models per partition:
+
+  ID  Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+   1  LG+I+G4           -4878.454   10178.908 + 6.91e-310   99642.908 + 6.91e-310   10768.819 +        0
+   2  LG+G4             -5307.617   10971.233 + 6.91e-310   74695.233 + 6.91e-310   11476.092 +        0
+   3  LG+I+G4           -5808.790   11979.580 + 6.91e-310   77863.580 + 6.91e-310   12451.116 +        0
+   4  LG+I+R4          -10489.065   21378.130 + 6.91e-310  101778.130 + 6.91e-310   22000.528 +        0
+   5  LG+I+G4           -4947.108   10348.215 + 6.91e-310  113860.215 + 6.91e-310   10868.149 +        0
+   6  LG+I+R4          -25922.768   52289.537 + 6.91e-310   53427.606 + 6.91e-310   53119.056 +        0
+   7  LG+I+R4          -16693.369   33826.737 + 6.91e-310   34521.309 + 6.91e-310   34682.291 +        0
+   8  LG+I+G4          -15789.542   32009.084 + 6.91e-310   32632.440 + 6.91e-310   32847.562 +        0
+   9  LG+G4             -5031.820   10479.639 + 6.91e-310   97423.639 + 6.91e-310   10992.548 +        0
+  10  LG+I+G4           -6058.153   12546.306 + 6.91e-310  105426.306 + 6.91e-310   13128.855 +        0
+  11  LG+I+R4          -32779.080   65986.160 + 6.91e-310   66432.859 + 6.91e-310   66851.284 +        0
+  12  LG+G4             -4730.712    9885.424 + 6.91e-310  100197.424 + 6.91e-310   10461.745 +        0
+  13  LG+I+G4           -5162.988   10787.975 + 6.91e-310  117971.975 + 6.91e-310   11392.068 +        0
+  14  LG+I+R4          -13004.272   26460.544 + 6.91e-310   28433.698 + 6.91e-310   27281.198 +        0
+  15  LG+I+R4          -17072.315   34588.630 + 6.91e-310   35350.260 + 6.91e-310   35446.986 +        0
+  16  LG+I+G4           -7190.334   14818.669 + 6.91e-310  111178.669 + 6.91e-310   15419.809 +        0
+  17  LG+I+R4          -23902.449   48260.897 + 6.91e-310   49972.766 + 6.91e-310   49097.630 +        0
+  18  LG+I+G4          -14815.488   30060.975 + 6.91e-310  122940.975 + 6.91e-310   30761.337 +        0
+  19  LG+I+G4           -7841.555   16137.109 + 6.91e-310  119649.109 + 6.91e-310   16811.257 +        0
+  20  LG+R4            -12179.362   24816.723 + 6.91e-310   59930.057 + 6.91e-310   25607.011 +        0
+  21  LG+G4             -7149.391   14758.783 + 6.91e-310  121018.783 + 6.91e-310   15355.660 +        0
+  22  LG+I+R4          -16834.134   34104.269 + 6.91e-310   34745.101 + 6.91e-310   34956.231 +        0
+  23  LG+I+R4          -18505.757   37479.513 + 6.91e-310  147459.513 + 6.91e-310   38244.192 +        0
+  24  LG+I+R4          -33078.945   66609.890 + 6.91e-310   67170.568 + 6.91e-310   67517.542 +        0
+  25  LG+I+G4          -17366.733   35163.465 + 6.91e-310   36369.699 + 6.91e-310   35954.703 +        0
+  26  LG+I+G4           -8111.895   16681.789 + 6.91e-310  122021.789 + 6.91e-310   17368.151 +        0
+  27  LG+G4             -5458.910   11353.820 + 6.91e-310  106837.820 + 6.91e-310   11910.565 +        0
+  28  LG+I+G4           -7453.189   15336.378 + 6.91e-310  108216.378 + 6.91e-310   16004.157 +        0
+  29  LG+I+R4          -39648.277   79772.554 + 6.91e-310   80112.148 + 6.91e-310   80808.480 +        0
+  30  LG+I+G4          -10260.088   20970.176 + 6.91e-310  122670.176 + 6.91e-310   21615.372 +        0
+  31  LG+I+G4          -23316.438   47030.876 + 6.91e-310   47275.047 + 6.91e-310   47879.671 +        0
+  32  LG+I+R4          -44863.147   90126.295 + 6.91e-310   90250.753 + 6.91e-310   91074.635 +        0
+  33  LG+I+R4          -19449.327   39358.655 + 6.91e-310   39939.310 + 6.91e-310   40284.604 +        0
+  34  LG+I+R4          -28150.410   56720.820 + 6.91e-310   56998.626 + 6.91e-310   57618.124 +        0
+  35  LG+I+R4          -19677.240   39798.480 + 6.91e-310   40306.234 + 6.91e-310   40694.357 +        0
+  36  LG+F+I+R4        -25392.908   51255.816 + 6.91e-310   51764.623 + 6.91e-310   52223.569 +        0
+  37  LG+I+G4          -19005.162   38468.325 + 6.91e-310  143808.325 + 6.91e-310   39234.812 +        0
+  38  WAG+I+R4         -27402.419   55240.837 + 6.91e-310   55627.412 + 6.91e-310   56144.270 +        0
+  39  LG+I+G4          -22752.191   45938.382 + 6.91e-310   46441.638 + 6.91e-310   46807.761 +        0
+  40  LG+F+G4          -15524.196   31522.393 + 6.91e-310   32881.573 + 6.91e-310   32416.224 +        0
+  41  LG+I+R4          -36983.088   74434.176 + 6.91e-310   74763.457 + 6.91e-310   75450.644 +        0
+  42  LG+I+G4          -21209.995   42793.990 + 6.91e-310   42970.653 + 6.91e-310   43611.800 +        0
+  43  LG+I+G4          -23083.104   46612.209 + 6.91e-310   47710.055 + 6.91e-310   47449.033 +        0
+  44  LG+I+G4          -12206.866   24827.732 + 6.91e-310   25570.077 + 6.91e-310   25610.346 +        0
+  45  LG+I+R4          -57318.027  115068.053 + 6.91e-310  115229.403 + 6.91e-310  116079.389 +        0
+  46  LG+I+R4          -23014.406   46468.811 + 6.91e-310   46734.494 + 6.91e-310   47431.317 +        0
+  47  LG+I+G4           -8304.435   17054.869 + 6.91e-310  116958.869 + 6.91e-310   17761.887 +        0
+  48  LG+I+R4          -38645.893   77739.786 + 6.91e-310   78480.963 + 6.91e-310   78610.895 +        0
+  49  LG+I+R4          -57194.777  114825.553 + 6.91e-310  114961.184 + 6.91e-310  115877.977 +        0
+  50  LG+I+R4          -66868.442  134172.885 + 6.91e-310  134315.186 + 6.91e-310  135217.371 +        0
+  51  LG+I+G4          -13535.091   27532.181 + 6.91e-310  134716.181 + 6.91e-310   28289.426 +        0
+  52  LG+I+R4          -33372.788   67193.576 + 6.91e-310   67426.371 + 6.91e-310   68199.158 +        0
+  53  LG+F+I+G4        -50469.497  101410.994 + 6.91e-310  101754.135 + 6.91e-310  102433.648 +        0
+  54  LG+I+R4          -12992.902   26433.805 + 6.91e-310   27693.805 + 6.91e-310   27267.155 +        0
+  55  LG+I+G4          -50500.392  101414.784 + 6.91e-310  101619.326 + 6.91e-310  102334.719 +        0
+  56  LG+F+I+G4        -24879.015   50222.029 + 6.91e-310   51028.835 + 6.91e-310   51128.073 +        0
+  57  LG+I+G4          -19381.185   39204.370 + 6.91e-310   42090.370 + 6.91e-310   39987.854 +        0
+  58  LG+F+G4           -3292.149    7054.297 + 6.91e-310  117974.297 + 6.91e-310    7592.555 +        0
+  59  LG+R4             -8320.717   16999.434 + 6.91e-310   81439.434 + 6.91e-310   17562.836 +        0
+  60  LG+I+G4          -18833.456   38056.912 + 6.91e-310   38375.412 + 6.91e-310   38852.052 +        0
+  61  LG+I+G4          -17624.954   35687.908 + 6.91e-310   36151.177 + 6.91e-310   36576.856 +        0
+  62  LG+I+R4          -33200.932   66829.864 + 6.91e-310   66990.738 + 6.91e-310   67828.865 +        0
+  63  LG+F+I+R4        -17194.655   34823.309 + 6.91e-310   35306.024 + 6.91e-310   35696.922 +        0
+  64  LG+I+G4           -6267.390   12888.779 + 6.91e-310   14742.073 + 6.91e-310   13482.895 +        0
+  65  LG+I+G4           -8784.268   17994.536 + 6.91e-310   26282.172 + 6.91e-310   18722.165 +        0
+  66  LG+I+G4           -8925.441   18264.882 + 6.91e-310  104376.882 + 6.91e-310   18947.634 +        0
+  67  LG+I+G4           -5274.450   10922.900 + 6.91e-310   81234.900 + 6.91e-310   11493.224 +        0
+  68  LG+I+G4           -5846.128   12090.255 + 6.91e-310   91690.255 + 6.91e-310   12694.609 +        0
+  69  LG+R4             -5149.610   10765.221 + 6.91e-310  119809.221 + 6.91e-310   11402.755 +        0
+  70  LG+G4             -5579.153   11506.305 + 6.91e-310   72406.305 + 6.91e-310   11964.748 +        0
+  71  LG+I+R4          -24840.699   50081.397 + 6.91e-310   50264.959 + 6.91e-310   50973.378 +        0
+  72  LG+I+R4          -37694.139   75804.279 + 6.91e-310   75951.392 + 6.91e-310   76778.678 +        0
+  73  LG+I+G4           -7443.228   15312.455 + 6.91e-310  106476.455 + 6.91e-310   15940.541 +        0
+  74  LG+I+G4           -8835.000   18059.999 + 6.91e-310   94499.999 + 6.91e-310   18639.113 +        0
+  75  LG+G4             -5310.330   10972.660 + 6.91e-310   73276.660 + 6.91e-310   11438.073 +        0
+  76  LG+I+R4          -35667.784   71767.567 + 6.91e-310   72186.067 + 6.91e-310   72650.801 +        0
+  77  LG+I+R4          -28949.141   58322.282 + 6.91e-310   59216.460 + 6.91e-310   59117.153 +        0
+  78  LG+G4             -4268.171    8888.342 + 6.91e-310   71192.342 + 6.91e-310    9387.528 +        0
+  79  LG+I+R4           -8945.486   18266.973 + 6.91e-310   20137.078 + 6.91e-310   18910.863 +        0
+  80  LG+I+G4          -12153.228   24652.457 + 6.91e-310   25248.536 + 6.91e-310   25278.158 +        0
+  81  LG+I+G4          -19599.956   39641.913 + 6.91e-310   40072.281 + 6.91e-310   40550.056 +        0
+  82  LG+I+R4          -29586.623   59613.245 + 6.91e-310   60117.080 + 6.91e-310   60498.936 +        0
+  83  LG+I+R4          -21342.372   43112.745 + 6.91e-310   43354.903 + 6.91e-310   44051.897 +        0
+  84  LG+I+R4          -25359.172   51158.344 + 6.91e-310   51419.041 + 6.91e-310   52123.458 +        0
+  85  LG+I+G4          -13866.266   28170.532 + 6.91e-310  124530.532 + 6.91e-310   28837.042 +        0
+  86  LG+I+G4           -4354.799    9071.597 + 6.91e-310   74955.597 + 6.91e-310    9604.035 +        0
+  87  LG+I+G4          -10700.177   21862.354 + 6.91e-310  129046.354 + 6.91e-310   22526.524 +        0
+  88  LG+I+R4          -16486.652   33441.304 + 6.91e-310   34488.732 + 6.91e-310   34337.277 +        0
+  89  LG+R4             -8434.595   17303.190 + 6.91e-310   18221.753 + 6.91e-310   18121.593 +        0
+  90  LG+R4             -9767.088   19952.176 + 6.91e-310   20949.676 + 6.91e-310   20724.868 +        0
+  91  LG+I+G4          -11828.455   24102.911 + 6.91e-310   35203.355 + 6.91e-310   24872.492 +        0
+  92  LG+I+G4          -15847.766   32153.532 + 6.91e-310  137493.532 + 6.91e-310   32929.630 +        0
+  93  LG+I+G4          -16898.794   34247.589 + 6.91e-310  135947.589 + 6.91e-310   34947.786 +        0
+  94  LG+I+R4          -41643.426   83654.851 + 6.91e-310   83725.621 + 6.91e-310   84583.114 +        0
+  95  LG+I+G4          -19370.487   39198.974 + 6.91e-310   40041.694 + 6.91e-310   40085.689 +        0
+  96  LG+I+G4          -18421.893   37305.786 + 6.91e-310   38410.775 + 6.91e-310   38182.675 +        0
+  97  LG+I+G4          -11448.982   23367.963 + 6.91e-310  134287.963 + 6.91e-310   24118.308 +        0
+  98  LG+I+R4          -27560.403   55596.806 + 6.91e-310   56186.257 + 6.91e-310   56565.091 +        0
+  99  LG+I+G4           -3291.098    6980.196 + 6.91e-310   86580.196 + 6.91e-310    7529.868 +        0
+ 100  LG+I+G4          -19160.531   38779.062 + 6.91e-310   40033.110 + 6.91e-310   39637.673 +        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Topology-unlinked partition model with separate substitution models and separate rates across sites
+
+  ID  Model         TreeLen  Parameters
+   1  LG+I+G4        10.2142  LG+I{0.200502}+G4{1.27716}
+   2  LG+G4          13.5493  LG+G4{0.799681}
+   3  LG+I+G4        17.5904  LG+I{0.0467684}+G4{1.63443}
+   4  LG+I+R4        26.4654  LG+I{0.0732878}+R4{0.173686,0.128543,0.321591,0.446268,0.31558,1.12804,0.115855,4.12733}
+   5  LG+I+G4        21.5876  LG+I{0.0697671}+G4{1.19749}
+   6  LG+I+R4        31.4913  LG+I{0.0694436}+R4{0.161632,0.0933729,0.338391,0.496054,0.23424,1.30028,0.196293,2.61073}
+   7  LG+I+R4        13.6467  LG+I{0.14404}+R4{0.146495,0.109574,0.332854,0.576197,0.335156,1.70587,0.0414559,5.31712}
+   8  LG+I+G4        13.6323  LG+I{0.193486}+G4{1.09147}
+   9  LG+G4          16.0414  LG+G4{1.12373}
+  10  LG+I+G4        23.7942  LG+I{0.13517}+G4{1.13484}
+  11  LG+I+R4        27.4815  LG+I{0.0653084}+R4{0.23586,0.185137,0.322743,0.649183,0.267853,1.50054,0.108236,3.18648}
+  12  LG+G4          14.1957  LG+G4{0.817427}
+  13  LG+I+G4        15.0613  LG+I{0.0793695}+G4{1.37082}
+  14  LG+I+R4        15.0053  LG+I{0.163695}+R4{0.173043,0.149671,0.362482,0.690154,0.276022,2.07353,0.0247582,6.12295}
+  15  LG+I+R4        17.8406  LG+I{0.0870798}+R4{0.429108,0.236902,0.276839,0.929772,0.171538,2.40508,0.0354344,6.44522}
+  16  LG+I+G4        19.1424  LG+I{0.0411019}+G4{1.54321}
+  17  LG+I+R4        30.1816  LG+I{0.0767084}+R4{0.131239,0.111188,0.210799,0.482482,0.29498,1.0405,0.286274,2.01477}
+  18  LG+I+G4        26.9102  LG+I{0.046866}+G4{1.04947}
+  19  LG+I+G4        14.7415  LG+I{0.0798407}+G4{1.49578}
+  20  LG+R4          15.3148  LG+R4{0.272502,0.0465344,0.288938,0.552432,0.32837,1.46695,0.11019,3.14003}
+  21  LG+G4          25.3967  LG+G4{1.47538}
+  22  LG+I+R4        14.8796  LG+I{0.0672333}+R4{0.35297,0.183475,0.299817,0.724669,0.202934,1.89691,0.0770457,4.32242}
+  23  LG+I+R4        45.6995  LG+I{0.0345077}+R4{0.172294,0.112798,0.304351,0.393517,0.26924,1.20496,0.219607,2.44242}
+  24  LG+I+R4        24.4096  LG+I{0.0285298}+R4{0.102192,0.177457,0.182495,0.434466,0.453592,1.00851,0.233191,1.90885}
+  25  LG+I+G4        15.9218  LG+I{0.085265}+G4{1.35927}
+  26  LG+I+G4        14.0341  LG+I{0.0564771}+G4{1.25479}
+  27  LG+G4          18.6059  LG+G4{1.41037}
+  28  LG+I+G4        12.5107  LG+I{0.122531}+G4{1.17272}
+  29  LG+I+R4        21.7110  LG+I{0.0630807}+R4{0.234737,0.151428,0.308057,0.628379,0.312734,1.60929,0.0813916,3.28779}
+  30  LG+I+G4        27.0018  LG+I{0.0717734}+G4{1.4083}
+  31  LG+I+G4        14.1511  LG+I{0.122582}+G4{0.90928}
+  32  LG+I+R4        17.2202  LG+I{0.184264}+R4{0.223827,0.173431,0.257064,0.70189,0.251965,1.86476,0.0828795,3.75118}
+  33  LG+I+R4        14.2612  LG+I{0.205923}+R4{0.246562,0.161762,0.277431,0.699541,0.179505,1.94335,0.0905793,4.6059}
+  34  LG+I+R4        19.5529  LG+I{0.0747336}+R4{0.264499,0.184906,0.317859,0.662619,0.278304,1.66667,0.0646041,4.28197}
+  35  LG+I+R4        13.3901  LG+I{0.151093}+R4{0.293514,0.206364,0.311711,0.838509,0.204818,2.32003,0.0388637,5.22012}
+  36  LG+F+I+R4      19.2881  LG+F+I{0.157996}+R4{0.21528,0.169324,0.360512,0.69176,0.192338,1.94973,0.0738742,4.59096}
+  37  LG+I+G4        37.0614  LG+I{0.105765}+G4{0.879243}
+  38  WAG+I+R4       18.7490  WAG+I{0.173727}+R4{0.24842,0.172093,0.273069,0.802323,0.233353,1.86867,0.0714307,4.22925}
+  39  LG+I+G4        19.8433  LG+I{0.186548}+G4{1.01449}
+  40  LG+F+G4        19.6171  LG+F+G4{0.753502}
+  41  LG+I+R4        28.8414  LG+I{0.0156054}+R4{0.31496,0.159264,0.307986,0.569011,0.256009,1.54825,0.105441,3.5871}
+  42  LG+I+G4        10.8177  LG+I{0.160955}+G4{1.07495}
+  43  LG+I+G4        29.2478  LG+I{0.0671733}+G4{1.0399}
+  44  LG+I+G4        16.1747  LG+I{0.137181}+G4{0.777521}
+  45  LG+I+R4        25.5374  LG+I{0.0592434}+R4{0.158997,0.127672,0.312631,0.49289,0.304762,1.24704,0.164366,2.71075}
+  46  LG+I+R4        9.0495  LG+I{0.112783}+R4{0.284695,0.197942,0.340076,0.800726,0.212753,2.11468,0.0496927,4.45605}
+  47  LG+I+G4        13.3365  LG+I{0.0899378}+G4{1.11273}
+  48  LG+I+R4        48.2357  LG+I{0.110975}+R4{0.112953,0.122846,0.237029,0.454989,0.300271,1.14617,0.238771,2.23694}
+  49  LG+I+R4        23.5960  LG+I{0.114651}+R4{0.267297,0.156447,0.255271,0.638909,0.231118,1.50952,0.131663,3.38904}
+  50  LG+I+R4        38.9692  LG+I{0.120103}+R4{0.336625,0.187535,0.323397,0.653885,0.177785,1.71206,0.0420901,10.003}
+  51  LG+I+G4        24.1031  LG+I{0.130032}+G4{1.15356}
+  52  LG+I+R4        19.1913  LG+I{0.238317}+R4{0.383458,0.225699,0.223019,1.05922,0.1156,2.45479,0.0396062,9.93419}
+  53  LG+F+I+G4      34.7717  LG+F+I{0.0754304}+G4{0.963438}
+  54  LG+I+R4        11.1835  LG+I{0.186887}+R4{0.319914,0.183241,0.310079,0.878837,0.119603,2.45591,0.0635163,5.90613}
+  55  LG+I+G4        26.1177  LG+I{0.0810498}+G4{1.14006}
+  56  LG+F+I+G4      25.2546  LG+F+I{0.0274656}+G4{1.47346}
+  57  LG+I+G4        31.7695  LG+I{0.0910769}+G4{1.0513}
+  58  LG+F+G4        17.2875  LG+F+G4{0.993215}
+  59  LG+R4          12.7204  LG+R4{0.251829,0.100156,0.271716,0.601517,0.429898,1.49591,0.0465574,3.61375}
+  60  LG+I+G4        20.5303  LG+I{0.133131}+G4{0.813346}
+  61  LG+I+G4        11.7640  LG+I{0.151066}+G4{1.0148}
+  62  LG+I+R4        12.4989  LG+I{0.200443}+R4{0.247639,0.163423,0.266852,0.751677,0.187766,1.85938,0.0973006,4.21185}
+  63  LG+F+I+R4      13.1139  LG+F+I{0.132145}+R4{0.315747,0.192645,0.289129,0.744102,0.191836,2.02535,0.0711433,4.71578}
+  64  LG+I+G4        8.4886  LG+I{0.11654}+G4{1.07919}
+  65  LG+I+G4        12.1325  LG+I{0.142312}+G4{0.920538}
+  66  LG+I+G4        12.1329  LG+I{0.0544043}+G4{1.36794}
+  67  LG+I+G4        9.9470  LG+I{0.0984736}+G4{0.888904}
+  68  LG+I+G4        10.5961  LG+I{0.14713}+G4{0.899047}
+  69  LG+R4          10.0815  LG+R4{0.254805,0.0653095,0.348446,0.701664,0.351259,1.64283,0.0454896,3.55702}
+  70  LG+G4          15.0057  LG+G4{1.05492}
+  71  LG+I+R4        10.1084  LG+I{0.177885}+R4{0.253345,0.15286,0.298129,0.796289,0.172054,1.87071,0.0985868,4.07778}
+  72  LG+I+R4        11.7509  LG+I{0.1245}+R4{0.289327,0.222062,0.278094,0.813184,0.241523,1.86066,0.0665561,3.90975}
+  73  LG+I+G4        13.6163  LG+I{0.0705146}+G4{1.07116}
+  74  LG+I+G4        21.5415  LG+I{0.129901}+G4{1.20102}
+  75  LG+G4          14.2605  LG+G4{1.09418}
+  76  LG+I+R4        32.1704  LG+I{0.0620681}+R4{0.157029,0.0940111,0.29631,0.400854,0.304587,1.22749,0.180006,2.73647}
+  77  LG+I+R4        36.8756  LG+I{0.00901866}+R4{0.0658292,0.18989,0.296152,0.540626,0.360415,0.985397,0.268585,1.75825}
+  78  LG+G4          10.2592  LG+G4{0.65558}
+  79  LG+I+R4        9.5842  LG+I{0.0994545}+R4{0.37064,0.255077,0.310405,0.92873,0.182469,2.26795,0.0370312,5.49117}
+  80  LG+I+G4        11.5693  LG+I{0.173176}+G4{1.23935}
+  81  LG+I+G4        15.6115  LG+I{0.0867853}+G4{0.871059}
+  82  LG+I+R4        24.9919  LG+I{0.0531794}+R4{0.20091,0.16303,0.346346,0.632369,0.330645,1.52302,0.0689201,3.54974}
+  83  LG+I+R4        9.3556  LG+I{0.223786}+R4{0.317022,0.203689,0.247679,0.991958,0.155243,2.39909,0.0562688,5.63896}
+  84  LG+I+R4        11.4576  LG+I{0.14128}+R4{0.280179,0.22194,0.306793,0.800786,0.211746,2.10184,0.0600023,4.11793}
+  85  LG+I+G4        24.1629  LG+I{0.0495809}+G4{1.0324}
+  86  LG+I+G4        6.9758  LG+I{0.193351}+G4{0.948336}
+  87  LG+I+G4        28.9042  LG+I{0.0581482}+G4{1.26523}
+  88  LG+I+R4        12.5810  LG+I{0.0377276}+R4{0.274369,0.184533,0.355344,0.693381,0.238068,1.56748,0.0944906,3.49044}
+  89  LG+R4          6.0372  LG+R4{0.484101,0.0498619,0.202176,0.559504,0.228319,1.77038,0.0854039,5.369}
+  90  LG+R4          6.9559  LG+R4{0.310021,0.126301,0.267142,0.573804,0.357852,1.53526,0.0649841,3.97268}
+  91  LG+I+G4        15.1142  LG+I{0.126382}+G4{1.0833}
+  92  LG+I+G4        22.0319  LG+I{0.0646318}+G4{0.972612}
+  93  LG+I+G4        40.6207  LG+I{0.0120841}+G4{2.53584}
+  94  LG+I+R4        9.3170  LG+I{0.184595}+R4{0.310588,0.147428,0.236067,0.717233,0.178279,2.12038,0.0904715,4.4973}
+  95  LG+I+G4        18.7263  LG+I{0.147096}+G4{0.788087}
+  96  LG+I+G4        19.7544  LG+I{0.149657}+G4{0.940319}
+  97  LG+I+G4        20.8648  LG+I{0.172289}+G4{1.08667}
+  98  LG+I+R4        21.0063  LG+I{0.11493}+R4{0.236158,0.213451,0.322063,0.770183,0.24149,1.62004,0.085359,3.63549}
+  99  LG+I+G4        6.8794  LG+I{0.160417}+G4{1.14498}
+ 100  LG+I+G4        19.2356  LG+I{0.172435}+G4{1.00161}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -1858811.5740 (s.e. 8224.7911)
+Unconstrained log-likelihood (without tree): -194694.3074
+Number of free parameters (#branches + #model parameters): 21484
+Akaike information criterion (AIC) score: 3760591.1479
+Corrected Akaike information criterion (AICc) score: 3839085.1093
+Bayesian information criterion (BIC) score: 3941307.8903
+
+Total tree length (sum of branch lengths): 1892.0103
+Sum of internal branch lengths: 800.4739 (42.3081% of tree length)
+
+Tree topologies are unlinked across partitions, thus no drawing will be displayed here
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t i1.treefile
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s <alignment.phy> --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s <alignment.phy> --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Mon Jul 10 19:15:53 2023
+Total CPU time used: 9.038e+04 seconds (25h:6m:24s)
+Total wall-clock time used: 2.352e+04 seconds (6h:31m:57s)
+

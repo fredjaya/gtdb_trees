@@ -1,0 +1,162 @@
+IQ-TREE 2.2.2.7 COVID-edition built Jun  7 2023
+
+Partition file name: /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Cloacimonadota_treeshrunk/03_subset_loci/testing_loci/
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 1
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 60 taxa with 19 partitions and 7333 total sites (33.2742% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	AA	50	365	309	254	83	83	gtdb_r207_bac120_TIGR00020.faa_subtaxa
+   2	AA	46	279	244	206	56	56	gtdb_r207_bac120_TIGR00064.faa_subtaxa
+   3	AA	53	194	181	153	29	29	gtdb_r207_bac120_TIGR00095.faa_subtaxa
+   4	AA	49	410	407	389	7	7	gtdb_r207_bac120_TIGR00115.faa_subtaxa
+   5	AA	55	293	281	207	49	49	gtdb_r207_bac120_TIGR00116.faa_subtaxa
+   6	AA	53	183	177	155	17	17	gtdb_r207_bac120_TIGR00138.faa_subtaxa
+   7	AA	46	454	401	320	91	91	gtdb_r207_bac120_TIGR00416.faa_subtaxa
+   8	AA	32	406	377	293	47	47	gtdb_r207_bac120_TIGR00442.faa_subtaxa
+   9	AA	48	361	346	302	46	46	gtdb_r207_bac120_TIGR00539.faa_subtaxa
+  10	AA	48	923	805	682	184	184	gtdb_r207_bac120_TIGR00580.faa_subtaxa
+  11	AA	46	563	543	488	55	55	gtdb_r207_bac120_TIGR00634.faa_subtaxa
+  12	AA	18	516	476	403	61	61	gtdb_r207_bac120_TIGR00717.faa_subtaxa
+  13	AA	47	73	70	57	11	11	gtdb_r207_bac120_TIGR00810.faa_subtaxa
+  14	AA	26	462	263	184	229	229	gtdb_r207_bac120_TIGR01039.faa_subtaxa
+  15	AA	27	286	270	208	49	49	gtdb_r207_bac120_TIGR01146.faa_subtaxa
+  16	AA	44	450	403	357	72	72	gtdb_r207_bac120_TIGR01302.faa_subtaxa
+  17	AA	25	594	422	294	201	201	gtdb_r207_bac120_TIGR01394.faa_subtaxa
+  18	AA	11	166	163	121	11	11	gtdb_r207_bac120_TIGR02273.faa_subtaxa
+  19	AA	45	355	293	234	82	82	gtdb_r207_bac120_TIGR02397.faa_subtaxa
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: Q.yeast+I+G4:gtdb_r207_bac120_TIGR00020.faa_subtaxa,Q.yeast+I+G4:gtdb_r207_bac120_TIGR00064.faa_subtaxa,Q.yeast+I+G4:gtdb_r207_bac120_TIGR00095.faa_subtaxa,Q.pfam+F+R4:gtdb_r207_bac120_TIGR00115.faa_subtaxa,LG+F+I+G4:gtdb_r207_bac120_TIGR00116.faa_subtaxa,Q.yeast+I+G4:gtdb_r207_bac120_TIGR00138.faa_subtaxa,Q.yeast+I+R5:gtdb_r207_bac120_TIGR00416.faa_subtaxa,Q.yeast+G4:gtdb_r207_bac120_TIGR00442.faa_subtaxa,Q.pfam+F+I+R5:gtdb_r207_bac120_TIGR00539.faa_subtaxa,Q.yeast+I+R5:gtdb_r207_bac120_TIGR00580.faa_subtaxa,Q.yeast+F+I+G4:gtdb_r207_bac120_TIGR00634.faa_subtaxa,LG+F+G4:gtdb_r207_bac120_TIGR00717.faa_subtaxa,mtZOA+G4:gtdb_r207_bac120_TIGR00810.faa_subtaxa,LG+I+R3:gtdb_r207_bac120_TIGR01039.faa_subtaxa,Q.yeast+I+G4:gtdb_r207_bac120_TIGR01146.faa_subtaxa,Q.yeast+R4:gtdb_r207_bac120_TIGR01302.faa_subtaxa,Q.insect+R4:gtdb_r207_bac120_TIGR01394.faa_subtaxa,WAG+F+G4:gtdb_r207_bac120_TIGR02273.faa_subtaxa,Q.yeast+I+G4:gtdb_r207_bac120_TIGR02397.faa_subtaxa
+
+List of best-fit models per partition:
+
+  ID  Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+   1  Q.yeast+I+G4     -13268.779   26735.558 + 6.91e-310   26810.275 + 6.91e-310   27121.648 +        0
+   2  Q.yeast+I+G4     -11365.446   22912.891 + 6.91e-310   23002.431 + 6.91e-310   23243.332 +        0
+   3  Q.yeast+I+G4     -11382.641   22975.281 + 6.91e-310   23228.236 + 6.91e-310   23318.406 +        0
+   4  Q.pfam+F+R4      -29522.281   59284.563 + 6.91e-310   59385.047 + 6.91e-310   59766.502 +        0
+   5  LG+F+I+G4         -7035.365   14326.730 + 6.91e-310   14528.096 + 6.91e-310   14797.792 +        0
+   6  Q.yeast+I+G4     -10837.981   21885.961 + 6.91e-310   22175.052 + 6.91e-310   22222.957 +        0
+   7  Q.yeast+I+R5     -18182.639   36561.278 + 6.91e-310   36615.937 + 6.91e-310   36964.852 +        0
+   8  Q.yeast+G4       -14800.210   29724.421 + 6.91e-310   29747.196 + 6.91e-310   29972.815 +        0
+   9  Q.pfam+F+I+R5    -24427.602   49097.204 + 6.91e-310   49220.735 + 6.91e-310   49567.758 +        0
+  10  Q.yeast+I+R5     -38355.304   76914.608 + 6.91e-310   76940.232 + 6.91e-310   77407.026 +        0
+  11  Q.yeast+F+I+G4   -35690.989   71601.977 + 6.91e-310   71656.004 + 6.91e-310   72078.638 +        0
+  12  LG+F+G4          -11378.568   22863.135 + 6.91e-310   22875.525 + 6.91e-310   23088.179 +        0
+  13  mtZOA+G4          -2212.984    4609.967 + 6.91e-310   21721.967 + 6.91e-310    4820.690 +        0
+  14  LG+I+R3           -6856.203   13820.407 + 6.91e-310   13835.001 + 6.91e-310   14043.727 +        0
+  15  Q.yeast+I+G4      -8354.872   16815.745 + 6.91e-310   16840.417 + 6.91e-310   17009.513 +        0
+  16  Q.yeast+R4       -16041.786   32265.571 + 6.91e-310   32312.342 + 6.91e-310   32639.513 +        0
+  17  Q.insect+R4       -9979.690   20065.379 + 6.91e-310   20075.979 + 6.91e-310   20297.884 +        0
+  18  WAG+F+G4          -2952.446    5982.892 + 6.91e-310    6007.654 + 6.91e-310    6104.260 +        0
+  19  Q.yeast+I+G4     -13269.897   26717.794 + 6.91e-310   26778.247 + 6.91e-310   27062.413 +        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Topology-unlinked partition model with separate substitution models and separate rates across sites
+
+  ID  Model         TreeLen  Parameters
+   1  Q.yeast+I+G4   13.4706  Q.yeast+I{0.160256}+G4{0.791022}
+   2  Q.yeast+I+G4   13.9008  Q.yeast+I{0.158654}+G4{0.883915}
+   3  Q.yeast+I+G4   26.6403  Q.yeast+I{0.0708075}+G4{0.968548}
+   4  Q.pfam+F+R4    31.2690  Q.pfam+F+R4{0.0636734,0.0843986,0.35863,0.521457,0.44721,1.14344,0.130486,2.27043}
+   5  LG+F+I+G4      11.9558  LG+F+I{0.0855104}+G4{1.40663}
+   6  Q.yeast+I+G4   24.3620  Q.yeast+I{0.0812109}+G4{1.26107}
+   7  Q.yeast+I+R5   15.9055  Q.yeast+I{0.166123}+R5{0.255538,0.180344,0.24176,0.602724,0.192853,1.34413,0.108262,2.79606,0.0354638,6.94439}
+   8  Q.yeast+G4     21.2302  Q.yeast+G4{0.633099}
+   9  Q.pfam+F+I+R5  30.1807  Q.pfam+F+I{0.108548}+R5{0.0662033,0.0736171,0.192931,0.328292,0.259333,0.817918,0.312302,1.68929,0.0606826,3.16578}
+  10  Q.yeast+I+R5   17.7063  Q.yeast+I{0.14882}+R5{0.238631,0.116317,0.227761,0.463411,0.186395,1.1482,0.129985,2.2762,0.0684087,5.2158}
+  11  Q.yeast+F+I+G4 26.4473  Q.yeast+F+I{0.0909245}+G4{1.2426}
+  12  LG+F+G4        8.9970  LG+F+G4{1.18371}
+  13  mtZOA+G4       10.3861  mtZOA+G4{0.904759}
+  14  LG+I+R3        3.0232  LG+I{0.427431}+R3{0.337223,0.634387,0.198175,2.63608,0.037171,7.09331}
+  15  Q.yeast+I+G4   10.8730  Q.yeast+I{0.107857}+G4{0.833746}
+  16  Q.yeast+R4     13.3891  Q.yeast+R4{0.411481,0.0921126,0.270906,0.608968,0.195889,1.60076,0.121724,3.97255}
+  17  Q.insect+R4    4.2406  Q.insect+R4{0.441237,0.0752627,0.329748,0.810129,0.195032,2.4133,0.0339833,6.73812}
+  18  WAG+F+G4       7.2570  WAG+F+G4{2.11313}
+  19  Q.yeast+I+G4   15.1398  Q.yeast+I{0.195145}+G4{0.814282}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -285619.2847 (s.e. 2809.7179)
+Unconstrained log-likelihood (without tree): -42513.2227
+Number of free parameters (#branches + #model parameters): 1665
+Akaike information criterion (AIC) score: 574568.5694
+Corrected Akaike information criterion (AICc) score: 575547.5318
+Bayesian information criterion (BIC) score: 586057.3025
+
+Total tree length (sum of branch lengths): 306.3744
+Sum of internal branch lengths: 97.3674 (31.7805% of tree length)
+
+Tree topologies are unlinked across partitions, thus no drawing will be displayed here
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t existing_Q.treefile
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s <alignment.phy> --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s <alignment.phy> --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Mon Jul 10 14:54:43 2023
+Total CPU time used: 3239 seconds (0h:53m:58s)
+Total wall-clock time used: 1602 seconds (0h:26m:41s)
+

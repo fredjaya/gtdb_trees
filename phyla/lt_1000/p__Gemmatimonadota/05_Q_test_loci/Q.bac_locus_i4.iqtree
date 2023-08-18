@@ -1,0 +1,162 @@
+IQ-TREE 2.2.2.7 COVID-edition built Jun  7 2023
+
+Partition file name: /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_smaller/p__Gemmatimonadota_treeshrunk/03_subset_loci/testing_loci/
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 1
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 237 taxa with 19 partitions and 8984 total sites (31.9059% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	AA	149	194	186	159	21	21	gtdb_r207_bac120_TIGR00095.faa_subtaxa
+   2	AA	217	293	275	244	41	41	gtdb_r207_bac120_TIGR00116.faa_subtaxa
+   3	AA	3	240	21	0	240	240	gtdb_r207_bac120_TIGR00186.faa_subtaxa
+   4	AA	195	847	825	701	103	103	gtdb_r207_bac120_TIGR00344.faa_subtaxa
+   5	AA	87	437	428	389	30	30	gtdb_r207_bac120_TIGR00362.faa_subtaxa
+   6	AA	139	454	405	340	87	87	gtdb_r207_bac120_TIGR00416.faa_subtaxa
+   7	AA	179	270	265	245	21	21	gtdb_r207_bac120_TIGR00436.faa_subtaxa
+   8	AA	181	361	345	278	52	52	gtdb_r207_bac120_TIGR00539.faa_subtaxa
+   9	AA	180	172	162	130	31	31	gtdb_r207_bac120_TIGR00922.faa_subtaxa
+  10	AA	178	787	646	541	209	209	gtdb_r207_bac120_TIGR00963.faa_subtaxa
+  11	AA	177	57	57	53	3	3	gtdb_r207_bac120_TIGR00964.faa_subtaxa
+  12	AA	185	462	394	237	183	183	gtdb_r207_bac120_TIGR01039.faa_subtaxa
+  13	AA	183	639	533	432	164	164	gtdb_r207_bac120_TIGR01059.faa_subtaxa
+  14	AA	143	800	739	618	125	125	gtdb_r207_bac120_TIGR01063.faa_subtaxa
+  15	AA	184	227	210	172	44	44	gtdb_r207_bac120_TIGR01169.faa_subtaxa
+  16	AA	180	140	129	97	35	35	gtdb_r207_bac120_TIGR01632.faa_subtaxa
+  17	AA	182	1238	1088	726	419	419	gtdb_r207_bac120_TIGR02013.faa_subtaxa
+  18	AA	3	219	20	0	219	219	gtdb_r207_bac120_TIGR02191.faa_subtaxa
+  19	AA	162	1147	951	573	445	445	gtdb_r207_bac120_TIGR02386.faa_subtaxa
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: Q.bac_locus_i4+I+R6:gtdb_r207_bac120_TIGR00095.faa_subtaxa,Q.bac_locus_i4+I+R5:gtdb_r207_bac120_TIGR00116.faa_subtaxa,Q.bac_locus_i4:gtdb_r207_bac120_TIGR00186.faa_subtaxa,Q.bac_locus_i4+R9:gtdb_r207_bac120_TIGR00344.faa_subtaxa,Q.bac_locus_i4+F+I+R5:gtdb_r207_bac120_TIGR00362.faa_subtaxa,Q.bac_locus_i4+I+R7:gtdb_r207_bac120_TIGR00416.faa_subtaxa,Q.bac_locus_i4+I+R6:gtdb_r207_bac120_TIGR00436.faa_subtaxa,Q.bac_locus_i4+I+R7:gtdb_r207_bac120_TIGR00539.faa_subtaxa,Q.bac_locus_i4+I+R6:gtdb_r207_bac120_TIGR00922.faa_subtaxa,Q.bac_locus_i4+I+R7:gtdb_r207_bac120_TIGR00963.faa_subtaxa,Q.bac_locus_i4+I+R5:gtdb_r207_bac120_TIGR00964.faa_subtaxa,Q.bac_locus_i4+I+R5:gtdb_r207_bac120_TIGR01039.faa_subtaxa,Q.bac_locus_i4+F+I+R6:gtdb_r207_bac120_TIGR01059.faa_subtaxa,Q.bac_locus_i4+R7:gtdb_r207_bac120_TIGR01063.faa_subtaxa,Q.bac_locus_i4+R6:gtdb_r207_bac120_TIGR01169.faa_subtaxa,Q.bac_locus_i4+I+G4:gtdb_r207_bac120_TIGR01632.faa_subtaxa,Q.bac_locus_i4+I+R8:gtdb_r207_bac120_TIGR02013.faa_subtaxa,Q.bac_locus_i4:gtdb_r207_bac120_TIGR02191.faa_subtaxa,Q.bac_locus_i4+R7:gtdb_r207_bac120_TIGR02386.faa_subtaxa
+
+List of best-fit models per partition:
+
+  ID  Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+   1  Q.bac_locus_i4+I+R6  -20991.357   42594.714 + 6.93e-310  230478.714 + 6.93e-310   43594.679 +        0
+   2  Q.bac_locus_i4+I+R5  -28696.098   58272.196 + 6.93e-310  446352.196 + 6.93e-310   59891.472 +        0
+   3  Q.bac_locus_i4     -561.734    1129.469 + 6.93e-310    1129.571 + 6.93e-310    1139.911 +        0
+   4  Q.bac_locus_i4+R9 -118527.697  237861.394 + 6.93e-310  238596.436 + 6.93e-310  239772.299 +        0
+   5  Q.bac_locus_i4+F+I+R5  -30912.979   62223.958 + 6.93e-310   62559.823 + 6.93e-310   63035.865 +        0
+   6  Q.bac_locus_i4+I+R7  -35843.014   72262.028 + 6.93e-310   73270.901 + 6.93e-310   73448.040 +        0
+   7  Q.bac_locus_i4+I+R6  -46428.067   93588.135 + 6.93e-310  362232.135 + 6.93e-310   94905.157 +        0
+   8  Q.bac_locus_i4+I+R7  -58815.832  118375.663 + 6.93e-310  395887.663 + 6.93e-310  119822.326 +        0
+   9  Q.bac_locus_i4+I+R6  -13403.658   27543.317 + 6.93e-310  299127.317 + 6.93e-310   28701.594 +        0
+  10  Q.bac_locus_i4+I+R7  -71329.166  143390.332 + 6.93e-310  144029.961 + 6.93e-310  145098.904 +        0
+  11  Q.bac_locus_i4+I+R5   -7261.640   15243.280 + 6.93e-310  275163.280 + 6.93e-310   15978.779 +        0
+  12  Q.bac_locus_i4+I+R5  -24835.803   50423.605 + 6.93e-310   53758.946 + 6.93e-310   51978.578 +        0
+  13  Q.bac_locus_i4+F+I+R6  -52264.968  105315.936 + 6.93e-310  106579.953 + 6.93e-310  107068.679 +        0
+  14  Q.bac_locus_i4+R7  -57270.708  115131.417 + 6.93e-310  115477.925 + 6.93e-310  116513.377 +        0
+  15  Q.bac_locus_i4+R6  -18880.753   38511.506 + 6.93e-310  320511.506 + 6.93e-310   39795.863 +        0
+  16  Q.bac_locus_i4+I+G4   -9589.388   19896.777 + 6.93e-310  278376.777 + 6.93e-310   20952.826 +        0
+  17  Q.bac_locus_i4+I+R8  -86430.316  173612.633 + 6.93e-310  173941.906 + 6.93e-310  175538.224 +        0
+  18  Q.bac_locus_i4     -632.916    1271.832 + 6.93e-310    1271.944 + 6.93e-310    1282.000 +        0
+  19  Q.bac_locus_i4+R7  -56737.709  114141.418 + 6.93e-310  114415.027 + 6.93e-310  115821.371 +        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Topology-unlinked partition model with separate substitution models and separate rates across sites
+
+  ID  Model         TreeLen  Parameters
+   1  Q.bac_locus_i4+I+R6 58.1539  Q.bac_locus_i4+I{0.0577517}+R6{0.127603,0.0596729,0.186307,0.226287,0.130441,0.617441,0.217507,1.01101,0.204532,2.02443,0.0758572,3.10747}
+   2  Q.bac_locus_i4+I+R5 38.9654  Q.bac_locus_i4+I{0.0755799}+R5{0.16615,0.140611,0.197865,0.490374,0.231399,1.01736,0.2333,1.63461,0.0957053,2.74633}
+   3  Q.bac_locus_i4 30.0000  Q.bac_locus_i4
+   4  Q.bac_locus_i4+R9 53.5486  Q.bac_locus_i4+R9{0.162686,0.00752271,0.131919,0.0842571,0.120016,0.249941,0.126473,0.516739,0.099459,0.8516,0.113009,1.33158,0.14298,2.06731,0.0740732,3.10405,0.0293841,4.47927}
+   5  Q.bac_locus_i4+F+I+R5 36.0963  Q.bac_locus_i4+F+I{0.0502322}+R5{0.23366,0.0995957,0.207816,0.338113,0.242779,0.81889,0.172296,1.76299,0.0932168,4.33288}
+   6  Q.bac_locus_i4+I+R7 28.3119  Q.bac_locus_i4+I{0.139738}+R7{0.191779,0.0535004,0.154356,0.253769,0.171836,0.602691,0.148707,1.15983,0.0825767,2.20702,0.0827521,3.66548,0.0282553,6.68742}
+   7  Q.bac_locus_i4+I+R6 70.6588  Q.bac_locus_i4+I{0.0759766}+R6{0.161695,0.0858148,0.190651,0.308344,0.206542,0.619167,0.0822166,1.10526,0.138907,1.79057,0.144012,3.19322}
+   8  Q.bac_locus_i4+I+R7 83.3711  Q.bac_locus_i4+I{0.0827893}+R7{0.123151,0.0240043,0.090369,0.130305,0.11896,0.383946,0.171979,0.625682,0.125408,1.13799,0.164507,1.97712,0.122837,2.9635}
+   9  Q.bac_locus_i4+I+R6 19.1460  Q.bac_locus_i4+I{0.11846}+R6{0.208716,0.0869253,0.26386,0.352792,0.156331,0.870263,0.106855,1.63594,0.126141,3.51703,0.0196365,6.83781}
+  10  Q.bac_locus_i4+I+R7 29.1732  Q.bac_locus_i4+I{0.234625}+R7{0.119807,0.0527131,0.125644,0.195638,0.12173,0.478304,0.118147,0.896332,0.0980939,1.59103,0.124531,2.90545,0.057423,4.9996}
+  11  Q.bac_locus_i4+I+R5 42.3125  Q.bac_locus_i4+I{0.0407004}+R5{0.151854,0.10388,0.26853,0.349667,0.11617,0.768048,0.235482,1.46826,0.187264,2.43162}
+  12  Q.bac_locus_i4+I+R5 12.1106  Q.bac_locus_i4+I{0.31403}+R5{0.24559,0.102305,0.171599,0.590258,0.109024,1.51833,0.089237,2.86964,0.0705203,6.40913}
+  13  Q.bac_locus_i4+F+I+R6 20.7577  Q.bac_locus_i4+F+I{0.20818}+R6{0.214404,0.0875859,0.199563,0.483081,0.131192,1.10036,0.118469,2.02515,0.0910496,3.22038,0.0371419,5.58199}
+  14  Q.bac_locus_i4+R7 18.0530  Q.bac_locus_i4+R7{0.210382,0.0238502,0.217971,0.250862,0.186294,0.654582,0.16449,1.12572,0.132512,2.03475,0.0692672,3.55603,0.0190837,6.14361}
+  15  Q.bac_locus_i4+R6 20.6895  Q.bac_locus_i4+R6{0.233147,0.0194336,0.211605,0.169157,0.222732,0.60299,0.153777,1.34267,0.123698,2.87274,0.0550408,4.78816}
+  16  Q.bac_locus_i4+I+G4 17.1084  Q.bac_locus_i4+I{0.225006}+G4{0.894645}
+  17  Q.bac_locus_i4+I+R8 20.3622  Q.bac_locus_i4+I{0.23237}+R8{0.196699,0.0366229,0.13619,0.189039,0.105726,0.53568,0.0987594,1.06537,0.0587756,1.82546,0.089113,2.9305,0.0560314,4.54365,0.0263363,6.91728}
+  18  Q.bac_locus_i4 0.0000  Q.bac_locus_i4
+  19  Q.bac_locus_i4+R7 12.7907  Q.bac_locus_i4+R7{0.482435,0.0216663,0.174346,0.246111,0.110362,0.693983,0.0879059,1.53666,0.0646125,2.98135,0.0601472,5.45775,0.020192,10.6016}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -737199.5775 (s.e. 8640.6950)
+Unconstrained log-likelihood (without tree): -54469.6025
+Number of free parameters (#branches + #model parameters): 5981
+Akaike information criterion (AIC) score: 1486361.1551
+Corrected Akaike information criterion (AICc) score: 1510197.4922
+Bayesian information criterion (BIC) score: 1528845.3972
+
+Total tree length (sum of branch lengths): 611.6100
+Sum of internal branch lengths: 205.6060 (33.6172% of tree length)
+
+Tree topologies are unlinked across partitions, thus no drawing will be displayed here
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t Q.bac_locus_i4.treefile
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s <alignment.phy> --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s <alignment.phy> --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sun Aug  6 17:46:26 2023
+Total CPU time used: 6.984e+04 seconds (19h:23m:57s)
+Total wall-clock time used: 2.161e+04 seconds (6h:0m:13s)
+

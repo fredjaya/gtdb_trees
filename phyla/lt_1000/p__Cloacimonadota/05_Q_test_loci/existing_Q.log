@@ -1,0 +1,2231 @@
+IQ-TREE multicore version 2.2.2.7 COVID-edition for Linux 64-bit built Jun  7 2023
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan.
+
+Host:    fisher.uds.anu.edu.au (AVX2, FMA3, 1007 GB RAM)
+Command: iqtree2 -seed 1 -T 8 -S /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Cloacimonadota_treeshrunk/03_subset_loci/testing_loci/ -m MFP -pre existing_Q
+Seed:    1 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon Jul 10 11:49:32 2023
+Kernel:  AVX+FMA - 8 threads (8 CPU cores detected)
+
+Reading 19 alignment files in directory /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Cloacimonadota_treeshrunk/03_subset_loci/testing_loci/
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Cloacimonadota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00020.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.00131459 secs using 97.83% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.00139608 secs using 622% CPU
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 60 sequences with 365 columns, 309 distinct patterns
+254 parsimony-informative, 28 singleton sites, 83 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.00417925 secs using 483.5% CPU
+   1  G001412425   11.23%    passed     95.81%
+   2  G002742885    6.30%    passed     86.18%
+   3  G009777575   11.23%    passed     76.66%
+   4  G011372345    6.03%    passed     87.62%
+   5  G012516855  100.00%    passed      -nan%
+   6  G018645365    4.11%    passed     81.69%
+   7  G002412625    0.55%    passed     99.92%
+   8  G009782695  100.00%    passed      -nan%
+   9  G012522635   11.51%    passed     97.95%
+  10  G014382915   11.23%    passed     99.78%
+  11  G016938155   18.36%    passed     88.00%
+  12  G017998585    6.03%    passed     99.99%
+  13  G018334695   10.96%    passed     54.70%
+  14  G018400535    5.21%    passed     99.51%
+  15  G012522935   10.96%    passed     99.97%
+  16  G014384665   32.05%    passed     95.61%
+  17  G001577135   10.96%    passed     52.92%
+  18  G002376725   10.96%    passed     93.45%
+  19  G002424605  100.00%    passed      -nan%
+  20  G018654125  100.00%    passed      -nan%
+  21  G004353895   10.96%    passed     93.65%
+  22  G002049945   10.96%    passed     99.98%
+  23  G002432865   11.23%    passed     99.93%
+  24  G016931665    4.93%    passed     97.76%
+  25  G016932035   10.96%    passed     99.98%
+  26  G017995405  100.00%    passed      -nan%
+  27  G002085205  100.00%    passed      -nan%
+  28  G002841975   11.78%    passed     99.74%
+  29  G012839325    0.55%    passed     99.96%
+  30  G013203665   10.96%    passed    100.00%
+  31  G000404785   11.23%    passed     99.99%
+  32  G001577185    4.93%    passed     92.90%
+  33  G016927675  100.00%    passed      -nan%
+  34  G018433885    0.55%    passed     99.94%
+  35  G000146065   11.23%    passed     99.99%
+  36  G002391675    8.77%    passed     99.97%
+  37  G003564135   21.37%    passed     82.10%
+  38  G014382495   10.96%    passed     99.77%
+  39  G014382685   10.96%    passed     99.89%
+  40  G002070045   10.96%    passed     98.83%
+  41  G002379855    6.03%    passed     99.94%
+  42  G002842035    5.48%    passed     98.73%
+  43  G003564155    6.03%    passed     99.90%
+  44  G002425825  100.00%    passed      -nan%
+  45  G003647825   10.96%    passed     99.22%
+  46  G012519465   10.96%    passed    100.00%
+  47  G012728875   11.51%    passed     99.39%
+  48  G017995495    9.86%    passed     92.50%
+  49  G002427325    0.55%    passed     99.96%
+  50  G002840645   11.23%    passed     99.70%
+  51  G011043895  100.00%    passed      -nan%
+  52  G016838885   10.96%    passed     99.06%
+  53  G017996595    9.04%    passed     99.36%
+  54  G016875595    6.03%    passed    100.00%
+  55  G016935235   18.36%    passed     94.34%
+  56  G017994635    0.55%    passed     99.97%
+  57  G002428685   11.23%    passed     99.39%
+  58  G002410505    0.55%    passed     99.99%
+  59  G002435865  100.00%    passed      -nan%
+  60  G003647765   10.96%    passed     97.91%
+WARNING: 10 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        24.52%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.00053969 secs using 99.5% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Cloacimonadota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00064.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.00056508 secs using 95.38% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000666568 secs using 21.75% CPU
+Alignment has 60 sequences with 279 columns, 244 distinct patterns
+206 parsimony-informative, 17 singleton sites, 56 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.00416861 secs using 529.5% CPU
+   1  G001412425    1.43%    passed     99.77%
+   2  G002742885    1.79%    passed     86.00%
+   3  G009777575    0.00%    passed     71.64%
+   4  G011372345    1.08%    passed     97.49%
+   5  G012516855    1.43%    passed     99.61%
+   6  G018645365    2.51%    passed     97.40%
+   7  G002412625    2.15%    passed     91.83%
+   8  G009782695  100.00%    passed      -nan%
+   9  G012522635    1.43%    passed     97.88%
+  10  G014382915    1.08%    passed    100.00%
+  11  G016938155    1.08%    passed     84.44%
+  12  G017998585  100.00%    passed      -nan%
+  13  G018334695    1.08%    passed     84.80%
+  14  G018400535    1.08%    passed     98.83%
+  15  G012522935    0.36%    passed     95.66%
+  16  G014384665  100.00%    passed      -nan%
+  17  G001577135    1.08%    passed     97.87%
+  18  G002376725    1.43%    passed     95.47%
+  19  G002424605    1.08%    passed     99.89%
+  20  G018654125  100.00%    passed      -nan%
+  21  G004353895   30.11%    passed     96.95%
+  22  G002049945  100.00%    passed      -nan%
+  23  G002432865    2.15%    passed     99.22%
+  24  G016931665  100.00%    passed      -nan%
+  25  G016932035    1.43%    passed     98.84%
+  26  G017995405    0.36%    passed     95.94%
+  27  G002085205  100.00%    passed      -nan%
+  28  G002841975    1.08%    passed     99.93%
+  29  G012839325    2.15%    passed     96.02%
+  30  G013203665  100.00%    passed      -nan%
+  31  G000404785    1.43%    passed     99.89%
+  32  G001577185    1.08%    passed     98.23%
+  33  G016927675   16.49%    passed     75.71%
+  34  G018433885    2.15%    passed     96.88%
+  35  G000146065    1.79%    passed     92.49%
+  36  G002391675    0.36%    passed     81.05%
+  37  G003564135    1.79%    passed     69.49%
+  38  G014382495    1.08%    passed     65.25%
+  39  G014382685    1.08%    passed     99.49%
+  40  G002070045  100.00%    passed      -nan%
+  41  G002379855  100.00%    passed      -nan%
+  42  G002842035    1.43%    passed     91.53%
+  43  G003564155    2.15%    passed     51.19%
+  44  G002425825  100.00%    passed      -nan%
+  45  G003647825    1.43%    passed     99.85%
+  46  G012519465    0.36%    passed     96.83%
+  47  G012728875    1.43%    passed     99.90%
+  48  G017995495    1.43%    passed     99.77%
+  49  G002427325    2.15%    passed     99.10%
+  50  G002840645    1.43%    passed     99.14%
+  51  G011043895  100.00%    passed      -nan%
+  52  G016838885    1.43%    passed     96.52%
+  53  G017996595  100.00%    passed      -nan%
+  54  G016875595  100.00%    passed      -nan%
+  55  G016935235    1.79%    passed     86.65%
+  56  G017994635    2.15%    passed     76.42%
+  57  G002428685    1.43%    passed    100.00%
+  58  G002410505    2.15%    passed     97.17%
+  59  G002435865    1.08%    passed     97.46%
+  60  G003647765    0.72%    passed     80.91%
+WARNING: 14 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        25.12%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.000345608 secs using 95.48% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Cloacimonadota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00095.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.000414332 secs using 97.99% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000461657 secs using 96.39% CPU
+WARNING: 12 sites contain only gaps or ambiguous characters.
+Alignment has 60 sequences with 194 columns, 181 distinct patterns
+153 parsimony-informative, 12 singleton sites, 29 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.00417759 secs using 497.3% CPU
+   1  G001412425    9.79%    passed     98.62%
+   2  G002742885    9.79%    passed     95.54%
+   3  G009777575    9.79%    passed     89.80%
+   4  G011372345   12.37%    passed     84.04%
+   5  G012516855   17.01%    failed      2.30%
+   6  G018645365   17.01%    passed     83.03%
+   7  G002412625   13.92%    passed     93.00%
+   8  G009782695  100.00%    passed      -nan%
+   9  G012522635   39.69%    passed     74.74%
+  10  G014382915   11.86%    passed     89.11%
+  11  G016938155   14.43%    passed     96.41%
+  12  G017998585  100.00%    passed      -nan%
+  13  G018334695   10.31%    passed     82.57%
+  14  G018400535   15.46%    passed     55.57%
+  15  G012522935   18.04%    passed     77.61%
+  16  G014384665   10.31%    passed     16.56%
+  17  G001577135   10.31%    passed     22.07%
+  18  G002376725   10.82%    passed     76.48%
+  19  G002424605   21.65%    passed     98.03%
+  20  G018654125   38.66%    passed     69.94%
+  21  G004353895   12.89%    passed     73.96%
+  22  G002049945  100.00%    passed      -nan%
+  23  G002432865   13.92%    passed     94.78%
+  24  G016931665   10.82%    passed     99.25%
+  25  G016932035   10.31%    passed     92.84%
+  26  G017995405  100.00%    passed      -nan%
+  27  G002085205   11.34%    passed     89.73%
+  28  G002841975   20.62%    passed     75.46%
+  29  G012839325   19.59%    passed     91.99%
+  30  G013203665   10.82%    passed     56.72%
+  31  G000404785   22.16%    passed     52.49%
+  32  G001577185   17.53%    passed     97.99%
+  33  G016927675   10.82%    passed     75.74%
+  34  G018433885   15.98%    passed     99.97%
+  35  G000146065   21.65%    passed     95.86%
+  36  G002391675  100.00%    passed      -nan%
+  37  G003564135   10.31%    passed     35.59%
+  38  G014382495    9.79%    passed      9.20%
+  39  G014382685   21.65%    passed     41.42%
+  40  G002070045  100.00%    passed      -nan%
+  41  G002379855   15.98%    passed     41.62%
+  42  G002842035   12.89%    passed     91.62%
+  43  G003564155   10.82%    passed     90.60%
+  44  G002425825   21.13%    passed     95.91%
+  45  G003647825  100.00%    passed      -nan%
+  46  G012519465   18.04%    passed     78.29%
+  47  G012728875   20.62%    passed     73.85%
+  48  G017995495   13.40%    passed     55.44%
+  49  G002427325   12.37%    passed     98.52%
+  50  G002840645   15.46%    passed     90.89%
+  51  G011043895   11.34%    passed     61.92%
+  52  G016838885   15.98%    passed     99.85%
+  53  G017996595   12.37%    passed     90.71%
+  54  G016875595   23.20%    passed     88.23%
+  55  G016935235   10.82%    passed     99.71%
+  56  G017994635   11.86%    passed     99.55%
+  57  G002428685   12.89%    passed     98.40%
+  58  G002410505   16.49%    passed     98.36%
+  59  G002435865   22.16%    passed     92.05%
+  60  G003647765    9.28%    passed     59.09%
+WARNING: 7 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        25.31%  1 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.000284219 secs using 99.22% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Cloacimonadota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00115.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.00174658 secs using 47.58% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.00103593 secs using 112.9% CPU
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 60 sequences with 410 columns, 407 distinct patterns
+389 parsimony-informative, 14 singleton sites, 7 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.00419036 secs using 491.9% CPU
+   1  G001412425    4.39%    passed     37.32%
+   2  G002742885    5.61%    passed     30.86%
+   3  G009777575    7.07%    passed     35.37%
+   4  G011372345    4.63%    failed      2.04%
+   5  G012516855    8.54%    passed     13.20%
+   6  G018645365  100.00%    passed      -nan%
+   7  G002412625   10.98%    passed     29.82%
+   8  G009782695  100.00%    passed      -nan%
+   9  G012522635   12.20%    passed      5.72%
+  10  G014382915    4.88%    passed     29.23%
+  11  G016938155   12.20%    passed      6.10%
+  12  G017998585    5.12%    passed      7.15%
+  13  G018334695    3.90%    passed     11.94%
+  14  G018400535    5.12%    passed     41.56%
+  15  G012522935  100.00%    passed      -nan%
+  16  G014384665    3.66%    failed      0.20%
+  17  G001577135    3.90%    passed     58.01%
+  18  G002376725    7.07%    passed     74.65%
+  19  G002424605    6.59%    passed     83.08%
+  20  G018654125    4.88%    passed     47.03%
+  21  G004353895    8.05%    passed     78.92%
+  22  G002049945    3.66%    passed     29.84%
+  23  G002432865  100.00%    passed      -nan%
+  24  G016931665    4.63%    passed     13.02%
+  25  G016932035    3.90%    passed     41.01%
+  26  G017995405   23.41%    passed     27.88%
+  27  G002085205  100.00%    passed      -nan%
+  28  G002841975    9.76%    passed     52.90%
+  29  G012839325  100.00%    passed      -nan%
+  30  G013203665    5.12%    passed     29.19%
+  31  G000404785    3.90%    passed     56.10%
+  32  G001577185    4.63%    passed      8.15%
+  33  G016927675    4.63%    passed     97.14%
+  34  G018433885   11.46%    passed     91.63%
+  35  G000146065   10.24%    passed     67.51%
+  36  G002391675   11.71%    passed      5.47%
+  37  G003564135    6.34%    passed     15.41%
+  38  G014382495    4.63%    failed      0.01%
+  39  G014382685    3.66%    passed     72.42%
+  40  G002070045    7.56%    passed     84.44%
+  41  G002379855    7.32%    passed      9.76%
+  42  G002842035   12.44%    passed     93.37%
+  43  G003564155    6.83%    passed     80.29%
+  44  G002425825  100.00%    passed      -nan%
+  45  G003647825    5.12%    passed     92.54%
+  46  G012519465  100.00%    passed      -nan%
+  47  G012728875    7.07%    passed     13.69%
+  48  G017995495   18.78%    failed      0.89%
+  49  G002427325  100.00%    passed      -nan%
+  50  G002840645  100.00%    passed      -nan%
+  51  G011043895    3.66%    passed     30.14%
+  52  G016838885    6.10%    passed     66.29%
+  53  G017996595  100.00%    passed      -nan%
+  54  G016875595    6.59%    failed      4.76%
+  55  G016935235    5.85%    passed     62.30%
+  56  G017994635   12.44%    passed     21.92%
+  57  G002428685    7.80%    passed     74.51%
+  58  G002410505    8.78%    passed     12.85%
+  59  G002435865    7.80%    passed     50.65%
+  60  G003647765    3.41%    passed     33.94%
+WARNING: 11 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        24.30%  5 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.000553088 secs using 97.09% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Cloacimonadota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00116.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.000597473 secs using 99.59% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000734525 secs using 99.93% CPU
+Alignment has 60 sequences with 293 columns, 281 distinct patterns
+207 parsimony-informative, 37 singleton sites, 49 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.00416847 secs using 496.5% CPU
+   1  G001412425   35.84%    passed     65.57%
+   2  G002742885    2.39%    passed     39.85%
+   3  G009777575   59.39%    passed     82.28%
+   4  G011372345   62.80%    passed     95.39%
+   5  G012516855   62.80%    passed     99.75%
+   6  G018645365    2.05%    passed     48.80%
+   7  G002412625   62.80%    passed     99.58%
+   8  G009782695  100.00%    passed      -nan%
+   9  G012522635   62.12%    passed     94.86%
+  10  G014382915  100.00%    passed      -nan%
+  11  G016938155   62.46%    passed     38.72%
+  12  G017998585   62.80%    passed     28.48%
+  13  G018334695   57.34%    passed     87.81%
+  14  G018400535    2.05%    passed     71.21%
+  15  G012522935   63.14%    passed     99.73%
+  16  G014384665   39.25%    passed     16.40%
+  17  G001577135   57.00%    passed     94.11%
+  18  G002376725   62.46%    passed     67.52%
+  19  G002424605   62.80%    passed     99.24%
+  20  G018654125    2.05%    passed     42.62%
+  21  G004353895   62.46%    passed     83.12%
+  22  G002049945   39.25%    passed     88.88%
+  23  G002432865   63.14%    passed     99.91%
+  24  G016931665   62.80%    passed     99.84%
+  25  G016932035   56.66%    passed     15.56%
+  26  G017995405  100.00%    passed      -nan%
+  27  G002085205   62.80%    passed     95.16%
+  28  G002841975   63.14%    passed     99.35%
+  29  G012839325   62.80%    passed     83.96%
+  30  G013203665   36.86%    passed     96.44%
+  31  G000404785   56.66%    passed     28.84%
+  32  G001577185    1.71%    passed     54.21%
+  33  G016927675  100.00%    passed      -nan%
+  34  G018433885   62.80%    passed     97.97%
+  35  G000146065   63.14%    passed     99.66%
+  36  G002391675   64.16%    passed     99.94%
+  37  G003564135   53.24%    passed     91.79%
+  38  G014382495   58.70%    passed     82.33%
+  39  G014382685   54.27%    passed     99.30%
+  40  G002070045   62.12%    passed     70.81%
+  41  G002379855   64.16%    passed     96.83%
+  42  G002842035   62.80%    passed     69.22%
+  43  G003564155   63.48%    passed     99.55%
+  44  G002425825   62.46%    passed     99.75%
+  45  G003647825    2.05%    passed     93.21%
+  46  G012519465   63.14%    passed     99.96%
+  47  G012728875   62.80%    passed     99.02%
+  48  G017995495   61.77%    passed     99.95%
+  49  G002427325   63.48%    passed     94.49%
+  50  G002840645   62.80%    passed     99.87%
+  51  G011043895   55.97%    passed     88.25%
+  52  G016838885   63.14%    passed     77.90%
+  53  G017996595   62.80%    passed     92.48%
+  54  G016875595   63.14%    passed     95.77%
+  55  G016935235  100.00%    passed      -nan%
+  56  G017994635   63.14%    passed     98.67%
+  57  G002428685   62.12%    passed     99.72%
+  58  G002410505   62.80%    passed     99.70%
+  59  G002435865   52.90%    passed     97.95%
+  60  G003647765   38.91%    passed     24.59%
+WARNING: 49 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        56.70%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.000492731 secs using 97.01% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Cloacimonadota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00138.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.000390302 secs using 1125% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000438355 secs using 99.69% CPU
+Alignment has 60 sequences with 183 columns, 177 distinct patterns
+155 parsimony-informative, 11 singleton sites, 17 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.00420237 secs using 429.5% CPU
+   1  G001412425    9.84%    passed     84.33%
+   2  G002742885   18.03%    passed     88.50%
+   3  G009777575   18.58%    passed     85.98%
+   4  G011372345   18.03%    passed     32.99%
+   5  G012516855  100.00%    passed      -nan%
+   6  G018645365    5.46%    passed     70.29%
+   7  G002412625   17.49%    passed     66.36%
+   8  G009782695   12.02%    passed     86.48%
+   9  G012522635   16.39%    passed     73.69%
+  10  G014382915   13.11%    passed     98.47%
+  11  G016938155  100.00%    passed      -nan%
+  12  G017998585   18.58%    passed     89.38%
+  13  G018334695   13.66%    passed     91.88%
+  14  G018400535   17.49%    passed     79.11%
+  15  G012522935    9.84%    passed     29.62%
+  16  G014384665    1.09%    passed     53.66%
+  17  G001577135  100.00%    passed      -nan%
+  18  G002376725   16.39%    passed     74.01%
+  19  G002424605   18.03%    passed     74.48%
+  20  G018654125    9.84%    passed     23.82%
+  21  G004353895   16.94%    passed     94.15%
+  22  G002049945  100.00%    passed      -nan%
+  23  G002432865   15.85%    passed     76.95%
+  24  G016931665    4.37%    passed     87.43%
+  25  G016932035    0.55%    passed     26.08%
+  26  G017995405   18.03%    passed     53.79%
+  27  G002085205   16.39%    passed     15.89%
+  28  G002841975   17.49%    passed     58.78%
+  29  G012839325   18.03%    passed     95.37%
+  30  G013203665   14.75%    passed     94.51%
+  31  G000404785    0.55%    passed     71.93%
+  32  G001577185    4.37%    failed      3.51%
+  33  G016927675   18.58%    passed     70.08%
+  34  G018433885   16.39%    passed     92.77%
+  35  G000146065   15.85%    passed     26.88%
+  36  G002391675  100.00%    passed      -nan%
+  37  G003564135   14.75%    passed     97.95%
+  38  G014382495    1.09%    passed      5.43%
+  39  G014382685   25.68%    passed     96.71%
+  40  G002070045   14.75%    passed     68.76%
+  41  G002379855  100.00%    passed      -nan%
+  42  G002842035   18.58%    passed     71.61%
+  43  G003564155   14.21%    passed     82.03%
+  44  G002425825   14.75%    passed     14.31%
+  45  G003647825    5.46%    passed     99.50%
+  46  G012519465   20.22%    passed     66.71%
+  47  G012728875   18.03%    passed     72.73%
+  48  G017995495   19.67%    passed     24.94%
+  49  G002427325   18.58%    passed     77.65%
+  50  G002840645   11.48%    passed     75.76%
+  51  G011043895  100.00%    passed      -nan%
+  52  G016838885    8.74%    passed     18.06%
+  53  G017996595   14.75%    passed     50.41%
+  54  G016875595   16.39%    passed     12.93%
+  55  G016935235   19.13%    passed     74.97%
+  56  G017994635   18.58%    passed     50.77%
+  57  G002428685   14.21%    passed     58.19%
+  58  G002410505   18.58%    passed     87.08%
+  59  G002435865   18.58%    passed     52.71%
+  60  G003647765    0.55%    failed      0.06%
+WARNING: 7 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        23.98%  2 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.000248071 secs using 99.17% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Cloacimonadota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00416.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.00195771 secs using 55.63% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.00116953 secs using 99.78% CPU
+WARNING: 3 sites contain only gaps or ambiguous characters.
+Alignment has 60 sequences with 454 columns, 401 distinct patterns
+320 parsimony-informative, 43 singleton sites, 91 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0083118 secs using 353.8% CPU
+   1  G001412425    2.86%    passed     87.98%
+   2  G002742885    7.05%    passed     88.44%
+   3  G009777575    2.42%    passed     28.66%
+   4  G011372345    4.41%    passed     77.40%
+   5  G012516855    2.86%    passed     98.91%
+   6  G018645365    5.29%    passed     94.01%
+   7  G002412625    2.86%    passed     99.34%
+   8  G009782695    3.08%    passed     98.65%
+   9  G012522635    3.08%    passed     75.52%
+  10  G014382915    4.41%    passed     99.94%
+  11  G016938155  100.00%    passed      -nan%
+  12  G017998585    3.74%    passed     84.01%
+  13  G018334695  100.00%    passed      -nan%
+  14  G018400535    5.07%    passed     60.38%
+  15  G012522935   41.41%    passed     52.25%
+  16  G014384665  100.00%    passed      -nan%
+  17  G001577135  100.00%    passed      -nan%
+  18  G002376725    3.30%    passed     99.32%
+  19  G002424605  100.00%    passed      -nan%
+  20  G018654125   19.16%    passed     97.60%
+  21  G004353895    3.30%    passed     99.85%
+  22  G002049945  100.00%    passed      -nan%
+  23  G002432865    2.86%    passed     97.18%
+  24  G016931665    4.63%    passed     86.89%
+  25  G016932035  100.00%    passed      -nan%
+  26  G017995405    3.30%    passed     88.07%
+  27  G002085205    5.29%    passed     63.68%
+  28  G002841975    3.52%    passed     98.03%
+  29  G012839325    5.07%    passed     98.32%
+  30  G013203665    3.08%    passed     62.47%
+  31  G000404785  100.00%    passed      -nan%
+  32  G001577185    2.86%    passed     70.07%
+  33  G016927675    2.20%    passed     92.28%
+  34  G018433885    3.30%    passed     99.96%
+  35  G000146065    3.08%    passed     99.72%
+  36  G002391675    3.96%    passed     96.58%
+  37  G003564135  100.00%    passed      -nan%
+  38  G014382495  100.00%    passed      -nan%
+  39  G014382685  100.00%    passed      -nan%
+  40  G002070045    3.30%    passed     99.23%
+  41  G002379855    3.08%    passed     98.98%
+  42  G002842035    3.96%    passed     99.90%
+  43  G003564155  100.00%    passed      -nan%
+  44  G002425825    4.63%    passed     99.97%
+  45  G003647825   47.58%    passed     68.07%
+  46  G012519465    3.96%    passed     81.50%
+  47  G012728875    3.08%    passed     87.52%
+  48  G017995495    3.30%    passed     99.74%
+  49  G002427325    3.08%    passed     98.83%
+  50  G002840645    2.86%    passed     99.95%
+  51  G011043895  100.00%    passed      -nan%
+  52  G016838885    2.42%    passed     11.48%
+  53  G017996595    3.30%    passed     99.40%
+  54  G016875595    3.74%    passed     67.06%
+  55  G016935235    2.42%    passed     88.04%
+  56  G017994635    6.17%    passed     99.67%
+  57  G002428685    2.86%    passed    100.00%
+  58  G002410505    3.08%    passed     99.90%
+  59  G002435865    3.74%    passed     99.75%
+  60  G003647765  100.00%    passed      -nan%
+WARNING: 14 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        27.73%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.000589555 secs using 99.74% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Cloacimonadota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00442.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.0013916 secs using 502.2% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000964126 secs using 99.88% CPU
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 60 sequences with 406 columns, 377 distinct patterns
+293 parsimony-informative, 66 singleton sites, 47 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0104161 secs using 259.2% CPU
+   1  G001412425    0.99%    passed     82.52%
+   2  G002742885    1.72%    passed     73.68%
+   3  G009777575    0.99%    passed     82.62%
+   4  G011372345    1.23%    passed     63.56%
+   5  G012516855    0.74%    passed     36.77%
+   6  G018645365    0.99%    passed     31.38%
+   7  G002412625  100.00%    passed      -nan%
+   8  G009782695  100.00%    passed      -nan%
+   9  G012522635    0.74%    passed     25.49%
+  10  G014382915    0.99%    passed     42.76%
+  11  G016938155    0.99%    passed     54.12%
+  12  G017998585  100.00%    passed      -nan%
+  13  G018334695    0.74%    passed     53.94%
+  14  G018400535    0.74%    passed     99.54%
+  15  G012522935  100.00%    passed      -nan%
+  16  G014384665  100.00%    passed      -nan%
+  17  G001577135  100.00%    passed      -nan%
+  18  G002376725    1.23%    passed     92.47%
+  19  G002424605  100.00%    passed      -nan%
+  20  G018654125  100.00%    passed      -nan%
+  21  G004353895    1.23%    passed     84.02%
+  22  G002049945  100.00%    passed      -nan%
+  23  G002432865  100.00%    passed      -nan%
+  24  G016931665  100.00%    passed      -nan%
+  25  G016932035    0.74%    passed     76.90%
+  26  G017995405  100.00%    passed      -nan%
+  27  G002085205   41.13%    passed     82.37%
+  28  G002841975  100.00%    passed      -nan%
+  29  G012839325    0.99%    passed     80.74%
+  30  G013203665    0.74%    passed     53.66%
+  31  G000404785    0.74%    passed     85.68%
+  32  G001577185  100.00%    passed      -nan%
+  33  G016927675    1.23%    passed     94.44%
+  34  G018433885  100.00%    passed      -nan%
+  35  G000146065  100.00%    passed      -nan%
+  36  G002391675  100.00%    passed      -nan%
+  37  G003564135    0.99%    passed     99.30%
+  38  G014382495    0.74%    passed      9.01%
+  39  G014382685    0.74%    passed     97.40%
+  40  G002070045    1.23%    passed     84.02%
+  41  G002379855    1.23%    passed     16.71%
+  42  G002842035  100.00%    passed      -nan%
+  43  G003564155    0.99%    passed     71.70%
+  44  G002425825  100.00%    passed      -nan%
+  45  G003647825  100.00%    passed      -nan%
+  46  G012519465  100.00%    passed      -nan%
+  47  G012728875    0.99%    passed     36.96%
+  48  G017995495  100.00%    passed      -nan%
+  49  G002427325  100.00%    passed      -nan%
+  50  G002840645  100.00%    passed      -nan%
+  51  G011043895  100.00%    passed      -nan%
+  52  G016838885    0.99%    passed     84.47%
+  53  G017996595  100.00%    passed      -nan%
+  54  G016875595    0.74%    failed      0.70%
+  55  G016935235    5.42%    passed     98.53%
+  56  G017994635    1.23%    passed     56.00%
+  57  G002428685    0.99%    passed     45.74%
+  58  G002410505  100.00%    passed      -nan%
+  59  G002435865  100.00%    passed      -nan%
+  60  G003647765    1.72%    passed     13.23%
+WARNING: 28 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        47.95%  1 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.000457831 secs using 199.2% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Cloacimonadota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00539.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.000758825 secs using 786.5% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000892775 secs using 99.8% CPU
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 60 sequences with 361 columns, 346 distinct patterns
+302 parsimony-informative, 13 singleton sites, 46 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.00419662 secs using 497.3% CPU
+   1  G001412425   47.92%    passed     75.77%
+   2  G002742885    4.16%    passed     63.41%
+   3  G009777575    6.93%    failed      0.38%
+   4  G011372345    3.88%    passed     39.96%
+   5  G012516855   10.25%    failed      0.04%
+   6  G018645365   11.36%    failed      4.89%
+   7  G002412625    5.54%    failed      0.01%
+   8  G009782695  100.00%    passed      -nan%
+   9  G012522635   11.91%    passed     17.08%
+  10  G014382915    4.16%    passed     18.77%
+  11  G016938155    7.48%    passed     52.36%
+  12  G017998585    2.22%    passed     27.81%
+  13  G018334695    1.94%    passed      9.67%
+  14  G018400535   25.21%    passed     35.66%
+  15  G012522935    1.66%    failed      0.56%
+  16  G014384665    3.60%    failed      0.00%
+  17  G001577135  100.00%    passed      -nan%
+  18  G002376725    3.32%    passed     10.60%
+  19  G002424605    5.26%    passed     71.02%
+  20  G018654125  100.00%    passed      -nan%
+  21  G004353895   10.25%    passed     74.91%
+  22  G002049945  100.00%    passed      -nan%
+  23  G002432865    2.77%    passed     46.00%
+  24  G016931665  100.00%    passed      -nan%
+  25  G016932035   18.01%    passed     67.80%
+  26  G017995405   32.96%    passed      9.82%
+  27  G002085205  100.00%    passed      -nan%
+  28  G002841975    2.22%    failed      0.40%
+  29  G012839325    7.48%    passed     86.38%
+  30  G013203665    4.43%    passed     14.99%
+  31  G000404785    1.66%    passed     27.38%
+  32  G001577185    6.65%    failed      0.73%
+  33  G016927675  100.00%    passed      -nan%
+  34  G018433885   10.25%    passed     10.05%
+  35  G000146065    3.88%    passed     15.05%
+  36  G002391675    9.14%    passed     18.93%
+  37  G003564135    8.86%    passed     81.40%
+  38  G014382495    2.77%    failed      0.00%
+  39  G014382685    5.82%    passed     31.24%
+  40  G002070045    2.77%    passed     19.50%
+  41  G002379855    7.20%    failed      0.00%
+  42  G002842035    6.09%    passed     30.09%
+  43  G003564155   11.36%    passed     52.96%
+  44  G002425825    5.82%    passed     68.58%
+  45  G003647825    4.71%    passed     57.86%
+  46  G012519465    4.16%    passed     12.60%
+  47  G012728875  100.00%    passed      -nan%
+  48  G017995495  100.00%    passed      -nan%
+  49  G002427325  100.00%    passed      -nan%
+  50  G002840645    5.82%    passed     47.06%
+  51  G011043895    3.88%    passed     98.11%
+  52  G016838885    4.43%    passed     66.08%
+  53  G017996595  100.00%    passed      -nan%
+  54  G016875595   11.36%    failed      1.55%
+  55  G016935235  100.00%    passed      -nan%
+  56  G017994635   11.91%    passed     19.20%
+  57  G002428685    4.99%    passed     72.54%
+  58  G002410505   11.63%    failed      2.19%
+  59  G002435865    2.49%    passed     97.48%
+  60  G003647765    1.66%    passed     39.86%
+WARNING: 12 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        26.40%  12 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.000546927 secs using 1221% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Cloacimonadota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00580.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.0023232 secs using 73.35% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.00205386 secs using 210.9% CPU
+WARNING: 6 sites contain only gaps or ambiguous characters.
+Alignment has 60 sequences with 923 columns, 805 distinct patterns
+682 parsimony-informative, 57 singleton sites, 184 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.00440391 secs using 410.3% CPU
+   1  G001412425    4.44%    passed     71.44%
+   2  G002742885    3.68%    passed     70.75%
+   3  G009777575  100.00%    passed      -nan%
+   4  G011372345    5.74%    passed     55.84%
+   5  G012516855    4.66%    passed     16.47%
+   6  G018645365    3.58%    failed      3.28%
+   7  G002412625    4.33%    passed     99.63%
+   8  G009782695   46.59%    passed     56.54%
+   9  G012522635   34.89%    passed     15.27%
+  10  G014382915    4.44%    passed     94.76%
+  11  G016938155  100.00%    passed      -nan%
+  12  G017998585   27.19%    passed     46.76%
+  13  G018334695    3.25%    failed      0.31%
+  14  G018400535    3.58%    passed     94.20%
+  15  G012522935    4.66%    passed     69.22%
+  16  G014384665    3.25%    failed      0.05%
+  17  G001577135  100.00%    passed      -nan%
+  18  G002376725    3.58%    passed     90.42%
+  19  G002424605    4.23%    passed     92.20%
+  20  G018654125   50.27%    passed     72.31%
+  21  G004353895    3.58%    passed     79.82%
+  22  G002049945    4.33%    passed     53.80%
+  23  G002432865    2.82%    passed     99.29%
+  24  G016931665  100.00%    passed      -nan%
+  25  G016932035    4.12%    passed     87.49%
+  26  G017995405    4.23%    passed     61.09%
+  27  G002085205  100.00%    passed      -nan%
+  28  G002841975  100.00%    passed      -nan%
+  29  G012839325    4.77%    passed     92.72%
+  30  G013203665    3.36%    passed      9.31%
+  31  G000404785  100.00%    passed      -nan%
+  32  G001577185  100.00%    passed      -nan%
+  33  G016927675  100.00%    passed      -nan%
+  34  G018433885    4.23%    passed     99.24%
+  35  G000146065    5.20%    passed     93.59%
+  36  G002391675  100.00%    passed      -nan%
+  37  G003564135    4.01%    passed     63.78%
+  38  G014382495    3.90%    failed      0.00%
+  39  G014382685    3.47%    passed     63.55%
+  40  G002070045    3.79%    passed     89.59%
+  41  G002379855    4.01%    passed     71.01%
+  42  G002842035    4.44%    passed     97.36%
+  43  G003564155    2.28%    passed     17.88%
+  44  G002425825   26.22%    passed     54.95%
+  45  G003647825  100.00%    passed      -nan%
+  46  G012519465    4.33%    passed     75.89%
+  47  G012728875    3.90%    passed     41.55%
+  48  G017995495    4.01%    passed     44.04%
+  49  G002427325    4.23%    passed     99.84%
+  50  G002840645    4.55%    passed     82.31%
+  51  G011043895    3.47%    passed     93.87%
+  52  G016838885    4.01%    passed     80.91%
+  53  G017996595    4.01%    passed     90.98%
+  54  G016875595    4.01%    failed      1.07%
+  55  G016935235    3.58%    passed     94.84%
+  56  G017994635    4.33%    passed     97.24%
+  57  G002428685    4.01%    passed     93.43%
+  58  G002410505    4.01%    passed     98.11%
+  59  G002435865    3.68%    passed     88.68%
+  60  G003647765  100.00%    passed      -nan%
+WARNING: 13 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        25.95%  5 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.00127093 secs using 369.9% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Cloacimonadota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00634.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.00190055 secs using 394.8% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.00151523 secs using 161.2% CPU
+WARNING: 2 sites contain only gaps or ambiguous characters.
+Alignment has 60 sequences with 563 columns, 543 distinct patterns
+488 parsimony-informative, 20 singleton sites, 55 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.00439072 secs using 492.9% CPU
+   1  G001412425    1.42%    failed      2.53%
+   2  G002742885    2.66%    failed      1.29%
+   3  G009777575    0.89%    failed      1.50%
+   4  G011372345    1.24%    failed      0.00%
+   5  G012516855    1.78%    passed      7.55%
+   6  G018645365    1.78%    failed      0.01%
+   7  G002412625    1.95%    passed     31.02%
+   8  G009782695  100.00%    passed      -nan%
+   9  G012522635    1.78%    failed      1.17%
+  10  G014382915    1.78%    passed     44.13%
+  11  G016938155    1.60%    passed     47.28%
+  12  G017998585    1.24%    passed      9.27%
+  13  G018334695  100.00%    passed      -nan%
+  14  G018400535    1.42%    failed      1.49%
+  15  G012522935    1.42%    failed      2.99%
+  16  G014384665  100.00%    passed      -nan%
+  17  G001577135  100.00%    passed      -nan%
+  18  G002376725    1.78%    passed     18.53%
+  19  G002424605    1.42%    passed     97.30%
+  20  G018654125    1.42%    failed      2.59%
+  21  G004353895    1.78%    passed     43.56%
+  22  G002049945  100.00%    passed      -nan%
+  23  G002432865    1.78%    passed     15.71%
+  24  G016931665    1.42%    passed     66.16%
+  25  G016932035  100.00%    passed      -nan%
+  26  G017995405    1.95%    failed      0.00%
+  27  G002085205   35.52%    failed      2.08%
+  28  G002841975    2.13%    passed     91.35%
+  29  G012839325    2.13%    passed     51.16%
+  30  G013203665    1.42%    failed      0.00%
+  31  G000404785  100.00%    passed      -nan%
+  32  G001577185    1.60%    failed      0.00%
+  33  G016927675  100.00%    passed      -nan%
+  34  G018433885    1.60%    passed     53.59%
+  35  G000146065    1.78%    passed     50.24%
+  36  G002391675    1.78%    failed      0.62%
+  37  G003564135    0.71%    passed      6.92%
+  38  G014382495  100.00%    passed      -nan%
+  39  G014382685  100.00%    passed      -nan%
+  40  G002070045  100.00%    passed      -nan%
+  41  G002379855    1.95%    failed      0.43%
+  42  G002842035    1.60%    passed     91.64%
+  43  G003564155   10.30%    failed      0.35%
+  44  G002425825    1.60%    passed     77.33%
+  45  G003647825    1.60%    passed     27.36%
+  46  G012519465    1.42%    failed      0.41%
+  47  G012728875    1.78%    failed      0.17%
+  48  G017995495    1.42%    failed      0.03%
+  49  G002427325    2.13%    passed     94.54%
+  50  G002840645    1.95%    passed     14.29%
+  51  G011043895  100.00%    passed      -nan%
+  52  G016838885    1.42%    passed     25.50%
+  53  G017996595    1.60%    failed      0.00%
+  54  G016875595  100.00%    passed      -nan%
+  55  G016935235    1.24%    passed     49.95%
+  56  G017994635    7.46%    failed      0.40%
+  57  G002428685    1.60%    passed     28.70%
+  58  G002410505    2.13%    passed     25.53%
+  59  G002435865    1.42%    passed     34.40%
+  60  G003647765  100.00%    passed      -nan%
+WARNING: 14 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        25.40%  21 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.000889646 secs using 99.7% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Cloacimonadota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00717.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.00174738 secs using 90.48% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.00130405 secs using 280.4% CPU
+Alignment has 60 sequences with 516 columns, 476 distinct patterns
+403 parsimony-informative, 52 singleton sites, 61 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.00527425 secs using 450.6% CPU
+   1  G001412425  100.00%    passed      -nan%
+   2  G002742885   17.05%    failed      3.66%
+   3  G009777575  100.00%    passed      -nan%
+   4  G011372345  100.00%    passed      -nan%
+   5  G012516855  100.00%    passed      -nan%
+   6  G018645365  100.00%    passed      -nan%
+   7  G002412625  100.00%    passed      -nan%
+   8  G009782695    2.71%    passed     44.99%
+   9  G012522635  100.00%    passed      -nan%
+  10  G014382915  100.00%    passed      -nan%
+  11  G016938155  100.00%    passed      -nan%
+  12  G017998585  100.00%    passed      -nan%
+  13  G018334695    0.58%    passed     74.58%
+  14  G018400535  100.00%    passed      -nan%
+  15  G012522935    2.91%    passed     88.43%
+  16  G014384665    1.16%    passed     93.12%
+  17  G001577135    0.58%    passed     84.22%
+  18  G002376725  100.00%    passed      -nan%
+  19  G002424605    1.36%    passed     79.49%
+  20  G018654125  100.00%    passed      -nan%
+  21  G004353895  100.00%    passed      -nan%
+  22  G002049945  100.00%    passed      -nan%
+  23  G002432865  100.00%    passed      -nan%
+  24  G016931665    2.33%    passed     97.99%
+  25  G016932035    1.36%    passed     89.71%
+  26  G017995405  100.00%    passed      -nan%
+  27  G002085205    2.33%    passed     96.26%
+  28  G002841975  100.00%    passed      -nan%
+  29  G012839325  100.00%    passed      -nan%
+  30  G013203665   14.92%    passed     27.27%
+  31  G000404785  100.00%    passed      -nan%
+  32  G001577185    2.52%    passed     99.04%
+  33  G016927675    2.13%    passed     95.54%
+  34  G018433885  100.00%    passed      -nan%
+  35  G000146065  100.00%    passed      -nan%
+  36  G002391675  100.00%    passed      -nan%
+  37  G003564135  100.00%    passed      -nan%
+  38  G014382495    2.13%    passed     95.77%
+  39  G014382685  100.00%    passed      -nan%
+  40  G002070045  100.00%    passed      -nan%
+  41  G002379855  100.00%    passed      -nan%
+  42  G002842035  100.00%    passed      -nan%
+  43  G003564155   18.22%    passed     83.76%
+  44  G002425825   19.38%    passed      7.03%
+  45  G003647825  100.00%    passed      -nan%
+  46  G012519465  100.00%    passed      -nan%
+  47  G012728875  100.00%    passed      -nan%
+  48  G017995495  100.00%    passed      -nan%
+  49  G002427325  100.00%    passed      -nan%
+  50  G002840645  100.00%    passed      -nan%
+  51  G011043895  100.00%    passed      -nan%
+  52  G016838885  100.00%    passed      -nan%
+  53  G017996595  100.00%    passed      -nan%
+  54  G016875595  100.00%    passed      -nan%
+  55  G016935235   16.47%    passed     72.84%
+  56  G017994635  100.00%    passed      -nan%
+  57  G002428685  100.00%    passed      -nan%
+  58  G002410505  100.00%    passed      -nan%
+  59  G002435865  100.00%    passed      -nan%
+  60  G003647765    2.13%    passed     59.18%
+WARNING: 42 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        71.84%  1 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.000427121 secs using 99.74% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Cloacimonadota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR00810.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.000197144 secs using 98.91% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000202719 secs using 99.15% CPU
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 60 sequences with 73 columns, 70 distinct patterns
+57 parsimony-informative, 5 singleton sites, 11 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.00432734 secs using 497.3% CPU
+   1  G001412425    4.11%    passed     99.98%
+   2  G002742885    2.74%    failed      1.63%
+   3  G009777575    9.59%    passed     84.56%
+   4  G011372345    4.11%    failed      2.60%
+   5  G012516855    5.48%    passed    100.00%
+   6  G018645365    5.48%    passed     95.23%
+   7  G002412625    4.11%    passed     99.99%
+   8  G009782695  100.00%    passed      -nan%
+   9  G012522635    5.48%    passed     99.96%
+  10  G014382915  100.00%    passed      -nan%
+  11  G016938155  100.00%    passed      -nan%
+  12  G017998585    5.48%    passed     31.13%
+  13  G018334695    1.37%    passed     72.09%
+  14  G018400535    5.48%    passed     90.32%
+  15  G012522935    4.11%    passed     99.98%
+  16  G014384665    2.74%    passed     97.30%
+  17  G001577135  100.00%    passed      -nan%
+  18  G002376725    5.48%    passed    100.00%
+  19  G002424605  100.00%    passed      -nan%
+  20  G018654125    4.11%    passed     99.96%
+  21  G004353895    5.48%    passed     99.99%
+  22  G002049945  100.00%    passed      -nan%
+  23  G002432865    4.11%    passed     99.99%
+  24  G016931665    4.11%    passed     99.37%
+  25  G016932035    1.37%    passed     96.58%
+  26  G017995405    4.11%    passed    100.00%
+  27  G002085205  100.00%    passed      -nan%
+  28  G002841975  100.00%    passed      -nan%
+  29  G012839325    4.11%    passed     99.98%
+  30  G013203665    6.85%    passed     99.69%
+  31  G000404785  100.00%    passed      -nan%
+  32  G001577185    5.48%    passed     99.31%
+  33  G016927675    4.11%    passed     99.99%
+  34  G018433885    4.11%    passed    100.00%
+  35  G000146065    4.11%    passed    100.00%
+  36  G002391675    4.11%    passed     90.17%
+  37  G003564135    5.48%    passed     21.75%
+  38  G014382495    1.37%    passed     96.64%
+  39  G014382685    2.74%    passed     96.24%
+  40  G002070045  100.00%    passed      -nan%
+  41  G002379855  100.00%    passed      -nan%
+  42  G002842035    4.11%    passed     99.97%
+  43  G003564155    4.11%    passed     86.37%
+  44  G002425825    4.11%    passed    100.00%
+  45  G003647825    5.48%    passed     95.88%
+  46  G012519465  100.00%    passed      -nan%
+  47  G012728875    5.48%    passed     99.98%
+  48  G017995495    5.48%    passed    100.00%
+  49  G002427325    4.11%    passed     99.88%
+  50  G002840645    4.11%    passed    100.00%
+  51  G011043895    1.37%    passed     83.16%
+  52  G016838885    6.85%    passed     95.46%
+  53  G017996595    4.11%    passed     98.16%
+  54  G016875595    4.11%    passed     99.82%
+  55  G016935235    4.11%    passed     97.87%
+  56  G017994635    4.11%    passed     98.08%
+  57  G002428685    4.11%    passed     99.90%
+  58  G002410505    4.11%    passed     99.99%
+  59  G002435865  100.00%    passed      -nan%
+  60  G003647765    4.11%    passed     92.39%
+WARNING: 13 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        25.09%  2 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.000114728 secs using 97.62% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Cloacimonadota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR01039.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.00128589 secs using 237.4% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.00101416 secs using 706.4% CPU
+WARNING: 2 sites contain only gaps or ambiguous characters.
+Alignment has 60 sequences with 462 columns, 263 distinct patterns
+184 parsimony-informative, 49 singleton sites, 229 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.00845218 secs using 301.7% CPU
+   1  G001412425    0.43%    passed    100.00%
+   2  G002742885    0.43%    passed     99.58%
+   3  G009777575    0.43%    passed    100.00%
+   4  G011372345    0.43%    passed    100.00%
+   5  G012516855  100.00%    passed      -nan%
+   6  G018645365    0.65%    passed     99.99%
+   7  G002412625  100.00%    passed      -nan%
+   8  G009782695    0.43%    passed     99.98%
+   9  G012522635  100.00%    passed      -nan%
+  10  G014382915    0.65%    passed    100.00%
+  11  G016938155    0.65%    passed     99.98%
+  12  G017998585   13.20%    passed     99.96%
+  13  G018334695    0.65%    passed     99.52%
+  14  G018400535    0.43%    passed     99.97%
+  15  G012522935  100.00%    passed      -nan%
+  16  G014384665    0.65%    passed     99.97%
+  17  G001577135  100.00%    passed      -nan%
+  18  G002376725  100.00%    passed      -nan%
+  19  G002424605  100.00%    passed      -nan%
+  20  G018654125  100.00%    passed      -nan%
+  21  G004353895  100.00%    passed      -nan%
+  22  G002049945    0.43%    passed    100.00%
+  23  G002432865  100.00%    passed      -nan%
+  24  G016931665    0.43%    passed     99.97%
+  25  G016932035    0.43%    passed     99.96%
+  26  G017995405  100.00%    passed      -nan%
+  27  G002085205    0.43%    passed    100.00%
+  28  G002841975  100.00%    passed      -nan%
+  29  G012839325  100.00%    passed      -nan%
+  30  G013203665    0.43%    passed    100.00%
+  31  G000404785    0.43%    passed     99.99%
+  32  G001577185  100.00%    passed      -nan%
+  33  G016927675    0.65%    passed     99.92%
+  34  G018433885  100.00%    passed      -nan%
+  35  G000146065  100.00%    passed      -nan%
+  36  G002391675  100.00%    passed      -nan%
+  37  G003564135    0.43%    passed     99.99%
+  38  G014382495    0.87%    passed    100.00%
+  39  G014382685    0.43%    passed    100.00%
+  40  G002070045  100.00%    passed      -nan%
+  41  G002379855  100.00%    passed      -nan%
+  42  G002842035  100.00%    passed      -nan%
+  43  G003564155    0.43%    passed     99.49%
+  44  G002425825  100.00%    passed      -nan%
+  45  G003647825  100.00%    passed      -nan%
+  46  G012519465  100.00%    passed      -nan%
+  47  G012728875  100.00%    passed      -nan%
+  48  G017995495  100.00%    passed      -nan%
+  49  G002427325  100.00%    passed      -nan%
+  50  G002840645  100.00%    passed      -nan%
+  51  G011043895  100.00%    passed      -nan%
+  52  G016838885    0.65%    passed     99.96%
+  53  G017996595  100.00%    passed      -nan%
+  54  G016875595  100.00%    passed      -nan%
+  55  G016935235    0.65%    passed    100.00%
+  56  G017994635  100.00%    passed      -nan%
+  57  G002428685  100.00%    passed      -nan%
+  58  G002410505  100.00%    passed      -nan%
+  59  G002435865  100.00%    passed      -nan%
+  60  G003647765    0.65%    passed     99.19%
+WARNING: 34 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        57.11%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.000384979 secs using 99.23% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Cloacimonadota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR01146.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.000575541 secs using 99.56% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000792958 secs using 273.8% CPU
+Alignment has 60 sequences with 286 columns, 270 distinct patterns
+208 parsimony-informative, 29 singleton sites, 49 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.00691655 secs using 356.8% CPU
+   1  G001412425    1.40%    passed    100.00%
+   2  G002742885    1.75%    passed     99.62%
+   3  G009777575    1.75%    passed     98.18%
+   4  G011372345    1.40%    passed     99.99%
+   5  G012516855  100.00%    passed      -nan%
+   6  G018645365    1.40%    passed     74.49%
+   7  G002412625  100.00%    passed      -nan%
+   8  G009782695    1.75%    passed     91.90%
+   9  G012522635  100.00%    passed      -nan%
+  10  G014382915   33.22%    passed     89.40%
+  11  G016938155    1.75%    passed     98.68%
+  12  G017998585  100.00%    passed      -nan%
+  13  G018334695    1.05%    passed     99.99%
+  14  G018400535    1.75%    passed     98.56%
+  15  G012522935  100.00%    passed      -nan%
+  16  G014384665    1.40%    passed     89.46%
+  17  G001577135  100.00%    passed      -nan%
+  18  G002376725  100.00%    passed      -nan%
+  19  G002424605  100.00%    passed      -nan%
+  20  G018654125  100.00%    passed      -nan%
+  21  G004353895  100.00%    passed      -nan%
+  22  G002049945    1.05%    passed     54.77%
+  23  G002432865  100.00%    passed      -nan%
+  24  G016931665    1.40%    passed     98.56%
+  25  G016932035    1.05%    passed     98.66%
+  26  G017995405  100.00%    passed      -nan%
+  27  G002085205    1.40%    passed     98.88%
+  28  G002841975  100.00%    passed      -nan%
+  29  G012839325  100.00%    passed      -nan%
+  30  G013203665    1.40%    passed     99.25%
+  31  G000404785    1.05%    passed     57.27%
+  32  G001577185    1.40%    passed     90.57%
+  33  G016927675    1.75%    passed     90.16%
+  34  G018433885  100.00%    passed      -nan%
+  35  G000146065  100.00%    passed      -nan%
+  36  G002391675  100.00%    passed      -nan%
+  37  G003564135    1.40%    passed     91.98%
+  38  G014382495    0.70%    passed     84.47%
+  39  G014382685    1.05%    passed     61.39%
+  40  G002070045  100.00%    passed      -nan%
+  41  G002379855  100.00%    passed      -nan%
+  42  G002842035  100.00%    passed      -nan%
+  43  G003564155    1.40%    passed     93.59%
+  44  G002425825  100.00%    passed      -nan%
+  45  G003647825    7.34%    passed     99.92%
+  46  G012519465  100.00%    passed      -nan%
+  47  G012728875  100.00%    passed      -nan%
+  48  G017995495  100.00%    passed      -nan%
+  49  G002427325  100.00%    passed      -nan%
+  50  G002840645  100.00%    passed      -nan%
+  51  G011043895  100.00%    passed      -nan%
+  52  G016838885    1.40%    passed     84.99%
+  53  G017996595  100.00%    passed      -nan%
+  54  G016875595  100.00%    passed      -nan%
+  55  G016935235    2.45%    passed     47.84%
+  56  G017994635  100.00%    passed      -nan%
+  57  G002428685  100.00%    passed      -nan%
+  58  G002410505  100.00%    passed      -nan%
+  59  G002435865  100.00%    passed      -nan%
+  60  G003647765    0.70%    passed     84.21%
+WARNING: 33 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        56.26%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.00033802 secs using 99.11% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Cloacimonadota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR01302.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.00129517 secs using 299.6% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.00112336 secs using 140.5% CPU
+Alignment has 60 sequences with 450 columns, 403 distinct patterns
+357 parsimony-informative, 21 singleton sites, 72 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.00434935 secs using 452% CPU
+   1  G001412425    8.89%    passed     25.55%
+   2  G002742885    1.11%    passed     98.62%
+   3  G009777575    1.33%    passed     79.33%
+   4  G011372345    6.22%    failed      3.04%
+   5  G012516855    1.33%    passed     96.93%
+   6  G018645365    4.44%    passed     32.80%
+   7  G002412625    1.33%    passed     96.19%
+   8  G009782695    1.33%    passed     31.74%
+   9  G012522635    1.56%    passed     95.68%
+  10  G014382915  100.00%    passed      -nan%
+  11  G016938155    0.89%    passed     99.91%
+  12  G017998585    1.56%    passed     90.95%
+  13  G018334695  100.00%    passed      -nan%
+  14  G018400535    8.67%    passed      7.62%
+  15  G012522935    1.56%    passed     99.72%
+  16  G014384665  100.00%    passed      -nan%
+  17  G001577135  100.00%    passed      -nan%
+  18  G002376725    1.33%    passed     98.61%
+  19  G002424605  100.00%    passed      -nan%
+  20  G018654125    6.00%    passed     25.65%
+  21  G004353895    1.56%    passed     98.85%
+  22  G002049945    1.33%    passed     99.18%
+  23  G002432865    1.33%    passed     99.83%
+  24  G016931665    8.67%    passed     50.86%
+  25  G016932035  100.00%    passed      -nan%
+  26  G017995405    1.33%    passed     97.34%
+  27  G002085205  100.00%    passed      -nan%
+  28  G002841975    1.33%    passed     99.64%
+  29  G012839325    1.33%    passed     97.82%
+  30  G013203665    8.89%    passed     35.67%
+  31  G000404785  100.00%    passed      -nan%
+  32  G001577185  100.00%    passed      -nan%
+  33  G016927675  100.00%    passed      -nan%
+  34  G018433885    1.33%    passed     99.57%
+  35  G000146065    1.11%    passed     99.88%
+  36  G002391675    1.33%    passed     99.86%
+  37  G003564135    1.56%    passed     97.87%
+  38  G014382495  100.00%    passed      -nan%
+  39  G014382685  100.00%    passed      -nan%
+  40  G002070045  100.00%    passed      -nan%
+  41  G002379855    1.56%    passed     99.85%
+  42  G002842035    1.33%    passed     99.92%
+  43  G003564155  100.00%    passed      -nan%
+  44  G002425825    1.11%    passed     99.43%
+  45  G003647825    9.33%    passed     40.96%
+  46  G012519465   22.44%    passed     98.33%
+  47  G012728875    1.33%    passed     88.44%
+  48  G017995495    1.33%    passed     79.83%
+  49  G002427325    1.33%    passed     98.96%
+  50  G002840645    1.33%    passed     99.68%
+  51  G011043895  100.00%    passed      -nan%
+  52  G016838885    1.11%    passed     96.36%
+  53  G017996595    1.33%    passed     92.51%
+  54  G016875595    1.33%    passed     66.93%
+  55  G016935235    8.67%    failed      3.85%
+  56  G017994635    1.33%    passed     95.87%
+  57  G002428685    1.33%    passed     99.03%
+  58  G002410505    1.33%    passed    100.00%
+  59  G002435865    1.56%    passed     80.78%
+  60  G003647765  100.00%    passed      -nan%
+WARNING: 16 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        28.96%  2 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.000587553 secs using 98.37% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Cloacimonadota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR01394.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.00199012 secs using 251% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.00140852 secs using 235.8% CPU
+Alignment has 60 sequences with 594 columns, 422 distinct patterns
+294 parsimony-informative, 99 singleton sites, 201 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.00417354 secs using 389.2% CPU
+   1  G001412425    0.34%    passed     90.83%
+   2  G002742885    0.00%    passed     99.85%
+   3  G009777575  100.00%    passed      -nan%
+   4  G011372345    0.00%    passed     99.50%
+   5  G012516855  100.00%    passed      -nan%
+   6  G018645365    0.00%    passed     99.57%
+   7  G002412625    0.00%    passed     99.77%
+   8  G009782695  100.00%    passed      -nan%
+   9  G012522635  100.00%    passed      -nan%
+  10  G014382915   72.56%    passed     96.10%
+  11  G016938155  100.00%    passed      -nan%
+  12  G017998585    0.00%    passed     99.89%
+  13  G018334695  100.00%    passed      -nan%
+  14  G018400535  100.00%    passed      -nan%
+  15  G012522935  100.00%    passed      -nan%
+  16  G014384665  100.00%    passed      -nan%
+  17  G001577135  100.00%    passed      -nan%
+  18  G002376725  100.00%    passed      -nan%
+  19  G002424605    0.00%    passed     99.99%
+  20  G018654125  100.00%    passed      -nan%
+  21  G004353895  100.00%    passed      -nan%
+  22  G002049945  100.00%    passed      -nan%
+  23  G002432865  100.00%    passed      -nan%
+  24  G016931665  100.00%    passed      -nan%
+  25  G016932035    0.00%    passed     99.83%
+  26  G017995405  100.00%    passed      -nan%
+  27  G002085205  100.00%    passed      -nan%
+  28  G002841975    0.00%    passed     99.95%
+  29  G012839325  100.00%    passed      -nan%
+  30  G013203665    0.00%    passed     99.51%
+  31  G000404785    0.00%    passed     99.62%
+  32  G001577185  100.00%    passed      -nan%
+  33  G016927675  100.00%    passed      -nan%
+  34  G018433885    0.00%    passed     99.98%
+  35  G000146065  100.00%    passed      -nan%
+  36  G002391675  100.00%    passed      -nan%
+  37  G003564135    1.18%    passed     99.96%
+  38  G014382495  100.00%    passed      -nan%
+  39  G014382685    0.00%    passed     99.97%
+  40  G002070045  100.00%    passed      -nan%
+  41  G002379855  100.00%    passed      -nan%
+  42  G002842035    0.00%    passed     99.85%
+  43  G003564155  100.00%    passed      -nan%
+  44  G002425825    0.00%    passed    100.00%
+  45  G003647825    0.00%    passed     97.36%
+  46  G012519465  100.00%    passed      -nan%
+  47  G012728875  100.00%    passed      -nan%
+  48  G017995495  100.00%    passed      -nan%
+  49  G002427325  100.00%    passed      -nan%
+  50  G002840645    0.00%    passed    100.00%
+  51  G011043895  100.00%    passed      -nan%
+  52  G016838885    0.00%    passed     99.56%
+  53  G017996595    0.00%    passed     99.92%
+  54  G016875595  100.00%    passed      -nan%
+  55  G016935235  100.00%    passed      -nan%
+  56  G017994635    0.00%    passed     99.95%
+  57  G002428685    0.00%    passed     99.94%
+  58  G002410505    0.00%    passed     98.68%
+  59  G002435865    0.00%    passed     99.39%
+  60  G003647765  100.00%    passed      -nan%
+WARNING: 36 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        59.57%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.000509473 secs using 98.14% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Cloacimonadota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR02273.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.000365011 secs using 99.17% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000423104 secs using 98.08% CPU
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 60 sequences with 166 columns, 163 distinct patterns
+121 parsimony-informative, 34 singleton sites, 11 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.00415552 secs using 350.4% CPU
+   1  G001412425  100.00%    passed      -nan%
+   2  G002742885  100.00%    passed      -nan%
+   3  G009777575  100.00%    passed      -nan%
+   4  G011372345    4.22%    passed     19.54%
+   5  G012516855  100.00%    passed      -nan%
+   6  G018645365  100.00%    passed      -nan%
+   7  G002412625  100.00%    passed      -nan%
+   8  G009782695  100.00%    passed      -nan%
+   9  G012522635  100.00%    passed      -nan%
+  10  G014382915  100.00%    passed      -nan%
+  11  G016938155  100.00%    passed      -nan%
+  12  G017998585    3.61%    passed     64.07%
+  13  G018334695    1.81%    passed     94.74%
+  14  G018400535  100.00%    passed      -nan%
+  15  G012522935  100.00%    passed      -nan%
+  16  G014384665  100.00%    passed      -nan%
+  17  G001577135    1.81%    passed     17.95%
+  18  G002376725  100.00%    passed      -nan%
+  19  G002424605  100.00%    passed      -nan%
+  20  G018654125  100.00%    passed      -nan%
+  21  G004353895  100.00%    passed      -nan%
+  22  G002049945    3.01%    passed     49.72%
+  23  G002432865  100.00%    passed      -nan%
+  24  G016931665  100.00%    passed      -nan%
+  25  G016932035   42.17%    passed     82.53%
+  26  G017995405  100.00%    passed      -nan%
+  27  G002085205  100.00%    passed      -nan%
+  28  G002841975  100.00%    passed      -nan%
+  29  G012839325  100.00%    passed      -nan%
+  30  G013203665  100.00%    passed      -nan%
+  31  G000404785    3.01%    passed     39.61%
+  32  G001577185  100.00%    passed      -nan%
+  33  G016927675  100.00%    passed      -nan%
+  34  G018433885  100.00%    passed      -nan%
+  35  G000146065  100.00%    passed      -nan%
+  36  G002391675  100.00%    passed      -nan%
+  37  G003564135  100.00%    passed      -nan%
+  38  G014382495    2.41%    failed      1.97%
+  39  G014382685    3.01%    passed     41.13%
+  40  G002070045  100.00%    passed      -nan%
+  41  G002379855  100.00%    passed      -nan%
+  42  G002842035  100.00%    passed      -nan%
+  43  G003564155  100.00%    passed      -nan%
+  44  G002425825  100.00%    passed      -nan%
+  45  G003647825  100.00%    passed      -nan%
+  46  G012519465  100.00%    passed      -nan%
+  47  G012728875  100.00%    passed      -nan%
+  48  G017995495  100.00%    passed      -nan%
+  49  G002427325  100.00%    passed      -nan%
+  50  G002840645  100.00%    passed      -nan%
+  51  G011043895    1.81%    passed     49.24%
+  52  G016838885  100.00%    passed      -nan%
+  53  G017996595  100.00%    passed      -nan%
+  54  G016875595  100.00%    passed      -nan%
+  55  G016935235  100.00%    passed      -nan%
+  56  G017994635  100.00%    passed      -nan%
+  57  G002428685  100.00%    passed      -nan%
+  58  G002410505  100.00%    passed      -nan%
+  59  G002435865  100.00%    passed      -nan%
+  60  G003647765    3.61%    passed     82.07%
+WARNING: 49 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        82.84%  1 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.000143921 secs using 97.28% CPU
+Reading alignment file /mnt/data/dayhoff/home/u1070770/gtdb/02_working/2306_phyla_test/2307_nf/p__Cloacimonadota_treeshrunk/03_subset_loci/testing_loci/gtdb_r207_bac120_TIGR02397.faa_subtaxa ... Fasta format detected
+Reading fasta file: done in 0.000684893 secs using 99.58% CPU
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.000895334 secs using 99.85% CPU
+Alignment has 60 sequences with 355 columns, 293 distinct patterns
+234 parsimony-informative, 39 singleton sites, 82 constant sites
+            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.00421307 secs using 395.4% CPU
+   1  G001412425    0.56%    passed     95.18%
+   2  G002742885    0.56%    passed     99.67%
+   3  G009777575  100.00%    passed      -nan%
+   4  G011372345    0.56%    passed     75.31%
+   5  G012516855    0.28%    passed     67.18%
+   6  G018645365    0.56%    passed     90.61%
+   7  G002412625    0.56%    passed     99.96%
+   8  G009782695   31.83%    passed     91.90%
+   9  G012522635    0.28%    passed     76.63%
+  10  G014382915  100.00%    passed      -nan%
+  11  G016938155    0.56%    passed     99.29%
+  12  G017998585    0.56%    passed     92.30%
+  13  G018334695    0.56%    passed     44.13%
+  14  G018400535    0.56%    passed     99.53%
+  15  G012522935  100.00%    passed      -nan%
+  16  G014384665    0.56%    passed     44.40%
+  17  G001577135    0.56%    passed     99.94%
+  18  G002376725    0.28%    passed     83.74%
+  19  G002424605  100.00%    passed      -nan%
+  20  G018654125   38.03%    passed     94.11%
+  21  G004353895  100.00%    passed      -nan%
+  22  G002049945  100.00%    passed      -nan%
+  23  G002432865    0.28%    passed     98.16%
+  24  G016931665  100.00%    passed      -nan%
+  25  G016932035  100.00%    passed      -nan%
+  26  G017995405    0.56%    passed     96.57%
+  27  G002085205  100.00%    passed      -nan%
+  28  G002841975    0.56%    passed     99.80%
+  29  G012839325    0.56%    passed     96.00%
+  30  G013203665    0.56%    passed     90.70%
+  31  G000404785  100.00%    passed      -nan%
+  32  G001577185    0.85%    passed     87.37%
+  33  G016927675  100.00%    passed      -nan%
+  34  G018433885    0.56%    passed     99.80%
+  35  G000146065    0.28%    passed     96.12%
+  36  G002391675    0.28%    passed     52.37%
+  37  G003564135    0.28%    passed     51.92%
+  38  G014382495    0.56%    passed     29.01%
+  39  G014382685    0.56%    passed     90.45%
+  40  G002070045    0.28%    passed     99.96%
+  41  G002379855    0.28%    passed     95.13%
+  42  G002842035    0.56%    passed     99.09%
+  43  G003564155    0.56%    passed     82.82%
+  44  G002425825    0.28%    passed     99.92%
+  45  G003647825  100.00%    passed      -nan%
+  46  G012519465    0.56%    passed     68.79%
+  47  G012728875    0.28%    passed     71.94%
+  48  G017995495    0.28%    passed     81.10%
+  49  G002427325    0.56%    passed     97.96%
+  50  G002840645    0.28%    passed     99.51%
+  51  G011043895  100.00%    passed      -nan%
+  52  G016838885    0.56%    passed     99.18%
+  53  G017996595    0.28%    passed     99.74%
+  54  G016875595  100.00%    passed      -nan%
+  55  G016935235    0.56%    passed     98.83%
+  56  G017994635    0.56%    passed     97.88%
+  57  G002428685    0.28%    passed     99.88%
+  58  G002410505    0.56%    passed     99.15%
+  59  G002435865  100.00%    passed      -nan%
+  60  G003647765    0.56%    passed     92.10%
+WARNING: 15 sequences contain more than 50% gaps/ambiguity
+****  TOTAL        26.50%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+Identifying sites to remove: done in 0.000483405 secs using 99.5% CPU
+Subset	Type	Seqs	Sites	Infor	Invar	Model	Name
+1		50	365	254	83		gtdb_r207_bac120_TIGR00020.faa_subtaxa
+2		46	279	206	56		gtdb_r207_bac120_TIGR00064.faa_subtaxa
+3		53	194	153	29		gtdb_r207_bac120_TIGR00095.faa_subtaxa
+4		49	410	389	7		gtdb_r207_bac120_TIGR00115.faa_subtaxa
+5		55	293	207	49		gtdb_r207_bac120_TIGR00116.faa_subtaxa
+6		53	183	155	17		gtdb_r207_bac120_TIGR00138.faa_subtaxa
+7		46	454	320	91		gtdb_r207_bac120_TIGR00416.faa_subtaxa
+8		32	406	293	47		gtdb_r207_bac120_TIGR00442.faa_subtaxa
+9		48	361	302	46		gtdb_r207_bac120_TIGR00539.faa_subtaxa
+10		48	923	682	184		gtdb_r207_bac120_TIGR00580.faa_subtaxa
+11		46	563	488	55		gtdb_r207_bac120_TIGR00634.faa_subtaxa
+12		18	516	403	61		gtdb_r207_bac120_TIGR00717.faa_subtaxa
+13		47	73	57	11		gtdb_r207_bac120_TIGR00810.faa_subtaxa
+14		26	462	184	229		gtdb_r207_bac120_TIGR01039.faa_subtaxa
+15		27	286	208	49		gtdb_r207_bac120_TIGR01146.faa_subtaxa
+16		44	450	357	72		gtdb_r207_bac120_TIGR01302.faa_subtaxa
+17		25	594	294	201		gtdb_r207_bac120_TIGR01394.faa_subtaxa
+18		11	166	121	11		gtdb_r207_bac120_TIGR02273.faa_subtaxa
+19		45	355	234	82		gtdb_r207_bac120_TIGR02397.faa_subtaxa
+Linked 60 total sequences
+
+Creating fast initial parsimony tree by random order stepwise addition...
+0.155 seconds, parsimony score: 58548 (based on 5953 sites)
+Perform fast likelihood tree search using LG+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Optimizing NNI: done in 0.815885 secs using 780.9% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 1.616 secs using 781.8% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 1.69913 secs using 781% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 1.77616 secs using 782.9% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 1.85597 secs using 783.5% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 1.91245 secs using 783.6% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 0.892315 secs using 790.3% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 2.06236 secs using 783.5% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 0.304418 secs using 772.6% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 0.599501 secs using 767.1% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 0.343779 secs using 772.5% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 0.803921 secs using 769.2% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 0.0736129 secs using 782.1% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 0.195209 secs using 778.3% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 1.14872 secs using 770.8% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 0.333336 secs using 728.4% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 1.01261 secs using 753.1% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 1.25153 secs using 605.1% CPU
+Estimate model parameters (epsilon = 1.000)
+Optimizing NNI: done in 5.43798 secs using 510.9% CPU
+Estimate model parameters (epsilon = 1.000)
+Log-likelihood: -287735.947
+Time for fast ML tree search: 40.171 seconds
+
+NOTE: ModelFinder requires 271 MB RAM!
+Selecting individual models for 19 charsets using BIC...
+ No. Model        Score       TreeLen     Charset
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+   1 LG+F+I+G4    14797.792   11.703      gtdb_r207_bac120_TIGR00116.faa_subtaxa
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+   2 Q.yeast+I+G4 27121.648   13.687      gtdb_r207_bac120_TIGR00020.faa_subtaxa
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+   3 Q.yeast+G4   29972.815   21.543      gtdb_r207_bac120_TIGR00442.faa_subtaxa
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+   4 Q.yeast+I+G4 23243.332   13.832      gtdb_r207_bac120_TIGR00064.faa_subtaxa
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+   5 Q.pfam+F+I+R5 49567.758   30.099      gtdb_r207_bac120_TIGR00539.faa_subtaxa
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+   6 Q.yeast+I+G4 23318.406   25.985      gtdb_r207_bac120_TIGR00095.faa_subtaxa
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+   7 Q.yeast+I+G4 22222.957   23.547      gtdb_r207_bac120_TIGR00138.faa_subtaxa
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+   8 Q.yeast+I+R5 36964.852   15.923      gtdb_r207_bac120_TIGR00416.faa_subtaxa
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+   9 Q.yeast+I+G4 17009.513   10.963      gtdb_r207_bac120_TIGR01146.faa_subtaxa
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+  10 LG+I+R3      14043.727   3.047       gtdb_r207_bac120_TIGR01039.faa_subtaxa	0h:41m:52s (0h:37m:41s left)
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+  11 Q.yeast+I+G4 27062.413   15.278      gtdb_r207_bac120_TIGR02397.faa_subtaxa	0h:43m:38s (0h:31m:44s left)
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+  12 WAG+F+G4     6104.260    7.280       gtdb_r207_bac120_TIGR02273.faa_subtaxa	0h:45m:1s (0h:26m:15s left)
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+  13 mtZOA+G4     4820.690    10.560      gtdb_r207_bac120_TIGR00810.faa_subtaxa	0h:45m:9s (0h:20m:50s left)
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+  14 Q.insect+R4  20297.884   4.208       gtdb_r207_bac120_TIGR01394.faa_subtaxa	0h:49m:37s (0h:17m:43s left)
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+  15 LG+F+G4      23088.179   8.993       gtdb_r207_bac120_TIGR00717.faa_subtaxa	0h:52m:27s (0h:13m:59s left)
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+  16 Q.pfam+F+R4  59766.502   31.301      gtdb_r207_bac120_TIGR00115.faa_subtaxa	0h:55m:42s (0h:10m:26s left)
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Log-likelihood -39028.6 of Blosum62+I+R6 worse than Blosum62+I+R5 -39026.9
+WARNING: Log-likelihood -38956.8 of Blosum62+F+I+R6 worse than Blosum62+F+I+R5 -38954.5
+  17 Q.yeast+F+I+G4 72078.638   26.441      gtdb_r207_bac120_TIGR00634.faa_subtaxa	1h:28m:34s (0h:10m:25s left)
+  18 Q.yeast+R4   32639.513   13.295      gtdb_r207_bac120_TIGR01302.faa_subtaxa	1h:37m:44s (0h:5m:25s left)
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+  19 Q.yeast+I+R5 77407.026   17.653      gtdb_r207_bac120_TIGR00580.faa_subtaxa	2h:37m:47s (0h:0m:0s left)
+Full partition model BIC score: 586650.097 (LnL: -285915.682  df:1665)
+Partition information was printed to existing_Q.best_scheme.nex
+Partition information in Raxml format was printed to existing_Q.best_scheme
+
+All model information printed to existing_Q.model.gz
+CPU time for ModelFinder: 12150.739 seconds (3h:22m:30s)
+Wall-clock time for ModelFinder: 9508.389 seconds (2h:38m:28s)
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+
+NOTE: 182 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Partition gtdb_r207_bac120_TIGR00115.faa_subtaxa / Model: Q.pfam+F+R4 / df: 120 / LogL: -29522.281
+Partition gtdb_r207_bac120_TIGR00416.faa_subtaxa / Model: Q.yeast+I+R5 / df: 98 / LogL: -18182.636
+Partition gtdb_r207_bac120_TIGR00442.faa_subtaxa / Model: Q.yeast+G4 / df: 62 / LogL: -14800.210
+Partition gtdb_r207_bac120_TIGR00539.faa_subtaxa / Model: Q.pfam+F+I+R5 / df: 121 / LogL: -24427.560
+Partition gtdb_r207_bac120_TIGR01394.faa_subtaxa / Model: Q.insect+R4 / df: 53 / LogL: -9979.682
+Partition gtdb_r207_bac120_TIGR00580.faa_subtaxa / Model: Q.yeast+I+R5 / df: 102 / LogL: -38355.283
+Partition gtdb_r207_bac120_TIGR01302.faa_subtaxa / Model: Q.yeast+R4 / df: 91 / LogL: -16041.200
+Partition gtdb_r207_bac120_TIGR00717.faa_subtaxa / Model: LG+F+G4 / df: 53 / LogL: -11378.567
+Partition gtdb_r207_bac120_TIGR00095.faa_subtaxa / Model: Q.yeast+I+G4 / df: 105 / LogL: -11382.640
+Partition gtdb_r207_bac120_TIGR01039.faa_subtaxa / Model: LG+I+R3 / df: 54 / LogL: -6856.190
+Partition gtdb_r207_bac120_TIGR00810.faa_subtaxa / Model: mtZOA+G4 / df: 92 / LogL: -2212.972
+Partition gtdb_r207_bac120_TIGR02273.faa_subtaxa / Model: WAG+F+G4 / df: 39 / LogL: -2952.446
+Partition gtdb_r207_bac120_TIGR00138.faa_subtaxa / Model: Q.yeast+I+G4 / df: 105 / LogL: -10837.976
+Partition gtdb_r207_bac120_TIGR00064.faa_subtaxa / Model: Q.yeast+I+G4 / df: 91 / LogL: -11365.445
+Partition gtdb_r207_bac120_TIGR02397.faa_subtaxa / Model: Q.yeast+I+G4 / df: 89 / LogL: -13269.896
+Partition gtdb_r207_bac120_TIGR00116.faa_subtaxa / Model: LG+F+I+G4 / df: 128 / LogL: -7035.353
+Partition gtdb_r207_bac120_TIGR01146.faa_subtaxa / Model: Q.yeast+I+G4 / df: 53 / LogL: -8354.870
+Partition gtdb_r207_bac120_TIGR00634.faa_subtaxa / Model: Q.yeast+F+I+G4 / df: 110 / LogL: -35690.985
+Partition gtdb_r207_bac120_TIGR00020.faa_subtaxa / Model: Q.yeast+I+G4 / df: 99 / LogL: -13268.775
+Optimal log-likelihood: -285914.967
+Wrote distance file to... 
+--------------------------------------------------------------------
+|                SEPARATE TREE SEARCH FOR PARTITIONS               |
+--------------------------------------------------------------------
+Partition gtdb_r207_bac120_TIGR00020.faa_subtaxa / Iterations: 150 / LogL: -13258.1 / Time: 0h:11m:37s
+Partition gtdb_r207_bac120_TIGR01302.faa_subtaxa / Iterations: 136 / LogL: -16035.5 / Time: 0h:11m:40s
+Partition gtdb_r207_bac120_TIGR00416.faa_subtaxa / Iterations: 105 / LogL: -18173.8 / Time: 0h:11m:46s
+Partition gtdb_r207_bac120_TIGR00634.faa_subtaxa / Iterations: 102 / LogL: -35690.1 / Time: 0h:11m:51s
+Partition gtdb_r207_bac120_TIGR00116.faa_subtaxa / Iterations: 143 / LogL: -6965.02 / Time: 0h:12m:2s
+Partition gtdb_r207_bac120_TIGR00115.faa_subtaxa / Iterations: 138 / LogL: -29515.8 / Time: 0h:13m:21s
+Partition gtdb_r207_bac120_TIGR00539.faa_subtaxa / Iterations: 129 / LogL: -24422.8 / Time: 0h:13m:28s
+Partition gtdb_r207_bac120_TIGR01394.faa_subtaxa / Iterations: 110 / LogL: -9976.12 / Time: 0h:15m:3s
+Partition gtdb_r207_bac120_TIGR00717.faa_subtaxa / Iterations: 102 / LogL: -11378.6 / Time: 0h:16m:23s
+Partition gtdb_r207_bac120_TIGR00064.faa_subtaxa / Iterations: 105 / LogL: -11356.9 / Time: 0h:16m:27s
+Partition gtdb_r207_bac120_TIGR02397.faa_subtaxa / Iterations: 108 / LogL: -13259.9 / Time: 0h:17m:46s
+Partition gtdb_r207_bac120_TIGR02273.faa_subtaxa / Iterations: 102 / LogL: -2952 / Time: 0h:17m:56s
+Partition gtdb_r207_bac120_TIGR01146.faa_subtaxa / Iterations: 109 / LogL: -8328.33 / Time: 0h:18m:0s
+Partition gtdb_r207_bac120_TIGR01039.faa_subtaxa / Iterations: 158 / LogL: -6850.99 / Time: 0h:19m:18s
+Partition gtdb_r207_bac120_TIGR00095.faa_subtaxa / Iterations: 142 / LogL: -11351 / Time: 0h:19m:23s
+Partition gtdb_r207_bac120_TIGR00138.faa_subtaxa / Iterations: 140 / LogL: -10802.2 / Time: 0h:19m:24s
+Partition gtdb_r207_bac120_TIGR00442.faa_subtaxa / Iterations: 159 / LogL: -14787.1 / Time: 0h:20m:56s
+Partition gtdb_r207_bac120_TIGR00810.faa_subtaxa / Iterations: 301 / LogL: -2178.49 / Time: 0h:22m:34s
+Partition gtdb_r207_bac120_TIGR00580.faa_subtaxa / Iterations: 122 / LogL: -38336.6 / Time: 0h:26m:36s
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+Partition gtdb_r207_bac120_TIGR00020.faa_subtaxa / Model: Q.yeast+I+G4 / df: 99 / LogL: -13258.144
+Partition gtdb_r207_bac120_TIGR00634.faa_subtaxa / Model: Q.yeast+F+I+G4 / df: 110 / LogL: -35690.116
+Partition gtdb_r207_bac120_TIGR00116.faa_subtaxa / Model: LG+F+I+G4 / df: 128 / LogL: -6965.015
+Partition gtdb_r207_bac120_TIGR00416.faa_subtaxa / Model: Q.yeast+I+R5 / df: 98 / LogL: -18173.797
+Partition gtdb_r207_bac120_TIGR02397.faa_subtaxa / Model: Q.yeast+I+G4 / df: 89 / LogL: -13259.931
+Partition gtdb_r207_bac120_TIGR01394.faa_subtaxa / Model: Q.insect+R4 / df: 53 / LogL: -9976.120
+Partition gtdb_r207_bac120_TIGR00095.faa_subtaxa / Model: Q.yeast+I+G4 / df: 105 / LogL: -11350.964
+Partition gtdb_r207_bac120_TIGR00064.faa_subtaxa / Model: Q.yeast+I+G4 / df: 91 / LogL: -11356.880
+Partition gtdb_r207_bac120_TIGR01302.faa_subtaxa / Model: Q.yeast+R4 / df: 91 / LogL: -16035.542
+Partition gtdb_r207_bac120_TIGR00717.faa_subtaxa / Model: LG+F+G4 / df: 53 / LogL: -11378.567
+Partition gtdb_r207_bac120_TIGR00138.faa_subtaxa / Model: Q.yeast+I+G4 / df: 105 / LogL: -10802.225
+Partition gtdb_r207_bac120_TIGR00810.faa_subtaxa / Model: mtZOA+G4 / df: 92 / LogL: -2178.490
+Partition gtdb_r207_bac120_TIGR02273.faa_subtaxa / Model: WAG+F+G4 / df: 39 / LogL: -2952.003
+Partition gtdb_r207_bac120_TIGR01146.faa_subtaxa / Model: Q.yeast+I+G4 / df: 53 / LogL: -8328.327
+Partition gtdb_r207_bac120_TIGR01039.faa_subtaxa / Model: LG+I+R3 / df: 54 / LogL: -6850.986
+Partition gtdb_r207_bac120_TIGR00442.faa_subtaxa / Model: Q.yeast+G4 / df: 62 / LogL: -14787.025
+Partition gtdb_r207_bac120_TIGR00115.faa_subtaxa / Model: Q.pfam+F+R4 / df: 120 / LogL: -29515.785
+Partition gtdb_r207_bac120_TIGR00580.faa_subtaxa / Model: Q.yeast+I+R5 / df: 102 / LogL: -38336.618
+Partition gtdb_r207_bac120_TIGR00539.faa_subtaxa / Model: Q.pfam+F+I+R5 / df: 121 / LogL: -24422.750
+Optimal log-likelihood: -285619.285
+Partition information was printed to existing_Q.best_model.nex
+BEST SCORE FOUND : -285619.285
+Total tree length: 306.374
+
+Total number of iterations: 0
+CPU time used for tree search: 3100.752 sec (0h:51m:40s)
+Wall-clock time used for tree search: 1517.011 sec (0h:25m:17s)
+Total CPU time used: 3238.883 sec (0h:53m:58s)
+Total wall-clock time used: 1601.747 sec (0h:26m:41s)
+
+Analysis results written to: 
+  IQ-TREE report:                existing_Q.iqtree
+  Maximum-likelihood tree:       existing_Q.treefile
+  Best partitioning scheme:      existing_Q.best_scheme.nex
+  Screen log file:               existing_Q.log
+
+Date and Time: Mon Jul 10 14:54:43 2023

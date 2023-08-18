@@ -1,0 +1,15 @@
+     33 LG
+     26 Q.plant
+     19 Q.yeast
+     17 Q.insect
+      4 WAG
+      3 Q.pfam
+      3 cpREV
+      1 WAGF
+      1 VT
+      1 Q.insectF
+      1 mtZOA
+      1 JTTF
+      1 JTTDCMut
+      1 Dayhoff
+      1 cpREVF
