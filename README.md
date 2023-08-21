@@ -111,11 +111,7 @@ for training:
 mkdir 04_model_selection
 iqtree2 -S 03_subset_loci/training_loci -T 4 -pre 04_model_selection/training_loci 
 iqtree2 -S 03_subset_loci/testing_loci -T 4 -pre 04_model_selection/testing_loci   
-
-# Parse outputs  
-for i in 04_model_selection/*.best_scheme; do
-	cut -f1 -d, $i;
-done | sort | uniq -c | sort -hr > 04_model_selection/best_scheme_counts.txt
+cat 04_model_selection/*.best_scheme > 04_model_selection/combined.best_scheme
 ```
 
 ### 4. Training  
@@ -126,3 +122,11 @@ AMAS.py concat -i 03_subset_loci/training_loci/* -f fasta -d aa -p 03_subset_loc
 AMAS.py concat -i 03_subset_loci/testing_loci/* -f fasta -d aa -p 03_subset_loci/testing.partitions -t 03_subset_loci/testing_concat.faa -u fasta -y nexus
 ```
 
+Run:  
+```
+# For p__Firestonebacteria  
+# First did some manual cleaning of node labels from phylorank
+
+cd ~/Dropbox/gtdb/02_working/2308_phyla/lt_1000/p__Firestonebacteria
+scripts/estimate_q.py --best_scheme 04_model_selection/combined.best_scheme -l ~/Dropbox/gtdb/01_data/gtdb_r207_full_concat/ -te 
+```
