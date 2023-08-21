@@ -1,6 +1,0 @@
-gtdb_r207_bac120_PF03726.15.faa_subtaxa
-gtdb_r207_bac120_TIGR00431.faa_subtaxa
-gtdb_r207_bac120_TIGR01302.faa_subtaxa
-gtdb_r207_bac120_TIGR02191.faa_subtaxa
-gtdb_r207_bac120_TIGR00928.faa_subtaxa
-gtdb_r207_bac120_TIGR00580.faa_subtaxa

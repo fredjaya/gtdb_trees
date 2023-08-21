@@ -1,5 +1,7 @@
 # Estimating bacterial Q-matrices  
 
+Analysis files on [Dropbox](https://www.dropbox.com/sh/pfsew90nisv8k1l/AADSdnqcUheiS44skXUtomr0a?dl=0)  
+
 ## Installation  
 
 Download repo:  
@@ -92,11 +94,11 @@ mkdir 02_loci_assignment/training_loci 02_loci_assignment/testing_loci
 
 # Arrange loci into training and testing directories  
 for i in `cat 01_alistat/training_loci.txt`; do 
-	cp $i 02_loci_assignment/training_loci/
+	cp $i 03_subset_loci/training_loci/
 done
 
 for i in `cat 01_alistat/testing_loci.txt`; do 
-	cp $i 02_loci_assignment/testing_loci/
+	cp $i 03_subset_loci/testing_loci/
 done
 ```
 
@@ -120,8 +122,7 @@ done | sort | uniq -c | sort -hr > 04_model_selection/best_scheme_counts.txt
 
 First concatenate training and testing loci and generate partition files:  
 ```
-
+AMAS.py concat -i 03_subset_loci/training_loci/* -f fasta -d aa -p 03_subset_loci/training.partitions -t 03_subset_loci/training_concat.faa -u fasta -y nexus
+AMAS.py concat -i 03_subset_loci/testing_loci/* -f fasta -d aa -p 03_subset_loci/testing.partitions -t 03_subset_loci/testing_concat.faa -u fasta -y nexus
 ```
-
-
 
