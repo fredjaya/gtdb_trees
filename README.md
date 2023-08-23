@@ -8,7 +8,6 @@ Download repo:
 ```
 git clone https://github.com/fredjaya/gtdb_trees.git
 ```  
-
 Install mamba/conda environment:  
 ```
 cd gtdb_trees/
@@ -112,7 +111,18 @@ mkdir 04_model_selection
 iqtree2 -S 03_subset_loci/training_loci -T 4 -pre 04_model_selection/training_loci 
 iqtree2 -S 03_subset_loci/testing_loci -T 4 -pre 04_model_selection/testing_loci   
 cat 04_model_selection/*.best_scheme > 04_model_selection/combined.best_scheme
+```  
+
+Next, count the frequency of best-fitting models across all loci to select
+the most common ones for the starting models `-mset` for training:  
 ```
+scripts/count_top_models.py combined.best_scheme > 04_model_selection/starting_models.txt
+```
+
+> [('Q.yeast', 73), ('LG', 27), ('Q.insect', 8), ('Q.pfam', 7), ('HIVw', 1), ('mtZOA', 1)]  
+> Total loci: 117  
+> Selecting most frequent models up to 106 loci.  
+> Starting models: Q.yeast,LG,Q.insect  
 
 ### 4. Training  
 
@@ -135,11 +145,13 @@ scripts/estimate_q.py --best_scheme 04_model_selection/combined.best_scheme -l ~
 ### First pass  
 
 **Scripting**  
-- [ ] Clean GTDB tree (remove annotations etc.)  
+- [ ] Clean GTDB tree (remove annotations etc.; actually might be ok as 
+treeshrink cleans it, just wont work for tiny groups.)   
 - [x] ~~Re-do Pearsons for lower triangle only~~ Leave it.  
 - [ ] Add second constrained method  
 - [ ] Increase `-cmax 8`  
 - [ ] Log training processes i.e. which commands were used, some output  
+- [ ] Automate the script
 - [x] Leave `--init-model` as LG  
 - [ ] Diagnostic plots  
 
