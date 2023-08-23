@@ -126,7 +126,48 @@ Run:
 ```
 # For p__Firestonebacteria  
 # First did some manual cleaning of node labels from phylorank
-
 cd ~/Dropbox/gtdb/02_working/2308_phyla/lt_1000/p__Firestonebacteria
 scripts/estimate_q.py --best_scheme 04_model_selection/combined.best_scheme -l ~/Dropbox/gtdb/01_data/gtdb_r207_full_concat/ -te 
-```
+```  
+
+## To-do  
+
+### First pass  
+
+**Scripting**  
+- [ ] Clean GTDB tree (remove annotations etc.)  
+- [x] ~~Re-do Pearsons for lower triangle only~~ Leave it.  
+- [ ] Add second constrained method  
+- [ ] Increase `-cmax 8`  
+- [ ] Log training processes i.e. which commands were used, some output  
+- [x] Leave `--init-model` as LG  
+- [ ] Diagnostic plots  
+
+**Phylum tests**
+- [ ] Run Margulisbacteria (n=53)  
+- [ ] Run a n~500  
+- [ ] Run a n~1000  
+- [ ] How correlated are all these matrices? Pick the fastest one  
+
+**Update GitHub README**  
+- [ ] Explain input/output files for each step e.g. explain columns  
+- [ ] Explain  different training modes and commands  
+- [ ] Put training commands on GitHub  
+
+**post iqtree issues**  
+- [ ] best_scheme.nex comma error  
+- [ ] init-model Q.yeast not found  
+
+### Second pass  
+**Subsampling test**  
+- [ ] Subset larger phylum e.g. $k=\{50,100,250,500\}$  
+- [ ] Estimate Qs  
+- [ ] Calculate Pearsons on them  
+- [ ] Re-run on more  
+
+**Global Qs**  
+- [ ] Add to-dos later  
+
+### Third pass  
+- [ ] Remove redundant (highly similar) matrices  
+- [ ] All vs. all testing  
