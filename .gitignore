@@ -3,3 +3,5 @@
 alistat
 faSomeRecords.py
 *.~lock*
+__pycache__
+

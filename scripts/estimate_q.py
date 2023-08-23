@@ -61,39 +61,40 @@ if __name__ == "__main__":
     seed = 1
     pearsons_rho = 0
     rho_cutoff = 0.999
-    iteration=0
+    iteration=1 # pro tip: change this to resume from i  
     models = args.starting_models
 
     while pearsons_rho < rho_cutoff:
-            iteration += 1
-            if iteration > 1:
-                models = args.starting_models + f",05_{args.mode}/Q.{args.mode}_i{iteration-1}"
+        iteration += 1
+        if iteration > 1:
+            models = args.starting_models + f",05_{args.mode}/Q.{args.mode}_i{iteration-1}"
 
-            run_command(f"mkdir -p 05_{args.mode}")
+        run_command(f"mkdir -p 05_{args.mode}")
 
-            if args.mode == "fullcon":
-                run_command(f"{iqtree_binary} --seed {seed} -T {args.threads} -p {args.loci} -m MFP -mset {args.starting_models} -cmax 2 -te {args.constraint_tree} -pre 05_fullcon/i{iteration}")
-            elif args.mode == "semicon":
-                run_command(f"{iqtree_binary} --seed {seed} -T {args.threads} -p {args.loci} -m MFP -mset {args.starting_models} -cmax 2 -pre 05_semicon/i{iteration}")
-            elif args.mode == "uncon":
-                run_command(f"{iqtree_binary} --seed {seed} -T {args.threads} -S {args.loci} -m MFP -mset {args.starting_models} -cmax 2 -pre 05_uncon/i{iteration}")
+        if args.mode == "fullcon":
+            run_command(f"{iqtree_binary} --seed {seed} -T {args.threads} -p {args.loci} -m MFP -mset {models} -cmax 8 -te {args.constraint_tree} -pre 05_fullcon/i{iteration}")
+        elif args.mode == "semicon":
+           run_command(f"{iqtree_binary} --seed {seed} -T {args.threads} -p {args.loci} -m MFP -mset {models} -cmax 8 -pre 05_semicon/i{iteration}")
+        elif args.mode == "uncon":
+           run_command(f"{iqtree_binary} --seed {seed} -T {args.threads} -S {args.loci} -m MFP -mset {models} -cmax 8 -pre 05_uncon/i{iteration}")
 
-            run_command(f"sed -i 's/, //' 05_{args.mode}/i{iteration}.best_scheme.nex")
-            run_command(f"{iqtree_binary} -seed {seed} -T {args.threads} -s {args.loci} -p 05_{args.mode}/i{iteration}.best_scheme.nex -te 05_{args.mode}/i1.treefile --init-model LG --model-joint GTR20+FO -pre 05_{args.mode}/i{iteration}.GTR20")
+        run_command(f"sed -i 's/, //' 05_{args.mode}/i{iteration}.best_scheme.nex")
+        run_command(f"{iqtree_binary} -seed {seed} -T {args.threads} -s {args.loci} -p 05_{args.mode}/i{iteration}.best_scheme.nex -te 05_{args.mode}/i1.treefile --init-model LG --model-joint GTR20+FO -pre 05_{args.mode}/i{iteration}.GTR20")
+        
+        with open(f"05_{args.mode}/i{iteration}.GTR20.iqtree") as iq:
+            """
+            Parse .iqtree file to get new Q.matrix and calculate the 
+            correlation between the previous one
+            """
+            lines = iq.readlines()
+            # Write Q-matrix
+            grep_iqtree("can be used as input for IQ-TREE", f"05_{args.mode}/Q.{args.mode}_i{iteration}")
 
-            with open(f"05_{args.mode}/i{iteration}.GTR20.iqtree") as iq:
-                """
-                Parse .iqtree file to get new Q.matrix and calculate the 
-                correlation between the previous one
-                """
-                lines = iq.readlines()
-                grep_iqtree("Can be used as input", f"Q.{args.mode}_i{iteration}")
-            
-            if iteration > 1:
-                qold = read_qmatrix(f"Q.{args.mode}_i{iteration-1}")
-                qnew = read_qmatrix(f"Q.{args.mode}_i{iteration}")
-                rho = pearsons_correlation(qold, qnew)
-                print(f"rho={rho}")
-                if rho > rho_cutoff:
-                    print("Very similar to previous Q, stop.")
-                pearsons_rho = rho
+        if iteration > 1:
+            qold = read_qmatrix(f"05_{args.mode}/Q.{args.mode}_i{iteration-1}")
+            qnew = read_qmatrix(f"05_{args.mode}/Q.{args.mode}_i{iteration}")
+            rho = pearsons_correlation(qold, qnew)
+            print(f"rho={rho}")
+            if rho > rho_cutoff:
+                print("Very similar to previous Q, stop.")
+            pearsons_rho = rho
