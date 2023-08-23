@@ -119,26 +119,50 @@ the most common ones for the starting models `-mset` for training:
 scripts/count_top_models.py combined.best_scheme > 04_model_selection/starting_models.txt
 ```
 
+Example output:  
 > [('Q.yeast', 73), ('LG', 27), ('Q.insect', 8), ('Q.pfam', 7), ('HIVw', 1), ('mtZOA', 1)]  
 > Total loci: 117  
+> Cut-off: 0.9  
 > Selecting most frequent models up to 106 loci.  
 > Starting models: Q.yeast,LG,Q.insect  
 
 ### 4. Training  
 
-First concatenate training and testing loci and generate partition files:  
+**Training modes**  
+
+| Mode              | Name    | Fixed topology? | Linked branch lengths? |
+| ----------------- | ------- | --------------- | ---------------------- |
+| Unconstrained     | uncon   | No              | No                     |
+| Semi-constrained  | semicon | No              | Yes                    |
+| Fully-constrained | fullcon | Yes             | Yes                    |
+
+#### 4a. Fully constrained
 ```
-AMAS.py concat -i 03_subset_loci/training_loci/* -f fasta -d aa -p 03_subset_loci/training.partitions -t 03_subset_loci/training_concat.faa -u fasta -y nexus
-AMAS.py concat -i 03_subset_loci/testing_loci/* -f fasta -d aa -p 03_subset_loci/testing.partitions -t 03_subset_loci/testing_concat.faa -u fasta -y nexus
+scripts/estimate_q.py \ 
+	--mode fullcon \
+	--loci 03_subset_loci/training_loci/ \
+	-mset Q.yeast,LG,Q.insect \
+	-te pruned_treeshrink/output.tree \
+	-T 4 -v
 ```
 
-Run:  
+#### 4b. Semi-constrained  
 ```
-# For p__Firestonebacteria  
-# First did some manual cleaning of node labels from phylorank
-cd ~/Dropbox/gtdb/02_working/2308_phyla/lt_1000/p__Firestonebacteria
-scripts/estimate_q.py --best_scheme 04_model_selection/combined.best_scheme -l ~/Dropbox/gtdb/01_data/gtdb_r207_full_concat/ -te 
-```  
+scripts/estimate_q.py \ 
+	--mode semicon \
+	--loci 03_subset_loci/training_loci/ \
+	-mset Q.yeast,LG,Q.insect \
+	-T 4 -v
+```
+
+#### 4c. Unconstrained  
+```
+scripts/estimate_q.py \ 
+	--mode fullcon \
+	--loci 03_subset_loci/training_loci/ \
+	-mset Q.yeast,LG,Q.insect \
+	-T 4 -v
+```
 
 ## To-do  
 
@@ -148,11 +172,11 @@ scripts/estimate_q.py --best_scheme 04_model_selection/combined.best_scheme -l ~
 - [ ] Clean GTDB tree (remove annotations etc.; actually might be ok as 
 treeshrink cleans it, just wont work for tiny groups.)   
 - [x] ~~Re-do Pearsons for lower triangle only~~ Leave it.  
-- [ ] Add second constrained method  
-- [ ] Increase `-cmax 8`  
-- [ ] Log training processes i.e. which commands were used, some output  
-- [ ] Automate the script
+- [x] Add second constrained method  
+- [x] Increase `-cmax 8`  
+- [x] Log training processes i.e. which commands were used, some output  
 - [x] Leave `--init-model` as LG  
+- [ ] Automate the script
 - [ ] Diagnostic plots  
 
 **Phylum tests**
@@ -172,7 +196,7 @@ treeshrink cleans it, just wont work for tiny groups.)
 
 ### Second pass  
 **Subsampling test**  
-- [ ] Subset larger phylum e.g. $k=\{50,100,250,500\}$  
+- [ ] Subset a larger phylum e.g. $k=\{50,100,250,500\}$  
 - [ ] Estimate Qs  
 - [ ] Calculate Pearsons on them  
 - [ ] Re-run on more  
