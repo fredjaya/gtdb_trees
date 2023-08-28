@@ -61,7 +61,7 @@ if __name__ == "__main__":
     seed = 1
     pearsons_rho = 0
     rho_cutoff = 0.999
-    iteration=1 # pro tip: change this to resume from i  
+    iteration=0 # pro tip: change this to resume from i  
     models = args.starting_models
 
     while pearsons_rho < rho_cutoff:
@@ -79,7 +79,7 @@ if __name__ == "__main__":
            run_command(f"{iqtree_binary} --seed {seed} -T {args.threads} -S {args.loci} -m MFP -mset {models} -cmax 8 -pre 05_uncon/i{iteration}")
 
         run_command(f"sed -i 's/, //' 05_{args.mode}/i{iteration}.best_scheme.nex")
-        run_command(f"{iqtree_binary} -seed {seed} -T {args.threads} -s {args.loci} -p 05_{args.mode}/i{iteration}.best_scheme.nex -te 05_{args.mode}/i1.treefile --init-model LG --model-joint GTR20+FO -pre 05_{args.mode}/i{iteration}.GTR20")
+        run_command(f"{iqtree_binary} -seed {seed} -T {args.threads} -S {args.loci} -p 05_{args.mode}/i{iteration}.best_scheme.nex -te 05_{args.mode}/i1.treefile --init-model LG --model-joint GTR20+FO -pre 05_{args.mode}/i{iteration}.GTR20")
         
         with open(f"05_{args.mode}/i{iteration}.GTR20.iqtree") as iq:
             """

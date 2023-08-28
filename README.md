@@ -157,8 +157,16 @@ scripts/estimate_q.py \
 
 #### 4c. Unconstrained  
 ```
+# First remove empty sequences  
+mkdir -p 05_uncon/complete_training_loci  
+cd 05_uncon/complete_training_loci
+for i in ../../03_subset_loci/*; do
+	scripts/remove_empties.py $i;
+done
+
+# Train
 scripts/estimate_q.py \ 
-	--mode fullcon \
+	--mode uncon \
 	--loci 03_subset_loci/training_loci/ \
 	-mset Q.yeast,LG,Q.insect \
 	-T 4 -v
@@ -176,7 +184,7 @@ treeshrink cleans it, just wont work for tiny groups.)
 - [x] Increase `-cmax 8`  
 - [x] Log training processes i.e. which commands were used, some output  
 - [x] Leave `--init-model` as LG  
-- [ ] Automate the script
+- [x] Automate the script
 - [ ] Diagnostic plots  
 
 **Phylum tests**
