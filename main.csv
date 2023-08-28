@@ -43,7 +43,7 @@ index	group	pruned_taxa	pruned_tree_length	shrunk_taxa	shrunk_taxa_removed	shrun
 42	p__Dependentiae	61	20.70232	61	0	20.70232	0	20.70232				
 43	p__Cloacimonadota	60	12.10927	60	0	12.10927	0	12.10927				
 44	p__Nitrospinota	60	11.89895	60	0	11.89895	0	11.89895				
-45	p__Margulisbacteria	54	18.52574	54	0	18.52574	0	18.52574				
+45	p__Margulisbacteria	54	18.52574	54	0	18.52574	0	18.52574	0	6	6	5
 46	p__Firmicutes_F	49										
 47	p__Zixibacteria	47										
 48	p__Bipolaricaulota	46										

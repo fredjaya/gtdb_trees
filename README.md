@@ -164,6 +164,15 @@ scripts/estimate_q.py \
 	-T 4 -v
 ```
 
+### 5. Testing  
+Run ModelFinder with the starting models, and three new ones with different  
+training schemes:  
+```
+mkdir -p 06_testing
+iqtree2 -T 4 -S 03_subset_loci/training_loci/ -m MF -pre 06_testing/test_loci_mf \
+-mset LG,Q.pfam,Q.insect,05_uncon/Q.uncon_i2,05_semicon/Q.semicon_i2,05_fullcon/Q.fullcon_i2 
+```
+
 ## To-do  
 
 ### First pass  
@@ -180,7 +189,7 @@ treeshrink cleans it, just wont work for tiny groups.)
 - [ ] Diagnostic plots  
 
 **Phylum tests**
-- [ ] Run Margulisbacteria (n=53)  
+- [x] Run Margulisbacteria (n=53)  
 - [ ] Run a n~500  
 - [ ] Run a n~1000  
 - [ ] How correlated are all these matrices? Pick the fastest one  
@@ -188,7 +197,7 @@ treeshrink cleans it, just wont work for tiny groups.)
 **Update GitHub README**  
 - [ ] Explain input/output files for each step e.g. explain columns  
 - [ ] Explain  different training modes and commands  
-- [ ] Put training commands on GitHub  
+- [x] Put training commands on GitHub  
 
 **post iqtree issues**  
 - [ ] best_scheme.nex comma error  
