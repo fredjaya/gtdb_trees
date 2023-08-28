@@ -157,14 +157,6 @@ scripts/estimate_q.py \
 
 #### 4c. Unconstrained  
 ```
-# First remove empty sequences  
-mkdir -p 05_uncon/complete_training_loci  
-cd 05_uncon/complete_training_loci
-for i in ../../03_subset_loci/*; do
-	scripts/remove_empties.py $i;
-done
-
-# Train
 scripts/estimate_q.py \ 
 	--mode uncon \
 	--loci 03_subset_loci/training_loci/ \

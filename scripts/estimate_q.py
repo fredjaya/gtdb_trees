@@ -71,15 +71,17 @@ if __name__ == "__main__":
 
         run_command(f"mkdir -p 05_{args.mode}")
 
-        if args.mode == "fullcon":
+        if args.mode == "uncon":
+            run_command(f"{iqtree_binary} --seed {seed} -T {args.threads} -S {args.loci} -m MFP -mset {models} -cmax 8 -pre 05_uncon/i{iteration}")
+            run_command(f"{iqtree_binary} -seed {seed} -T {args.threads} -S {args.loci} -te 05_{args.mode}/i1.treefile --init-model LG --model-joint GTR20+FO -pre 05_{args.mode}/i{iteration}.GTR20")
+        elif args.mode == "fullcon":
             run_command(f"{iqtree_binary} --seed {seed} -T {args.threads} -p {args.loci} -m MFP -mset {models} -cmax 8 -te {args.constraint_tree} -pre 05_fullcon/i{iteration}")
         elif args.mode == "semicon":
-           run_command(f"{iqtree_binary} --seed {seed} -T {args.threads} -p {args.loci} -m MFP -mset {models} -cmax 8 -pre 05_semicon/i{iteration}")
-        elif args.mode == "uncon":
-           run_command(f"{iqtree_binary} --seed {seed} -T {args.threads} -S {args.loci} -m MFP -mset {models} -cmax 8 -pre 05_uncon/i{iteration}")
+            run_command(f"{iqtree_binary} --seed {seed} -T {args.threads} -p {args.loci} -m MFP -mset {models} -cmax 8 -pre 05_semicon/i{iteration}")
 
-        run_command(f"sed -i 's/, //' 05_{args.mode}/i{iteration}.best_scheme.nex")
-        run_command(f"{iqtree_binary} -seed {seed} -T {args.threads} -S {args.loci} -p 05_{args.mode}/i{iteration}.best_scheme.nex -te 05_{args.mode}/i1.treefile --init-model LG --model-joint GTR20+FO -pre 05_{args.mode}/i{iteration}.GTR20")
+        if args.mode in ["semicon", "fullcon"]:
+            run_command(f"sed -i 's/, //' 05_{args.mode}/i{iteration}.best_scheme.nex")
+            run_command(f"{iqtree_binary} -seed {seed} -T {args.threads} -S {args.loci} -p 05_{args.mode}/i{iteration}.best_scheme.nex -te 05_{args.mode}/i1.treefile --init-model LG --model-joint GTR20+FO -pre 05_{args.mode}/i{iteration}.GTR20")
         
         with open(f"05_{args.mode}/i{iteration}.GTR20.iqtree") as iq:
             """
